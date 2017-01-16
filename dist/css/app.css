@@ -268,7 +268,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -425,7 +425,7 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: "Open Sans Condensed", "Source Sans Pro", sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
@@ -559,7 +559,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: "Source Code Pro", monospace; }
 
 code {
   padding: 0.2rem 0.4rem;
@@ -3655,7 +3655,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3737,7 +3737,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;

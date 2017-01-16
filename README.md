@@ -2,7 +2,7 @@
 
 Vivid UI theme for openSUSE websites. Based on Bootstrap 4.0 Alpha 6. Apply [openSUSE Brand Guidelines](https://opensuse.github.io/branding-guidelines/) and [openSUSE Artwork](https://github.com/openSUSE/artwork).
 
-# Colors
+## Colors
 
 Name in SaSS     | Value     | Mapped variables
 -----------------|-----------|--------------------
@@ -14,6 +14,26 @@ $opensuse-green2 | #6da741   |
 $opensuse-blue   | #21a4df   | $brand-info
 $body-bg         | #f6f6f6   |
 $link-color      | #00a489   | $opensuse-cyan2
+
+## Fonts
+
+Default
+
+- Font family: Open Sans, Source Sans Pro, sans-serif
+- Font weight: normal (400)
+- Font style: normal
+
+Title and heading
+
+- Font family: Open Sans Condensed, Source Sans Pro, sans-serif
+- Font weight: bold (700)
+- Font style: normal
+
+Source code and commands
+
+- Font family: Source Code Pro, monospace
+- Font weight: normal
+- Font style: normal
 
 ## Icons
 
