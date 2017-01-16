@@ -1,1 +1,7 @@
+// Customized Bootstrap
+@import "customize";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Patches to Bootstrap
+@import "dropdown-animation";
+@import "selection-color";
