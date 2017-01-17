@@ -4094,7 +4094,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 .rounded-0 {
   border-radius: 0; }
 
-.clearfix::after {
+.clearfix::after, .global-footer::after {
   display: block;
   content: "";
   clear: both; }
