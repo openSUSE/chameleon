@@ -5997,7 +5997,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .dropdown.show .dropdown-menu, .btn-group.show .dropdown-menu {
   transition: max-height 0.2s, opacity 0.2s, visibility 0s;
-  max-height: 190px;
+  max-height: 300px;
+  overflow-y: auto;
   opacity: 1;
   visibility: visible; }
 
@@ -6018,6 +6019,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin-top: -16.67%; }
 
 .site-navbar {
+  background: #eceeef; }
+
+.global-footer {
+  margin-top: 30px;
+  padding: 30px 0;
+  color: #636c72;
   background: #eceeef; }
 
 #software-navbar form.form-inline {

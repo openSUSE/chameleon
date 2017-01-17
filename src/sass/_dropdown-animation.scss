@@ -10,7 +10,8 @@
 
     &.show .dropdown-menu {
         transition: max-height 0.2s, opacity 0.2s, visibility 0s;
-        max-height: 190px;
+        max-height: 300px;
+        overflow-y: auto;
         opacity: 1;
         visibility: visible;
     }
