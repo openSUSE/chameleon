@@ -13,7 +13,7 @@
 
     <body>
 
-        <nav class="navbar sticky-top navbar-inverse navbar-toggleable-md bg-inverse">
+        <nav id="global-navbar" class="navbar sticky-top navbar-inverse navbar-toggleable-md bg-inverse">
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,13 +65,26 @@
                         </div>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control" type="search" placeholder="Search packages...">
+            </div>
+        </nav>
+
+        <nav id="software-navbar" class="site-navbar py-3">
+            <div class="container align-center">
+                <form class="form form-inline">
+                    <input class="form-control mr-2" type="search" placeholder="Search packages...">
+                    <button type="submit" class="btn btn-primary mr-2 hidden-sm-down">
+                        <span class="typcn typcn-lg typcn-zoom-outline"></span>
+                        <span class="hidden-xs-down">Search</span>
+                    </button>
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#search-config-modal">
+                        <span class="typcn typcn-lg typcn-spanner-outline"></span>
+                        <span class="hidden-xs-down">Settings</span>
+                    </button>
                 </form>
             </div>
         </nav>
-        
-        <header class="py-5">
+
+        <header class="my-5">
             <div class="container">
                 <h1>
                     <img src="images/firefox-icon.png" width="48" height="48" alt="Icon" />
@@ -111,7 +124,7 @@
                 </div>
             </div>
         </header>
-        
+
         <div class="container">
             <h3 class="mt-5 mb-4">openSUSE Tumbleweed</h3>
 

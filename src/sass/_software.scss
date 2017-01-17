@@ -1,0 +1,11 @@
+#software-navbar {
+    form.form-inline {
+        display: flex;
+        max-width: 600px;
+        margin: auto;
+        
+        input.form-control {
+            flex: 1 1 200px;
+        }
+    }
+}

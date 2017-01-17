@@ -6010,3 +6010,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   background: #35b9ab;
   /* Gecko Browsers */
   color: #fff; }
+
+.typcn.typcn-lg::before {
+  font-size: 150%;
+  line-height: 66.67%;
+  margin-bottom: -16.67%;
+  margin-top: -16.67%; }
+
+.site-navbar {
+  background: #eceeef; }
+
+#software-navbar form.form-inline {
+  display: flex;
+  max-width: 600px;
+  margin: auto; }
+  #software-navbar form.form-inline input.form-control {
+    flex: 1 1 200px; }
