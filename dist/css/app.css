@@ -5987,7 +5987,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-.dropdown .dropdown-menu, .btn-group .dropdown-menu {
+.dropdown .dropdown-menu, .dropup .dropdown-menu, .btn-group .dropdown-menu {
   transition: max-height 0.2s, opacity 0.2s 0.1s, visibility 0s 0.3s;
   max-height: 0;
   display: block;
@@ -5995,7 +5995,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   opacity: 0;
   visibility: hidden; }
 
-.dropdown.show .dropdown-menu, .btn-group.show .dropdown-menu {
+.dropdown.show .dropdown-menu, .dropup.show .dropdown-menu, .btn-group.show .dropdown-menu {
   transition: max-height 0.2s, opacity 0.2s, visibility 0s;
   max-height: 300px;
   overflow-y: auto;
