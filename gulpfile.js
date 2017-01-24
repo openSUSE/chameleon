@@ -36,7 +36,7 @@ gulp.task('sass', function () {
 gulp.task('copy', function () {
     gulp.src('./node_modules/npm-font-open-sans-condensed/fonts/*')
         .pipe(gulp.dest('./dist/fonts/open-sans-condensed'));
-    gulp.src('./node_modules/open-sans-fontface/fonts/*')
+    gulp.src('./node_modules/open-sans-fontface/fonts/*/*')
         .pipe(gulp.dest('./dist/fonts/open-sans'));
 });
 
