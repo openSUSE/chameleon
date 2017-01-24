@@ -20,6 +20,7 @@ $link-color           : $opensuse-cyan2;
 $link-hover-decoration: none;
 
 // Fonts
-$font-family-sans-serif: "Open Sans", "Source Sans Pro", sans-serif;
-$headings-font-family: "Open Sans Condensed", "Source Sans Pro", sans-serif;
+$font-family-sans-serif: "Open Sans", sans-serif;
+$headings-font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+$headings-font-weight: bold;
 $font-family-monospace:  "Source Code Pro", monospace;
