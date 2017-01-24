@@ -18,6 +18,8 @@
   "homepage": "https://github.com/guoyunhe/chameleon#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
+    "npm-font-open-sans-condensed": "^1.0.2",
+    "open-sans-fontface": "^1.4.0",
     "tether": "^1.4.0",
     "typicons.font": "^2.0.8"
   },

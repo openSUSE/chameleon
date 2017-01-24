@@ -2,6 +2,9 @@
 @import "customize";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// Global styles
+@import "fontfaces";
+
 // Patches to Bootstrap
 @import "dropdown-animation";
 @import "selection-color";
