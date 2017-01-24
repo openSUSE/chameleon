@@ -1,0 +1,10 @@
+// Font Path
+$font-path: "../fonts" !default;
+
+// Open Sans Condensed
+$FontPathOpenSansCondensed: $font-path + "/open-sans-condensed";
+@import '../../node_modules/npm-font-open-sans-condensed/open-sans-condensed.scss';
+
+// Open Sans
+$OpenSansPath: $font-path + "/open-sans";
+@import '../../node_modules/open-sans-fontface/open-sans.scss';

@@ -9,6 +9,7 @@
 
 'use strict';
 
+var argv = require('yargs').argv;
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
 var sass = require('gulp-sass');
@@ -19,14 +20,9 @@ gulp.task('js', function() {
     gulp.src('src/js/app.js')
     .pipe(browserify({
         insertGlobals : true,
-        debug : !gulp.env.production
+        debug : !argv.production
     }))
     .pipe(gulp.dest('./dist/js'))
-});
-
-// Watch JavaScript file changes
-gulp.task('js:watch', function () {
-    gulp.watch('./src/js/**/*.js', ['js']);
 });
 
 // Compile SASS stylesheets
@@ -36,9 +32,12 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist/css'));
 });
 
-// Watch SASS file changes
-gulp.task('sass:watch', function () {
-    gulp.watch('./src/sass/**/*.scss', ['sass']);
+// Copy fonts, images, etc.
+gulp.task('copy', function () {
+    gulp.src('./node_modules/npm-font-open-sans-condensed/fonts/*')
+        .pipe(gulp.dest('./dist/fonts/open-sans-condensed'));
+    gulp.src('./node_modules/open-sans-fontface/fonts/*')
+        .pipe(gulp.dest('./dist/fonts/open-sans'));
 });
 
 // Build all
