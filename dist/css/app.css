@@ -6065,6 +6065,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-style: normal;
   src: local("Open Sans Condensed Bold"), url("../fonts/open-sans-condensed/OpenSans-CondBold.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondBold.ttf") format("truetype"); }
 
+button, input, select {
+  font-family: "Open Sans", sans-serif; }
+
 .dropdown .dropdown-menu, .dropup .dropdown-menu, .btn-group .dropdown-menu {
   transition: max-height 0.2s, opacity 0.2s 0.1s, visibility 0s 0.3s;
   max-height: 0;
