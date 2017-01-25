@@ -117,8 +117,8 @@ $open-sans-condensed-font-path: $font-path + "/open-sans-condensed";
     font-weight: 300;
     font-style: normal;
     src: local('Open Sans Condensed Light'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-condlight.woff') format('woff'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-condlight.ttf') format('truetype');
+        url('#{$open-sans-condensed-font-path}/OpenSans-CondLight.woff') format('woff'),
+        url('#{$open-sans-condensed-font-path}/OpenSans-CondLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -126,8 +126,8 @@ $open-sans-condensed-font-path: $font-path + "/open-sans-condensed";
     font-weight: 300;
     font-style: italic;
     src: local('Open Sans Condensed Light Italic'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-condlightitalic.woff') format('woff'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-condlightitalic.ttf') format('truetype');
+        url('#{$open-sans-condensed-font-path}/OpenSans-CondLightItalic.woff') format('woff'),
+        url('#{$open-sans-condensed-font-path}/OpenSans-CondLightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -135,6 +135,6 @@ $open-sans-condensed-font-path: $font-path + "/open-sans-condensed";
     font-weight: bold;
     font-style: normal;
     src: local('Open Sans Condensed Bold'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-condbold.woff') format('woff'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-condbold.ttf') format('truetype');
+        url('#{$open-sans-condensed-font-path}/OpenSans-CondBold.woff') format('woff'),
+        url('#{$open-sans-condensed-font-path}/OpenSans-CondBold.ttf') format('truetype');
 }

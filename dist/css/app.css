@@ -6051,19 +6051,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-family: 'Open Sans Condensed';
   font-weight: 300;
   font-style: normal;
-  src: local("Open Sans Condensed Light"), url("../fonts/open-sans-condensed/OpenSans-condlight.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-condlight.ttf") format("truetype"); }
+  src: local("Open Sans Condensed Light"), url("../fonts/open-sans-condensed/OpenSans-CondLight.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondLight.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Open Sans Condensed';
   font-weight: 300;
   font-style: italic;
-  src: local("Open Sans Condensed Light Italic"), url("../fonts/open-sans-condensed/OpenSans-condlightitalic.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-condlightitalic.ttf") format("truetype"); }
+  src: local("Open Sans Condensed Light Italic"), url("../fonts/open-sans-condensed/OpenSans-CondLightItalic.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondLightItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Open Sans Condensed';
   font-weight: bold;
   font-style: normal;
-  src: local("Open Sans Condensed Bold"), url("../fonts/open-sans-condensed/OpenSans-condbold.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-condbold.ttf") format("truetype"); }
+  src: local("Open Sans Condensed Bold"), url("../fonts/open-sans-condensed/OpenSans-CondBold.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondBold.ttf") format("truetype"); }
 
 .dropdown .dropdown-menu, .dropup .dropdown-menu, .btn-group .dropdown-menu {
   transition: max-height 0.2s, opacity 0.2s 0.1s, visibility 0s 0.3s;
