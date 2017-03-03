@@ -7468,6 +7468,13 @@ button, input, select {
   margin-bottom: -16.67%;
   margin-top: -16.67%; }
 
+#global-navbar .navbar-brand {
+  font-size: 1em; }
+  #global-navbar .navbar-brand img {
+    height: 2.5em;
+    width: auto;
+    margin: -0.5em 0; }
+
 .site-navbar {
   background: #eceeef; }
 
