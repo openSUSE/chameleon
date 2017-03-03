@@ -22,22 +22,14 @@ gulp.task('js', function() {
         insertGlobals : true,
         debug : !argv.production
     }))
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest('./js'))
 });
 
 // Compile SASS stylesheets
 gulp.task('sass', function () {
     return gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'));
-});
-
-// Copy fonts, images, etc.
-gulp.task('copy', function () {
-    gulp.src('./node_modules/npm-font-open-sans-condensed/fonts/*')
-        .pipe(gulp.dest('./dist/fonts/open-sans-condensed'));
-    gulp.src('./node_modules/open-sans-fontface/fonts/*/*')
-        .pipe(gulp.dest('./dist/fonts/open-sans'));
+    .pipe(gulp.dest('./css'));
 });
 
 // Build all
