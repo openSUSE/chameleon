@@ -41,7 +41,17 @@ Use Typicons as basic icon set for UI. See <http://typicons.com/>.
 
 For icons not covered by Typicons, we create our own in SVG format.
 
-## Demo
+## Run
+
+```shell
+# Install http-server tool
+npm install http-server -g
+
+# Change to project path and run:
+http-server
+```
+
+## Online demo
 
 - For software.opensuse.org
   - [Download OS](https://guoyunhe.me/demo/chameleon/test/software-download.html)

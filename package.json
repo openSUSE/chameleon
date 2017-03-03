@@ -18,15 +18,11 @@
   "homepage": "https://github.com/guoyunhe/chameleon#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
-    "tether": "^1.4.0",
-    "typicons.font": "^2.0.8"
+    "tether": "^1.4.0"
   },
   "devDependencies": {
-    "connect": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-svgstore": "^6.1.0",
-    "serve-static": "^1.11.1"
+    "gulp-sass": "^3.1.0"
   }
 }
