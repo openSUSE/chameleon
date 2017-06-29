@@ -7471,9 +7471,9 @@ button, input, select {
 #global-navbar .navbar-brand {
   font-size: 1em; }
   #global-navbar .navbar-brand img {
-    height: 2.5em;
+    height: 2em;
     width: auto;
-    margin: -0.5em 0; }
+    margin: 0; }
 
 .site-navbar {
   background: #eceeef; }
