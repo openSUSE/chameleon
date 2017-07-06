@@ -17,7 +17,7 @@ var sass = require('gulp-sass');
 // Compile JavaScripts
 gulp.task('js', function() {
     // Single entry point to browserify
-    gulp.src('src/js/app.js')
+    gulp.src(['src/js/app.js', 'src/js/app-no-jquery.js'])
     .pipe(browserify({
         insertGlobals : true,
         debug : !argv.production
