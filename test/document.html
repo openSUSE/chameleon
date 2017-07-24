@@ -54,190 +54,196 @@
         </header>
         
         <div class="container my-4">
-            <h2 class="my-4">Get document for</h2>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#leap-423" role="tab">Leap 42.3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#leap-422" role="tab">Leap 42.2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#leap-421" role="tab">Leap 42.1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Previous version</a>
-                </li>
-            </ul>
+            <h2>
+                Get document for
+                <div class="btn-group" role="group">
+                    <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Leap 42.3
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-button">
+                        <a class="dropdown-item" data-toggle="tab" href="#leap-423" role="tab">Leap 42.3</a>
+                        <a class="dropdown-item" data-toggle="tab" href="#leap-422" role="tab">Leap 42.2</a>
+                        <a class="dropdown-item" data-toggle="tab" href="#leap-421" role="tab">Leap 42.1</a>
+                        <a class="dropdown-item" href="#">Previous</a>
+                    </div>
+                </div>
+            </h2>
 
             <div class="tab-content">
                 <div id="leap-423" class="tab-pane active">
-                    <div class="card">
-                        <div class="card-block">
-                            <table class="table table-bordered table-responsive">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Startup Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">GNOME User Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Reference Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Security Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tuning Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Virtualization Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Release Notes</th>
-                                        <td>HTML</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-lg-6 my-1">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Start-Up Guide</h4>
+                                        <p class="card-text">This manual will see you through your initial contact with openSUSE&reg; Leap. Check out the various parts of this manual to learn how to install, use and enjoy your system.</p>
+                                        <div>
+                                            <a class="btn btn-primary" href="#">HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">Single HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
+                                            <div class="btn-group hidden hidden-sm-up" role="group">
+                                                <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Other type
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdown-button">
+                                                    <a class="dropdown-item" href="#">Single HTML</a>
+                                                    <a class="dropdown-item" href="#">PDF</a>
+                                                    <a class="dropdown-item" href="#">ePUB</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 my-1">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title">GNOME User Guide</h4>
+                                        <p class="card-text">Introduces the GNOME desktop of openSUSE&reg; Leap. It guides you through using and configuring the desktop and helps you perform key tasks.</p>
+                                        <div>
+                                            <a class="btn btn-primary" href="#">HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">Single HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
+                                            <div class="btn-group hidden hidden-sm-up" role="group">
+                                                <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Other type
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdown-button">
+                                                    <a class="dropdown-item" href="#">Single HTML</a>
+                                                    <a class="dropdown-item" href="#">PDF</a>
+                                                    <a class="dropdown-item" href="#">ePUB</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 my-1">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Reference Guide</h4>
+                                        <p class="card-text">This manual gives you a general understanding of openSUSE&reg; Leap. It is intended mainly for system administrators and home users with basic system administration knowledge.</p>
+                                        <div>
+                                            <a class="btn btn-primary" href="#">HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">Single HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
+                                            <div class="btn-group hidden hidden-sm-up" role="group">
+                                                <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Other type
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdown-button">
+                                                    <a class="dropdown-item" href="#">Single HTML</a>
+                                                    <a class="dropdown-item" href="#">PDF</a>
+                                                    <a class="dropdown-item" href="#">ePUB</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 my-1">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Security Guide</h4>
+                                        <p class="card-text">Introduces basic concepts of system security, covering both local and network security aspects. Shows how to use the product inherent security software like AppArmor.</p>
+                                        <div>
+                                            <a class="btn btn-primary" href="#">HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">Single HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
+                                            <div class="btn-group hidden hidden-sm-up" role="group">
+                                                <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Other type
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdown-button">
+                                                    <a class="dropdown-item" href="#">Single HTML</a>
+                                                    <a class="dropdown-item" href="#">PDF</a>
+                                                    <a class="dropdown-item" href="#">ePUB</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 my-1">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Tuning Guide</h4>
+                                        <p class="card-text">An administrator's guide for problem detection, resolution and optimization. Find how to inspect and optimize your system by means of monitoring tools and how to manage resources.</p>
+                                        <div>
+                                            <a class="btn btn-primary" href="#">HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">Single HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
+                                            <div class="btn-group hidden hidden-sm-up" role="group">
+                                                <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Other type
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdown-button">
+                                                    <a class="dropdown-item" href="#">Single HTML</a>
+                                                    <a class="dropdown-item" href="#">PDF</a>
+                                                    <a class="dropdown-item" href="#">ePUB</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 my-1">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Virtualization Guide</h4>
+                                        <p class="card-text">Describes virtualization technology in general, and introduces libvirt—the unified interface to virtualization—and detailed information on specific hypervisors.</p>
+                                        <div>
+                                            <a class="btn btn-primary" href="#">HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">Single HTML</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
+                                            <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
+                                            <div class="btn-group hidden hidden-sm-up" role="group">
+                                                <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Other type
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdown-button">
+                                                    <a class="dropdown-item" href="#">Single HTML</a>
+                                                    <a class="dropdown-item" href="#">PDF</a>
+                                                    <a class="dropdown-item" href="#">ePUB</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 my-1">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Release Notes</h4>
+                                        <p class="card-text">Release Notes of openSUSE Leap 42.3</p>
+                                        <div>
+                                            <a class="btn btn-primary" href="#">HTML</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
                 <div id="leap-422" class="tab-pane">
-                    <div class="card">
-                        <div class="card-block">
-                            <table class="table table-bordered table-responsive">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Startup Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">GNOME User Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Reference Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Security Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tuning Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Virtualization Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Release Notes</th>
-                                        <td>HTML</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    
                 </div>
+                
                 <div id="leap-421" class="tab-pane">
-                    <div class="card">
-                        <div class="card-block">
-                            <table class="table table-bordered table-responsive">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Startup Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">GNOME User Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Reference Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Security Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Tuning Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Virtualization Guide</th>
-                                        <td>HTML</td>
-                                        <td>single HTML</td>
-                                        <td>PDF</td>
-                                        <td>ePUB</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Release Notes</th>
-                                        <td>HTML</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
