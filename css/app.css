@@ -5866,6 +5866,9 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+html {
+  font-size: 14px; }
+
 @font-face {
   font-family: 'Open Sans';
   font-weight: 300;
@@ -5946,6 +5949,9 @@ a.text-dark:focus, a.text-dark:hover {
 
 button, input, select {
   font-family: "Open Sans", sans-serif; }
+
+textarea {
+  font-family: "Source Code Pro", monospace; }
 
 .dropdown .dropdown-menu, .dropup .dropdown-menu, .btn-group .dropdown-menu {
   transition: max-height 0.2s, opacity 0.2s 0.1s, visibility 0s 0.3s;
