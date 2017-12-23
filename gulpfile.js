@@ -9,7 +9,6 @@
 
 'use strict';
 
-var argv = require('yargs').argv;
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
 var sass = require('gulp-sass');
@@ -20,7 +19,7 @@ gulp.task('js', function() {
     gulp.src(['src/js/app.js', 'src/js/app-no-jquery.js'])
     .pipe(browserify({
         insertGlobals : true,
-        debug : !argv.production
+        debug : true
     }))
     .pipe(gulp.dest('./js'))
 });
