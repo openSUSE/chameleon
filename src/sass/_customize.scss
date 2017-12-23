@@ -1,3 +1,5 @@
+// https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+
 // openSUSE Brand Colors
 $opensuse-green  : #73ba25;
 $opensuse-dark   : #173f4f;
@@ -7,13 +9,17 @@ $opensuse-green2 : #6da741;
 $opensuse-blue   : #21a4df;
 
 // Bootstrap colors
-$brand-primary   : $opensuse-cyan;
-$brand-success   : $opensuse-green;
-$brand-info      : $opensuse-blue;
-$brand-inverse   : $opensuse-dark;
+$primary:       $opensuse-cyan;
+//$secondary:     $gray-600;
+$success:       $opensuse-green;
+$info:          $opensuse-blue;
+//$warning:       $yellow;
+//$danger:        $red;
+//$light:         $gray-100;
+$dark:          $opensuse-dark;
 
 // Boby
-$body-bg         : #f6f6f6;
+$body-bg         : #ffffff;
 
 // Links
 $link-color           : $opensuse-cyan2;
