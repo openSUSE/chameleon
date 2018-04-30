@@ -6334,6 +6334,134 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   src: local("Open Sans Condensed Bold"), url("../fonts/open-sans-condensed/OpenSans-CondBold.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondBold.ttf") format("truetype"); }
 
+html[lang="zh-CN"],
+html[lang="zh_CN"],
+html[lang="zh-Hans"] {
+  font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
+  html[lang="zh-CN"] h1,
+  html[lang="zh-CN"] h2,
+  html[lang="zh-CN"] h3,
+  html[lang="zh-CN"] h4,
+  html[lang="zh-CN"] h5,
+  html[lang="zh-CN"] h6,
+  html[lang="zh-CN"] .h1,
+  html[lang="zh-CN"] .h2,
+  html[lang="zh-CN"] .h3,
+  html[lang="zh-CN"] .h4,
+  html[lang="zh-CN"] .h5,
+  html[lang="zh-CN"] .h6,
+  html[lang="zh-CN"] .lead,
+  html[lang="zh_CN"] h1,
+  html[lang="zh_CN"] h2,
+  html[lang="zh_CN"] h3,
+  html[lang="zh_CN"] h4,
+  html[lang="zh_CN"] h5,
+  html[lang="zh_CN"] h6,
+  html[lang="zh_CN"] .h1,
+  html[lang="zh_CN"] .h2,
+  html[lang="zh_CN"] .h3,
+  html[lang="zh_CN"] .h4,
+  html[lang="zh_CN"] .h5,
+  html[lang="zh_CN"] .h6,
+  html[lang="zh_CN"] .lead,
+  html[lang="zh-Hans"] h1,
+  html[lang="zh-Hans"] h2,
+  html[lang="zh-Hans"] h3,
+  html[lang="zh-Hans"] h4,
+  html[lang="zh-Hans"] h5,
+  html[lang="zh-Hans"] h6,
+  html[lang="zh-Hans"] .h1,
+  html[lang="zh-Hans"] .h2,
+  html[lang="zh-Hans"] .h3,
+  html[lang="zh-Hans"] .h4,
+  html[lang="zh-Hans"] .h5,
+  html[lang="zh-Hans"] .h6,
+  html[lang="zh-Hans"] .lead {
+    font-family: "Noto Sans", "Noto Sans SC", sans-serif;
+    font-weight: 200; }
+
+html[lang="zh-TW"],
+html[lang="zh_TW"],
+html[lang="zh-Hant"] {
+  font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
+  html[lang="zh-TW"] h1,
+  html[lang="zh-TW"] h2,
+  html[lang="zh-TW"] h3,
+  html[lang="zh-TW"] h4,
+  html[lang="zh-TW"] h5,
+  html[lang="zh-TW"] h6,
+  html[lang="zh-TW"] .h1,
+  html[lang="zh-TW"] .h2,
+  html[lang="zh-TW"] .h3,
+  html[lang="zh-TW"] .h4,
+  html[lang="zh-TW"] .h5,
+  html[lang="zh-TW"] .h6,
+  html[lang="zh-TW"] .lead,
+  html[lang="zh_TW"] h1,
+  html[lang="zh_TW"] h2,
+  html[lang="zh_TW"] h3,
+  html[lang="zh_TW"] h4,
+  html[lang="zh_TW"] h5,
+  html[lang="zh_TW"] h6,
+  html[lang="zh_TW"] .h1,
+  html[lang="zh_TW"] .h2,
+  html[lang="zh_TW"] .h3,
+  html[lang="zh_TW"] .h4,
+  html[lang="zh_TW"] .h5,
+  html[lang="zh_TW"] .h6,
+  html[lang="zh_TW"] .lead,
+  html[lang="zh-Hant"] h1,
+  html[lang="zh-Hant"] h2,
+  html[lang="zh-Hant"] h3,
+  html[lang="zh-Hant"] h4,
+  html[lang="zh-Hant"] h5,
+  html[lang="zh-Hant"] h6,
+  html[lang="zh-Hant"] .h1,
+  html[lang="zh-Hant"] .h2,
+  html[lang="zh-Hant"] .h3,
+  html[lang="zh-Hant"] .h4,
+  html[lang="zh-Hant"] .h5,
+  html[lang="zh-Hant"] .h6,
+  html[lang="zh-Hant"] .lead {
+    font-family: "Noto Sans", "Noto Sans TC", sans-serif;
+    font-weight: 200; }
+
+html[lang="ja"] {
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
+  html[lang="ja"] h1,
+  html[lang="ja"] h2,
+  html[lang="ja"] h3,
+  html[lang="ja"] h4,
+  html[lang="ja"] h5,
+  html[lang="ja"] h6,
+  html[lang="ja"] .h1,
+  html[lang="ja"] .h2,
+  html[lang="ja"] .h3,
+  html[lang="ja"] .h4,
+  html[lang="ja"] .h5,
+  html[lang="ja"] .h6,
+  html[lang="ja"] .lead {
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+    font-weight: 200; }
+
+html[lang="kr"] {
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
+  html[lang="kr"] h1,
+  html[lang="kr"] h2,
+  html[lang="kr"] h3,
+  html[lang="kr"] h4,
+  html[lang="kr"] h5,
+  html[lang="kr"] h6,
+  html[lang="kr"] .h1,
+  html[lang="kr"] .h2,
+  html[lang="kr"] .h3,
+  html[lang="kr"] .h4,
+  html[lang="kr"] .h5,
+  html[lang="kr"] .h6,
+  html[lang="kr"] .lead {
+    font-family: "Noto Sans", "Noto Sans KR", sans-serif;
+    font-weight: 200; }
+
 button, input, select {
   font-family: "Open Sans", sans-serif; }
 
