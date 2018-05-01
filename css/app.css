@@ -7981,6 +7981,10 @@ textarea {
   padding: 30px 0;
   color: #868e96;
   background: #f8f9fa; }
+  .global-footer .footer-copyright-language-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 #software-navbar form.form-inline {
   display: flex;
