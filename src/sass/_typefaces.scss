@@ -1,7 +1,16 @@
-html[lang="zh-CN"],
-html[lang="zh_CN"],
-html[lang="zh-Hans"] {
-  font-family: "Noto Sans", "Noto Sans SC", sans-serif;
+@mixin cjk-typeface($font-family, $heading-font-family, $heading-font-weight) {
+  font-family: "Noto Sans", $font-family, sans-serif;
+
+  body {
+    font-family: "Noto Sans", $font-family, sans-serif;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font-family: "Noto Sans", $font-family, sans-serif;
+  }
 
   h1,
   h2,
@@ -15,73 +24,32 @@ html[lang="zh-Hans"] {
   .h4,
   .h5,
   .h6,
+  .display-1,
+  .display-2,
+  .display-3,
   .lead {
-    font-family: "Noto Sans", "Noto Sans SC", sans-serif;
-    font-weight: 200;
+    font-family: "Noto Sans", $font-family, sans-serif;
+    font-weight: $heading-font-weight;
   }
+}
+
+html[lang="zh-CN"],
+html[lang="zh_CN"],
+html[lang="zh-Hans"] {
+  @include cjk-typeface("Noto Sans SC", "Noto Sans SC", 200);
 }
 
 html[lang="zh-TW"],
 html[lang="zh_TW"],
 html[lang="zh-Hant"] {
-  font-family: "Noto Sans", "Noto Sans TC", sans-serif;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6,
-  .lead {
-    font-family: "Noto Sans", "Noto Sans TC", sans-serif;
-    font-weight: 200;
-  }
+  @include cjk-typeface("Noto Sans TC", "Noto Sans TC", 200);
 }
 
-html[lang="ja"] {
-  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6,
-  .lead {
-    font-family: "Noto Sans", "Noto Sans JP", sans-serif;
-    font-weight: 200;
-  }
+html[lang="ja"],
+html[lang="jp"] {
+  @include cjk-typeface("Noto Sans JP", "Noto Sans JP", 200);
 }
 
 html[lang="kr"] {
-  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6,
-  .lead {
-    font-family: "Noto Sans", "Noto Sans KR", sans-serif;
-    font-weight: 200;
-  }
+  @include cjk-typeface("Noto Sans KR", "Noto Sans KR", 200);
 }

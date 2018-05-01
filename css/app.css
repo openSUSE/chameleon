@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Bootstrap v4.1.0 (https://getbootstrap.com/)
+ * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -51,7 +51,7 @@ html {
 @-ms-viewport {
   width: device-width; }
 
-article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
@@ -159,7 +159,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: 1em; }
 
 pre {
@@ -413,12 +413,6 @@ mark,
 .figure-caption {
   font-size: 90%;
   color: #868e96; }
-
-code,
-kbd,
-pre,
-samp {
-  font-family: "Source Code Pro", monospace; }
 
 code {
   font-size: 87.5%;
@@ -1456,6 +1450,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .custom-select.is-valid ~ .valid-tooltip {
     display: block; }
 
+.was-validated .form-control-file:valid ~ .valid-feedback,
+.was-validated .form-control-file:valid ~ .valid-tooltip, .form-control-file.is-valid ~ .valid-feedback,
+.form-control-file.is-valid ~ .valid-tooltip {
+  display: block; }
+
 .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
   color: #73ba25; }
 
@@ -1532,6 +1531,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .custom-select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip {
     display: block; }
+
+.was-validated .form-control-file:invalid ~ .invalid-feedback,
+.was-validated .form-control-file:invalid ~ .invalid-tooltip, .form-control-file.is-invalid ~ .invalid-feedback,
+.form-control-file.is-invalid ~ .invalid-tooltip {
+  display: block; }
 
 .was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
   color: #dc3545; }
@@ -2388,8 +2392,7 @@ input[type="button"].btn-block {
     .input-group > .custom-file:not(:last-child) .custom-file-label::after {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
-    .input-group > .custom-file:not(:first-child) .custom-file-label,
-    .input-group > .custom-file:not(:first-child) .custom-file-label::after {
+    .input-group > .custom-file:not(:first-child) .custom-file-label {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
 
@@ -2480,11 +2483,12 @@ input[type="button"].btn-block {
       background-color: #e9ecef; }
 
 .custom-control-label {
+  position: relative;
   margin-bottom: 0; }
   .custom-control-label::before {
     position: absolute;
     top: 0.25rem;
-    left: 0;
+    left: -1.5rem;
     display: block;
     width: 1rem;
     height: 1rem;
@@ -2495,7 +2499,7 @@ input[type="button"].btn-block {
   .custom-control-label::after {
     position: absolute;
     top: 0.25rem;
-    left: 0;
+    left: -1.5rem;
     display: block;
     width: 1rem;
     height: 1rem;
@@ -2621,7 +2625,7 @@ input[type="button"].btn-block {
     bottom: 0;
     z-index: 3;
     display: block;
-    height: calc(calc(2.25rem + 2px) - 1px * 2);
+    height: 2.25rem;
     padding: 0.375rem 0.75rem;
     line-height: 1.5;
     color: #495057;
@@ -4182,6 +4186,7 @@ button.close {
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
+    cursor: pointer;
     background-color: rgba(255, 255, 255, 0.5); }
     .carousel-indicators li::before {
       position: absolute;
@@ -6254,7 +6259,17 @@ a.text-dark:hover, a.text-dark:focus {
       background-color: #ffffff !important; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #dee2e6 !important; } }
+    border: 1px solid #dee2e6 !important; }
+  .table-dark {
+    color: inherit; }
+    .table-dark th,
+    .table-dark td,
+    .table-dark thead th,
+    .table-dark tbody + tbody {
+      border-color: #ced4da; }
+  .table .thead-dark th {
+    color: inherit;
+    border-color: #ced4da; } }
 
 @font-face {
   font-family: 'Open Sans';
@@ -6338,6 +6353,23 @@ html[lang="zh-CN"],
 html[lang="zh_CN"],
 html[lang="zh-Hans"] {
   font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
+  html[lang="zh-CN"] body,
+  html[lang="zh_CN"] body,
+  html[lang="zh-Hans"] body {
+    font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
+  html[lang="zh-CN"] button,
+  html[lang="zh-CN"] input,
+  html[lang="zh-CN"] select,
+  html[lang="zh-CN"] textarea,
+  html[lang="zh_CN"] button,
+  html[lang="zh_CN"] input,
+  html[lang="zh_CN"] select,
+  html[lang="zh_CN"] textarea,
+  html[lang="zh-Hans"] button,
+  html[lang="zh-Hans"] input,
+  html[lang="zh-Hans"] select,
+  html[lang="zh-Hans"] textarea {
+    font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
   html[lang="zh-CN"] h1,
   html[lang="zh-CN"] h2,
   html[lang="zh-CN"] h3,
@@ -6350,6 +6382,9 @@ html[lang="zh-Hans"] {
   html[lang="zh-CN"] .h4,
   html[lang="zh-CN"] .h5,
   html[lang="zh-CN"] .h6,
+  html[lang="zh-CN"] .display-1,
+  html[lang="zh-CN"] .display-2,
+  html[lang="zh-CN"] .display-3,
   html[lang="zh-CN"] .lead,
   html[lang="zh_CN"] h1,
   html[lang="zh_CN"] h2,
@@ -6363,6 +6398,9 @@ html[lang="zh-Hans"] {
   html[lang="zh_CN"] .h4,
   html[lang="zh_CN"] .h5,
   html[lang="zh_CN"] .h6,
+  html[lang="zh_CN"] .display-1,
+  html[lang="zh_CN"] .display-2,
+  html[lang="zh_CN"] .display-3,
   html[lang="zh_CN"] .lead,
   html[lang="zh-Hans"] h1,
   html[lang="zh-Hans"] h2,
@@ -6376,6 +6414,9 @@ html[lang="zh-Hans"] {
   html[lang="zh-Hans"] .h4,
   html[lang="zh-Hans"] .h5,
   html[lang="zh-Hans"] .h6,
+  html[lang="zh-Hans"] .display-1,
+  html[lang="zh-Hans"] .display-2,
+  html[lang="zh-Hans"] .display-3,
   html[lang="zh-Hans"] .lead {
     font-family: "Noto Sans", "Noto Sans SC", sans-serif;
     font-weight: 200; }
@@ -6384,6 +6425,23 @@ html[lang="zh-TW"],
 html[lang="zh_TW"],
 html[lang="zh-Hant"] {
   font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
+  html[lang="zh-TW"] body,
+  html[lang="zh_TW"] body,
+  html[lang="zh-Hant"] body {
+    font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
+  html[lang="zh-TW"] button,
+  html[lang="zh-TW"] input,
+  html[lang="zh-TW"] select,
+  html[lang="zh-TW"] textarea,
+  html[lang="zh_TW"] button,
+  html[lang="zh_TW"] input,
+  html[lang="zh_TW"] select,
+  html[lang="zh_TW"] textarea,
+  html[lang="zh-Hant"] button,
+  html[lang="zh-Hant"] input,
+  html[lang="zh-Hant"] select,
+  html[lang="zh-Hant"] textarea {
+    font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
   html[lang="zh-TW"] h1,
   html[lang="zh-TW"] h2,
   html[lang="zh-TW"] h3,
@@ -6396,6 +6454,9 @@ html[lang="zh-Hant"] {
   html[lang="zh-TW"] .h4,
   html[lang="zh-TW"] .h5,
   html[lang="zh-TW"] .h6,
+  html[lang="zh-TW"] .display-1,
+  html[lang="zh-TW"] .display-2,
+  html[lang="zh-TW"] .display-3,
   html[lang="zh-TW"] .lead,
   html[lang="zh_TW"] h1,
   html[lang="zh_TW"] h2,
@@ -6409,6 +6470,9 @@ html[lang="zh-Hant"] {
   html[lang="zh_TW"] .h4,
   html[lang="zh_TW"] .h5,
   html[lang="zh_TW"] .h6,
+  html[lang="zh_TW"] .display-1,
+  html[lang="zh_TW"] .display-2,
+  html[lang="zh_TW"] .display-3,
   html[lang="zh_TW"] .lead,
   html[lang="zh-Hant"] h1,
   html[lang="zh-Hant"] h2,
@@ -6422,12 +6486,28 @@ html[lang="zh-Hant"] {
   html[lang="zh-Hant"] .h4,
   html[lang="zh-Hant"] .h5,
   html[lang="zh-Hant"] .h6,
+  html[lang="zh-Hant"] .display-1,
+  html[lang="zh-Hant"] .display-2,
+  html[lang="zh-Hant"] .display-3,
   html[lang="zh-Hant"] .lead {
     font-family: "Noto Sans", "Noto Sans TC", sans-serif;
     font-weight: 200; }
 
-html[lang="ja"] {
+html[lang="ja"],
+html[lang="jp"] {
   font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
+  html[lang="ja"] body,
+  html[lang="jp"] body {
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
+  html[lang="ja"] button,
+  html[lang="ja"] input,
+  html[lang="ja"] select,
+  html[lang="ja"] textarea,
+  html[lang="jp"] button,
+  html[lang="jp"] input,
+  html[lang="jp"] select,
+  html[lang="jp"] textarea {
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
   html[lang="ja"] h1,
   html[lang="ja"] h2,
   html[lang="ja"] h3,
@@ -6440,12 +6520,38 @@ html[lang="ja"] {
   html[lang="ja"] .h4,
   html[lang="ja"] .h5,
   html[lang="ja"] .h6,
-  html[lang="ja"] .lead {
+  html[lang="ja"] .display-1,
+  html[lang="ja"] .display-2,
+  html[lang="ja"] .display-3,
+  html[lang="ja"] .lead,
+  html[lang="jp"] h1,
+  html[lang="jp"] h2,
+  html[lang="jp"] h3,
+  html[lang="jp"] h4,
+  html[lang="jp"] h5,
+  html[lang="jp"] h6,
+  html[lang="jp"] .h1,
+  html[lang="jp"] .h2,
+  html[lang="jp"] .h3,
+  html[lang="jp"] .h4,
+  html[lang="jp"] .h5,
+  html[lang="jp"] .h6,
+  html[lang="jp"] .display-1,
+  html[lang="jp"] .display-2,
+  html[lang="jp"] .display-3,
+  html[lang="jp"] .lead {
     font-family: "Noto Sans", "Noto Sans JP", sans-serif;
     font-weight: 200; }
 
 html[lang="kr"] {
   font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
+  html[lang="kr"] body {
+    font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
+  html[lang="kr"] button,
+  html[lang="kr"] input,
+  html[lang="kr"] select,
+  html[lang="kr"] textarea {
+    font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
   html[lang="kr"] h1,
   html[lang="kr"] h2,
   html[lang="kr"] h3,
@@ -6458,6 +6564,9 @@ html[lang="kr"] {
   html[lang="kr"] .h4,
   html[lang="kr"] .h5,
   html[lang="kr"] .h6,
+  html[lang="kr"] .display-1,
+  html[lang="kr"] .display-2,
+  html[lang="kr"] .display-3,
   html[lang="kr"] .lead {
     font-family: "Noto Sans", "Noto Sans KR", sans-serif;
     font-weight: 200; }
@@ -6468,21 +6577,6 @@ button, input, select {
 textarea {
   font-family: "Source Code Pro", monospace; }
 
-.dropdown .dropdown-menu, .dropup .dropdown-menu, .btn-group .dropdown-menu {
-  transition: max-height 0.2s, opacity 0.2s 0.1s, visibility 0s 0.3s;
-  max-height: 0;
-  display: block;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden; }
-
-.dropdown.show .dropdown-menu, .dropup.show .dropdown-menu, .btn-group.show .dropdown-menu {
-  transition: max-height 0.2s, opacity 0.2s, visibility 0s;
-  max-height: 300px;
-  overflow-y: auto;
-  opacity: 1;
-  visibility: visible; }
-
 ::selection {
   background: #35b9ab;
   /* WebKit/Blink Browsers */
@@ -6492,6 +6586,11 @@ textarea {
   background: #35b9ab;
   /* Gecko Browsers */
   color: #ffffff; }
+
+.dropdown .dropdown-menu,
+.dropup .dropdown-menu {
+  max-height: 50vh;
+  overflow-y: auto; }
 
 /* @FONT-FACE loads font into browser */
 @font-face {
