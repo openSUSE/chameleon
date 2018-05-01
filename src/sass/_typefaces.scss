@@ -1,4 +1,4 @@
-@mixin cjk-typeface($font-family, $heading-font-family, $heading-font-weight) {
+@mixin cjk-typeface($font-family) {
   font-family: "Noto Sans", $font-family, sans-serif;
 
   body {
@@ -29,27 +29,51 @@
   .display-3,
   .lead {
     font-family: "Noto Sans", $font-family, sans-serif;
-    font-weight: $heading-font-weight;
+  }
+
+  h1,
+  h2,
+  .h1,
+  .h2,
+  .display-1,
+  .display-2,
+  .display-3 {
+    font-weight: 200;
+  }
+
+  h3,
+  h4,
+  .h3,
+  .h4,
+  .lead {
+    font-weight: 300;
+  }
+
+  h5,
+  h6,
+  .h5,
+  .h6 {
+    font-weight: 400;
   }
 }
 
 html[lang="zh-CN"],
 html[lang="zh_CN"],
 html[lang="zh-Hans"] {
-  @include cjk-typeface("Noto Sans SC", "Noto Sans SC", 200);
+  @include cjk-typeface("Noto Sans SC");
 }
 
 html[lang="zh-TW"],
 html[lang="zh_TW"],
 html[lang="zh-Hant"] {
-  @include cjk-typeface("Noto Sans TC", "Noto Sans TC", 200);
+  @include cjk-typeface("Noto Sans TC");
 }
 
 html[lang="ja"],
 html[lang="jp"] {
-  @include cjk-typeface("Noto Sans JP", "Noto Sans JP", 200);
+  @include cjk-typeface("Noto Sans JP");
 }
 
 html[lang="kr"] {
-  @include cjk-typeface("Noto Sans KR", "Noto Sans KR", 200);
+  @include cjk-typeface("Noto Sans KR");
 }
