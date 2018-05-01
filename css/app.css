@@ -5,6 +5,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(../../node_modules/animate.css/animate.min.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
