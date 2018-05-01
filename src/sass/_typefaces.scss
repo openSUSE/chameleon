@@ -57,23 +57,24 @@
   }
 }
 
-html[lang="zh-CN"],
-html[lang="zh_CN"],
-html[lang="zh-Hans"] {
+[lang="zh"],
+[lang="zh-CN"],
+[lang="zh_CN"],
+[lang="zh-Hans"] {
   @include cjk-typeface("Noto Sans SC");
 }
 
-html[lang="zh-TW"],
-html[lang="zh_TW"],
-html[lang="zh-Hant"] {
+[lang="zh-TW"],
+[lang="zh_TW"],
+[lang="zh-Hant"] {
   @include cjk-typeface("Noto Sans TC");
 }
 
-html[lang="ja"],
-html[lang="jp"] {
+[lang="ja"],
+[lang="jp"] {
   @include cjk-typeface("Noto Sans JP");
 }
 
-html[lang="kr"] {
+[lang="kr"] {
   @include cjk-typeface("Noto Sans KR");
 }
