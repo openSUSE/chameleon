@@ -8776,523 +8776,13 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 300;
-  font-style: normal;
-  src: local("Open Sans Light"), url("../fonts/open-sans/OpenSans-Light.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Light.woff") format("woff"), url("../fonts/open-sans/OpenSans-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 300;
-  font-style: italic;
-  src: local("Open Sans Light Italic"), url("../fonts/open-sans/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-LightItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-LightItalic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: normal;
-  font-style: normal;
-  src: local("Open Sans"), url("../fonts/open-sans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Regular.woff") format("woff"), url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: normal;
-  font-style: italic;
-  src: local("Open Sans Italic"), url("../fonts/open-sans/OpenSans-Italic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Italic.woff") format("woff"), url("../fonts/open-sans/OpenSans-Italic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-style: normal;
-  src: local("Open Sans Semibold"), url("../fonts/open-sans/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Semibold.woff") format("woff"), url("../fonts/open-sans/OpenSans-Semibold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-style: italic;
-  src: local("Open Sans Semibold Italic"), url("../fonts/open-sans/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-SemiboldItalic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: bold;
-  font-style: normal;
-  src: local("Open Sans Bold"), url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Bold.woff") format("woff"), url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: bold;
-  font-style: italic;
-  src: local("Open Sans Bold Italic"), url("../fonts/open-sans/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-BoldItalic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 800;
-  font-style: normal;
-  src: local("Open Sans Extrabold"), url("../fonts/open-sans/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/open-sans/OpenSans-ExtraBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 800;
-  font-style: italic;
-  src: local("Open Sans Extrabold Italic"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-weight: 300;
-  font-style: normal;
-  src: local("Open Sans Condensed Light"), url("../fonts/open-sans-condensed/OpenSans-CondLight.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondLight.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-weight: 300;
-  font-style: italic;
-  src: local("Open Sans Condensed Light Italic"), url("../fonts/open-sans-condensed/OpenSans-CondLightItalic.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondLightItalic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-weight: bold;
-  font-style: normal;
-  src: local("Open Sans Condensed Bold"), url("../fonts/open-sans-condensed/OpenSans-CondBold.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondBold.ttf") format("truetype"); }
-
-[lang="zh"],
-[lang="zh-CN"],
-[lang="zh_CN"],
-[lang="zh-Hans"] {
-  font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
-  [lang="zh"] body,
-  [lang="zh-CN"] body,
-  [lang="zh_CN"] body,
-  [lang="zh-Hans"] body {
-    font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
-  [lang="zh"] button,
-  [lang="zh"] input,
-  [lang="zh"] select,
-  [lang="zh"] textarea,
-  [lang="zh-CN"] button,
-  [lang="zh-CN"] input,
-  [lang="zh-CN"] select,
-  [lang="zh-CN"] textarea,
-  [lang="zh_CN"] button,
-  [lang="zh_CN"] input,
-  [lang="zh_CN"] select,
-  [lang="zh_CN"] textarea,
-  [lang="zh-Hans"] button,
-  [lang="zh-Hans"] input,
-  [lang="zh-Hans"] select,
-  [lang="zh-Hans"] textarea {
-    font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
-  [lang="zh"] h1,
-  [lang="zh"] h2,
-  [lang="zh"] h3,
-  [lang="zh"] h4,
-  [lang="zh"] h5,
-  [lang="zh"] h6,
-  [lang="zh"] .h1,
-  [lang="zh"] .h2,
-  [lang="zh"] .h3,
-  [lang="zh"] .h4,
-  [lang="zh"] .h5,
-  [lang="zh"] .h6,
-  [lang="zh"] .display-1,
-  [lang="zh"] .display-2,
-  [lang="zh"] .display-3,
-  [lang="zh"] .lead,
-  [lang="zh-CN"] h1,
-  [lang="zh-CN"] h2,
-  [lang="zh-CN"] h3,
-  [lang="zh-CN"] h4,
-  [lang="zh-CN"] h5,
-  [lang="zh-CN"] h6,
-  [lang="zh-CN"] .h1,
-  [lang="zh-CN"] .h2,
-  [lang="zh-CN"] .h3,
-  [lang="zh-CN"] .h4,
-  [lang="zh-CN"] .h5,
-  [lang="zh-CN"] .h6,
-  [lang="zh-CN"] .display-1,
-  [lang="zh-CN"] .display-2,
-  [lang="zh-CN"] .display-3,
-  [lang="zh-CN"] .lead,
-  [lang="zh_CN"] h1,
-  [lang="zh_CN"] h2,
-  [lang="zh_CN"] h3,
-  [lang="zh_CN"] h4,
-  [lang="zh_CN"] h5,
-  [lang="zh_CN"] h6,
-  [lang="zh_CN"] .h1,
-  [lang="zh_CN"] .h2,
-  [lang="zh_CN"] .h3,
-  [lang="zh_CN"] .h4,
-  [lang="zh_CN"] .h5,
-  [lang="zh_CN"] .h6,
-  [lang="zh_CN"] .display-1,
-  [lang="zh_CN"] .display-2,
-  [lang="zh_CN"] .display-3,
-  [lang="zh_CN"] .lead,
-  [lang="zh-Hans"] h1,
-  [lang="zh-Hans"] h2,
-  [lang="zh-Hans"] h3,
-  [lang="zh-Hans"] h4,
-  [lang="zh-Hans"] h5,
-  [lang="zh-Hans"] h6,
-  [lang="zh-Hans"] .h1,
-  [lang="zh-Hans"] .h2,
-  [lang="zh-Hans"] .h3,
-  [lang="zh-Hans"] .h4,
-  [lang="zh-Hans"] .h5,
-  [lang="zh-Hans"] .h6,
-  [lang="zh-Hans"] .display-1,
-  [lang="zh-Hans"] .display-2,
-  [lang="zh-Hans"] .display-3,
-  [lang="zh-Hans"] .lead {
-    font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
-  [lang="zh"] h1,
-  [lang="zh"] h2,
-  [lang="zh"] .h1,
-  [lang="zh"] .h2,
-  [lang="zh"] .display-1,
-  [lang="zh"] .display-2,
-  [lang="zh"] .display-3,
-  [lang="zh-CN"] h1,
-  [lang="zh-CN"] h2,
-  [lang="zh-CN"] .h1,
-  [lang="zh-CN"] .h2,
-  [lang="zh-CN"] .display-1,
-  [lang="zh-CN"] .display-2,
-  [lang="zh-CN"] .display-3,
-  [lang="zh_CN"] h1,
-  [lang="zh_CN"] h2,
-  [lang="zh_CN"] .h1,
-  [lang="zh_CN"] .h2,
-  [lang="zh_CN"] .display-1,
-  [lang="zh_CN"] .display-2,
-  [lang="zh_CN"] .display-3,
-  [lang="zh-Hans"] h1,
-  [lang="zh-Hans"] h2,
-  [lang="zh-Hans"] .h1,
-  [lang="zh-Hans"] .h2,
-  [lang="zh-Hans"] .display-1,
-  [lang="zh-Hans"] .display-2,
-  [lang="zh-Hans"] .display-3 {
-    font-weight: 200; }
-  [lang="zh"] h3,
-  [lang="zh"] h4,
-  [lang="zh"] .h3,
-  [lang="zh"] .h4,
-  [lang="zh"] .lead,
-  [lang="zh-CN"] h3,
-  [lang="zh-CN"] h4,
-  [lang="zh-CN"] .h3,
-  [lang="zh-CN"] .h4,
-  [lang="zh-CN"] .lead,
-  [lang="zh_CN"] h3,
-  [lang="zh_CN"] h4,
-  [lang="zh_CN"] .h3,
-  [lang="zh_CN"] .h4,
-  [lang="zh_CN"] .lead,
-  [lang="zh-Hans"] h3,
-  [lang="zh-Hans"] h4,
-  [lang="zh-Hans"] .h3,
-  [lang="zh-Hans"] .h4,
-  [lang="zh-Hans"] .lead {
-    font-weight: 300; }
-  [lang="zh"] h5,
-  [lang="zh"] h6,
-  [lang="zh"] .h5,
-  [lang="zh"] .h6,
-  [lang="zh-CN"] h5,
-  [lang="zh-CN"] h6,
-  [lang="zh-CN"] .h5,
-  [lang="zh-CN"] .h6,
-  [lang="zh_CN"] h5,
-  [lang="zh_CN"] h6,
-  [lang="zh_CN"] .h5,
-  [lang="zh_CN"] .h6,
-  [lang="zh-Hans"] h5,
-  [lang="zh-Hans"] h6,
-  [lang="zh-Hans"] .h5,
-  [lang="zh-Hans"] .h6 {
-    font-weight: 400; }
-
-[lang="zh-TW"],
-[lang="zh_TW"],
-[lang="zh-Hant"] {
-  font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
-  [lang="zh-TW"] body,
-  [lang="zh_TW"] body,
-  [lang="zh-Hant"] body {
-    font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
-  [lang="zh-TW"] button,
-  [lang="zh-TW"] input,
-  [lang="zh-TW"] select,
-  [lang="zh-TW"] textarea,
-  [lang="zh_TW"] button,
-  [lang="zh_TW"] input,
-  [lang="zh_TW"] select,
-  [lang="zh_TW"] textarea,
-  [lang="zh-Hant"] button,
-  [lang="zh-Hant"] input,
-  [lang="zh-Hant"] select,
-  [lang="zh-Hant"] textarea {
-    font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
-  [lang="zh-TW"] h1,
-  [lang="zh-TW"] h2,
-  [lang="zh-TW"] h3,
-  [lang="zh-TW"] h4,
-  [lang="zh-TW"] h5,
-  [lang="zh-TW"] h6,
-  [lang="zh-TW"] .h1,
-  [lang="zh-TW"] .h2,
-  [lang="zh-TW"] .h3,
-  [lang="zh-TW"] .h4,
-  [lang="zh-TW"] .h5,
-  [lang="zh-TW"] .h6,
-  [lang="zh-TW"] .display-1,
-  [lang="zh-TW"] .display-2,
-  [lang="zh-TW"] .display-3,
-  [lang="zh-TW"] .lead,
-  [lang="zh_TW"] h1,
-  [lang="zh_TW"] h2,
-  [lang="zh_TW"] h3,
-  [lang="zh_TW"] h4,
-  [lang="zh_TW"] h5,
-  [lang="zh_TW"] h6,
-  [lang="zh_TW"] .h1,
-  [lang="zh_TW"] .h2,
-  [lang="zh_TW"] .h3,
-  [lang="zh_TW"] .h4,
-  [lang="zh_TW"] .h5,
-  [lang="zh_TW"] .h6,
-  [lang="zh_TW"] .display-1,
-  [lang="zh_TW"] .display-2,
-  [lang="zh_TW"] .display-3,
-  [lang="zh_TW"] .lead,
-  [lang="zh-Hant"] h1,
-  [lang="zh-Hant"] h2,
-  [lang="zh-Hant"] h3,
-  [lang="zh-Hant"] h4,
-  [lang="zh-Hant"] h5,
-  [lang="zh-Hant"] h6,
-  [lang="zh-Hant"] .h1,
-  [lang="zh-Hant"] .h2,
-  [lang="zh-Hant"] .h3,
-  [lang="zh-Hant"] .h4,
-  [lang="zh-Hant"] .h5,
-  [lang="zh-Hant"] .h6,
-  [lang="zh-Hant"] .display-1,
-  [lang="zh-Hant"] .display-2,
-  [lang="zh-Hant"] .display-3,
-  [lang="zh-Hant"] .lead {
-    font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
-  [lang="zh-TW"] h1,
-  [lang="zh-TW"] h2,
-  [lang="zh-TW"] .h1,
-  [lang="zh-TW"] .h2,
-  [lang="zh-TW"] .display-1,
-  [lang="zh-TW"] .display-2,
-  [lang="zh-TW"] .display-3,
-  [lang="zh_TW"] h1,
-  [lang="zh_TW"] h2,
-  [lang="zh_TW"] .h1,
-  [lang="zh_TW"] .h2,
-  [lang="zh_TW"] .display-1,
-  [lang="zh_TW"] .display-2,
-  [lang="zh_TW"] .display-3,
-  [lang="zh-Hant"] h1,
-  [lang="zh-Hant"] h2,
-  [lang="zh-Hant"] .h1,
-  [lang="zh-Hant"] .h2,
-  [lang="zh-Hant"] .display-1,
-  [lang="zh-Hant"] .display-2,
-  [lang="zh-Hant"] .display-3 {
-    font-weight: 200; }
-  [lang="zh-TW"] h3,
-  [lang="zh-TW"] h4,
-  [lang="zh-TW"] .h3,
-  [lang="zh-TW"] .h4,
-  [lang="zh-TW"] .lead,
-  [lang="zh_TW"] h3,
-  [lang="zh_TW"] h4,
-  [lang="zh_TW"] .h3,
-  [lang="zh_TW"] .h4,
-  [lang="zh_TW"] .lead,
-  [lang="zh-Hant"] h3,
-  [lang="zh-Hant"] h4,
-  [lang="zh-Hant"] .h3,
-  [lang="zh-Hant"] .h4,
-  [lang="zh-Hant"] .lead {
-    font-weight: 300; }
-  [lang="zh-TW"] h5,
-  [lang="zh-TW"] h6,
-  [lang="zh-TW"] .h5,
-  [lang="zh-TW"] .h6,
-  [lang="zh_TW"] h5,
-  [lang="zh_TW"] h6,
-  [lang="zh_TW"] .h5,
-  [lang="zh_TW"] .h6,
-  [lang="zh-Hant"] h5,
-  [lang="zh-Hant"] h6,
-  [lang="zh-Hant"] .h5,
-  [lang="zh-Hant"] .h6 {
-    font-weight: 400; }
-
-[lang="ja"],
-[lang="jp"] {
-  font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
-  [lang="ja"] body,
-  [lang="jp"] body {
-    font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
-  [lang="ja"] button,
-  [lang="ja"] input,
-  [lang="ja"] select,
-  [lang="ja"] textarea,
-  [lang="jp"] button,
-  [lang="jp"] input,
-  [lang="jp"] select,
-  [lang="jp"] textarea {
-    font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
-  [lang="ja"] h1,
-  [lang="ja"] h2,
-  [lang="ja"] h3,
-  [lang="ja"] h4,
-  [lang="ja"] h5,
-  [lang="ja"] h6,
-  [lang="ja"] .h1,
-  [lang="ja"] .h2,
-  [lang="ja"] .h3,
-  [lang="ja"] .h4,
-  [lang="ja"] .h5,
-  [lang="ja"] .h6,
-  [lang="ja"] .display-1,
-  [lang="ja"] .display-2,
-  [lang="ja"] .display-3,
-  [lang="ja"] .lead,
-  [lang="jp"] h1,
-  [lang="jp"] h2,
-  [lang="jp"] h3,
-  [lang="jp"] h4,
-  [lang="jp"] h5,
-  [lang="jp"] h6,
-  [lang="jp"] .h1,
-  [lang="jp"] .h2,
-  [lang="jp"] .h3,
-  [lang="jp"] .h4,
-  [lang="jp"] .h5,
-  [lang="jp"] .h6,
-  [lang="jp"] .display-1,
-  [lang="jp"] .display-2,
-  [lang="jp"] .display-3,
-  [lang="jp"] .lead {
-    font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
-  [lang="ja"] h1,
-  [lang="ja"] h2,
-  [lang="ja"] .h1,
-  [lang="ja"] .h2,
-  [lang="ja"] .display-1,
-  [lang="ja"] .display-2,
-  [lang="ja"] .display-3,
-  [lang="jp"] h1,
-  [lang="jp"] h2,
-  [lang="jp"] .h1,
-  [lang="jp"] .h2,
-  [lang="jp"] .display-1,
-  [lang="jp"] .display-2,
-  [lang="jp"] .display-3 {
-    font-weight: 200; }
-  [lang="ja"] h3,
-  [lang="ja"] h4,
-  [lang="ja"] .h3,
-  [lang="ja"] .h4,
-  [lang="ja"] .lead,
-  [lang="jp"] h3,
-  [lang="jp"] h4,
-  [lang="jp"] .h3,
-  [lang="jp"] .h4,
-  [lang="jp"] .lead {
-    font-weight: 300; }
-  [lang="ja"] h5,
-  [lang="ja"] h6,
-  [lang="ja"] .h5,
-  [lang="ja"] .h6,
-  [lang="jp"] h5,
-  [lang="jp"] h6,
-  [lang="jp"] .h5,
-  [lang="jp"] .h6 {
-    font-weight: 400; }
-
-[lang="kr"] {
-  font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
-  [lang="kr"] body {
-    font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
-  [lang="kr"] button,
-  [lang="kr"] input,
-  [lang="kr"] select,
-  [lang="kr"] textarea {
-    font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
-  [lang="kr"] h1,
-  [lang="kr"] h2,
-  [lang="kr"] h3,
-  [lang="kr"] h4,
-  [lang="kr"] h5,
-  [lang="kr"] h6,
-  [lang="kr"] .h1,
-  [lang="kr"] .h2,
-  [lang="kr"] .h3,
-  [lang="kr"] .h4,
-  [lang="kr"] .h5,
-  [lang="kr"] .h6,
-  [lang="kr"] .display-1,
-  [lang="kr"] .display-2,
-  [lang="kr"] .display-3,
-  [lang="kr"] .lead {
-    font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
-  [lang="kr"] h1,
-  [lang="kr"] h2,
-  [lang="kr"] .h1,
-  [lang="kr"] .h2,
-  [lang="kr"] .display-1,
-  [lang="kr"] .display-2,
-  [lang="kr"] .display-3 {
-    font-weight: 200; }
-  [lang="kr"] h3,
-  [lang="kr"] h4,
-  [lang="kr"] .h3,
-  [lang="kr"] .h4,
-  [lang="kr"] .lead {
-    font-weight: 300; }
-  [lang="kr"] h5,
-  [lang="kr"] h6,
-  [lang="kr"] .h5,
-  [lang="kr"] .h6 {
-    font-weight: 400; }
-
-button, input, select {
-  font-family: "Open Sans", sans-serif; }
-
-textarea {
-  font-family: "Source Code Pro", monospace; }
-
-::selection {
-  background: #35b9ab;
-  /* WebKit/Blink Browsers */
-  color: #ffffff; }
-
-::-moz-selection {
-  background: #35b9ab;
-  /* Gecko Browsers */
-  color: #ffffff; }
-
-.dropdown .dropdown-menu,
-.dropup .dropdown-menu {
-  max-height: 50vh;
-  overflow-y: auto; }
-
 /* @FONT-FACE loads font into browser */
 @font-face {
   font-family: 'typicons';
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/typicons/typicons.woff") format("woff"), url("../fonts/typicons/typicons.ttf") format("truetype"); }
+  src: url("typicons.eot");
+  src: url("typicons.eot?#iefix") format("embedded-opentype"), url("typicons.woff") format("woff"), url("typicons.ttf") format("truetype"), url("typicons.svg#typicons") format("svg"); }
 
 /* :before psuedo-selector inserts and styles icon */
 .typcn:before {
@@ -10655,6 +10145,533 @@ textarea {
   content: '\e14f';
   /* '' */ }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: local("Open Sans Light"), url("../fonts/open-sans/OpenSans-Light.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Light.woff") format("woff"), url("../fonts/open-sans/OpenSans-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: italic;
+  src: local("Open Sans Light Italic"), url("../fonts/open-sans/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-LightItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-LightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: local("Open Sans"), url("../fonts/open-sans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Regular.woff") format("woff"), url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: italic;
+  src: local("Open Sans Italic"), url("../fonts/open-sans/OpenSans-Italic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Italic.woff") format("woff"), url("../fonts/open-sans/OpenSans-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+  src: local("Open Sans Semibold"), url("../fonts/open-sans/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Semibold.woff") format("woff"), url("../fonts/open-sans/OpenSans-Semibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: italic;
+  src: local("Open Sans Semibold Italic"), url("../fonts/open-sans/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-SemiboldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-style: normal;
+  src: local("Open Sans Bold"), url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-Bold.woff") format("woff"), url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-style: italic;
+  src: local("Open Sans Bold Italic"), url("../fonts/open-sans/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-style: normal;
+  src: local("Open Sans Extrabold"), url("../fonts/open-sans/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/open-sans/OpenSans-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-style: italic;
+  src: local("Open Sans Extrabold Italic"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  font-style: normal;
+  src: local("Open Sans Condensed Light"), url("../fonts/open-sans-condensed/OpenSans-CondLight.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  font-style: italic;
+  src: local("Open Sans Condensed Light Italic"), url("../fonts/open-sans-condensed/OpenSans-CondLightItalic.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondLightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-weight: bold;
+  font-style: normal;
+  src: local("Open Sans Condensed Bold"), url("../fonts/open-sans-condensed/OpenSans-CondBold.woff") format("woff"), url("../fonts/open-sans-condensed/OpenSans-CondBold.ttf") format("truetype"); }
+
+[lang="zh"],
+[lang="zh-CN"],
+[lang="zh_CN"],
+[lang="zh-Hans"] {
+  font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
+  [lang="zh"] body,
+  [lang="zh-CN"] body,
+  [lang="zh_CN"] body,
+  [lang="zh-Hans"] body {
+    font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
+  [lang="zh"] button,
+  [lang="zh"] input,
+  [lang="zh"] select,
+  [lang="zh"] textarea,
+  [lang="zh-CN"] button,
+  [lang="zh-CN"] input,
+  [lang="zh-CN"] select,
+  [lang="zh-CN"] textarea,
+  [lang="zh_CN"] button,
+  [lang="zh_CN"] input,
+  [lang="zh_CN"] select,
+  [lang="zh_CN"] textarea,
+  [lang="zh-Hans"] button,
+  [lang="zh-Hans"] input,
+  [lang="zh-Hans"] select,
+  [lang="zh-Hans"] textarea {
+    font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
+  [lang="zh"] h1,
+  [lang="zh"] h2,
+  [lang="zh"] h3,
+  [lang="zh"] h4,
+  [lang="zh"] h5,
+  [lang="zh"] h6,
+  [lang="zh"] .h1,
+  [lang="zh"] .h2,
+  [lang="zh"] .h3,
+  [lang="zh"] .h4,
+  [lang="zh"] .h5,
+  [lang="zh"] .h6,
+  [lang="zh"] .display-1,
+  [lang="zh"] .display-2,
+  [lang="zh"] .display-3,
+  [lang="zh"] .lead,
+  [lang="zh-CN"] h1,
+  [lang="zh-CN"] h2,
+  [lang="zh-CN"] h3,
+  [lang="zh-CN"] h4,
+  [lang="zh-CN"] h5,
+  [lang="zh-CN"] h6,
+  [lang="zh-CN"] .h1,
+  [lang="zh-CN"] .h2,
+  [lang="zh-CN"] .h3,
+  [lang="zh-CN"] .h4,
+  [lang="zh-CN"] .h5,
+  [lang="zh-CN"] .h6,
+  [lang="zh-CN"] .display-1,
+  [lang="zh-CN"] .display-2,
+  [lang="zh-CN"] .display-3,
+  [lang="zh-CN"] .lead,
+  [lang="zh_CN"] h1,
+  [lang="zh_CN"] h2,
+  [lang="zh_CN"] h3,
+  [lang="zh_CN"] h4,
+  [lang="zh_CN"] h5,
+  [lang="zh_CN"] h6,
+  [lang="zh_CN"] .h1,
+  [lang="zh_CN"] .h2,
+  [lang="zh_CN"] .h3,
+  [lang="zh_CN"] .h4,
+  [lang="zh_CN"] .h5,
+  [lang="zh_CN"] .h6,
+  [lang="zh_CN"] .display-1,
+  [lang="zh_CN"] .display-2,
+  [lang="zh_CN"] .display-3,
+  [lang="zh_CN"] .lead,
+  [lang="zh-Hans"] h1,
+  [lang="zh-Hans"] h2,
+  [lang="zh-Hans"] h3,
+  [lang="zh-Hans"] h4,
+  [lang="zh-Hans"] h5,
+  [lang="zh-Hans"] h6,
+  [lang="zh-Hans"] .h1,
+  [lang="zh-Hans"] .h2,
+  [lang="zh-Hans"] .h3,
+  [lang="zh-Hans"] .h4,
+  [lang="zh-Hans"] .h5,
+  [lang="zh-Hans"] .h6,
+  [lang="zh-Hans"] .display-1,
+  [lang="zh-Hans"] .display-2,
+  [lang="zh-Hans"] .display-3,
+  [lang="zh-Hans"] .lead {
+    font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
+  [lang="zh"] h1,
+  [lang="zh"] h2,
+  [lang="zh"] .h1,
+  [lang="zh"] .h2,
+  [lang="zh"] .display-1,
+  [lang="zh"] .display-2,
+  [lang="zh"] .display-3,
+  [lang="zh-CN"] h1,
+  [lang="zh-CN"] h2,
+  [lang="zh-CN"] .h1,
+  [lang="zh-CN"] .h2,
+  [lang="zh-CN"] .display-1,
+  [lang="zh-CN"] .display-2,
+  [lang="zh-CN"] .display-3,
+  [lang="zh_CN"] h1,
+  [lang="zh_CN"] h2,
+  [lang="zh_CN"] .h1,
+  [lang="zh_CN"] .h2,
+  [lang="zh_CN"] .display-1,
+  [lang="zh_CN"] .display-2,
+  [lang="zh_CN"] .display-3,
+  [lang="zh-Hans"] h1,
+  [lang="zh-Hans"] h2,
+  [lang="zh-Hans"] .h1,
+  [lang="zh-Hans"] .h2,
+  [lang="zh-Hans"] .display-1,
+  [lang="zh-Hans"] .display-2,
+  [lang="zh-Hans"] .display-3 {
+    font-weight: 200; }
+  [lang="zh"] h3,
+  [lang="zh"] h4,
+  [lang="zh"] .h3,
+  [lang="zh"] .h4,
+  [lang="zh"] .lead,
+  [lang="zh-CN"] h3,
+  [lang="zh-CN"] h4,
+  [lang="zh-CN"] .h3,
+  [lang="zh-CN"] .h4,
+  [lang="zh-CN"] .lead,
+  [lang="zh_CN"] h3,
+  [lang="zh_CN"] h4,
+  [lang="zh_CN"] .h3,
+  [lang="zh_CN"] .h4,
+  [lang="zh_CN"] .lead,
+  [lang="zh-Hans"] h3,
+  [lang="zh-Hans"] h4,
+  [lang="zh-Hans"] .h3,
+  [lang="zh-Hans"] .h4,
+  [lang="zh-Hans"] .lead {
+    font-weight: 300; }
+  [lang="zh"] h5,
+  [lang="zh"] h6,
+  [lang="zh"] .h5,
+  [lang="zh"] .h6,
+  [lang="zh-CN"] h5,
+  [lang="zh-CN"] h6,
+  [lang="zh-CN"] .h5,
+  [lang="zh-CN"] .h6,
+  [lang="zh_CN"] h5,
+  [lang="zh_CN"] h6,
+  [lang="zh_CN"] .h5,
+  [lang="zh_CN"] .h6,
+  [lang="zh-Hans"] h5,
+  [lang="zh-Hans"] h6,
+  [lang="zh-Hans"] .h5,
+  [lang="zh-Hans"] .h6 {
+    font-weight: 400; }
+
+[lang="zh-TW"],
+[lang="zh_TW"],
+[lang="zh-Hant"] {
+  font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
+  [lang="zh-TW"] body,
+  [lang="zh_TW"] body,
+  [lang="zh-Hant"] body {
+    font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
+  [lang="zh-TW"] button,
+  [lang="zh-TW"] input,
+  [lang="zh-TW"] select,
+  [lang="zh-TW"] textarea,
+  [lang="zh_TW"] button,
+  [lang="zh_TW"] input,
+  [lang="zh_TW"] select,
+  [lang="zh_TW"] textarea,
+  [lang="zh-Hant"] button,
+  [lang="zh-Hant"] input,
+  [lang="zh-Hant"] select,
+  [lang="zh-Hant"] textarea {
+    font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
+  [lang="zh-TW"] h1,
+  [lang="zh-TW"] h2,
+  [lang="zh-TW"] h3,
+  [lang="zh-TW"] h4,
+  [lang="zh-TW"] h5,
+  [lang="zh-TW"] h6,
+  [lang="zh-TW"] .h1,
+  [lang="zh-TW"] .h2,
+  [lang="zh-TW"] .h3,
+  [lang="zh-TW"] .h4,
+  [lang="zh-TW"] .h5,
+  [lang="zh-TW"] .h6,
+  [lang="zh-TW"] .display-1,
+  [lang="zh-TW"] .display-2,
+  [lang="zh-TW"] .display-3,
+  [lang="zh-TW"] .lead,
+  [lang="zh_TW"] h1,
+  [lang="zh_TW"] h2,
+  [lang="zh_TW"] h3,
+  [lang="zh_TW"] h4,
+  [lang="zh_TW"] h5,
+  [lang="zh_TW"] h6,
+  [lang="zh_TW"] .h1,
+  [lang="zh_TW"] .h2,
+  [lang="zh_TW"] .h3,
+  [lang="zh_TW"] .h4,
+  [lang="zh_TW"] .h5,
+  [lang="zh_TW"] .h6,
+  [lang="zh_TW"] .display-1,
+  [lang="zh_TW"] .display-2,
+  [lang="zh_TW"] .display-3,
+  [lang="zh_TW"] .lead,
+  [lang="zh-Hant"] h1,
+  [lang="zh-Hant"] h2,
+  [lang="zh-Hant"] h3,
+  [lang="zh-Hant"] h4,
+  [lang="zh-Hant"] h5,
+  [lang="zh-Hant"] h6,
+  [lang="zh-Hant"] .h1,
+  [lang="zh-Hant"] .h2,
+  [lang="zh-Hant"] .h3,
+  [lang="zh-Hant"] .h4,
+  [lang="zh-Hant"] .h5,
+  [lang="zh-Hant"] .h6,
+  [lang="zh-Hant"] .display-1,
+  [lang="zh-Hant"] .display-2,
+  [lang="zh-Hant"] .display-3,
+  [lang="zh-Hant"] .lead {
+    font-family: "Noto Sans", "Noto Sans TC", sans-serif; }
+  [lang="zh-TW"] h1,
+  [lang="zh-TW"] h2,
+  [lang="zh-TW"] .h1,
+  [lang="zh-TW"] .h2,
+  [lang="zh-TW"] .display-1,
+  [lang="zh-TW"] .display-2,
+  [lang="zh-TW"] .display-3,
+  [lang="zh_TW"] h1,
+  [lang="zh_TW"] h2,
+  [lang="zh_TW"] .h1,
+  [lang="zh_TW"] .h2,
+  [lang="zh_TW"] .display-1,
+  [lang="zh_TW"] .display-2,
+  [lang="zh_TW"] .display-3,
+  [lang="zh-Hant"] h1,
+  [lang="zh-Hant"] h2,
+  [lang="zh-Hant"] .h1,
+  [lang="zh-Hant"] .h2,
+  [lang="zh-Hant"] .display-1,
+  [lang="zh-Hant"] .display-2,
+  [lang="zh-Hant"] .display-3 {
+    font-weight: 200; }
+  [lang="zh-TW"] h3,
+  [lang="zh-TW"] h4,
+  [lang="zh-TW"] .h3,
+  [lang="zh-TW"] .h4,
+  [lang="zh-TW"] .lead,
+  [lang="zh_TW"] h3,
+  [lang="zh_TW"] h4,
+  [lang="zh_TW"] .h3,
+  [lang="zh_TW"] .h4,
+  [lang="zh_TW"] .lead,
+  [lang="zh-Hant"] h3,
+  [lang="zh-Hant"] h4,
+  [lang="zh-Hant"] .h3,
+  [lang="zh-Hant"] .h4,
+  [lang="zh-Hant"] .lead {
+    font-weight: 300; }
+  [lang="zh-TW"] h5,
+  [lang="zh-TW"] h6,
+  [lang="zh-TW"] .h5,
+  [lang="zh-TW"] .h6,
+  [lang="zh_TW"] h5,
+  [lang="zh_TW"] h6,
+  [lang="zh_TW"] .h5,
+  [lang="zh_TW"] .h6,
+  [lang="zh-Hant"] h5,
+  [lang="zh-Hant"] h6,
+  [lang="zh-Hant"] .h5,
+  [lang="zh-Hant"] .h6 {
+    font-weight: 400; }
+
+[lang="ja"],
+[lang="jp"] {
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
+  [lang="ja"] body,
+  [lang="jp"] body {
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
+  [lang="ja"] button,
+  [lang="ja"] input,
+  [lang="ja"] select,
+  [lang="ja"] textarea,
+  [lang="jp"] button,
+  [lang="jp"] input,
+  [lang="jp"] select,
+  [lang="jp"] textarea {
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
+  [lang="ja"] h1,
+  [lang="ja"] h2,
+  [lang="ja"] h3,
+  [lang="ja"] h4,
+  [lang="ja"] h5,
+  [lang="ja"] h6,
+  [lang="ja"] .h1,
+  [lang="ja"] .h2,
+  [lang="ja"] .h3,
+  [lang="ja"] .h4,
+  [lang="ja"] .h5,
+  [lang="ja"] .h6,
+  [lang="ja"] .display-1,
+  [lang="ja"] .display-2,
+  [lang="ja"] .display-3,
+  [lang="ja"] .lead,
+  [lang="jp"] h1,
+  [lang="jp"] h2,
+  [lang="jp"] h3,
+  [lang="jp"] h4,
+  [lang="jp"] h5,
+  [lang="jp"] h6,
+  [lang="jp"] .h1,
+  [lang="jp"] .h2,
+  [lang="jp"] .h3,
+  [lang="jp"] .h4,
+  [lang="jp"] .h5,
+  [lang="jp"] .h6,
+  [lang="jp"] .display-1,
+  [lang="jp"] .display-2,
+  [lang="jp"] .display-3,
+  [lang="jp"] .lead {
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif; }
+  [lang="ja"] h1,
+  [lang="ja"] h2,
+  [lang="ja"] .h1,
+  [lang="ja"] .h2,
+  [lang="ja"] .display-1,
+  [lang="ja"] .display-2,
+  [lang="ja"] .display-3,
+  [lang="jp"] h1,
+  [lang="jp"] h2,
+  [lang="jp"] .h1,
+  [lang="jp"] .h2,
+  [lang="jp"] .display-1,
+  [lang="jp"] .display-2,
+  [lang="jp"] .display-3 {
+    font-weight: 200; }
+  [lang="ja"] h3,
+  [lang="ja"] h4,
+  [lang="ja"] .h3,
+  [lang="ja"] .h4,
+  [lang="ja"] .lead,
+  [lang="jp"] h3,
+  [lang="jp"] h4,
+  [lang="jp"] .h3,
+  [lang="jp"] .h4,
+  [lang="jp"] .lead {
+    font-weight: 300; }
+  [lang="ja"] h5,
+  [lang="ja"] h6,
+  [lang="ja"] .h5,
+  [lang="ja"] .h6,
+  [lang="jp"] h5,
+  [lang="jp"] h6,
+  [lang="jp"] .h5,
+  [lang="jp"] .h6 {
+    font-weight: 400; }
+
+[lang="kr"] {
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
+  [lang="kr"] body {
+    font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
+  [lang="kr"] button,
+  [lang="kr"] input,
+  [lang="kr"] select,
+  [lang="kr"] textarea {
+    font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
+  [lang="kr"] h1,
+  [lang="kr"] h2,
+  [lang="kr"] h3,
+  [lang="kr"] h4,
+  [lang="kr"] h5,
+  [lang="kr"] h6,
+  [lang="kr"] .h1,
+  [lang="kr"] .h2,
+  [lang="kr"] .h3,
+  [lang="kr"] .h4,
+  [lang="kr"] .h5,
+  [lang="kr"] .h6,
+  [lang="kr"] .display-1,
+  [lang="kr"] .display-2,
+  [lang="kr"] .display-3,
+  [lang="kr"] .lead {
+    font-family: "Noto Sans", "Noto Sans KR", sans-serif; }
+  [lang="kr"] h1,
+  [lang="kr"] h2,
+  [lang="kr"] .h1,
+  [lang="kr"] .h2,
+  [lang="kr"] .display-1,
+  [lang="kr"] .display-2,
+  [lang="kr"] .display-3 {
+    font-weight: 200; }
+  [lang="kr"] h3,
+  [lang="kr"] h4,
+  [lang="kr"] .h3,
+  [lang="kr"] .h4,
+  [lang="kr"] .lead {
+    font-weight: 300; }
+  [lang="kr"] h5,
+  [lang="kr"] h6,
+  [lang="kr"] .h5,
+  [lang="kr"] .h6 {
+    font-weight: 400; }
+
+@media (max-width: 767.98px) {
+  .display-1 {
+    font-size: 3.5rem; }
+  .display-2 {
+    font-size: 3rem; }
+  .display-3 {
+    font-size: 2.5rem; } }
+
+button, input, select {
+  font-family: "Open Sans", sans-serif; }
+
+textarea {
+  font-family: "Source Code Pro", monospace; }
+
+::selection {
+  background: #35b9ab;
+  /* WebKit/Blink Browsers */
+  color: #ffffff; }
+
+::-moz-selection {
+  background: #35b9ab;
+  /* Gecko Browsers */
+  color: #ffffff; }
+
+.dropdown .dropdown-menu,
+.dropup .dropdown-menu {
+  max-height: 50vh;
+  overflow-y: auto; }
+
+/* @FONT-FACE loads font into browser */
+@font-face {
+  font-family: "typicons";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/typicons/typicons.eot");
+  src: url("../fonts/typicons/typicons.eot?#iefix") format("embedded-opentype"), url("../fonts/typicons/typicons.woff") format("woff"), url("../fonts/typicons/typicons.ttf") format("truetype"), url("../fonts/typicons/typicons.svg#typicons") format("svg"); }
+
 .typcn.typcn-lg::before {
   font-size: 150%;
   line-height: 66.67%;
@@ -10680,6 +10697,9 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 767.98px) {
+      .global-footer .footer-copyright-language-row {
+        display: block; } }
 
 #software-navbar form.form-inline {
   display: flex;

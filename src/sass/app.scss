@@ -1,7 +1,10 @@
 // Customized Bootstrap
 @import "customize";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Include packages
 @import "../../node_modules/animate.css/animate";
+@import "../../node_modules/typicons.font/src/font/typicons";
 
 // Global styles
 @import "fontfaces";
@@ -14,7 +17,6 @@
 
 // Patch Typicons
 @import "typicons";
-@import "typicons-size";
 
 // Universal styles for all sites
 @import "global-navbar";
