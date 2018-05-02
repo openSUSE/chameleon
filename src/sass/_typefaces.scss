@@ -78,3 +78,18 @@
 [lang="kr"] {
   @include cjk-typeface("Noto Sans KR");
 }
+
+// Use smaller font sizes for smart phone
+@include media-breakpoint-down(sm) {
+  .display-1 {
+    font-size: 3.5rem;
+  }
+
+  .display-2 {
+    font-size: 3rem;
+  }
+
+  .display-3 {
+    font-size: 2.5rem;
+  }
+}
