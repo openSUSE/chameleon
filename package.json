@@ -17,16 +17,19 @@
   },
   "homepage": "https://github.com/guoyunhe/chameleon#readme",
   "dependencies": {
-    "animate.css": "^3.6.1",
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
-    "tether": "^1.4.0",
-    "typicons.font": "^2.0.9"
+    "tether": "^1.4.0"
   },
   "devDependencies": {
+    "browserify": "^16.2.2",
     "gulp": "^4.0.0",
-    "gulp-browserify": "^0.5.1",
-    "gulp-sass": "^4.0.1"
+    "gulp-buffer": "0.0.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-tap": "^1.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulplog": "^1.0.0"
   }
 }

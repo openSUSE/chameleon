@@ -2,9 +2,9 @@
 @import "customize";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Include packages
-@import "../../node_modules/animate.css/animate";
-@import "../../node_modules/typicons.font/src/font/typicons";
+// Patched Typicons
+@import "typicons";
+@import "animate";
 
 // Global styles
 @import "fontfaces";
@@ -15,9 +15,6 @@
 @import "selection-color";
 @import "dropdown-overflow-fix";
 @import "carousel";
-
-// Patch Typicons
-@import "typicons";
 
 // Universal styles for all sites
 @import "global-navbar";
