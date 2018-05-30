@@ -2,6 +2,17 @@
 
 Vivid UI theme for openSUSE websites. Based on Bootstrap 4.0 Alpha 6. Apply [openSUSE Brand Guidelines](https://opensuse.github.io/branding-guidelines/) and [openSUSE Artwork](https://github.com/openSUSE/artwork).
 
+## Integration progress
+
+| Site                  | Progress                 |
+| --------------------- | ------------------------ |
+| www.opensuse.org      | No plan yet              |
+| software.opensuse.org | Deployed. Minor improve  |
+| wiki.opensuse.org     | Deployed. A lot of TODOs |
+| build.opensuse.org    | No plan yet              |
+| docs.opensuse.org     | No plan yet              |
+| forums.opensuse.org   | No plan yet              |
+
 ## Colors
 
 | Name in SaSS     | Value   | Mapped variables |
@@ -19,21 +30,21 @@ Vivid UI theme for openSUSE websites. Based on Bootstrap 4.0 Alpha 6. Apply [ope
 
 Default
 
-- Font family: Open Sans, Source Sans Pro, sans-serif
-- Font weight: normal (400)
-- Font style: normal
+* Font family: Open Sans, Source Sans Pro, sans-serif
+* Font weight: normal (400)
+* Font style: normal
 
 Title and heading
 
-- Font family: Open Sans Condensed, Source Sans Pro, sans-serif
-- Font weight: bold (700)
-- Font style: normal
+* Font family: Open Sans Condensed, Source Sans Pro, sans-serif
+* Font weight: bold (700)
+* Font style: normal
 
 Source code and commands
 
-- Font family: Source Code Pro, monospace
-- Font weight: normal
-- Font style: normal
+* Font family: Source Code Pro, monospace
+* Font weight: normal
+* Font style: normal
 
 ## Icons
 
@@ -53,14 +64,13 @@ http-server
 
 ## Online demo
 
-- For software.opensuse.org
-  - [Download OS](https://opensuse-zh.github.io/chameleon/download.html)
-  - [Search package](https://opensuse-zh.github.io/chameleon/software-search.html)
-  - [Package detail](https://opensuse-zh.github.io/chameleon/software-package.html)
-- For doc.opensuse.org
-  - [Documentation Guides & Manuals](https://opensuse-zh.github.io/chameleon/document.html)
-- For en.opensuse.org (Wiki)
-- For forum.opensuse.org
-- For build.opensuse.org
-- For news.opensuse.org
-
+* For software.opensuse.org
+  * [Download OS](https://opensuse-zh.github.io/chameleon/download.html)
+  * [Search package](https://opensuse-zh.github.io/chameleon/software-search.html)
+  * [Package detail](https://opensuse-zh.github.io/chameleon/software-package.html)
+* For doc.opensuse.org
+  * [Documentation Guides & Manuals](https://opensuse-zh.github.io/chameleon/document.html)
+* For en.opensuse.org (Wiki)
+* For forum.opensuse.org
+* For build.opensuse.org
+* For news.opensuse.org
