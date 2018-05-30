@@ -1,12 +1,3 @@
-/*------------------------------------------------------------------------------
- * Gulp with SaSS and Browserify plugins
- *
- * See following links for basic usage examples:
- * http://gulpjs.com/
- * https://www.npmjs.com/package/gulp-browserify
- * https://www.npmjs.com/package/gulp-sass
- */
-
 "use strict";
 
 var gulp = require("gulp");
@@ -40,7 +31,12 @@ gulp.task("sass", function() {
   return gulp
     .src("./src/sass/**/*.scss")
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(
+      sass({
+        outputStyle: "compressed",
+        includePaths: ["node_modules"]
+      }).on("error", sass.logError)
+    )
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("./css"));
 });
