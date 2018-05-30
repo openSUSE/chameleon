@@ -28,6 +28,7 @@
     "gulp-buffer": "0.0.2",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgmin": "^1.2.4",
     "gulp-tap": "^1.0.1",
     "gulp-uglify": "^3.0.0",
     "gulplog": "^1.0.0"
