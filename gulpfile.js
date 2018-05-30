@@ -23,7 +23,7 @@ gulp.task("js", function() {
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(uglify())
     .pipe(sourcemaps.write("./"))
-    .pipe(gulp.dest("./js"));
+    .pipe(gulp.dest("dist/js"));
 });
 
 // Compile SaSS stylesheets with sourcemaps
@@ -38,7 +38,7 @@ gulp.task("sass", function() {
       }).on("error", sass.logError)
     )
     .pipe(sourcemaps.write("./"))
-    .pipe(gulp.dest("./css"));
+    .pipe(gulp.dest("dist/css"));
 });
 
 // Build all
