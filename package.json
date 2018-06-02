@@ -2,20 +2,21 @@
   "name": "chameleon",
   "version": "0.1.0",
   "description": "Vivid UI theme for openSUSE websites",
-  "main": "index.html",
+  "main": "src/js/chameleon.js",
+  "style": "src/scss/chameleon.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guoyunhe/chameleon.git"
+    "url": "git+https://github.com/openSUSE/opensuse-theme-chameleon.git"
   },
   "author": "Guo Yunhe",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/guoyunhe/chameleon/issues"
+    "url": "https://github.com/openSUSE/opensuse-theme-chameleon/issues"
   },
-  "homepage": "https://github.com/guoyunhe/chameleon#readme",
+  "homepage": "https://github.com/openSUSE/opensuse-theme-chameleon#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
