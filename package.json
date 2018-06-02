@@ -1,5 +1,5 @@
 {
-  "name": "chameleon",
+  "name": "opensuse-theme-chameleon",
   "version": "0.1.0",
   "description": "Vivid UI theme for openSUSE websites",
   "main": "src/js/chameleon.js",
