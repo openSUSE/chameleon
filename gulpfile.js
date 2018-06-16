@@ -13,7 +13,7 @@ var svgmin = require("gulp-svgmin");
 // Compile JavaScripts with sourcemaps
 gulp.task("js", function() {
   return gulp
-    .src("src/js/**/*.js", { read: false })
+    .src("src/js/*.js", { read: false })
     .pipe(
       tap(function(file) {
         log.info("bundling " + file.path);
