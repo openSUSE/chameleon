@@ -1,14 +1,14 @@
 // https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
 
 // openSUSE Brand Colors
-$opensuse-green : #73ba25;
-$opensuse-dark  : #173f4f;
-$opensuse-cyan  : #35b9ab;
-$opensuse-cyan2 : #00a489;
+$opensuse-green: #73ba25;
+$opensuse-dark: #173f4f;
+$opensuse-cyan: #35b9ab;
+$opensuse-cyan2: #00a489;
 $opensuse-green2: #6da741;
-$opensuse-blue  : #21a4df;
+$opensuse-blue: #21a4df;
 
-$white:    #ffffff;
+$white: #ffffff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -18,45 +18,45 @@ $gray-600: #868e96;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:    #000000;
+$black: #000000;
 
-$blue:    #007bff;
-$indigo:  #6610f2;
-$purple:  #6f42c1;
-$pink:    #e83e8c;
-$red:     #dc3545;
-$orange:  #fd7e14;
-$yellow:  #ffc107;
-$green:   #28a745;
-$teal:    #20c997;
-$cyan:    #17a2b8;
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
 
 // Bootstrap colors
-$primary    : $opensuse-cyan;
+$primary: $opensuse-cyan;
 //$secondary: $gray-600;
-$success    : $opensuse-green;
-$info       : $opensuse-blue;
+$success: $opensuse-green;
+$info: $opensuse-blue;
 //$warning  : $yellow;
 //$danger   : $red;
 //$light    : $gray-100;
-$dark       : $opensuse-dark;
+$dark: $opensuse-dark;
 
 // Body background
-$body-bg   : #ffffff;
+$body-bg: #ffffff;
 $body-color: #000000;
 
 // Links
-$link-color           : $opensuse-cyan2;
+$link-color: $opensuse-cyan2;
 $link-hover-decoration: none;
 
 // Fonts
 $font-family-sans-serif: "Open Sans", sans-serif;
-$font-family-serif     : "Source Serif", serif;
-$font-family-monospace : "Source Code Pro", monospace;
+$font-family-serif: "Source Serif", serif;
+$font-family-monospace: "Source Code Pro", monospace;
 
 // Headings
-$headings-font-family  : "Open Sans Condensed", "Open Sans", sans-serif;
-$headings-font-weight  : bold;
+$headings-font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+$headings-font-weight: bold;
 
 // Table
 $table-border-color: $gray-400;

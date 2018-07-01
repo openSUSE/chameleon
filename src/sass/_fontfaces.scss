@@ -1,140 +1,141 @@
-// Font Path
-$font-path: "../fonts" !default;
-
 // Open Sans
 $open-sans-font-path: $font-path + "/open-sans";
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-style: normal;
-    src: local('Open Sans Light'),
-        url("#{$open-sans-font-path}/OpenSans-Light.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-Light.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-Light.ttf") format("truetype");
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Open Sans Light"),
+    url("#{$open-sans-font-path}/OpenSans-Light.woff2") format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-Light.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-Light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-style: italic;
-    src: local('Open Sans Light Italic'),
-        url("#{$open-sans-font-path}/OpenSans-LightItalic.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-LightItalic.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-LightItalic.ttf") format("truetype");
-
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: italic;
+  src: local("Open Sans Light Italic"),
+    url("#{$open-sans-font-path}/OpenSans-LightItalic.woff2") format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-LightItalic.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-LightItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: normal;
-    font-style: normal;
-    src: local('Open Sans'),
-        url("#{$open-sans-font-path}/OpenSans-Regular.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-Regular.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-Regular.ttf") format("truetype");
-
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: local("Open Sans"),
+    url("#{$open-sans-font-path}/OpenSans-Regular.woff2") format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-Regular.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: normal;
-    font-style: italic;
-    src:  local('Open Sans Italic'),
-        url("#{$open-sans-font-path}/OpenSans-Italic.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-Italic.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-Italic.ttf") format("truetype");
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: italic;
+  src: local("Open Sans Italic"),
+    url("#{$open-sans-font-path}/OpenSans-Italic.woff2") format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-Italic.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-Italic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-style: normal;
-    src: local('Open Sans Semibold'),
-        url("#{$open-sans-font-path}/OpenSans-Semibold.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-Semibold.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-Semibold.ttf") format("truetype");
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Open Sans Semibold"),
+    url("#{$open-sans-font-path}/OpenSans-Semibold.woff2") format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-Semibold.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-Semibold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-style: italic;
-    src: local('Open Sans Semibold Italic'),
-        url("#{$open-sans-font-path}/OpenSans-SemiboldItalic.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-SemiboldItalic.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-SemiboldItalic.ttf") format("truetype");
-
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: italic;
+  src: local("Open Sans Semibold Italic"),
+    url("#{$open-sans-font-path}/OpenSans-SemiboldItalic.woff2") format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-SemiboldItalic.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-SemiboldItalic.ttf")
+      format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: bold;
-    font-style: normal;
-    src: local('Open Sans Bold'),
-        url("#{$open-sans-font-path}/OpenSans-Bold.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-Bold.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-Bold.ttf") format("truetype");
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: local("Open Sans Bold"),
+    url("#{$open-sans-font-path}/OpenSans-Bold.woff2") format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-Bold.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: bold;
-    font-style: italic;
-    src: local('Open Sans Bold Italic'),
-        url("#{$open-sans-font-path}/OpenSans-BoldItalic.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-BoldItalic.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-BoldItalic.ttf") format("truetype");
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: italic;
+  src: local("Open Sans Bold Italic"),
+    url("#{$open-sans-font-path}/OpenSans-BoldItalic.woff2") format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-BoldItalic.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-BoldItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: 800;
-    font-style: normal;
-    src: local('Open Sans Extrabold'),
-        url("#{$open-sans-font-path}/OpenSans-ExtraBold.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-ExtraBold.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-ExtraBold.ttf") format("truetype");
-
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-style: normal;
+  src: local("Open Sans Extrabold"),
+    url("#{$open-sans-font-path}/OpenSans-ExtraBold.woff2") format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-ExtraBold.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-weight: 800;
-    font-style: italic;
-    src: local('Open Sans Extrabold Italic'),
-        url("#{$open-sans-font-path}/OpenSans-ExtraBoldItalic.woff2") format("woff2"),
-        url("#{$open-sans-font-path}/OpenSans-ExtraBoldItalic.woff") format("woff"),
-        url("#{$open-sans-font-path}/OpenSans-ExtraBoldItalic.ttf") format("truetype");
-
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-style: italic;
+  src: local("Open Sans Extrabold Italic"),
+    url("#{$open-sans-font-path}/OpenSans-ExtraBoldItalic.woff2")
+      format("woff2"),
+    url("#{$open-sans-font-path}/OpenSans-ExtraBoldItalic.woff") format("woff"),
+    url("#{$open-sans-font-path}/OpenSans-ExtraBoldItalic.ttf")
+      format("truetype");
 }
 
 // Open Sans Condensed
 $open-sans-condensed-font-path: $font-path + "/open-sans-condensed";
 
 @font-face {
-    font-family: 'Open Sans Condensed';
-    font-weight: 300;
-    font-style: normal;
-    src: local('Open Sans Condensed Light'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-CondLight.woff') format('woff'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-CondLight.ttf') format('truetype');
+  font-family: "Open Sans Condensed";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Open Sans Condensed Light"),
+    url("#{$open-sans-condensed-font-path}/OpenSans-CondLight.woff")
+      format("woff"),
+    url("#{$open-sans-condensed-font-path}/OpenSans-CondLight.ttf")
+      format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans Condensed';
-    font-weight: 300;
-    font-style: italic;
-    src: local('Open Sans Condensed Light Italic'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-CondLightItalic.woff') format('woff'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-CondLightItalic.ttf') format('truetype');
+  font-family: "Open Sans Condensed";
+  font-weight: 300;
+  font-style: italic;
+  src: local("Open Sans Condensed Light Italic"),
+    url("#{$open-sans-condensed-font-path}/OpenSans-CondLightItalic.woff")
+      format("woff"),
+    url("#{$open-sans-condensed-font-path}/OpenSans-CondLightItalic.ttf")
+      format("truetype");
 }
 
 @font-face {
-    font-family: 'Open Sans Condensed';
-    font-weight: bold;
-    font-style: normal;
-    src: local('Open Sans Condensed Bold'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-CondBold.woff') format('woff'),
-        url('#{$open-sans-condensed-font-path}/OpenSans-CondBold.ttf') format('truetype');
+  font-family: "Open Sans Condensed";
+  font-weight: bold;
+  font-style: normal;
+  src: local("Open Sans Condensed Bold"),
+    url("#{$open-sans-condensed-font-path}/OpenSans-CondBold.woff")
+      format("woff"),
+    url("#{$open-sans-condensed-font-path}/OpenSans-CondBold.ttf")
+      format("truetype");
 }
