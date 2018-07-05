@@ -9,6 +9,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var uglify = require("gulp-uglify");
 var sass = require("gulp-sass");
 var svgmin = require("gulp-svgmin");
+var autoprefixer = require("gulp-autoprefixer");
 
 // Compile JavaScripts with sourcemaps
 gulp.task("js", function() {
@@ -37,6 +38,12 @@ gulp.task("sass", function() {
         outputStyle: "compressed",
         includePaths: ["node_modules"]
       }).on("error", sass.logError)
+    )
+    .pipe(
+      autoprefixer({
+        browsers: ["last 2 versions"],
+        cascade: false
+      })
     )
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("dist/css"));
