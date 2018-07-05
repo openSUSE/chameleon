@@ -7,6 +7,6 @@ var localize = require("./localize");
 var translations = [];
 
 translations.en = require("../../langs/en.json");
-translations["zh-CN"] = require("../../langs/zh-CN.json");
+translations["zh-CN"] = require("../../langs/zh_CN.json");
 
 localize("#global-navbar .l10n, #global-footer .l10n", translations);
