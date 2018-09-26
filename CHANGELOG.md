@@ -1,0 +1,20 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2018-09-26
+
+### Added
+
+- Based on Bootstrap 4.1.1.
+- Typicons.
+- Implemented [openSUSE Brand Guideline](https://opensuse.github.io/branding-guidelines/).
+- Gulp, SaSS and Browserify configuration.
+- Translation support for footer and header.
+- Simplified Chinese translation from openSUSE contributors.
+- Traditional Chinese translation from openSUSE contributors.
+- Brazilian Portuguese translation from openSUSE contributors.
+- Detailed README for using it in other openSUSE projects.
