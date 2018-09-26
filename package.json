@@ -2,8 +2,9 @@
   "name": "opensuse-theme-chameleon",
   "version": "0.1.0",
   "description": "Vivid UI theme for openSUSE websites",
-  "main": "src/js/chameleon.js",
-  "style": "src/scss/chameleon.scss",
+  "main": "dist/js/chameleon.js",
+  "sass": "src/sass/chameleon.scss",
+  "style": "dist/css/chameleon.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
