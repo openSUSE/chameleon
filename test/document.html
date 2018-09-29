@@ -10,6 +10,12 @@
 
   <link href="../dist/css/chameleon.css" rel="stylesheet" />
   <script src="../dist/js/chameleon.js"></script>
+  <script>
+    $(function () {
+      renderLanguageSelect();
+      //autoDetectLanguage();
+    });
+  </script>
 </head>
 
 <body>
@@ -20,8 +26,8 @@
       <img src="../dist/images/logo/logo-white.svg" width="48" height="30" class="d-inline-block align-top" alt="openSUSE Logo">
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#global-navbar-content" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#global-navbar-content"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -61,7 +67,8 @@
       <h1>Documentation Guides &amp; Manuals</h1>
       <p>
         This site hosts documentation for openSUSE Leap and related projects. For more openSUSE documentation, see the
-        <a href="https://en.opensuse.org/Portal:Documentation">openSUSE Wiki</a>. We hope you enjoy reading the fabulous manuals.
+        <a href="https://en.opensuse.org/Portal:Documentation">openSUSE Wiki</a>. We hope you enjoy reading the
+        fabulous manuals.
       </p>
     </div>
   </header>
@@ -70,8 +77,8 @@
     <h2>
       Get document for
       <div class="btn-group" role="group">
-        <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
+        <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
           Leap 42.3
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdown-button">
@@ -91,7 +98,8 @@
               <div class="card">
                 <div class="card-block">
                   <h4 class="card-title">Start-Up Guide</h4>
-                  <p class="card-text">This manual will see you through your initial contact with openSUSE&reg; Leap. Check out the various parts
+                  <p class="card-text">This manual will see you through your initial contact with openSUSE&reg; Leap.
+                    Check out the various parts
                     of this manual to learn how to install, use and enjoy your system.</p>
                   <div>
                     <a class="btn btn-primary" href="#">HTML</a>
@@ -99,8 +107,8 @@
                     <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
                     <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
                     <div class="btn-group hidden hidden-sm-up" role="group">
-                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Other type
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdown-button">
@@ -118,7 +126,8 @@
               <div class="card">
                 <div class="card-block">
                   <h4 class="card-title">GNOME User Guide</h4>
-                  <p class="card-text">Introduces the GNOME desktop of openSUSE&reg; Leap. It guides you through using and configuring the desktop
+                  <p class="card-text">Introduces the GNOME desktop of openSUSE&reg; Leap. It guides you through using
+                    and configuring the desktop
                     and helps you perform key tasks.</p>
                   <div>
                     <a class="btn btn-primary" href="#">HTML</a>
@@ -126,8 +135,8 @@
                     <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
                     <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
                     <div class="btn-group hidden hidden-sm-up" role="group">
-                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Other type
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdown-button">
@@ -145,7 +154,8 @@
               <div class="card">
                 <div class="card-block">
                   <h4 class="card-title">Reference Guide</h4>
-                  <p class="card-text">This manual gives you a general understanding of openSUSE&reg; Leap. It is intended mainly for system administrators
+                  <p class="card-text">This manual gives you a general understanding of openSUSE&reg; Leap. It is
+                    intended mainly for system administrators
                     and home users with basic system administration knowledge.</p>
                   <div>
                     <a class="btn btn-primary" href="#">HTML</a>
@@ -153,8 +163,8 @@
                     <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
                     <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
                     <div class="btn-group hidden hidden-sm-up" role="group">
-                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Other type
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdown-button">
@@ -172,7 +182,8 @@
               <div class="card">
                 <div class="card-block">
                   <h4 class="card-title">Security Guide</h4>
-                  <p class="card-text">Introduces basic concepts of system security, covering both local and network security aspects. Shows how
+                  <p class="card-text">Introduces basic concepts of system security, covering both local and network
+                    security aspects. Shows how
                     to use the product inherent security software like AppArmor.</p>
                   <div>
                     <a class="btn btn-primary" href="#">HTML</a>
@@ -180,8 +191,8 @@
                     <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
                     <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
                     <div class="btn-group hidden hidden-sm-up" role="group">
-                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Other type
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdown-button">
@@ -199,7 +210,8 @@
               <div class="card">
                 <div class="card-block">
                   <h4 class="card-title">Tuning Guide</h4>
-                  <p class="card-text">An administrator's guide for problem detection, resolution and optimization. Find how to inspect and optimize
+                  <p class="card-text">An administrator's guide for problem detection, resolution and optimization.
+                    Find how to inspect and optimize
                     your system by means of monitoring tools and how to manage resources.</p>
                   <div>
                     <a class="btn btn-primary" href="#">HTML</a>
@@ -207,8 +219,8 @@
                     <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
                     <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
                     <div class="btn-group hidden hidden-sm-up" role="group">
-                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Other type
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdown-button">
@@ -226,7 +238,8 @@
               <div class="card">
                 <div class="card-block">
                   <h4 class="card-title">Virtualization Guide</h4>
-                  <p class="card-text">Describes virtualization technology in general, and introduces libvirt—the unified interface to virtualization—and
+                  <p class="card-text">Describes virtualization technology in general, and introduces libvirt—the
+                    unified interface to virtualization—and
                     detailed information on specific hypervisors.</p>
                   <div>
                     <a class="btn btn-primary" href="#">HTML</a>
@@ -234,8 +247,8 @@
                     <a class="btn btn-secondary hidden-xs-down" href="#">PDF</a>
                     <a class="btn btn-secondary hidden-xs-down" href="#">ePUB</a>
                     <div class="btn-group hidden hidden-sm-up" role="group">
-                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                      <button id="dropdown-button" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Other type
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdown-button">
@@ -284,9 +297,12 @@
 
     <p>
       You may also fork the
-      <a href="https://github.com/SUSE/doc-sle">GitHub repository</a> and send us pull requests. For more information, see
-      <a href="https://github.com/SUSE/doc-sle/blob/develop/README.adoc">README</a>. If you are interested in writing larger amounts of text, see our
-      <a href="https://doc.opensuse.org/products/opensuse/Styleguide/opensuse_documentation_styleguide_sd/">Documentation Styleguide</a> for further help.
+      <a href="https://github.com/SUSE/doc-sle">GitHub repository</a> and send us pull requests. For more information,
+      see
+      <a href="https://github.com/SUSE/doc-sle/blob/develop/README.adoc">README</a>. If you are interested in writing
+      larger amounts of text, see our
+      <a href="https://doc.opensuse.org/products/opensuse/Styleguide/opensuse_documentation_styleguide_sd/">Documentation
+        Styleguide</a> for further help.
     </p>
 
     <p>To get in touch with the documentation team:</p>
@@ -419,13 +435,16 @@
               <a class="l10n" data-msg-id="connect" href="https://connect.opensuse.org/">Connect</a>
             </li>
             <li>
-              <a class="l10n" data-msg-id="facebook-group" href="https://www.facebook.com/groups/opensuseproject/">Facebook group</a>
+              <a class="l10n" data-msg-id="facebook-group" href="https://www.facebook.com/groups/opensuseproject/">Facebook
+                group</a>
             </li>
             <li>
-              <a class="l10n" data-msg-id="google-group" href="https://plus.google.com/communities/115444043324891769569">Google+ group</a>
+              <a class="l10n" data-msg-id="google-group" href="https://plus.google.com/communities/115444043324891769569">Google+
+                group</a>
             </li>
             <li>
-              <a class="l10n" data-msg-id="mail-lists" href="https://en.opensuse.org/openSUSE:Mailing_lists_subscription">Mail lists</a>
+              <a class="l10n" data-msg-id="mail-lists" href="https://en.opensuse.org/openSUSE:Mailing_lists_subscription">Mail
+                lists</a>
             </li>
             <li>
               <a class="l10n" data-msg-id="irc-channels" href="https://en.opensuse.org/openSUSE:IRC_list">IRC channels</a>
