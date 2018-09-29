@@ -36,13 +36,13 @@ var languages = {
   "zh-TW": "繁體中文"
 };
 
-$(function() {
-  /**
-   * Language detect order:
-   * 1. Users' choice saved in local storage
-   * 2. First matched browser language
-   * 3. Use English as fallback language
-   */
+/**
+ * Language detect order:
+ * 1. Users' choice saved in local storage
+ * 2. First matched browser language
+ * 3. Use English as fallback language
+ */
+function autoDetectLanguage() {
   var language =
     localStorage.getItem("lang") ||
     navigator.languages.find(function(lang) {
@@ -52,17 +52,25 @@ $(function() {
 
   document.documentElement.lang = language;
 
+  $("select#language-select").val(language);
+}
+
+function renderLanguageSelect() {
   for (var lang in languages) {
     var $option = $("<option></option>")
       .val(lang)
-      .text(languages[lang])
-      .attr("selected", language === lang);
+      .text(languages[lang]);
     $("#language-select").append($option);
   }
+
+  $("select#language-select").val(document.documentElement.lang);
 
   $("select#language-select").change(function() {
     var lang = $(this).val();
     document.documentElement.lang = lang;
     localStorage.setItem("lang", lang);
   });
-});
+}
+
+window.autoDetectLanguage = autoDetectLanguage;
+window.renderLanguageSelect = renderLanguageSelect;
