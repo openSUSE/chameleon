@@ -1,16 +1,13 @@
-$typicons-font-path: $font-path + "/typicons";
-
 /* @FONT-FACE loads font into browser */
 @font-face {
   font-family: "typicons";
   font-weight: normal;
   font-style: normal;
-  src: url($typicons-font-path+"/typicons.eot");
-  src: url($typicons-font-path+"/typicons.eot?#iefix")
-      format("embedded-opentype"),
-    url($typicons-font-path+"/typicons.woff") format("woff"),
-    url($typicons-font-path+"/typicons.ttf") format("truetype"),
-    url($typicons-font-path+"/typicons.svg#typicons") format("svg");
+  src: url($font-path+"/typicons.eot");
+  src: url($font-path+"/typicons.eot?#iefix") format("embedded-opentype"),
+    url($font-path+"/typicons.woff") format("woff"),
+    url($font-path+"/typicons.ttf") format("truetype"),
+    url($font-path+"/typicons.svg#typicons") format("svg");
 }
 
 .typcn.typcn-lg::before {
