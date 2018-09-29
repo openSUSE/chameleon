@@ -6,7 +6,7 @@ function localize(selector, translations) {
     var lang = document.documentElement.lang;
 
     if (!lang || !(lang in translations)) {
-      lang = "en"; // Use English if it is not a supported locale
+      return;
     }
 
     var translation = translations[lang];
