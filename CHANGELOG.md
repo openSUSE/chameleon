@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2018-09-30
+
+### Added
+
+- Enable Traditional Chinese, Brazilian Portuguese translations.
+
+### Changed
+
+- Language auto detection and language select rendering is executed only when
+  needed.
+
+### Fixed
+
+- A bug that causes lang attribute changed by JavaScript in wiki.
+
 ## [1.0.0] - 2018-09-26
 
 ### Added

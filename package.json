@@ -1,6 +1,6 @@
 {
   "name": "opensuse-theme-chameleon",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vivid UI theme for openSUSE websites",
   "main": "dist/js/chameleon.js",
   "sass": "src/sass/chameleon.scss",
