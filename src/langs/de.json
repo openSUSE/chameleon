@@ -1,7 +1,7 @@
 {
     "software": "",
     "download": "",
-    "documentation": "",
+    "documentation": "Dokumentation",
     "wiki": "",
     "wiki-url": "",
     "forum": "",
@@ -18,9 +18,9 @@
     "shop": "",
     "community": "",
     "connect": "",
-    "facebook-group": "",
-    "google-group": "",
-    "mail-lists": "",
+    "facebook-group": "Facebook-Gruppe",
+    "google-group": "Google+-Gruppe",
+    "mail-lists": "Mailinglisten",
     "irc-channels": "",
     "social-media": ""
 }
