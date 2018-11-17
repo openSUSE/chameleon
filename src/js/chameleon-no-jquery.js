@@ -5,3 +5,5 @@ require("bootstrap");
 
 require("./localization/language-select");
 require("./localization/navbar-footer");
+
+require("./wiki");

@@ -1,0 +1,22 @@
+body.mediawiki {
+  @import "button";
+  @import "card";
+  @import "catlinks";
+  @import "code";
+  @import "cse-search-box";
+  @import "edit";
+  @import "edit-section";
+  @import "header";
+  @import "heading";
+  @import "image";
+  @import "input";
+  @import "list";
+  @import "preference";
+  @import "search";
+  @import "sidebar";
+  @import "table";
+  @import "toc";
+  @import "user-menu";
+  @import "recent-changes";
+  @import "migrations/index";
+}
