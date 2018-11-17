@@ -1,5 +1,7 @@
 $(function () {
-  require("./login-modal");
-  require("./toc");
-  require("./migrations");
+  if (document.body.classList.contains('mediawiki')) {
+    require("./login-modal");
+    require("./toc");
+    require("./migrations");
+  }
 });
