@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unrelease]
 
+## [1.2.0] - 2018-11-24
+
 ### Added
 
 - Wiki styles and scripts are moved to this theme.
@@ -36,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - A bug that causes lang attribute changed by JavaScript in wiki.
 
-## [1.0.0] - 2018-09-26
+## 1.0.0 - 2018-09-26
 
 ### Added
 
@@ -49,3 +51,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Traditional Chinese translation from openSUSE contributors.
 - Brazilian Portuguese translation from openSUSE contributors.
 - Detailed README for using it in other openSUSE projects.
+
+[Unreleased]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.1.1...v1.2.0
+[1.1.1]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.0.0...v1.1.0
