@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Wiki styles and scripts are moved to this theme.
 
+### Changed
+
+- Use `font-diaplay: auto;` to render text faster.
+
 ## [1.1.1] - 2018-09-30
 
 ### Fixed

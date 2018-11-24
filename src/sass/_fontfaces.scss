@@ -3,6 +3,7 @@
   font-family: "Open Sans";
   font-weight: 300;
   font-style: normal;
+  font-display: auto;
   src: local("Open Sans Light"),
     url("#{$font-path}/OpenSans-Light.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-Light.woff") format("woff"),
@@ -13,6 +14,7 @@
   font-family: "Open Sans";
   font-weight: 300;
   font-style: italic;
+  font-display: auto;
   src: local("Open Sans Light Italic"),
     url("#{$font-path}/OpenSans-LightItalic.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-LightItalic.woff") format("woff"),
@@ -23,6 +25,7 @@
   font-family: "Open Sans";
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
   src: local("Open Sans Regular"),
     url("#{$font-path}/OpenSans-Regular.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-Regular.woff") format("woff"),
@@ -33,6 +36,7 @@
   font-family: "Open Sans";
   font-weight: normal;
   font-style: italic;
+  font-display: auto;
   src: local("Open Sans Italic"),
     url("#{$font-path}/OpenSans-Italic.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-Italic.woff") format("woff"),
@@ -43,6 +47,7 @@
   font-family: "Open Sans";
   font-weight: 600;
   font-style: normal;
+  font-display: auto;
   src: local("Open Sans Semibold"),
     url("#{$font-path}/OpenSans-Semibold.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-Semibold.woff") format("woff"),
@@ -53,6 +58,7 @@
   font-family: "Open Sans";
   font-weight: 600;
   font-style: italic;
+  font-display: auto;
   src: local("Open Sans Semibold Italic"),
     url("#{$font-path}/OpenSans-SemiboldItalic.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-SemiboldItalic.woff") format("woff"),
@@ -63,6 +69,7 @@
   font-family: "Open Sans";
   font-weight: bold;
   font-style: normal;
+  font-display: auto;
   src: local("Open Sans Bold"),
     url("#{$font-path}/OpenSans-Bold.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-Bold.woff") format("woff"),
@@ -73,6 +80,7 @@
   font-family: "Open Sans";
   font-weight: bold;
   font-style: italic;
+  font-display: auto;
   src: local("Open Sans Bold Italic"),
     url("#{$font-path}/OpenSans-BoldItalic.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-BoldItalic.woff") format("woff"),
@@ -83,6 +91,7 @@
   font-family: "Open Sans";
   font-weight: 800;
   font-style: normal;
+  font-display: auto;
   src: local("Open Sans Extrabold"),
     url("#{$font-path}/OpenSans-ExtraBold.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-ExtraBold.woff") format("woff"),
@@ -93,6 +102,7 @@
   font-family: "Open Sans";
   font-weight: 800;
   font-style: italic;
+  font-display: auto;
   src: local("Open Sans Extrabold Italic"),
     url("#{$font-path}/OpenSans-ExtraBoldItalic.woff2") format("woff2"),
     url("#{$font-path}/OpenSans-ExtraBoldItalic.woff") format("woff"),
@@ -104,6 +114,7 @@
   font-family: "Open Sans Condensed";
   font-weight: 300;
   font-style: normal;
+  font-display: auto;
   src: local("Open Sans Condensed Light"),
     url("#{$font-path}/OpenSans-CondLight.woff") format("woff"),
     url("#{$font-path}/OpenSans-CondLight.ttf") format("truetype");
@@ -113,6 +124,7 @@
   font-family: "Open Sans Condensed";
   font-weight: 300;
   font-style: italic;
+  font-display: auto;
   src: local("Open Sans Condensed Light Italic"),
     url("#{$font-path}/OpenSans-CondLightItalic.woff") format("woff"),
     url("#{$font-path}/OpenSans-CondLightItalic.ttf") format("truetype");
@@ -122,6 +134,7 @@
   font-family: "Open Sans Condensed";
   font-weight: bold;
   font-style: normal;
+  font-display: auto;
   src: local("Open Sans Condensed Bold"),
     url("#{$font-path}/OpenSans-CondBold.woff") format("woff"),
     url("#{$font-path}/OpenSans-CondBold.ttf") format("truetype");
