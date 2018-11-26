@@ -4,12 +4,14 @@
  * work and cause style loading issues.
  * @see https://bugzilla.mozilla.org/show_bug.cgi?id=1404468
  */
-$(function() {
-	$("#login-modal-toggle").click(function() {
-		// Must set focus after modal shown, otherwise it won't focus or wrong
-		// position of auto-fill menu
-		setTimeout(function() {
-			$("#login-username").focus();
-		}, 500);
-	});
-});
+var toggle = document.getElementById("login-modal-toggle");
+
+if (toggle) {
+  toggle.addEventListener('click', function () {
+    // Must set focus after modal shown, otherwise it won't focus or wrong
+    // position of auto-fill menu
+    setTimeout(function () {
+      document.getElementById("login-username").focus();
+    }, 500);
+  });
+}

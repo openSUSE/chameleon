@@ -1,34 +1,48 @@
-$(".box").each(function() {
-	var $this = $(this);
-	$this.removeClass("box box-shadow infobox").addClass("card");
+var boxes = document.getElementsByClassName('box');
 
-	// Margin for float card
-	if ($this.css("float") === "right") {
-		$this.addClass("ml-3");
-	} else if ($this.css("float") === "left") {
-		$this.addClass("mr-3");
-	}
+for (var i = 0; i < boxes.length; i++) {
+  var box = boxes.item(i);
 
-	// Wrap all content with a "card-body" block
-	var $body = $('<div class="card-body">' + $this.html() + "</div>");
-	$this.html("");
-	$this.append($body);
+  box.classList.remove("box", "box-shadow", "infobox");
+  box.classList.add("card");
 
-	// Set card image
-	var $img = $this.find("img").first();
-	if ($img.width() >= 100) {
-		$img.addClass("card-img-top").appendTo($this);
-	}
+  // Margin for float card
+  if (box.style.float === "right") {
+    box.classList.add("ml-3");
+  } else if (box.style.float === "left") {
+    box.classList.add("mr-3");
+  }
 
-	// Set card title
-	var $header = $this.find(".box-header");
-	var title = $header.html();
-	$header.remove();
-	$body.prepend('<h4 class="card-title">' + title + "</h4>");
+  // Wrap all content with a "card-body" block
+  var cardBody = document.createElement('div');
+  cardBody.classList.add('card-body');
+  cardBody.innerHTML = box.innerHTML;
+  box.innerHTML = '';
+  box.appendChild(cardBody);
 
-	// Remove empty <p> tag
-	$body.find("p").each(function() {
-		if ($this.find("img").length || $this.text().trim()) return;
-		$this.remove();
-	});
-});
+  // Set card image
+  var imgs = box.getElementsByTagName("img");
+  if (imgs.length > 0 && imgs.item(0).clientWidth >= 100) {
+    imgs.item(0).classList.add("card-img-top");
+    box.insertBefore(imgs.item(0), box.firstChild);
+  }
+
+  // Set card title
+  var cardHeaders = box.getElementsByClassName("box-header");
+  if (cardHeaders) {
+    var cardHeader = cardHeaders.item(0);
+    var title = document.createElement('h4');
+    title.classList.add('card-title');
+    title.innerHTML = cardHeader.innerHTML;
+    cardHeader.parentNode.removeChild(cardHeader);
+    cardBody.insertBefore(title, cardBody.firstChild);
+  }
+
+  // Remove empty <p> tag
+  var ps = cardBody.getElementsByTagName('p');
+  for (var j = 0; j < ps.length; j++) {
+    var p = ps.item(j);
+    if (p.getElementsByTagName("img").length || p.textContent.trim()) return;
+    p.parentNode.removeChild(p);
+  }
+}

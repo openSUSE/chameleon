@@ -17,12 +17,12 @@ function localize(selector, translations) {
     var elements = document.querySelectorAll(selector);
     for (var i = 0; i < elements.length; i++) {
       var element = elements.item(i);
-      if (element.dataset["msg-id"]) {
-        element.textContent = translation[element.dataset["msg-id"]];
+      if (element.dataset.msgId) {
+        element.textContent = translation[element.dataset.msgId];
       }
 
-      if (element.dataset["url-id"]) {
-        element.setAttribute('href', translation[element.dataset["url-id"]]);
+      if (element.dataset.urlId) {
+        element.setAttribute('href', translation[element.dataset.urlId]);
       }
     }
   }
