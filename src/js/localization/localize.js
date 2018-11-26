@@ -14,25 +14,23 @@ function localize(selector, translations) {
     /**
      * Replace translateable string
      */
-    $(function() {
-      $(selector).each(function() {
-        if ($(this).data("msg-id")) {
-          var text = translation[$(this).data("msg-id")];
-          $(this).text(text);
-        }
+    var elements = document.querySelectorAll(selector);
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements.item(i);
+      if (element.dataset["msg-id"]) {
+        element.textContent = translation[element.dataset["msg-id"]];
+      }
 
-        if ($(this).data("url-id")) {
-          var url = translation[$(this).data("url-id")];
-          $(this).attr("href", url);
-        }
-      });
-    });
+      if (element.dataset["url-id"]) {
+        element.setAttribute('href', translation[element.dataset["url-id"]]);
+      }
+    }
   }
 
   localizeString();
 
-  var observer = new MutationObserver(function(mutationsList) {
-    mutationsList.map(function(mutation) {
+  var observer = new MutationObserver(function (mutationsList) {
+    mutationsList.map(function (mutation) {
       if (mutation.type === "attributes" && mutation.attributeName === "lang") {
         localizeString();
       }
