@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unrelease]
 
+### Added
+
+- German translation.
+- Russian translation.
+
+### Changed
+
+- Drop jQuery from localization scripts.
+
 ## [1.2.0] - 2018-11-24
 
 ### Added
