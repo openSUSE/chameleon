@@ -43,30 +43,34 @@ var languages = {
  * 3. Use English as fallback language
  */
 function autoDetectLanguage() {
+  var languageSelect = document.getElementById("language-select");
+
   var language =
     localStorage.getItem("lang") ||
-    navigator.languages.find(function(lang) {
+    navigator.languages.find(function (lang) {
       return lang in languages;
     }) ||
     "en";
 
   document.documentElement.lang = language;
 
-  $("select#language-select").val(language);
+  languageSelect.value = language;
 }
 
 function renderLanguageSelect() {
+  var languageSelect = document.getElementById("language-select");
+
   for (var lang in languages) {
-    var $option = $("<option></option>")
-      .val(lang)
-      .text(languages[lang]);
-    $("#language-select").append($option);
+    var option = document.createElement('option');
+    option.value = lang;
+    option.textContent = languages[lang];
+    languageSelect.appendChild(option);
   }
 
-  $("select#language-select").val(document.documentElement.lang);
+  languageSelect.value = document.documentElement.lang;
 
-  $("select#language-select").change(function() {
-    var lang = $(this).val();
+  languageSelect.addEventListener('change', function () {
+    var lang = languageSelect.value;
     document.documentElement.lang = lang;
     localStorage.setItem("lang", lang);
   });
