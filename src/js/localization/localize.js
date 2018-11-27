@@ -18,11 +18,15 @@ function localize(selector, translations) {
     for (var i = 0; i < elements.length; i++) {
       var element = elements.item(i);
       if (element.dataset.msgId) {
-        element.textContent = translation[element.dataset.msgId];
+        if (translation[element.dataset.msgId]) {
+          element.textContent = translation[element.dataset.msgId];
+        }
       }
 
       if (element.dataset.urlId) {
-        element.setAttribute('href', translation[element.dataset.urlId]);
+        if (translation[element.dataset.urlId]) {
+          element.setAttribute('href', translation[element.dataset.urlId]);
+        }
       }
     }
   }
