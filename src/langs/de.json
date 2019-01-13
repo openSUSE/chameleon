@@ -12,15 +12,15 @@
     "build-service": "Build Service",
     "information": "Informationen",
     "news": "Neuigkeiten",
-    "release-notes": "",
-    "events": "",
-    "planet": "",
-    "shop": "",
-    "community": "",
-    "connect": "",
+    "release-notes": "Versionshinweise",
+    "events": "Veranstaltungen",
+    "planet": "Planet",
+    "shop": "Shop",
+    "community": "Community",
+    "connect": "Connect",
     "facebook-group": "Facebook-Gruppe",
     "google-group": "Google+-Gruppe",
     "mail-lists": "Mailinglisten",
     "irc-channels": "IRC-Kanäle",
-    "social-media": ""
+    "social-media": "Soziale Medien"
 }
