@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - German translation.
 - Russian translation.
+- Japanese translation.
+- Remove `google-group` string in translation.
+- `.pre` helper class for wiki.
 
 ### Changed
 
@@ -18,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- npm audit fix
+- `npm audit fix`.
 
 ## [1.2.0] - 2018-11-24
 
