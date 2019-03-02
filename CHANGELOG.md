@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Drop jQuery from localization scripts.
 
+### Fixed
+
+- npm audit fix
+
 ## [1.2.0] - 2018-11-24
 
 ### Added
@@ -61,7 +65,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Brazilian Portuguese translation from openSUSE contributors.
 - Detailed README for using it in other openSUSE projects.
 
-[Unreleased]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.2.0...HEAD
+[unreleased]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.2.0...HEAD
 [1.2.0]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.0.0...v1.1.0
