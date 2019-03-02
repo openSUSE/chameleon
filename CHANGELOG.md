@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unrelease]
 
+## [1.3.0] - 2019-03-02
+
 ### Added
 
 - German translation.
@@ -68,7 +70,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Brazilian Portuguese translation from openSUSE contributors.
 - Detailed README for using it in other openSUSE projects.
 
-[unreleased]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.2.0...HEAD
+[unreleased]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/openSUSE/opensuse-theme-chameleon/compare/v1.0.0...v1.1.0
