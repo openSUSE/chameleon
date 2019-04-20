@@ -147,7 +147,10 @@
     class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Main_Page rootpage-Main_Page skin-chameleon action-view"
   >
     <!-- Global Navbar -->
-    <nav id="global-navbar" class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav
+      id="global-navbar"
+      class="navbar navbar-expand-sm navbar-dark bg-dark noprint"
+    >
       <a class="navbar-brand" href="https://www.opensuse.org/">
         <img
           src="https://static.opensuse.org/chameleon/dist/images/logo/logo-white.svg"
@@ -286,9 +289,9 @@
     </nav>
 
     <!-- Main Wrap -->
-    <div class="container-fluid">
+    <div id="main-wrap" class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <div class="col-12 col-md-3 col-xl-2">
+        <div class="col-12 col-md-3 col-xl-2 noprint">
           <aside id="sidebar">
             <div class="container-fluid">
               <nav class="d-flex mb-3">
@@ -670,7 +673,7 @@
           <div id="mw-head-base" class="noprint"></div>
 
           <!-- Page Header -->
-          <header id="mw-head" class="my-3">
+          <header id="mw-head" class="my-3 noprint">
             <!-- Tabs for talk page and language variants -->
             <ul id="namespaces" class="nav nav-tabs">
               <li class="nav-item">
@@ -1717,8 +1720,7 @@ Transclusion expansion time report (%,ms,calls,template)
           </footer>
         </div>
         <!-- /.col -->
-        <div class="d-none d-xl-block col-xl-2">
-          <aside id="toc-sidebar"></aside>
+        <div id="toc-sidebar" class="d-none d-xl-block col-xl-2 noprint">
         </div>
         <!-- /.col -->
       </div>
@@ -1727,7 +1729,7 @@ Transclusion expansion time report (%,ms,calls,template)
     <!-- /.container-fluid -->
 
     <!-- Global Footer -->
-    <footer id="global-footer" class="global-footer m-0">
+    <footer id="global-footer" class="global-footer m-0 noprint">
       <div class="container">
         <div class="row">
           <div class="col-6 col-md-3">
