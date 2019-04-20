@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unrelease]
 
+### Added
+
+- Wiki test pages
+- Wiki print styles
+
+### Chagned
+
+- Update to Bootstrap 4.3.1
+- Update Gulp packages for security reason
+
 ## [1.3.0] - 2019-03-02
 
 ### Added

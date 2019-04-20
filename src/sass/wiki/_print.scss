@@ -1,0 +1,11 @@
+@media print {
+  #main-wrap {
+    > .row {
+      display: block;
+
+      > .col-12 {
+        width: auto !important;
+      }
+    }
+  }
+}
