@@ -38,7 +38,11 @@ You can directly include/link these files in your HTML template.
 Link CSS:
 
 ```html
-<link rel="stylesheet" type="text/css" href="path/to/chameleon/dist/css/chameleon.css"  />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="path/to/chameleon/dist/css/chameleon.css"
+/>
 ```
 
 Link JavaScript:
@@ -102,14 +106,14 @@ fonts in your styles.
 
 ### Colors
 
-| openSUSE colors  | Value   | Bootstrap colors |
-| ---------------- | ------- | ---------------- |
-| $opensuse-green  | #73ba25 | $brand-success   |
-| $opensuse-dark   | #173f4f | $brand-inverse   |
-| $opensuse-cyan   | #35b9ab | $brand-primary   |
-| $opensuse-cyan2  | #00a489 | $link-color      |
-| $opensuse-green2 | #6da741 |                  |
-| $opensuse-blue   | #21a4df | $brand-info      |
+| openSUSE colors   | Value   | Bootstrap colors |
+| ----------------- | ------- | ---------------- |
+| \$opensuse-green  | #73ba25 | \$brand-success  |
+| \$opensuse-dark   | #173f4f | \$brand-inverse  |
+| \$opensuse-cyan   | #35b9ab | \$brand-primary  |
+| \$opensuse-cyan2  | #00a489 | \$link-color     |
+| \$opensuse-green2 | #6da741 |                  |
+| \$opensuse-blue   | #21a4df | \$brand-info     |
 
 ### Fonts
 
@@ -145,10 +149,28 @@ The theme is shipped with some translations for navbar and footer links, so that
 our translators won't need to translate the same content for each site.
 
 ```html
-<a class="nav-link l10n" data-msg-id="software" href="https://software.opensuse.org/">
+<a
+  class="nav-link l10n"
+  data-msg-id="software"
+  href="https://software.opensuse.org/"
+>
   Software
 </a>
 ```
 
 Class `l10n` makes the element localizable. `data-msg-id` attribute defines the
 message key so that it can be find in translation files.
+
+## Development
+
+### Build
+
+```
+gulp
+```
+
+### Watch
+
+```
+gulp watch
+```
