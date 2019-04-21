@@ -60,10 +60,11 @@
 
 .tocnumber {
 	display: inline-block;
-	min-width: 1em;
-	margin-right: 0.5em;
+  margin-right: 0.5em;
+  white-space: nowrap;
 }
 
-.toclevel-2 > a > .tocnumber {
-	min-width: 2em;
+.toctext {
+  overflow: hidden;
+  word-wrap: break-word;
 }
