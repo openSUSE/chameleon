@@ -4,13 +4,15 @@
 	display: none;
 }
 
+#toc-sidebar {
+  padding: 4rem 0;
+}
+
 #toc {
 	position: sticky;
 	top: 0;
-	padding: 2rem 0;
 	font-size: $font-size-sm;
 	max-height: 100vh;
-	overflow-y: auto;
 
 	a {
 		color: inherit;

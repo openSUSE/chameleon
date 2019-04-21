@@ -11,11 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Wiki test pages
 - Wiki print styles
+- sticky-scroller for wiki side toc
 
 ### Chagned
 
 - Update to Bootstrap 4.3.1
 - Update Gulp packages for security reason
+- Change from gulp-uglify to gulp-uglify-es
 
 ## [1.3.0] - 2019-03-02
 
