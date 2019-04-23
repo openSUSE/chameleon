@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update to Bootstrap 4.3.1
 - Update Gulp packages for security reason
 - Change from gulp-uglify to gulp-uglify-es
+- Change CJK font-weight to default and don't mix Noto Sans
 
 ## [1.3.0] - 2019-03-02
 

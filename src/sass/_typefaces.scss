@@ -1,15 +1,15 @@
 @mixin cjk-typeface($font-family) {
-  font-family: "Noto Sans", $font-family, sans-serif;
+  font-family: $font-family, sans-serif;
 
   body {
-    font-family: "Noto Sans", $font-family, sans-serif;
+    font-family: $font-family, sans-serif;
   }
 
   button,
   input,
   select,
   textarea {
-    font-family: "Noto Sans", $font-family, sans-serif;
+    font-family: $font-family, sans-serif;
   }
 
   h1,
@@ -28,32 +28,7 @@
   .display-2,
   .display-3,
   .lead {
-    font-family: "Noto Sans", $font-family, sans-serif;
-  }
-
-  h1,
-  h2,
-  .h1,
-  .h2,
-  .display-1,
-  .display-2,
-  .display-3 {
-    font-weight: 200;
-  }
-
-  h3,
-  h4,
-  .h3,
-  .h4,
-  .lead {
-    font-weight: 300;
-  }
-
-  h5,
-  h6,
-  .h5,
-  .h6 {
-    font-weight: 400;
+    font-family: $font-family, sans-serif;
   }
 }
 
