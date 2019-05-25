@@ -61,6 +61,14 @@ gulp.task("svg", function() {
     .pipe(connect.reload());
 });
 
+// HTML
+gulp.task("html", function() {
+  gulp
+    .src("./*.html")
+    .pipe(gulp.dest("./"))
+    .pipe(connect.reload());
+});
+
 // Build all
 gulp.task("default", gulp.parallel("js", "sass", "svg"));
 
@@ -73,4 +81,5 @@ gulp.task("watch", function() {
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
   gulp.watch("src/js/**/*.js", gulp.parallel("js"));
   gulp.watch("src/images/**/*.svg", gulp.parallel("svg"));
+  gulp.watch("*.html", gulp.parallel("html"));
 });
