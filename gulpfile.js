@@ -11,6 +11,7 @@ var sass = require("gulp-sass");
 var svgmin = require("gulp-svgmin");
 var autoprefixer = require("gulp-autoprefixer");
 var connect = require("gulp-connect");
+var pug = require("gulp-pug");
 
 // Compile JavaScripts with sourcemaps
 gulp.task("js", function() {
@@ -61,16 +62,17 @@ gulp.task("svg", function() {
     .pipe(connect.reload());
 });
 
-// HTML
-gulp.task("html", function() {
-  gulp
-    .src("./*.html")
+// Pug templates
+gulp.task("pug", function() {
+  return gulp
+    .src("*.pug")
+    .pipe(pug())
     .pipe(gulp.dest("./"))
     .pipe(connect.reload());
 });
 
 // Build all
-gulp.task("default", gulp.parallel("js", "sass", "svg"));
+gulp.task("default", gulp.parallel("js", "sass", "svg", "pug"));
 
 // Watch all
 gulp.task("watch", function() {
@@ -81,5 +83,5 @@ gulp.task("watch", function() {
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
   gulp.watch("src/js/**/*.js", gulp.parallel("js"));
   gulp.watch("src/images/**/*.svg", gulp.parallel("svg"));
-  gulp.watch("*.html", gulp.parallel("html"));
+  gulp.watch("*.pug", gulp.parallel("pug"));
 });
