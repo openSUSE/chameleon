@@ -20,7 +20,7 @@
   "homepage": "https://github.com/openSUSE/opensuse-theme-chameleon#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "sticky-scroller": "^0.4.0",
     "tether": "^1.4.0"
@@ -30,6 +30,7 @@
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-buffer": "0.0.2",
+    "gulp-connect": "^5.7.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgmin": "^2.2.0",
