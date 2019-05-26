@@ -1,0 +1,94 @@
+extends ../layouts/doc.pug
+
+block variables
+
+block content
+
+  h2#how-to-use How to use
+
+  h3 Link from CDN
+
+  pre
+    code.html= `<link href="https://static.opensuse.org/opensuse-theme-chameleon/dist/css/chameleon.css" rel="stylesheet"/>`
+
+  p If your application already provides jQuery (MediaWiki, WordPress, etc.):
+
+  pre
+    code.html= `<script src="https://static.opensuse.org/opensuse-theme-chameleon/dist/js/chameleon-no-jquery.js"><script>`
+
+  p Otherwise:
+
+  pre
+    code.html= `<script src="https://static.opensuse.org/opensuse-theme-chameleon/dist/js/chameleon.js"><script>`
+
+  h3 Install from NPM
+
+  pre
+    code.bash npm install --save opensuse-theme-chameleon
+
+  h3 Import styles to SaSS
+
+  pre
+    code.scss @import '~opensuse-theme-chameleon/src/sass/chameleon';
+
+  h3 Import JavaScript to Browserify/Webpack
+
+  pre
+    code.js require('opensuse-theme-chameleon'); // CommonJS
+
+  pre
+    code.js import 'opensuse-theme-chameleon'; // ES6
+
+  h2#design-language Design language
+
+  p
+    | Based on
+    |
+    a(href="https://opensuse.github.io/branding-guidelines/") openSUSE Brand Guidelines
+    | .
+
+  h3#colors Colors
+
+  h3#fonts Fonts
+
+  h3#icons Icons
+
+  h2#usability-accessibility Usability &amp; accessibility
+
+  h3#print Print
+
+  p
+    | Our wiki pages, documents, news articles, forum discussions should have
+    | nice print result. So they can be used for offline educational activities.
+
+  h3#mobile Mobile
+
+  p
+    | Most of our web pages should be mobile friendly. In case users' PC have
+    | trouble or are unavailable, they can use mobile devices to search information.
+
+  p
+    | openSUSE has been ported to many different hardware, like Raspberry PI.
+    | These devices may have a small touch screen.
+
+  h2#components Components
+
+  p
+    | Chameleon is based on Bootstrap 4.3, providing all components from
+    |
+    a(href="https://getbootstrap.com/") Bootstrap
+    | .
+
+  p Avoid using too many color variants.
+
+  h3#button
+
+  p
+    button.btn.btn-primary Primary
+    |
+    |
+    button.btn.btn-secondary Secondary
+
+  h2#examples Examples
+
+  p We made some examples of how to use Chameleon theme in web applications.

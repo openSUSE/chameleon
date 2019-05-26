@@ -1,6 +1,5 @@
 // Customized Bootstrap
 @import "variables";
-@import "customize";
 @import "bootstrap/scss/bootstrap";
 
 // Patched Typicons
@@ -9,7 +8,7 @@
 
 // Global styles
 @import "fontfaces";
-@import "typefaces";
+@import "typography";
 
 // Patches to Bootstrap
 @import "button-input-fonts";

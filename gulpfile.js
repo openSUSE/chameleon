@@ -65,7 +65,7 @@ gulp.task("svg", function() {
 // Pug templates
 gulp.task("pug", function() {
   return gulp
-    .src("*.pug")
+    .src("src/pug/pages/*.pug")
     .pipe(pug())
     .pipe(gulp.dest("./"))
     .pipe(connect.reload());
@@ -83,5 +83,5 @@ gulp.task("watch", function() {
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
   gulp.watch("src/js/**/*.js", gulp.parallel("js"));
   gulp.watch("src/images/**/*.svg", gulp.parallel("svg"));
-  gulp.watch("*.pug", gulp.parallel("pug"));
+  gulp.watch("src/pug/**/*.pug", gulp.parallel("pug"));
 });
