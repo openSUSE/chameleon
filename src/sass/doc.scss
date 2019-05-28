@@ -1,19 +1,18 @@
 @import "variables";
 
+#doc-title {
+  div {
+    transform: skewX(-15deg);
+  }
+}
+
 #doc-navbar {
   position: sticky;
   top: 0;
-  justify-content: center;
 
   .nav {
     white-space: nowrap;
     overflow: auto;
     flex-wrap: nowrap;
-
-    .nav-item a:not(.active):hover {
-      @media (pointer: fine) {
-        color: $success;
-      }
-    }
   }
 }

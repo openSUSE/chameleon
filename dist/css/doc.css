@@ -1,3 +1,3 @@
-#doc-navbar{position:-webkit-sticky;position:sticky;top:0;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#doc-navbar .nav{white-space:nowrap;overflow:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap}@media (pointer: fine){#doc-navbar .nav .nav-item a:not(.active):hover{color:#73ba25}}
+#doc-title div{-webkit-transform:skewX(-15deg);transform:skewX(-15deg)}#doc-navbar{position:-webkit-sticky;position:sticky;top:0}#doc-navbar .nav{white-space:nowrap;overflow:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
 
 /*# sourceMappingURL=doc.css.map */

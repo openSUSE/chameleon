@@ -11,7 +11,9 @@
 @import "typography";
 
 // Patches to Bootstrap
+@import "buttons";
 @import "button-input-fonts";
+@import "inputs";
 @import "selection-color";
 @import "dropdown-overflow-fix";
 @import "carousel";

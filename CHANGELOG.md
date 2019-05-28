@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Wiki print styles
 - sticky-scroller for wiki side toc
 - Language code pt, zh, zh-Hans, zh-Hant
+- Buttons and inputs in dark background
 
 ### Chagned
 
@@ -20,6 +21,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update Gulp packages for security reason
 - Change from gulp-uglify to gulp-uglify-es
 - Change CJK font-weight to default and don't mix Noto Sans
+- Remove border-radius
+- Change border-width to 2px
 
 ## [1.3.0] - 2019-03-02
 

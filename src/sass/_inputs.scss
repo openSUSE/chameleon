@@ -1,0 +1,39 @@
+$border-color-light: rgba(255, 255, 255, 0.5);
+$bg-color-light: rgba(255, 255, 255, 0.1);
+$text-color-light: $white;
+
+.text-light {
+  .form-control,
+  .custom-file-label,
+  .custom-select,
+  .custom-control-label::before {
+    border-color: $border-color-light;
+    background-color: $bg-color-light;
+    color: $text-color-light;
+
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $white;
+      opacity: 0.5; /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $white;
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: $white;
+    }
+  }
+
+  .custom-file-label::after {
+    background: transparent;
+    color: $text-color-light;
+  }
+
+  .custom-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+  }
+}
