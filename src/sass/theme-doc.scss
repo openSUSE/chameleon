@@ -1,14 +1,15 @@
 @import "variables";
 
-#doc-title {
+#theme-doc-title {
   div {
     transform: skewX(-15deg);
   }
 }
 
-#doc-navbar {
+#theme-doc-navbar {
   position: sticky;
   top: 0;
+  z-index: 10;
 
   .nav {
     white-space: nowrap;

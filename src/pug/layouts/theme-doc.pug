@@ -3,21 +3,21 @@ block variables
 html(lang="en")
   head
     title= title ? title + ' - Chameleon' : 'Chameleon - the openSUSE web design'
-    link(href="/dist/images/icon/icon-color.svg", rel="shortcut icon", type="image/svg")
+    link(href="/dist/images/app-icons/official.svg", rel="shortcut icon", type="image/svg")
     link(href="/dist/css/chameleon.css", rel="stylesheet")
-    link(href="/dist/css/doc.css", rel="stylesheet")
+    link(href="/dist/css/theme-doc.css", rel="stylesheet")
     link(href="/lib/highlight-github.css", rel="stylesheet")
 
-  body(data-spy="scroll" data-target="#doc-navbar" data-offset="100" style="position: relative;")
+  body(data-spy="scroll" data-target="#theme-doc-navbar" data-offset="100" style="position: relative;")
 
-    include ../components/doc-header.pug
+    include ../components/theme-doc-header.pug
 
-    include ../components/doc-navbar.pug
+    include ../components/theme-doc-navbar.pug
 
     .container
       block content
 
-    include ../components/doc-footer.pug
+    include ../components/theme-doc-footer.pug
 
     script(src="/dist/js/chameleon.js")
     script(src="lib/highlight.js")
