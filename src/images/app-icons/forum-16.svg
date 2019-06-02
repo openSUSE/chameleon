@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="256"
-   height="256"
+   width="16"
+   height="16"
    id="svg3030"
    version="1.1"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -38,10 +38,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="svg3030"
      showgrid="true"
-     fit-margin-top="10"
-     fit-margin-left="10"
-     fit-margin-right="10"
-     fit-margin-bottom="10"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -49,7 +49,9 @@
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
-       id="grid1009" />
+       id="grid1009"
+       originx="0"
+       originy="0" />
   </sodipodi:namedview>
   <metadata
      id="metadata3035">
@@ -64,15 +66,15 @@
     </rdf:RDF>
   </metadata>
   <rect
-     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
      id="rect1047"
-     width="256"
-     height="256"
+     width="16"
+     height="16"
      x="0"
      y="0" />
   <path
-     style="opacity:1;fill:#73ba25;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
-     d="M 48,32 C 30.272,32 16,46.272 16,64 v 112 c 0,17.728 14.272,32 32,32 h 24 v 48 l 80,-48 h 56 c 17.728,0 32,-14.272 32,-32 V 64 C 240,46.272 225.728,32 208,32 Z"
+     style="opacity:1;fill:#73ba25;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 3,2 C 1.892,2 1,2.892 1,4 v 7 c 0,1.108 0.892,2 2,2 h 1.5 v 3 l 5,-3 H 13 c 1.108,0 2,-0.892 2,-2 V 4 C 15,2.892 14.108,2 13,2 Z"
      id="rect2450"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="sssscccsssss" />
