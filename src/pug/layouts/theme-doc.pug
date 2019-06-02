@@ -3,10 +3,10 @@ block variables
 html(lang="en")
   head
     title= title ? title + ' - Chameleon' : 'Chameleon - the openSUSE web design'
-    link(href="/dist/images/app-icons/official.svg", rel="shortcut icon", type="image/svg")
-    link(href="/dist/css/chameleon.css", rel="stylesheet")
-    link(href="/dist/css/theme-doc.css", rel="stylesheet")
-    link(href="/lib/highlight-github.css", rel="stylesheet")
+    link(href="./dist/images/app-icons/official.svg", rel="shortcut icon", type="image/svg")
+    link(href="./dist/css/chameleon.css", rel="stylesheet")
+    link(href="./dist/css/theme-doc.css", rel="stylesheet")
+    link(href="./lib/highlight-github.css", rel="stylesheet")
 
   body(data-spy="scroll" data-target="#theme-doc-navbar" data-offset="100" style="position: relative;")
 
@@ -19,6 +19,6 @@ html(lang="en")
 
     include ../components/theme-doc-footer.pug
 
-    script(src="/dist/js/chameleon.js")
-    script(src="lib/highlight.js")
+    script(src="./dist/js/chameleon.js")
+    script(src="./lib/highlight.js")
     script hljs.initHighlightingOnLoad()
