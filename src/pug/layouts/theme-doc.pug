@@ -1,9 +1,12 @@
+- var title = 'Chameleon'
+- var subtitle = 'web theme for openSUSE'
+
 block variables
 
 html(lang="en")
   head
-    title= title ? title + ' - Chameleon' : 'Chameleon - the openSUSE web design'
-    link(href="./dist/images/app-icons/official.svg", rel="shortcut icon", type="image/svg")
+    title= title + ' - ' + subtitle
+    link(href="./dist/images/app-icons/www-16.svg", rel="shortcut icon", type="image/svg")
     link(href="./dist/css/chameleon.css", rel="stylesheet")
     link(href="./dist/css/theme-doc.css", rel="stylesheet")
     link(href="./lib/highlight-github.css", rel="stylesheet")
