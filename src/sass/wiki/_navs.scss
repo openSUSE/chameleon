@@ -1,4 +1,11 @@
-// Link inside button (wiki text doesn't support class of internal and external link)
+// Override MediaWiki list styles
+ol.nav,
+ul.nav {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+// Link inside nav link span (wiki text doesn't support class of internal and external link)
 .nav-link a {
   display: block;
   color: inherit;
