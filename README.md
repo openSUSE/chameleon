@@ -163,14 +163,25 @@ message key so that it can be find in translation files.
 
 ## Development
 
+### Install
+
+```
+sudo zypper install git nodejs10
+sudo npm install -g gulp-cli
+```
+
+### Download
+
+Fork and clone this repo.
+
+### Run with hot reload
+
+```
+gulp watch
+```
+
 ### Build
 
 ```
 gulp
-```
-
-### Watch
-
-```
-gulp watch
 ```

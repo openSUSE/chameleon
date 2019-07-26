@@ -21,19 +21,20 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
+    "js-cookie": "^2.2.0",
     "popper.js": "^1.15.0",
     "sticky-scroller": "^0.4.0",
-    "tether": "^1.4.0"
+    "tether": "^1.4.7"
   },
   "devDependencies": {
-    "browserify": "^16.2.3",
-    "gulp": "^4.0.0",
+    "browserify": "^16.3.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-buffer": "0.0.2",
     "gulp-connect": "^5.7.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-svg2png-update": "^2.2.1",
     "gulp-svgmin": "^2.2.0",
     "gulp-tap": "^1.0.1",
