@@ -20,6 +20,9 @@ function localize(selector, translations) {
       if (element.dataset.msgId) {
         if (translation[element.dataset.msgId]) {
           element.textContent = translation[element.dataset.msgId];
+          if (element.placeholder) {
+            element.placeholder = translation[element.dataset.msgId];
+          }
         }
       }
 

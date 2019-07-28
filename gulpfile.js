@@ -15,11 +15,11 @@ var connect = require("gulp-connect");
 var pug = require("gulp-pug");
 
 // Compile JavaScripts with sourcemaps
-gulp.task("js", function() {
+gulp.task("js", function () {
   return gulp
     .src("src/js/*.js", { read: false })
     .pipe(
-      tap(function(file) {
+      tap(function (file) {
         log.info("bundling " + file.path);
         file.contents = browserify(file.path, { debug: true }).bundle();
       })
@@ -33,7 +33,7 @@ gulp.task("js", function() {
 });
 
 // Compile SaSS stylesheets with sourcemaps
-gulp.task("sass", function() {
+gulp.task("sass", function () {
   return gulp
     .src("src/sass/**/*.scss")
     .pipe(sourcemaps.init())
@@ -55,7 +55,7 @@ gulp.task("sass", function() {
 });
 
 // Minify SVG images
-gulp.task("svg", function() {
+gulp.task("svg", function () {
   return gulp
     .src("src/images/**/*.svg")
     .pipe(svgmin())
@@ -64,7 +64,7 @@ gulp.task("svg", function() {
 });
 
 // Generate PNG as fallback
-gulp.task("svg2png", function() {
+gulp.task("svg2png", function () {
   gulp
     .src("src/images/**/*.svg")
     .pipe(svg2png())
@@ -73,10 +73,10 @@ gulp.task("svg2png", function() {
 });
 
 // Pug templates
-gulp.task("pug", function() {
+gulp.task("pug", function () {
   return gulp
     .src("src/pug/pages/**/*.pug")
-    .pipe(pug())
+    .pipe(pug({ pretty: true }))
     .pipe(gulp.dest("./"))
     .pipe(connect.reload());
 });
@@ -85,7 +85,7 @@ gulp.task("pug", function() {
 gulp.task("default", gulp.parallel("js", "sass", "svg", "svg2png", "pug"));
 
 // Watch all
-gulp.task("watch", function() {
+gulp.task("watch", function () {
   connect.server({
     root: ".",
     livereload: true

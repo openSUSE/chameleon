@@ -24,4 +24,15 @@ function switchDarkMode() {
   } else {
     document.body.classList.remove('bg-dark', 'text-light');
   }
+
+  const tables = document.getElementsByClassName('table');
+
+  for (let i = 0; i < tables.length; i++) {
+    const classList = tables.item(i).classList;
+    if (isDarkMode) {
+      classList.add('table-dark');
+    } else {
+      classList.remove('table-dark');
+    }
+  }
 }
