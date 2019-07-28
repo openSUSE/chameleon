@@ -1,0 +1,35 @@
+extends ../layouts/example.pug
+
+block variables
+  - var name = 'Wiki'
+  - var title = 'openSUSE Wiki'
+
+block content
+
+  #site-navbar
+
+    a#site-brand(href="#")
+      img#site-logo(src="dist/images/logo/logo-white.svg")
+      span#site-name= name
+
+    #site-menu.site-menu
+      a(href="#") Install
+      a(href="#") Upgrade
+      a(href="#") FAQ
+      a(href="#") Help
+
+    form#site-search
+      input.form-control.form-control-sm(type="search" placeholder="Search wiki...")
+
+    .space
+
+    #site-notification
+      span.typcn.typcn-bell
+      span.dot
+
+    #site-user.dropdown
+      img.dropdown-toggle(data-toggle="dropdown" src="https://www.gravatar.com/avatar/4391a20b3ad9ae843e66bc179c3ae2b9")
+      .dropdown-menu.dropdown-menu-right
+        a.dropdown-item(href="#") Profile
+        a.dropdown-item(href="#") Settings
+        a.dropdown-item(href="#") Logout

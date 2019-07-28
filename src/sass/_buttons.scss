@@ -3,15 +3,4 @@
   .btn-secondary {
     @include button-variant($white, $white);
   }
-
-  a,
-  .btn-link {
-    color: $opensuse-green;
-
-    &:hover {
-      @media (pointer: fine) {
-        color: lighten($opensuse-green, 10);
-      }
-    }
-  }
 }

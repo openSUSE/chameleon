@@ -2,14 +2,6 @@
 
 $font-path: "../fonts" !default;
 
-// openSUSE Brand Colors
-$opensuse-green: #73ba25;
-$opensuse-dark: #173f4f;
-$opensuse-cyan: #35b9ab;
-$opensuse-cyan2: #00a489;
-$opensuse-green2: #6da741;
-$opensuse-blue: #21a4df;
-
 $white: #ffffff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -22,33 +14,33 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000000;
 
-$blue: #007bff;
+$blue: #21a4df;
 $indigo: #6610f2;
 $purple: #6f42c1;
 $pink: #e83e8c;
 $red: #dc3545;
 $orange: #fd7e14;
 $yellow: #ffc107;
-$green: #28a745;
-$teal: #20c997;
-$cyan: #17a2b8;
+$green: #73ba25;
+$teal: #6da741;
+$cyan: #35b9ab;
 
 // Bootstrap colors
-$primary: $opensuse-cyan;
+$primary: $cyan;
 $secondary: $gray-300;
-$success: $opensuse-green;
-$info: $opensuse-blue;
-//$warning  : $yellow;
-//$danger   : $red;
-//$light    : $gray-100;
-$dark: $opensuse-dark;
+$success: $green;
+$info: $blue;
+$warning : $yellow;
+$danger : $red;
+$light: $gray-100;
+$dark: $gray-900;
 
 // Body background
 $body-bg: #ffffff;
 $body-color: #000000;
 
 // Links
-$link-color: $opensuse-cyan2;
+$link-color: $teal;
 
 // Options
 
@@ -74,6 +66,7 @@ $font-family-sans-serif: "Open Sans", sans-serif;
 $font-family-serif: "Source Serif", serif;
 $font-family-monospace: "Source Code Pro", monospace;
 $font-size-base: 1rem;
+$font-size-small: 0.8rem;
 
 // Headings
 $headings-margin-bottom: 1em;

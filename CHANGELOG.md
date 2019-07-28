@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Buttons and inputs in dark background
 - Application icons SVG
 - Dark mode switch
+- Cross-site and per-site navbar
 
 ### Chagned
 

@@ -75,7 +75,7 @@ gulp.task("svg2png", function() {
 // Pug templates
 gulp.task("pug", function() {
   return gulp
-    .src("src/pug/pages/*.pug")
+    .src("src/pug/pages/**/*.pug")
     .pipe(pug())
     .pipe(gulp.dest("./"))
     .pipe(connect.reload());

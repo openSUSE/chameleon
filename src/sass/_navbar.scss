@@ -1,0 +1,148 @@
+// Deprecated
+#global-navbar {
+  .navbar-brand {
+    font-size: 1em;
+
+    img {
+      height: 2em;
+      width: auto;
+      margin: 0;
+    }
+  }
+}
+
+// Compact navbar to show all openSUSE sites
+#cross-site-navbar {
+  $height: 1.5rem;
+  display: flex;
+  height: $height;
+  overflow: hidden;
+  font-size: $font-size-sm;
+  background: $gray-900;
+  color: $gray-400;
+
+  > .sites {
+    display: flex;
+    flex: 1 1 auto;
+
+    > a {
+      display: block;
+      padding: 0 15px;
+      height: $height;
+      line-height: $height;
+      color: inherit;
+      text-transform: lowercase;
+
+      &:hover {
+        background: $primary;
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+
+  > .actions {
+    flex: 0 1 auto;
+    display: flex;
+    height: $height;
+    align-items: center;
+
+    > * {
+      margin-right: 15px;
+      line-height: $height;
+    }
+  }
+}
+
+// Per site navbar, shows navigations inside site
+#site-navbar {
+  $height: 2.5rem;
+  display: flex;
+  align-items: stretch;
+  height: $height;
+  background: $gray-200;
+
+  #site-brand {
+    display: flex;
+    align-items: center;
+    line-height: $height;
+    font-size: 1.5rem;
+    font-family: $headings-font-family;
+    font-weight: 200;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: inherit;
+    text-decoration: none;
+    background: $green;
+    color: $white;
+    user-select: none;
+
+    #site-logo {
+      width: auto;
+      height: $height * 0.8;
+      object-fit: contain;
+      object-position: center;
+      margin-right: 5px;
+    }
+  }
+
+  #site-menu {
+    display: flex;
+    padding: 0 7.5px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 0 7.5px;
+      line-height: $height;
+    }
+  }
+
+  #site-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .space {
+    flex: 1 1 0;
+  }
+
+  #site-notification {
+    position: relative;
+    line-height: $height;
+    font-size: $height * 0.5;
+    cursor: pointer;
+
+    .dot {
+      position: absolute;
+      display: block;
+      top: $height * 0.25;
+      right: 0;
+      background: $green;
+      border-radius: 100%;
+      width: 0.3em;
+      height: 0.3em;
+    }
+  }
+
+  #site-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+
+    img {
+      width: $height * 0.8;
+      height: $height * 0.8;
+      border-radius: 100%;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  body.bg-dark & {
+    background: $gray-800;
+  }
+}
