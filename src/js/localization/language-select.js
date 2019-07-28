@@ -45,6 +45,10 @@ var languages = {
 function autoDetectLanguage() {
   var languageSelect = document.getElementById("language-select");
 
+  if (!languageSelect) {
+    return;
+  }
+
   var language =
     localStorage.getItem("lang") ||
     navigator.languages.find(function (lang) {
@@ -59,6 +63,10 @@ function autoDetectLanguage() {
 
 function renderLanguageSelect() {
   var languageSelect = document.getElementById("language-select");
+
+  if (!languageSelect) {
+    return;
+  }
 
   for (var lang in languages) {
     var option = document.createElement('option');
@@ -76,5 +84,7 @@ function renderLanguageSelect() {
   });
 }
 
-window.autoDetectLanguage = autoDetectLanguage;
-window.renderLanguageSelect = renderLanguageSelect;
+document.addEventListener('DOMContentLoaded', function () {
+  renderLanguageSelect();
+  autoDetectLanguage();
+});

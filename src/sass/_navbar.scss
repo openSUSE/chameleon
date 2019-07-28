@@ -42,7 +42,7 @@
   }
 
   > .actions {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     display: flex;
     height: $height;
     align-items: center;
@@ -50,6 +50,18 @@
     > * {
       margin-right: 15px;
       line-height: $height;
+      white-space: nowrap;
+    }
+
+    > #language-select {
+      border: 0;
+      background: transparent;
+      height: $height;
+      line-height: $height;
+      font-size: inherit;
+      padding: 0;
+      color: inherit;
+      width: max-content;
     }
   }
 }

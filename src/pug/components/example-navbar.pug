@@ -1,11 +1,15 @@
-#cross-site-navbar
+nav#cross-site-navbar
   .sites
-    a(href="www.html") main
-    a(href="software.html") software
-    a(href="wiki.html") wiki
-    a(href="forum.html") forum
-    a(href="#") more
+    a.l10n(href="www.html" data-msg-id="main") Main
+    a.l10n(href="software.html" data-msg-id="software") Software
+    a.l10n(href="doc.html" data-msg-id="documentation") Documentation
+    a.l10n(href="wiki.html" data-msg-id="wiki") Wiki
+    a.l10n(href="forum.html" data-msg-id="forum") Forum
+    a.l10n(href="build.html" data-msg-id="build-service") Build Service
+    a(href="build.html") Bugzilla
+    a.l10n(href="#" data-msg-id="more") more
   .actions
+    select#language-select.custom-select
     .custom-control.custom-switch.dark-mode-switch
       input#dark-mode-input.custom-control-input(type="checkbox")
-      label.custom-control-label(for="dark-mode-input") Dark Mode
+      label.custom-control-label.l10n(for="dark-mode-input" data-msg-id="dark-mode") Dark Mode
