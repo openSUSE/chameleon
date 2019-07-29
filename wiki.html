@@ -7,7 +7,7 @@
     <link href="./dist/css/chameleon.css" rel="stylesheet"/>
   </head>
   <body>
-    <nav id="cross-site-navbar">
+    <nav class="cross-site-navbar">
       <div class="sites">
         <div class="menu"><a class="l10n" href="www.html" data-msg-id="main">Main</a><a class="l10n" href="software.html" data-msg-id="software">Software</a><a class="l10n" href="doc.html" data-msg-id="doc">Doc</a><a class="l10n" href="wiki.html" data-msg-id="wiki" data-url-id="wiki-url">Wiki</a><a class="l10n" href="forum.html" data-msg-id="forum" data-url-id="forum-url">Forum</a></div>
         <div class="dropdown"><a class="dropdown-toggle l10n" href="#" data-toggle="dropdown" data-msg-id="more">More</a>
@@ -20,26 +20,33 @@
         </div>
       </div>
       <div class="actions">
-        <div class="dropdown auto-detect" id="language-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">en</a>
-          <div class="dropdown-menu dropdown-menu-right"></div>
-        </div>
         <div class="custom-control custom-switch dark-mode-switch">
           <input class="custom-control-input" id="dark-mode-input" type="checkbox"/>
-          <label class="custom-control-label l10n" for="dark-mode-input" data-msg-id="dark-mode">Dark Mode</label>
+          <label class="custom-control-label l10n" for="dark-mode-input" data-msg-id="dark-mode"><span class="d-none d-sm-inline">Dark Mode</span></label>
         </div>
       </div>
     </nav>
-    <nav id="site-navbar"><a id="site-brand" href="#"><img id="site-logo" src="dist/images/logo/logo-white.svg"/><span id="site-name">Wiki</span></a>
-      <div class="site-menu" id="site-menu"><a href="#">Install</a><a href="#">Upgrade</a><a href="#">FAQ</a><a href="#">Help</a></div>
-      <div id="site-search">
-        <form>
-          <input class="form-control form-control-sm" type="search" placeholder="Search wiki..."/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="#"><img class="mr-2" src="dist/images/logo/logo-white.svg"/><span class="navbar-name">Wiki</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="site-menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Portals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><span>EN</span></a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">English</a><a class="dropdown-item" href="#">简体中文</a></div>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control l10n" type="search" data-msg-id="search" placeholder="Search"/>
         </form>
-      </div>
-      <div class="space"></div>
-      <div id="site-notification"><span class="typcn typcn-bell"></span><span class="dot"></span></div>
-      <div class="dropdown" id="site-user"><img class="dropdown-toggle" data-toggle="dropdown" src="https://www.gravatar.com/avatar/4391a20b3ad9ae843e66bc179c3ae2b9"/>
-        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Profile</a><a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Logout</a></div>
+        <ul class="navbar-user-menu navbar-nav">
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><img src="https://www.gravatar.com/avatar/4391a20b3ad9ae843e66bc179c3ae2b9"/></a>
+            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Profile</a><a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Logout</a></div>
+          </li>
+        </ul>
       </div>
     </nav>
     <script src="./dist/js/chameleon.js"></script>

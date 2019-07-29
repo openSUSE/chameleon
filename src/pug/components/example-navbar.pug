@@ -1,4 +1,4 @@
-nav#cross-site-navbar
+nav.cross-site-navbar
   .sites
     .menu
       a.l10n(href="www.html" data-msg-id="main") Main
@@ -48,9 +48,7 @@ nav#cross-site-navbar
         a(href="https://www.youtube.com/user/opensusetv") YouTube
 
   .actions
-    #language-dropdown.dropdown.auto-detect
-      a.dropdown-toggle(href="#" data-toggle="dropdown") en
-      .dropdown-menu.dropdown-menu-right
     .custom-control.custom-switch.dark-mode-switch
       input#dark-mode-input.custom-control-input(type="checkbox")
-      label.custom-control-label.l10n(for="dark-mode-input" data-msg-id="dark-mode") Dark Mode
+      label.custom-control-label.l10n(for="dark-mode-input" data-msg-id="dark-mode")
+        span.d-none.d-sm-inline Dark Mode

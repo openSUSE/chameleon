@@ -12,7 +12,7 @@
 }
 
 // Compact navbar to show all openSUSE sites
-#cross-site-navbar {
+.cross-site-navbar {
   $height: 1.5rem;
   display: flex;
   height: $height;
@@ -85,98 +85,37 @@
 }
 
 // Per site navbar, shows navigations inside site
-#site-navbar {
-  $height: 2.5rem;
-  display: flex;
-  align-items: stretch;
-  height: $height;
-  background: $gray-200;
+.navbar {
+  $image-height: 32px;
 
-  #site-brand {
+  img {
+    height: $image-height;
+    width: auto;
+    margin-top: -$navbar-padding-y;
+    margin-bottom: -$navbar-padding-y;
+
+  }
+
+  .navbar-brand {
     display: flex;
     align-items: center;
-    line-height: $height;
-    font-size: 1.5rem;
-    font-family: $headings-font-family;
-    font-weight: 200;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: inherit;
-    text-decoration: none;
     background: $green;
     color: $white;
     user-select: none;
+    margin-left: -$navbar-padding-x;
+    margin-top: -$navbar-padding-y;
+    margin-bottom: -$navbar-padding-y;
+    padding-left: $navbar-padding-x;
+    padding-right: $navbar-padding-x;
+    align-self: stretch;
 
-    #site-logo {
-      width: auto;
-      height: $height * 0.8;
-      object-fit: contain;
-      object-position: center;
-      margin-right: 5px;
+    &:hover {
+      color: $white;
     }
   }
 
-  #site-menu {
-    display: flex;
-    padding: 0 7.5px;
-
-    a {
-      display: block;
-      text-decoration: none;
-      padding: 0 7.5px;
-      line-height: $height;
-    }
-  }
-
-  #site-search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  form {
     margin: 0;
-
-    form {
-      margin: 0;
-    }
-  }
-
-  .space {
-    flex: 1 1 0;
-  }
-
-  #site-notification {
-    position: relative;
-    line-height: $height;
-    font-size: $height * 0.5;
-    cursor: pointer;
-
-    .dot {
-      position: absolute;
-      display: block;
-      top: $height * 0.25;
-      right: 0;
-      background: $green;
-      border-radius: 100%;
-      width: 0.3em;
-      height: 0.3em;
-    }
-  }
-
-  #site-user {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 15px;
-
-    img {
-      width: $height * 0.8;
-      height: $height * 0.8;
-      border-radius: 100%;
-      cursor: pointer;
-      user-select: none;
-    }
-  }
-
-  body.bg-dark & {
-    background: $gray-800;
+    align-self: stretch;
   }
 }

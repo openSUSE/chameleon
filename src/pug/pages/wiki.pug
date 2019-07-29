@@ -6,31 +6,41 @@ block variables
 
 block content
 
-  nav#site-navbar
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    a.navbar-brand(href="#")
+      img.mr-2(src="dist/images/logo/logo-white.svg")
+      span.navbar-name= name
 
-    a#site-brand(href="#")
-      img#site-logo(src="dist/images/logo/logo-white.svg")
-      span#site-name= name
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#site-menu")
+      span.navbar-toggler-icon
 
-    #site-menu.site-menu
-      a(href="#") Install
-      a(href="#") Upgrade
-      a(href="#") FAQ
-      a(href="#") Help
+    #site-menu.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item
+          a.nav-link(href="#") Home
+        li.nav-item
+          a.nav-link(href="#") Portals
+        li.nav-item
+          a.nav-link(href="#") Categories
+        li.nav-item
+          a.nav-link(href="#") Help
+        li.nav-item
+          a.nav-link(href="#") FAQ
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(data-toggle="dropdown" href="#")
+            span EN
+          .dropdown-menu
+            a.dropdown-item(href="#") English
+            a.dropdown-item(href="#") 简体中文
 
-    #site-search
-      form
-        input.form-control.form-control-sm(type="search" placeholder="Search wiki...")
+      form.form-inline
+        input.form-control.l10n(type="search" data-msg-id="search" placeholder="Search")
 
-    .space
-
-    #site-notification
-      span.typcn.typcn-bell
-      span.dot
-
-    #site-user.dropdown
-      img.dropdown-toggle(data-toggle="dropdown" src="https://www.gravatar.com/avatar/4391a20b3ad9ae843e66bc179c3ae2b9")
-      .dropdown-menu.dropdown-menu-right
-        a.dropdown-item(href="#") Profile
-        a.dropdown-item(href="#") Settings
-        a.dropdown-item(href="#") Logout
+      ul.navbar-user-menu.navbar-nav
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(data-toggle="dropdown" href="#")
+            img(src="https://www.gravatar.com/avatar/4391a20b3ad9ae843e66bc179c3ae2b9")
+          .dropdown-menu.dropdown-menu-right
+            a.dropdown-item(href="#") Profile
+            a.dropdown-item(href="#") Settings
+            a.dropdown-item(href="#") Logout

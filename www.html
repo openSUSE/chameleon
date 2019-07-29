@@ -7,7 +7,7 @@
     <link href="./dist/css/chameleon.css" rel="stylesheet"/>
   </head>
   <body>
-    <nav id="cross-site-navbar">
+    <nav class="cross-site-navbar">
       <div class="sites">
         <div class="menu"><a class="l10n" href="www.html" data-msg-id="main">Main</a><a class="l10n" href="software.html" data-msg-id="software">Software</a><a class="l10n" href="doc.html" data-msg-id="doc">Doc</a><a class="l10n" href="wiki.html" data-msg-id="wiki" data-url-id="wiki-url">Wiki</a><a class="l10n" href="forum.html" data-msg-id="forum" data-url-id="forum-url">Forum</a></div>
         <div class="dropdown"><a class="dropdown-toggle l10n" href="#" data-toggle="dropdown" data-msg-id="more">More</a>
@@ -20,12 +20,9 @@
         </div>
       </div>
       <div class="actions">
-        <div class="dropdown auto-detect" id="language-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">en</a>
-          <div class="dropdown-menu dropdown-menu-right"></div>
-        </div>
         <div class="custom-control custom-switch dark-mode-switch">
           <input class="custom-control-input" id="dark-mode-input" type="checkbox"/>
-          <label class="custom-control-label l10n" for="dark-mode-input" data-msg-id="dark-mode">Dark Mode</label>
+          <label class="custom-control-label l10n" for="dark-mode-input" data-msg-id="dark-mode"><span class="d-none d-sm-inline">Dark Mode</span></label>
         </div>
       </div>
     </nav>

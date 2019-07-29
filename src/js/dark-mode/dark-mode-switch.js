@@ -35,4 +35,17 @@ function switchDarkMode() {
       classList.remove('table-dark');
     }
   }
+
+  const navbars = document.getElementsByClassName('navbar');
+
+  for (let i = 0; i < navbars.length; i++) {
+    const classList = navbars.item(i).classList;
+    if (isDarkMode) {
+      classList.add('navbar-dark', 'bg-dark');
+      classList.remove('navbar-light', 'bg-light');
+    } else {
+      classList.add('navbar-light', 'bg-light');
+      classList.remove('navbar-dark', 'bg-dark');
+    }
+  }
 }
