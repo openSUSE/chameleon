@@ -1,29 +1,27 @@
 const CrossStorageClient = require('cross-storage').CrossStorageClient;
 
 const storage = new CrossStorageClient('https://static.opensuse.org/chameleon/hub.html');
-
-const switches = document.getElementsByClassName("dark-mode-switch");
-
-let isDarkMode;
+const checkbox = document.querySelector(".dark-mode-switch input");
 
 storage.onConnect().then(function () {
-  isDarkMode = storage.get('isDarkMode') === 'true';
-  switchDarkMode();
+  storage.get('isDarkMode').then(value => {
+    const isDarkMode = value === 'true';
+    if (checkbox) {
+      checkbox.checked = isDarkMode;
+    }
+    switchDarkMode(isDarkMode);
+  })
 });
 
-for (let i = 0; i < switches.length; i++) {
-  const s = switches.item(i);
-  const input = s.getElementsByTagName('input').item(0);
-  if (!input) break;
-  input.checked = isDarkMode;
-  input.addEventListener('change', function () {
-    isDarkMode = input.checked;
+if (checkbox) {
+  checkbox.addEventListener('change', function () {
+    const isDarkMode = checkbox.checked;
     storage.set('isDarkMode', isDarkMode);
-    switchDarkMode();
+    switchDarkMode(isDarkMode);
   });
 }
 
-function switchDarkMode() {
+function switchDarkMode(isDarkMode) {
   if (isDarkMode) {
     document.body.classList.add('bg-dark', 'text-light');
   } else {

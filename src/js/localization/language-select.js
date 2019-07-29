@@ -1,4 +1,8 @@
-var languages = {
+const CrossStorageClient = require('cross-storage').CrossStorageClient;
+
+const storage = new CrossStorageClient('https://static.opensuse.org/chameleon/hub.html');
+
+const languages = {
   ar: "العربية",
   bg: "Български",
   ca: "Català",
@@ -53,21 +57,26 @@ function autoDetectLanguage() {
     return;
   }
 
-  var language =
-    localStorage.getItem("lang") ||
-    navigator.languages.find(function (lang) {
-      return lang in languages;
-    }) ||
+  const toggle = dropdown.getElementsByClassName('dropdown-toggle').item(0);
+
+  if (!toggle) {
+    return;
+  }
+
+  const lang = navigator.languages.find(function (lang) {
+    return lang in languages;
+  }) ||
     "en";
 
-  document.documentElement.lang = language;
+  document.documentElement.lang = lang;
+  toggle.textContent = languages[lang];
 
-  if (dropdown) {
-    const toggle = dropdown.getElementsByClassName('dropdown-toggle').item(0);
-    if (toggle) {
-      toggle.textContent = languages[language];
+  storage.get("lang").then(lang => {
+    if (lang) {
+      document.documentElement.lang = lang;
+      toggle.textContent = languages[lang];
     }
-  }
+  })
 }
 
 function renderLanguageSelect() {
@@ -104,14 +113,14 @@ function renderLanguageSelect() {
       toggle.textContent = this.textContent;
 
       if (dropdown.classList.contains('auto-detect')) {
-        localStorage.setItem('lang', this.lang);
+        storage.set('lang', this.lang);
       }
     });
     menu.appendChild(item);
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+storage.onConnect().then(function () {
   renderLanguageSelect();
   autoDetectLanguage();
 });
