@@ -42,11 +42,17 @@ var languages = {
  * 2. First matched browser language
  * 3. Use English as fallback language
  *
- * When to use:
+ * When to use: www.o.o, doc.o.o, only front-end static web pages
  *
- * When not to use: in wiki, server side will add language attributes
+ * When not to use: in wiki, server side will remember language preferences
  */
 function autoDetectLanguage() {
+  const dropdown = document.getElementById("language-dropdown");
+
+  if (!dropdown || !dropdown.classList.contains('auto-detect')) {
+    return;
+  }
+
   var language =
     localStorage.getItem("lang") ||
     navigator.languages.find(function (lang) {
@@ -56,7 +62,7 @@ function autoDetectLanguage() {
 
   document.documentElement.lang = language;
 
-  var dropdown = document.getElementById("language-dropdown");
+
 
   if (dropdown) {
     const toggle = dropdown.getElementsByClassName('dropdown-toggle').item(0);
@@ -96,6 +102,10 @@ function renderLanguageSelect() {
       this.classList.add('active');
       document.documentElement.lang = this.lang;
       toggle.textContent = this.textContent;
+
+      if (dropdown.classList.contains('auto-detect')) {
+        localStorage.setItem('lang', this.lang);
+      }
     });
     menu.appendChild(item);
   }
