@@ -109,7 +109,7 @@
     padding-right: $navbar-padding-x;
     align-self: stretch;
 
-    &:hover {
+    &:hover, &:focus {
       color: $white;
     }
   }

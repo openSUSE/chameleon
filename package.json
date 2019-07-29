@@ -20,6 +20,7 @@
   "homepage": "https://github.com/openSUSE/opensuse-theme-chameleon#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "cross-storage": "^1.0.0",
     "jquery": "^3.4.1",
     "js-cookie": "^2.2.0",
     "popper.js": "^1.15.0",

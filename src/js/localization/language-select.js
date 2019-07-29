@@ -49,7 +49,7 @@ var languages = {
 function autoDetectLanguage() {
   const dropdown = document.getElementById("language-dropdown");
 
-  if (!dropdown || !dropdown.classList.contains('auto-detect')) {
+  if (!dropdown) {
     return;
   }
 
@@ -61,8 +61,6 @@ function autoDetectLanguage() {
     "en";
 
   document.documentElement.lang = language;
-
-
 
   if (dropdown) {
     const toggle = dropdown.getElementsByClassName('dropdown-toggle').item(0);
@@ -91,6 +89,8 @@ function renderLanguageSelect() {
     item.href = "#";
     item.lang = lang;
     item.textContent = languages[lang];
+    item.classList.add('dropdown-item');
+    toggle.textContent = this.textContent;
     if (lang === document.documentElement.lang) {
       item.classList.add('active');
     }
@@ -109,8 +109,6 @@ function renderLanguageSelect() {
     });
     menu.appendChild(item);
   }
-
-  toggle.textContent = document.documentElement.lang;
 }
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -1,10 +1,15 @@
-const Cookies = require('js-cookie');
+const CrossStorageClient = require('cross-storage').CrossStorageClient;
+
+const storage = new CrossStorageClient('https://static.opensuse.org/chameleon/hub.html');
 
 const switches = document.getElementsByClassName("dark-mode-switch");
 
-let isDarkMode = Cookies.get('isDarkMode') === 'true';
+let isDarkMode;
 
-switchDarkMode();
+storage.onConnect().then(function () {
+  isDarkMode = storage.get('isDarkMode') === 'true';
+  switchDarkMode();
+});
 
 for (let i = 0; i < switches.length; i++) {
   const s = switches.item(i);
@@ -13,7 +18,7 @@ for (let i = 0; i < switches.length; i++) {
   input.checked = isDarkMode;
   input.addEventListener('change', function () {
     isDarkMode = input.checked;
-    Cookies.set('isDarkMode', isDarkMode, { expires: 365 });
+    storage.set('isDarkMode', isDarkMode);
     switchDarkMode();
   });
 }
