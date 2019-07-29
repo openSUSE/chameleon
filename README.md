@@ -4,9 +4,7 @@ Vivid UI theme for openSUSE websites. Based on Bootstrap 4.1. Apply
 [openSUSE Brand Guidelines](https://opensuse.github.io/branding-guidelines/) and
 [openSUSE Artwork](https://github.com/openSUSE/artwork).
 
-![openSUSE Software](screenshots/software-home.png)
-
-![openSUSE Wiki](screenshots/wiki-home.png)
+[![Translation status](https://l10n.opensuse.org/widgets/opensuse-theme-chameleon/-/master/svg-badge.svg)](https://l10n.opensuse.org/engage/opensuse-theme-chameleon/?utm_source=widget)
 
 ## Download
 
