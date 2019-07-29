@@ -5,9 +5,40 @@ nav#cross-site-navbar
     a.l10n(href="doc.html" data-msg-id="documentation") Documentation
     a.l10n(href="wiki.html" data-msg-id="wiki" data-url-id="wiki-url") Wiki
     a.l10n(href="forum.html" data-msg-id="forum" data-url-id="forum-url") Forum
-    a.l10n(href="build.html" data-msg-id="build-service") Build Service
-    a(href="build.html") Bugzilla
-    a.l10n(href="#" data-msg-id="more") more
+    .dropdown
+      a.dropdown-toggle.l10n(href="#" data-toggle="dropdown" data-msg-id="more") More
+      .dropdown-menu.dropdown-menu-right
+        .dropdown-header.l10n(data-msg-id="development") Development
+
+        a.l10n(href="https://build.opensuse.org/" data-msg-id="build-service") Build Service
+
+        a(href="https://bugzilla.opensuse.org/") Bugzilla
+        a(href="https://github.com/openSUSE/") GitHub
+        a(href="https://openqa.opensuse.org/") openQA
+
+        .dropdown-header.l10n(data-msg-id="information") Information
+
+        a.l10n(href="https://news.opensuse.org/" data-msg-id="news") News
+        a.l10n(href="https://events.opensuse.org/" data-msg-id="events") Events
+        a.l10n(href="https://planet.opensuse.org/" data-msg-id="planet") Planet
+        a.l10n(href="https://shop.opensuse.org/" data-msg-id="shop") Shop
+        a.l10n(href="https://status.opensuse.org/" data-msg-id="status") Status
+
+        .dropdown-header.l10n(data-msg-id="community") Community
+        a.l10n(href="https://www.facebook.com/groups/opensuseproject/" data-msg-id="facebook-group") Facebook Group
+        a.l10n(href="https://en.opensuse.org/openSUSE:IRC_list" data-msg-id="irc-channels") IRC Channels
+        a.l10n(href="https://en.opensuse.org/openSUSE:Mailing_lists_subscription" data-msg-id="mail-lists") Mail Lists
+        a(href="http://reddit.com/r/openSUSE/") Reddit
+        a.l10n(href="https://t.me/opensuseusers" data-msg-id="telegram-group") Telegram Group
+
+        .dropdown-header.l10n(data-msg-id="social-media") Social Media
+
+        a(href="https://www.facebook.com/en.openSUSE") Facebook
+        a(href="https://fosstodon.org/@opensuse") Mastodon
+        a(href="https://t.me/opensusenews") Telegram
+        a(href="https://twitter.com/opensuse") Twitter
+        a(href="https://www.youtube.com/user/opensusetv") YouTube
+
   .actions
     select#language-select.custom-select
     .custom-control.custom-switch.dark-mode-switch
