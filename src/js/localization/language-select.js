@@ -41,14 +41,12 @@ var languages = {
  * 1. Users' choice saved in local storage
  * 2. First matched browser language
  * 3. Use English as fallback language
+ *
+ * When to use:
+ *
+ * When not to use: in wiki, server side will add language attributes
  */
 function autoDetectLanguage() {
-  var languageSelect = document.getElementById("language-select");
-
-  if (!languageSelect) {
-    return;
-  }
-
   var language =
     localStorage.getItem("lang") ||
     navigator.languages.find(function (lang) {
@@ -58,30 +56,51 @@ function autoDetectLanguage() {
 
   document.documentElement.lang = language;
 
-  languageSelect.value = language;
+  var dropdown = document.getElementById("language-dropdown");
+
+  if (dropdown) {
+    const toggle = dropdown.getElementsByClassName('dropdown-toggle').item(0);
+    if (toggle) {
+      toggle.textContent = languages[language];
+    }
+  }
 }
 
 function renderLanguageSelect() {
-  var languageSelect = document.getElementById("language-select");
+  var dropdown = document.getElementById("language-dropdown");
 
-  if (!languageSelect) {
+  if (!dropdown) {
     return;
   }
 
-  for (var lang in languages) {
-    var option = document.createElement('option');
-    option.value = lang;
-    option.textContent = languages[lang];
-    languageSelect.appendChild(option);
+  const toggle = dropdown.getElementsByClassName('dropdown-toggle').item(0);
+  const menu = dropdown.getElementsByClassName('dropdown-menu').item(0);
+
+  if (!toggle || !menu) {
+    return;
   }
 
-  languageSelect.value = document.documentElement.lang;
+  for (let lang in languages) {
+    let item = document.createElement('a');
+    item.href = "#";
+    item.lang = lang;
+    item.textContent = languages[lang];
+    if (lang === document.documentElement.lang) {
+      item.classList.add('active');
+    }
+    item.addEventListener('click', function () {
+      const items = menu.getElementsByTagName('a');
+      for (let i = 0; i < items.length; i++) {
+        items.item(i).classList.remove('active');
+      }
+      this.classList.add('active');
+      document.documentElement.lang = this.lang;
+      toggle.textContent = this.textContent;
+    });
+    menu.appendChild(item);
+  }
 
-  languageSelect.addEventListener('change', function () {
-    var lang = languageSelect.value;
-    document.documentElement.lang = lang;
-    localStorage.setItem("lang", lang);
-  });
+  toggle.textContent = document.documentElement.lang;
 }
 
 document.addEventListener('DOMContentLoaded', function () {

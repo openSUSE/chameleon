@@ -23,16 +23,28 @@
   > .sites {
     display: flex;
     flex: 1 1 auto;
+
+    .menu {
+      display: flex;
+      flex: 0 1 auto;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    .dropdown {
+      flex: 0 0 auto;
+    }
   }
 
   a {
     display: block;
-    padding: 0 15px;
+    padding: 0 8px;
+    height: $height;
     line-height: $height;
     color: inherit;
     white-space: nowrap;
 
-    &:hover {
+    &:hover, &.active {
       background: $primary;
       text-decoration: none;
       color: $white;
@@ -52,7 +64,7 @@
   }
 
   > .actions {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     display: flex;
     height: $height;
     align-items: center;
@@ -63,15 +75,11 @@
       white-space: nowrap;
     }
 
-    > #language-select {
-      border: 0;
-      background: transparent;
-      height: $height;
-      line-height: $height;
-      font-size: inherit;
-      padding: 0;
-      color: inherit;
-      width: max-content;
+    @media (max-width: 400px) {
+      label {
+        width: 0;
+        color: transparent;
+      }
     }
   }
 }

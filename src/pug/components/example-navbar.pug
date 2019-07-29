@@ -1,13 +1,21 @@
 nav#cross-site-navbar
   .sites
-    a.l10n(href="www.html" data-msg-id="main") Main
-    a.l10n(href="software.html" data-msg-id="software") Software
-    a.l10n(href="doc.html" data-msg-id="documentation") Documentation
-    a.l10n(href="wiki.html" data-msg-id="wiki" data-url-id="wiki-url") Wiki
-    a.l10n(href="forum.html" data-msg-id="forum" data-url-id="forum-url") Forum
+    .menu
+      a.l10n(href="www.html" data-msg-id="main") Main
+      a.l10n(href="software.html" data-msg-id="software") Software
+      a.l10n(href="doc.html" data-msg-id="doc") Doc
+      a.l10n(href="wiki.html" data-msg-id="wiki" data-url-id="wiki-url") Wiki
+      a.l10n(href="forum.html" data-msg-id="forum" data-url-id="forum-url") Forum
     .dropdown
       a.dropdown-toggle.l10n(href="#" data-toggle="dropdown" data-msg-id="more") More
       .dropdown-menu.dropdown-menu-right
+
+        a.l10n(href="www.html" data-msg-id="main") Main
+        a.l10n(href="software.html" data-msg-id="software") Software
+        a.l10n(href="doc.html" data-msg-id="doc") Doc
+        a.l10n(href="wiki.html" data-msg-id="wiki" data-url-id="wiki-url") Wiki
+        a.l10n(href="forum.html" data-msg-id="forum" data-url-id="forum-url") Forum
+
         .dropdown-header.l10n(data-msg-id="development") Development
 
         a.l10n(href="https://build.opensuse.org/" data-msg-id="build-service") Build Service
@@ -40,7 +48,9 @@ nav#cross-site-navbar
         a(href="https://www.youtube.com/user/opensusetv") YouTube
 
   .actions
-    select#language-select.custom-select
+    #language-dropdown.dropdown
+      a.dropdown-toggle(href="#" data-toggle="dropdown") en
+      .dropdown-menu.dropdown-menu-right
     .custom-control.custom-switch.dark-mode-switch
       input#dark-mode-input.custom-control-input(type="checkbox")
       label.custom-control-label.l10n(for="dark-mode-input" data-msg-id="dark-mode") Dark Mode
