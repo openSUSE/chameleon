@@ -1,6 +1,6 @@
 // Button colors in dark background
 .text-light {
   .btn-secondary {
-    @include button-variant($white, $white);
+    @include button-variant($gray-700, $gray-700);
   }
 }

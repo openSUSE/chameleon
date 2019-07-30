@@ -5,7 +5,7 @@
 	a {
 		@extend .btn;
 		@extend .btn-sm;
-		@extend .btn-light;
+		@extend .btn-secondary;
 		font-family: $font-family-sans-serif;
 	}
 }

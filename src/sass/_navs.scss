@@ -1,0 +1,19 @@
+.bg-dark {
+  .nav {
+    &.nav-tabs {
+      border-color: $gray-700;
+
+      .nav-link {
+        &.active, &:hover {
+          border-color: $gray-700;
+        }
+
+        &.active {
+          color: inherit;
+          background-color: $dark;
+          border-bottom-color: $dark;
+        }
+      }
+    }
+  }
+}
