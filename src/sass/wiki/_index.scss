@@ -9,15 +9,13 @@ body.mediawiki {
   @import "header";
   @import "image";
   @import "input";
+  @import "layout";
   @import "list";
   @import "navs";
   @import "preference";
   @import "print";
-  @import "search";
-  @import "sidebar";
   @import "table";
   @import "toc";
-  @import "user-menu";
   @import "recent-changes";
   @import "migrations/index";
 }
