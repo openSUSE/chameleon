@@ -22,9 +22,5 @@
 
   padding: 30px 0;
   color: $gray-600;
-  background: $gray-100;
-
-  body.bg-dark & {
-    background: $gray-800;
-  }
+  background: $light;
 }

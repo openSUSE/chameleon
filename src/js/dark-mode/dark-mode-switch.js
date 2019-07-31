@@ -23,9 +23,9 @@ if (checkbox) {
 
 function switchDarkMode(isDarkMode) {
   if (isDarkMode) {
-    document.body.classList.add('bg-dark', 'text-light');
+    document.body.classList.add('dark-mode');
   } else {
-    document.body.classList.remove('bg-dark', 'text-light');
+    document.body.classList.remove('dark-mode');
   }
 
   const tables = document.getElementsByClassName('table');

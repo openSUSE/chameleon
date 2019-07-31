@@ -1,0 +1,24 @@
+.alert {
+  border-width: 0 0 0 4px;
+  background: $light;
+
+  &.alert-success {
+    border-color: $success;
+    color: $success;
+  }
+
+  &.alert-info {
+    border-color: $info;
+    color: $info;
+  }
+
+  &.alert-warning {
+    border-color: $warning;
+    color: $warning;
+  }
+
+  &.alert-danger {
+    border-color: $danger;
+    color: $danger;
+  }
+}

@@ -1,8 +1,0 @@
-// Dropdown higher than viewport cannot be properly positioned by Popper.js
-.dropdown,
-.dropup {
-  .dropdown-menu {
-    max-height: 50vh;
-    overflow-y: auto;
-  }
-}

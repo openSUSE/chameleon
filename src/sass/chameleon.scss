@@ -11,16 +11,16 @@
 @import "typography";
 
 // Patches to Bootstrap
-@import "buttons";
+@import "alert";
 @import "button-input-fonts";
-@import "inputs";
-@import "navs";
 @import "selection-color";
-@import "dropdown-overflow-fix";
 @import "carousel";
+@import "code";
 
 // Universal styles for all sites
 @import "navbar";
 @import "footer";
+
+@import "dark-mode";
 
 @import "wiki/index";

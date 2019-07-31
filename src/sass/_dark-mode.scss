@@ -1,0 +1,84 @@
+$dark-mode-body-bg-color: $black;
+$dark-mode-text-color: $white;
+$dark-mode-secondary: $gray-800;
+$dark-mode-component-bg-color: $gray-900;
+$dark-mode-component-border-color: $gray-800;
+$dark-mode-component-text-color: $white;
+
+.dark-mode {
+  background-color: $dark-mode-body-bg-color;
+  color: $dark-mode-text-color;
+
+  .alert {
+    background: $dark-mode-component-bg-color;
+  }
+
+  .btn-secondary {
+    @include button-variant($dark-mode-secondary, $dark-mode-secondary);
+  }
+
+  .form-control,
+  .custom-file-label,
+  .custom-select,
+  .custom-control-label::before {
+    border-color: $dark-mode-component-border-color;
+    background-color: $dark-mode-component-bg-color;
+    color: $dark-mode-component-text-color;
+
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $dark-mode-component-text-color;
+      opacity: 0.5; /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $dark-mode-component-text-color;
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: $dark-mode-component-text-color;
+    }
+  }
+
+  .custom-file-label::after {
+    background: transparent;
+    color: $dark-mode-component-text-color;
+  }
+
+  .custom-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+  }
+
+  hr {
+    border-color: $dark;
+  }
+
+  .nav {
+    &.nav-tabs {
+      border-color: $dark-mode-component-border-color;
+
+      .nav-link {
+        &.active, &:hover {
+          border-color: $dark-mode-component-border-color;
+        }
+
+        &.active {
+          color: inherit;
+          background-color: $dark-mode-body-bg-color;
+          border-bottom-color: $dark-mode-body-bg-color;
+        }
+      }
+    }
+  }
+
+  pre {
+    background: $dark;
+    color: $white;
+  }
+
+  .site-footer {
+    background: $dark;
+  }
+}

@@ -17,8 +17,8 @@
   display: flex;
   height: $height;
   font-size: $font-size-sm;
-  background: $gray-900;
-  color: $gray-400;
+  background: $black;
+  color: $gray-500;
 
   > .sites {
     display: flex;
@@ -53,8 +53,8 @@
 
   .dropdown-menu {
     border: 0;
-    background: $gray-900;
-    color: $gray-400;
+    background: $black;
+    color: $gray-500;
     margin-top: 0;
 
     .dropdown-header {
