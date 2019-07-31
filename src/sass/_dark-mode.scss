@@ -1,16 +1,15 @@
 $dark-mode-body-bg-color: $black;
-$dark-mode-text-color: $white;
+$dark-mode-text-color: $gray-500;
 $dark-mode-secondary: $gray-800;
-$dark-mode-component-bg-color: $gray-900;
-$dark-mode-component-border-color: $gray-800;
-$dark-mode-component-text-color: $white;
+$dark-mode-bg-color: $gray-900;
+$dark-mode-border-color: $gray-800;
 
 .dark-mode {
   background-color: $dark-mode-body-bg-color;
   color: $dark-mode-text-color;
 
   .alert {
-    background: $dark-mode-component-bg-color;
+    background: $dark-mode-bg-color;
   }
 
   .btn-secondary {
@@ -21,30 +20,30 @@ $dark-mode-component-text-color: $white;
   .custom-file-label,
   .custom-select,
   .custom-control-label::before {
-    border-color: $dark-mode-component-border-color;
-    background-color: $dark-mode-component-bg-color;
-    color: $dark-mode-component-text-color;
+    border-color: $dark-mode-border-color;
+    background-color: $dark-mode-bg-color;
+    color: $dark-mode-text-color;
 
     &::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: $dark-mode-component-text-color;
+      color: $dark-mode-text-color;
       opacity: 0.5; /* Firefox */
     }
 
     &:-ms-input-placeholder {
       /* Internet Explorer 10-11 */
-      color: $dark-mode-component-text-color;
+      color: $dark-mode-text-color;
     }
 
     &::-ms-input-placeholder {
       /* Microsoft Edge */
-      color: $dark-mode-component-text-color;
+      color: $dark-mode-text-color;
     }
   }
 
   .custom-file-label::after {
     background: transparent;
-    color: $dark-mode-component-text-color;
+    color: $dark-mode-text-color;
   }
 
   .custom-select {
@@ -57,11 +56,11 @@ $dark-mode-component-text-color: $white;
 
   .nav {
     &.nav-tabs {
-      border-color: $dark-mode-component-border-color;
+      border-color: $dark-mode-border-color;
 
       .nav-link {
         &.active, &:hover {
-          border-color: $dark-mode-component-border-color;
+          border-color: $dark-mode-border-color;
         }
 
         &.active {
@@ -74,8 +73,8 @@ $dark-mode-component-text-color: $white;
   }
 
   pre {
-    background: $dark;
-    color: $white;
+    background: $dark-mode-bg-color;
+    color: $dark-mode-text-color;
   }
 
   .site-footer {
