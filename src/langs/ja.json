@@ -22,5 +22,10 @@
     "google-group": "Google+ グループ",
     "mail-lists": "メーリングリスト",
     "irc-channels": "IRC チャンネル",
-    "social-media": "ソーシャルメディア"
+    "social-media": "ソーシャルメディア",
+    "dark-mode": "ダークモード",
+    "more": "さらに",
+    "search": "検索",
+    "main": "メイン",
+    "doc": "文書"
 }
