@@ -22,5 +22,10 @@
     "google-group": "Google+ 群组",
     "mail-lists": "邮件列表",
     "irc-channels": "IRC 频道",
-    "social-media": "社交媒体"
+    "social-media": "社交媒体",
+    "dark-mode": "暗色模式",
+    "more": "更多",
+    "search": "搜索",
+    "main": "主站",
+    "doc": "文档"
 }
