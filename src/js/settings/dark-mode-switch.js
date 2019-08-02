@@ -1,3 +1,9 @@
+/**
+ * Switch to toggle light/dark theme.
+ *
+ * This setting is a cross-site feature via cross-storage package.
+ */
+
 const CrossStorageClient = require('cross-storage').CrossStorageClient;
 
 const storage = new CrossStorageClient('https://static.opensuse.org/chameleon/hub.html');
