@@ -26,6 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change CJK font-weight to default and don't mix Noto Sans
 - Remove border-radius
 - Change border-width to 2px
+- Colors follow [openSUSE Design System](https://opensuse.eosdesignsystem.com/colors)
+- Alert component style
 
 ## [1.3.0] - 2019-03-02
 
