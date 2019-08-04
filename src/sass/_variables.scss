@@ -36,14 +36,9 @@ $orange: #fe7f2d;
 
 // These names are not in Bootstrap color lists
 $colors: (
-  turquoise: $turquoise,
-  cerulean: $cerulean,
+  'turquoise': $turquoise,
+  'cerulean': $cerulean,
 );
-
-:root {
-  --turquoise: $turquoise;
-  --cerulean: $cerulean;
-}
 
 // Bootstrap colors
 $primary: $turquoise;
