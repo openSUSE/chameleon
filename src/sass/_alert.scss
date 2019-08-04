@@ -21,4 +21,9 @@
     border-color: $danger;
     color: $danger;
   }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }

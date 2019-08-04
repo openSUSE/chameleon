@@ -40,6 +40,11 @@ $colors: (
   cerulean: $cerulean,
 );
 
+:root {
+  --turquoise: $turquoise;
+  --cerulean: $cerulean;
+}
+
 // Bootstrap colors
 $primary: $turquoise;
 $secondary: $gray-200;
