@@ -2,6 +2,7 @@
  * Switch to toggle light/dark theme.
  *
  * This setting is a cross-site feature via cross-storage package.
+ * Since cross-storage sometimes timeout, we use localStorage as fallback.
  */
 
 const CrossStorageClient = require('cross-storage').CrossStorageClient;
@@ -9,6 +10,15 @@ const CrossStorageClient = require('cross-storage').CrossStorageClient;
 const storage = new CrossStorageClient('https://static.opensuse.org/chameleon/hub.html');
 const checkbox = document.querySelector(".dark-mode-switch input");
 
+
+// localStorage is faster and doesn't timeout. It is a fallback option.
+const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+if (checkbox) {
+  checkbox.checked = isDarkMode;
+}
+switchDarkMode(isDarkMode);
+
+// Then try the cross storage option.
 storage.onConnect().then(function () {
   storage.get('isDarkMode').then(value => {
     const isDarkMode = value === 'true';
@@ -19,9 +29,11 @@ storage.onConnect().then(function () {
   })
 });
 
+// Handle switch interaction
 if (checkbox) {
   checkbox.addEventListener('change', function () {
     const isDarkMode = checkbox.checked;
+    localStorage.setItem('isDarkMode', isDarkMode);
     storage.set('isDarkMode', isDarkMode);
     switchDarkMode(isDarkMode);
   });
