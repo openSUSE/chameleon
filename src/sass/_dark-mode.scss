@@ -59,6 +59,11 @@ $dark-mode-border-color: $gray-800;
     border-color: $dark;
   }
 
+  .list-group-item:not(.active) {
+    background-color: $dark-mode-bg-color;
+    border-color: $dark-mode-border-color;
+  }
+
   .nav {
     &.nav-tabs {
       border-color: $dark-mode-border-color;
