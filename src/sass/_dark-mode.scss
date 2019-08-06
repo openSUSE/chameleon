@@ -60,8 +60,12 @@ $dark-mode-border-color: $gray-800;
   }
 
   .list-group-item:not(.active) {
-    background-color: $dark-mode-bg-color;
+    background-color: $dark-mode-body-bg-color;
     border-color: $dark-mode-border-color;
+  }
+
+  .list-group-item-action:hover:not(.active) {
+    background-color: $dark-mode-bg-color;
   }
 
   .modal-content {

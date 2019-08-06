@@ -25,6 +25,7 @@ storage.onConnect().then(function () {
     if (checkbox) {
       checkbox.checked = isDarkMode;
     }
+    localStorage.setItem('isDarkMode', isDarkMode);
     switchDarkMode(isDarkMode);
   })
 });
