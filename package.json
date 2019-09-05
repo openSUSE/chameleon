@@ -6,6 +6,7 @@
   "sass": "src/sass/chameleon.scss",
   "style": "dist/css/chameleon.css",
   "scripts": {
+    "start": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
