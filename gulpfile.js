@@ -7,9 +7,8 @@ var tap = require("gulp-tap");
 var buffer = require("gulp-buffer");
 var sourcemaps = require("gulp-sourcemaps");
 var uglify = require("gulp-uglify-es").default;
-var sass = require("gulp-sass");
+var sass = require("gulp-dart-sass");
 var svgmin = require("gulp-svgmin");
-var svg2png = require("gulp-svg2png-update");
 var autoprefixer = require("gulp-autoprefixer");
 var connect = require("gulp-connect");
 var pug = require("gulp-pug");
@@ -63,15 +62,6 @@ gulp.task("svg", function () {
     .pipe(connect.reload());
 });
 
-// Generate PNG as fallback
-gulp.task("svg2png", function () {
-  gulp
-    .src("src/images/**/*.svg")
-    .pipe(svg2png())
-    .pipe(gulp.dest("dist/images"))
-    .pipe(connect.reload());
-});
-
 // Pug templates
 gulp.task("pug", function () {
   return gulp
@@ -82,7 +72,8 @@ gulp.task("pug", function () {
 });
 
 // Build all
-gulp.task("default", gulp.parallel("js", "sass", "svg", "svg2png", "pug"));
+gulp.task("build", gulp.parallel("js", "sass", "svg", "pug"));
+gulp.task("default", gulp.parallel("build"));
 
 // Watch all
 gulp.task("watch", function () {
@@ -92,6 +83,6 @@ gulp.task("watch", function () {
   });
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
   gulp.watch("src/js/**/*.js", gulp.parallel("js"));
-  gulp.watch("src/images/**/*.svg", gulp.parallel("svg", "svg2png"));
+  gulp.watch("src/images/**/*.svg", gulp.parallel("svg"));
   gulp.watch("src/pug/**/*.pug", gulp.parallel("pug"));
 });

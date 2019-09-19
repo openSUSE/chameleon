@@ -7,6 +7,7 @@
   "style": "dist/css/chameleon.css",
   "scripts": {
     "start": "gulp watch",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,10 +34,9 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-buffer": "0.0.2",
     "gulp-connect": "^5.7.0",
+    "gulp-dart-sass": "^0.9.1",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-svg2png-update": "^2.2.1",
     "gulp-svgmin": "^2.2.0",
     "gulp-tap": "^1.0.1",
     "gulp-uglify-es": "^1.0.4",
