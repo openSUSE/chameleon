@@ -1,17 +1,18 @@
 "use strict";
 
-var gulp = require("gulp");
-var browserify = require("browserify");
-var log = require("gulplog");
-var tap = require("gulp-tap");
-var buffer = require("gulp-buffer");
-var sourcemaps = require("gulp-sourcemaps");
-var uglify = require("gulp-uglify-es").default;
-var sass = require("gulp-dart-sass");
-var svgmin = require("gulp-svgmin");
-var autoprefixer = require("gulp-autoprefixer");
-var connect = require("gulp-connect");
-var pug = require("gulp-pug");
+const gulp = require("gulp");
+const browserify = require("browserify");
+const log = require("gulplog");
+const tap = require("gulp-tap");
+const buffer = require("gulp-buffer");
+const sourcemaps = require("gulp-sourcemaps");
+const uglify = require("gulp-uglify-es").default;
+const sass = require("gulp-dart-sass");
+const svgmin = require("gulp-svgmin");
+const autoprefixer = require("gulp-autoprefixer");
+const connect = require("gulp-connect");
+const open = require("gulp-open");
+const pug = require("gulp-pug");
 
 // Compile JavaScripts with sourcemaps
 gulp.task("js", function () {
@@ -77,10 +78,15 @@ gulp.task("default", gulp.parallel("build"));
 
 // Watch all
 gulp.task("watch", function () {
+  // start web server with live reload
   connect.server({
     root: ".",
+    port: "8044",
     livereload: true
   });
+  // start web browser to load test pages
+  gulp.src('.').pipe(open({ uri: 'http://localhost:8044' }));
+
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
   gulp.watch("src/js/**/*.js", gulp.parallel("js"));
   gulp.watch("src/images/**/*.svg", gulp.parallel("svg"));

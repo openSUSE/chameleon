@@ -35,6 +35,7 @@
     "gulp-buffer": "0.0.2",
     "gulp-connect": "^5.7.0",
     "gulp-dart-sass": "^0.9.1",
+    "gulp-open": "^3.0.1",
     "gulp-pug": "^4.0.1",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svgmin": "^2.2.0",
