@@ -1,8 +1,9 @@
 {
   "dark-mode": "Dark Mode",
-  "more": "More",
+  "opensuse-universe": "openSUSE Universe",
   "search": "Search",
   "main": "Main",
+  "main-site": "Main site",
   "software": "Software",
   "download": "Download",
   "doc": "Doc",
@@ -24,7 +25,13 @@
   "community": "Community",
   "connect": "Connect",
   "facebook-group": "Facebook group",
+  "telegram-group": "Telegram group",
+  "telegram-group-url": "https://t.me/opensuseusers",
   "mail-lists": "Mail lists",
   "irc-channels": "IRC channels",
-  "social-media": "Social media"
+  "social-media": "Social media",
+  "other": "Other",
+  "guide-unofficial": "Guide (unofficial)",
+  "mirrors": "Mirrors",
+  "lizards": "Lizards"
 }

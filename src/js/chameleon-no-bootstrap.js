@@ -4,7 +4,7 @@
  * Examples: Weblate (l10n.opensuse.org), Cachet (status.opensuse.org)
  */
 
-require("./settings");
+require("./components");
 
 require("./l10n");
 

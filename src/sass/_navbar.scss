@@ -1,3 +1,69 @@
+.navbar {
+  $image-height: 32px;
+  justify-content: initial;
+
+  img {
+    height: $image-height;
+    width: auto;
+    margin-top: -$navbar-padding-y;
+    margin-bottom: -$navbar-padding-y;
+
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    background: $green;
+    color: $white;
+    user-select: none;
+    margin-left: -$navbar-padding-x;
+    margin-top: -$navbar-padding-y;
+    margin-bottom: -$navbar-padding-y;
+    padding-left: $navbar-padding-x;
+    padding-right: $navbar-padding-x;
+    align-self: stretch;
+
+    &:hover, &:focus {
+      color: $white;
+    }
+  }
+
+  form {
+    margin: 0;
+    align-self: stretch;
+  }
+}
+
+.navbar-toggler {
+  border: 0;
+  margin-left: auto;
+}
+
+.megamenu-toggler {
+  display: block !important; // make it always visible
+  margin-left: 0;
+}
+
+.megamenu-toggler-icon {
+  $icon-path: 'M 8 5 C 6.338 5 5 6.338 5 8 L 5 10 C 5 11.662 6.338 13 8 13 L 10 13 C 11.662 13 13 11.662 13 10 L 13 8 C 13 6.338 11.662 5 10 5 L 8 5 z M 20 5 C 18.338 5 17 6.338 17 8 L 17 10 C 17 11.662 18.338 13 20 13 L 22 13 C 23.662 13 25 11.662 25 10 L 25 8 C 25 6.338 23.662 5 22 5 L 20 5 z M 8 17 C 6.338 17 5 18.338 5 20 L 5 22 C 5 23.662 6.338 25 8 25 L 10 25 C 11.662 25 13 23.662 13 22 L 13 20 C 13 18.338 11.662 17 10 17 L 8 17 z M 20 17 C 18.338 17 17 18.338 17 20 L 17 22 C 17 23.662 18.338 25 20 25 L 22 25 C 23.662 25 25 23.662 25 22 L 25 20 C 25 18.338 23.662 17 22 17 L 20 17 z';
+
+  .navbar-light & {
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' fill='transparent' d='#{$icon-path}'/></svg>");
+  }
+
+  .navbar-dark & {
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' fill='transparent' d='#{$icon-path}'/></svg>");
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  // TODO: deal with different navbar break point
+  .navbar-collapse {
+    order: 1;
+    margin-top: $navbar-padding-y;
+  }
+}
+
 // Deprecated
 #global-navbar {
   .navbar-brand {
@@ -10,8 +76,6 @@
     }
   }
 }
-
-// Compact navbar to show all openSUSE sites
 .cross-site-navbar {
   $height: 1.5rem;
   display: flex;
@@ -81,41 +145,5 @@
         color: transparent;
       }
     }
-  }
-}
-
-// Per site navbar, shows navigations inside site
-.navbar {
-  $image-height: 32px;
-
-  img {
-    height: $image-height;
-    width: auto;
-    margin-top: -$navbar-padding-y;
-    margin-bottom: -$navbar-padding-y;
-
-  }
-
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    background: $green;
-    color: $white;
-    user-select: none;
-    margin-left: -$navbar-padding-x;
-    margin-top: -$navbar-padding-y;
-    margin-bottom: -$navbar-padding-y;
-    padding-left: $navbar-padding-x;
-    padding-right: $navbar-padding-x;
-    align-self: stretch;
-
-    &:hover, &:focus {
-      color: $white;
-    }
-  }
-
-  form {
-    margin: 0;
-    align-self: stretch;
   }
 }

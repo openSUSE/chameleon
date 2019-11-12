@@ -8,8 +8,7 @@
 const CrossStorageClient = require('cross-storage').CrossStorageClient;
 
 const storage = new CrossStorageClient('https://static.opensuse.org/chameleon/hub.html');
-const checkbox = document.querySelector(".dark-mode-switch input");
-
+const checkbox = document.getElementById("dark-mode-input");
 
 // localStorage is faster and doesn't timeout. It is a fallback option.
 const isDarkMode = localStorage.getItem('isDarkMode') === 'true';

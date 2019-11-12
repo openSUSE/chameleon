@@ -8,7 +8,6 @@
 
 // Global styles
 @import "fontfaces";
-@import "typography";
 
 // Patches to Bootstrap
 @import "alert";
@@ -22,5 +21,7 @@
 @import "footer";
 
 @import "dark-mode";
+
+@import "components/index";
 
 @import "wiki/index";

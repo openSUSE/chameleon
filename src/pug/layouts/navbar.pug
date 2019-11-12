@@ -1,0 +1,14 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href="#")
+    img.mr-2(src="/dist/images/logo/logo-white.svg")
+    span.navbar-title
+      block title
+
+  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-collapse")
+    span.navbar-toggler-icon
+
+  #navbar-collapse.collapse.navbar-collapse
+    block content
+
+  button.navbar-toggler.megamenu-toggler(type="button")
+    span.navbar-toggler-icon.megamenu-toggler-icon

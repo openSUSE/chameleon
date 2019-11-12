@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Buttons and inputs in dark background
 - Application icons SVG
 - Dark mode switch
-- Cross-site and per-site navbar
+- Megamenu
 
 ### Chagned
 
@@ -25,7 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change from gulp-uglify to gulp-uglify-es
 - Change CJK font-weight to default and don't mix Noto Sans
 - Remove border-radius
-- Change border-width to 2px
 - Colors follow [openSUSE Design System](https://opensuse.eosdesignsystem.com/colors)
 - Alert component style
 

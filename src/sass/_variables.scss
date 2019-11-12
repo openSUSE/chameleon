@@ -3,6 +3,7 @@
 // Fonts
 // =====
 $font-path: "../fonts" !default;
+$image-path: "../images" !default;
 
 // Colors
 // ======
@@ -72,10 +73,6 @@ $enable-responsive-font-sizes: true;
 $enable-validation-icons: true;
 $enable-deprecation-messages: true;
 
-// Components
-
-$border-width: 2px;
-
 // Fonts
 $font-family-sans-serif: "Open Sans", sans-serif;
 $font-family-serif: "Source Serif", serif;
@@ -84,7 +81,7 @@ $font-size-base: 1rem;
 $font-size-small: 0.8rem;
 
 // Headings
-$headings-margin-bottom: 1em;
+$headings-margin-bottom: 1rem;
 $headings-font-family: "Open Sans Condensed", "Open Sans", sans-serif;
 $headings-font-weight: bold;
 
@@ -100,11 +97,12 @@ $display2-size: $font-size-base * 5.5;
 $display3-size: $font-size-base * 4.5;
 $display4-size: $font-size-base * 3.5;
 
+// Navbar
+$navbar-toggler-padding-y: .25rem;
+$navbar-toggler-padding-x: .25rem;
+
 // Table
 $table-border-color: $gray-400;
-
-// Modals
-$modal-content-border-width: 0;
 
 // Close
 $close-text-shadow: none;
