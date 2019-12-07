@@ -8,10 +8,6 @@ $dark-mode-border-color: $gray-800;
   background-color: $dark-mode-body-bg-color;
   color: $dark-mode-text-color;
 
-  .alert {
-    background: $dark-mode-bg-color;
-  }
-
   .btn-secondary {
     @include button-variant($dark-mode-secondary, $dark-mode-secondary);
   }
@@ -77,7 +73,8 @@ $dark-mode-border-color: $gray-800;
       border-color: $dark-mode-border-color;
 
       .nav-link {
-        &.active, &:hover {
+        &.active,
+        &:hover {
           border-color: $dark-mode-border-color;
         }
 

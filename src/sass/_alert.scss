@@ -1,29 +1,24 @@
 .alert {
   border-width: 0 0 0 4px;
-  background: $light;
+  color: inherit;
 
   &.alert-success {
     border-color: $success;
-    color: $success;
+    background-color: transparentize($success, 0.8);
   }
 
   &.alert-info {
     border-color: $info;
-    color: $info;
+    background-color: transparentize($info, 0.8);
   }
 
   &.alert-warning {
     border-color: $warning;
-    color: $warning;
+    background-color: transparentize($warning, 0.8);
   }
 
   &.alert-danger {
     border-color: $danger;
-    color: $danger;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: underline;
+    background-color: transparentize($danger, 0.8);
   }
 }
