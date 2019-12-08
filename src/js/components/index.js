@@ -1,3 +1,3 @@
 require("./megamenu");
-require("./dark-mode-switch");
+require("./darkmode");
 require("./language-dropdown");

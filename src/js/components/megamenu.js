@@ -221,14 +221,6 @@ modal.innerHTML = `
         ${content}
       </div>
     </div>
-    <div class="modal-footer">
-      <div class="mr-auto">
-        <div class="custom-control custom-switch dark-mode-switch">
-          <input class="custom-control-input" id="dark-mode-input" type="checkbox">
-          <label class="custom-control-label l10n" for="dark-mode-input" data-msg-id="dark-mode">Dark Mode</label>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 `;
