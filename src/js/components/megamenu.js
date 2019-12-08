@@ -232,15 +232,12 @@ toggler.innerHTML =
   '<span class="navbar-toggler-icon megamenu-toggler-icon"></span>';
 
 document.addEventListener("DOMContentLoaded", function() {
-  const $modal = jQuery(modal);
-  $modal.modal("hide");
-
   const navbar = document.querySelector(".navbar");
   if (navbar) {
     navbar.append(toggler);
   }
 
   toggler.addEventListener("click", function() {
-    $modal.modal("show");
+    jQuery(modal).modal("show");
   });
 });
