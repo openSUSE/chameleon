@@ -1,3 +1,4 @@
+const Modal = require("bootstrap").Modal;
 const sections = [
   {
     id: "main",
@@ -225,6 +226,8 @@ modal.innerHTML = `
 </div>
 `;
 
+const modalController = new Modal(modal);
+
 const toggler = document.createElement("button");
 toggler.className = "navbar-toggler megamenu-toggler";
 toggler.type = "button";
@@ -238,6 +241,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   toggler.addEventListener("click", function() {
-    jQuery(modal).modal("show");
+    modalController.show();
   });
 });
