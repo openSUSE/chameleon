@@ -225,11 +225,22 @@ modal.innerHTML = `
 </div>
 `;
 
+const toggler = document.createElement("button");
+toggler.className = "navbar-toggler megamenu-toggler";
+toggler.type = "button";
+toggler.innerHTML =
+  '<span class="navbar-toggler-icon megamenu-toggler-icon"></span>';
+
 document.addEventListener("readystatechange", function() {
   const $modal = jQuery(modal);
   $modal.modal("hide");
 
-  jQuery(".megamenu-toggler").click(function() {
+  const navbar = document.querySelector(".navbar");
+  if (navbar) {
+    navbar.append(toggler);
+  }
+
+  toggler.addEventListener("click", function() {
     $modal.modal("show");
   });
 });

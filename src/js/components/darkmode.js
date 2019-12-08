@@ -11,7 +11,15 @@ const storage = new CrossStorageClient(
   "https://static.opensuse.org/chameleon/hub.html"
 );
 
-const togglers = document.getElementsByClassName("darkmode-toggler");
+const toggler = document.createElement("button");
+toggler.className = "navbar-toggler darkmode-toggler";
+toggler.type = "button";
+toggler.innerHTML =
+  '<span class="navbar-toggler-icon darkmode-toggler-icon"></span>';
+toggler.addEventListener("click", function() {
+  isDarkMode = !isDarkMode;
+  switchDarkMode(isDarkMode);
+});
 
 // localStorage is faster and doesn't timeout. It is a fallback option.
 let isDarkMode = localStorage.getItem("isDarkMode") === "true";
@@ -23,15 +31,6 @@ storage.onConnect().then(function() {
     switchDarkMode(isDarkMode);
   });
 });
-
-if (togglers) {
-  for (let i = 0; i < togglers.length; i += 1) {
-    togglers.item(i).addEventListener("click", function() {
-      isDarkMode = !isDarkMode;
-      switchDarkMode(isDarkMode);
-    });
-  }
-}
 
 function switchDarkMode(isDarkMode) {
   localStorage.setItem("isDarkMode", isDarkMode);
@@ -67,3 +66,10 @@ function switchDarkMode(isDarkMode) {
     }
   }
 }
+
+document.addEventListener("readystatechange", function() {
+  const navbar = document.querySelector(".navbar");
+  if (navbar) {
+    navbar.append(toggler);
+  }
+});
