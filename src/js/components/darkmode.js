@@ -67,7 +67,7 @@ function switchDarkMode(isDarkMode) {
   }
 }
 
-document.addEventListener("readystatechange", function() {
+document.addEventListener("DOMContentLoaded", function() {
   const navbar = document.querySelector(".navbar");
   if (navbar) {
     navbar.append(toggler);

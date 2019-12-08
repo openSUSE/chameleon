@@ -231,7 +231,7 @@ toggler.type = "button";
 toggler.innerHTML =
   '<span class="navbar-toggler-icon megamenu-toggler-icon"></span>';
 
-document.addEventListener("readystatechange", function() {
+document.addEventListener("DOMContentLoaded", function() {
   const $modal = jQuery(modal);
   $modal.modal("hide");
 
