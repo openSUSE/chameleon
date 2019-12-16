@@ -1,2 +1,2 @@
-window.$ = window.jQuery = require("jquery");
+require("jquery");
 require("./chameleon-no-jquery");

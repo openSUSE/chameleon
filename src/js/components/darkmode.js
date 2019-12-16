@@ -7,9 +7,13 @@
 
 const CrossStorageClient = require("cross-storage").CrossStorageClient;
 
-const storage = new CrossStorageClient(
+const crossStorage = new CrossStorageClient(
   "https://static.opensuse.org/chameleon/hub.html"
 );
+
+let mode = "auto";
+
+readMode();
 
 const toggler = document.createElement("button");
 toggler.className = "navbar-toggler darkmode-toggler";
@@ -17,54 +21,43 @@ toggler.type = "button";
 toggler.innerHTML =
   '<span class="navbar-toggler-icon darkmode-toggler-icon"></span>';
 toggler.addEventListener("click", function() {
-  isDarkMode = !isDarkMode;
-  switchDarkMode(isDarkMode);
+  toggleMode();
+  applyMode();
+  writeMode();
 });
 
-// localStorage is faster and doesn't timeout. It is a fallback option.
-let isDarkMode = localStorage.getItem("isDarkMode") === "true";
+function toggleMode() {
+  switch (mode) {
+    case "light":
+      return (mode = "dark");
+    case "dark":
+      return (mode = "auto");
+    default:
+      return (mode = "light");
+  }
+}
 
-// Then try the cross storage option.
-storage.onConnect().then(function() {
-  storage.get("isDarkMode").then(value => {
-    isDarkMode = value === "true";
-    switchDarkMode(isDarkMode);
+function readMode() {
+  // localStorage is faster and doesn't timeout. It is a fallback option.
+  mode = localStorage.getItem("chameleon_mode");
+
+  // Then try the cross storage option.
+  crossStorage.onConnect().then(function() {
+    crossStorage.get("chameleon_mode").then(value => {
+      mode = value;
+      applyMode();
+    });
   });
-});
+}
 
-function switchDarkMode(isDarkMode) {
-  localStorage.setItem("isDarkMode", isDarkMode);
-  storage.set("isDarkMode", isDarkMode);
+function writeMode() {
+  localStorage.setItem("chameleon_mode", mode);
+  crossStorage.set("chameleon_mode", mode);
+}
 
-  if (isDarkMode) {
-    document.body.classList.add("dark-mode");
-  } else {
-    document.body.classList.remove("dark-mode");
-  }
-
-  const tables = document.getElementsByClassName("table");
-
-  for (let i = 0; i < tables.length; i++) {
-    const classList = tables.item(i).classList;
-    if (isDarkMode) {
-      classList.add("table-dark");
-    } else {
-      classList.remove("table-dark");
-    }
-  }
-
-  const navbars = document.getElementsByClassName("navbar");
-
-  for (let i = 0; i < navbars.length; i++) {
-    const classList = navbars.item(i).classList;
-    if (isDarkMode) {
-      classList.add("navbar-dark", "bg-dark");
-      classList.remove("navbar-light", "bg-light");
-    } else {
-      classList.add("navbar-light", "bg-light");
-      classList.remove("navbar-dark", "bg-dark");
-    }
-  }
+function applyMode() {
+  document.body.classList.remove("dark-mode", "light-mode", "auto-mode");
+  document.body.classList.add(mode + "-mode");
 }
 
 document.addEventListener("DOMContentLoaded", function() {
