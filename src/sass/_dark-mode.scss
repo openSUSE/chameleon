@@ -160,7 +160,7 @@ $dark-mode-border-color: $gray-800;
     background: $dark;
   }
 
-  body.mediawiki table,
+  &.mediawiki table,
   .table {
     color: inherit;
   }
