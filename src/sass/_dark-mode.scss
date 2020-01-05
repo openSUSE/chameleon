@@ -150,13 +150,18 @@ $dark-mode-border-color: $gray-800;
     }
   }
 
-  pre {
+  pre,
+  .pre {
     background: $dark-mode-bg-color;
     color: $dark-mode-text-color;
   }
 
   .site-footer {
     background: $dark;
+  }
+
+  .table {
+    color: inherit;
   }
 }
 
