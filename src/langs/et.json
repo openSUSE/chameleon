@@ -26,5 +26,13 @@
     "facebook-group": "Facebooki grupp",
     "mail-lists": "Meililoend",
     "irc-channels": "IRC kanalid",
-    "social-media": "Sotsiaalmeedia"
+    "social-media": "Sotsiaalmeedia",
+    "opensuse-universe": "openSUSE Universum",
+    "main-site": "Esileht",
+    "telegram-group": "Telegrammi grupp",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "other": "Muud",
+    "guide-unofficial": "Juhend (mitteametlik)",
+    "mirrors": "Peeglid",
+    "lizards": "Lizard"
 }
