@@ -27,5 +27,13 @@
     "more": "Mehr",
     "search": "Suche",
     "main": "Main",
-    "doc": "Doc"
+    "doc": "Doc",
+    "opensuse-universe": "openSUSE Universum",
+    "main-site": "Hauptseite",
+    "telegram-group": "Telegram-Gruppe",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "other": "Andere",
+    "guide-unofficial": "Leitfaden (inoffiziell)",
+    "mirrors": "Mirrors",
+    "lizards": "Lizards"
 }
