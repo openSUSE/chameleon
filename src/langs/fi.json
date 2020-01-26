@@ -26,5 +26,10 @@
     "facebook-group": "Facebook ryhmä",
     "mail-lists": "Postituslistat",
     "irc-channels": "IRC kanavat",
-    "social-media": "Sosiaalinen media"
+    "social-media": "Sosiaalinen media",
+    "main-site": "Pääsivusto",
+    "telegram-group": "Telegram ryhmä",
+    "other": "Muut",
+    "guide-unofficial": "Ohje (epävirallinen)",
+    "mirrors": "Peilit"
 }
