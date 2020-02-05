@@ -22,5 +22,17 @@
     "google-group": "Группа в Google+",
     "mail-lists": "Списки рассылки",
     "irc-channels": "IRC-каналы",
-    "social-media": "Социальные сети"
+    "social-media": "Социальные сети",
+    "dark-mode": "Тёмная тема",
+    "opensuse-universe": "Вселенная openSUSE",
+    "search": "Поиск",
+    "main": "Главная",
+    "main-site": "Основной сайт",
+    "doc": "Документация",
+    "telegram-group": "Группа Telegram",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "other": "Прочее",
+    "guide-unofficial": "Руководство (неофициальное)",
+    "mirrors": "Зеркала",
+    "lizards": "Блоги"
 }
