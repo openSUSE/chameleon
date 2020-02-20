@@ -57,7 +57,25 @@ gulp.task("sass", function() {
 // Icons (SVG Sprite)
 gulp.task("icons", function() {
   return gulp
-    .src(["node_modules/remixicon/icons/*/*.svg", "src/icons/*.svg"])
+    .src([
+      "node_modules/remixicon/icons/Buildings/*.svg",
+      "node_modules/remixicon/icons/Business/*.svg",
+      "node_modules/remixicon/icons/Communication/*.svg",
+      "node_modules/remixicon/icons/Design/*.svg",
+      "node_modules/remixicon/icons/Development/*.svg",
+      "node_modules/remixicon/icons/Device/*.svg",
+      "node_modules/remixicon/icons/Document/*.svg",
+      "node_modules/remixicon/icons/Editor/*.svg",
+      "node_modules/remixicon/icons/Finance/*.svg",
+      "node_modules/remixicon/icons/Logos/*.svg",
+      "node_modules/remixicon/icons/Map/*.svg",
+      "node_modules/remixicon/icons/Media/*.svg",
+      "node_modules/remixicon/icons/Others/*.svg",
+      "node_modules/remixicon/icons/System/*.svg",
+      "node_modules/remixicon/icons/User/*.svg",
+      "node_modules/remixicon/icons/Weather/*.svg",
+      "src/icons/*.svg"
+    ])
     .pipe(
       svgSprite({
         mode: {

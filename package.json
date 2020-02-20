@@ -24,6 +24,7 @@
     "bootstrap": "^4.4.1",
     "cross-storage": "^1.0.0",
     "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
     "sticky-scroller": "^0.4.0",
     "tether": "^1.4.7"
   },
@@ -43,7 +44,6 @@
     "gulp-uglify-es": "^1.0.4",
     "gulplog": "^1.0.0",
     "jstransformer-markdown-it": "^2.1.0",
-    "remixicon": "^2.3.0",
-    "svg2png": "^4.1.1"
+    "remixicon": "^2.3.0"
   }
 }

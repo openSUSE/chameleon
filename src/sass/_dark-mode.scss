@@ -47,18 +47,6 @@ $dark-mode-border-color: $gray-800;
       border-color: $navbar-dark-toggler-border-color;
     }
 
-    .navbar-toggler-icon {
-      background-image: $navbar-dark-toggler-icon-bg;
-    }
-
-    .darkmode-toggler-icon {
-      background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' fill='transparent' d='#{$darkmode-icon-path}'/></svg>");
-    }
-
-    .megamenu-toggler-icon {
-      background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' fill='transparent' d='#{$megamenu-icon-path}'/></svg>");
-    }
-
     .navbar-text {
       color: $navbar-dark-color;
       a {
@@ -168,23 +156,6 @@ $dark-mode-border-color: $gray-800;
 
 // Default auto mode
 body:not(.dark-mode):not(.light-mode) {
-  .darkmode-toggler-icon {
-    position: relative;
-  }
-
-  .darkmode-toggler-icon::after {
-    content: "auto";
-    font-size: 8px;
-    background: $green;
-    color: $white;
-    position: absolute;
-    bottom: -2px;
-    right: -2px;
-    display: block;
-    padding: 2px;
-    border-radius: 6px;
-  }
-
   @media (prefers-color-scheme: dark) {
     @include dark-mode();
   }

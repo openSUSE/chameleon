@@ -19,7 +19,7 @@ const toggler = document.createElement("button");
 toggler.className = "navbar-toggler darkmode-toggler";
 toggler.type = "button";
 toggler.innerHTML =
-  '<span class="navbar-toggler-icon darkmode-toggler-icon"></span>';
+  '<svg class="icon"><use xlink:href="/dist/svg/sprite.svg#lightbulb-line"></use></svg>';
 toggler.addEventListener("click", function() {
   toggleMode();
   applyMode();
@@ -58,6 +58,20 @@ function writeMode() {
 function applyMode() {
   document.body.classList.remove("dark-mode", "light-mode", "auto-mode");
   document.body.classList.add(mode + "-mode");
+  switch (mode) {
+    case "dark":
+      toggler.innerHTML =
+        '<svg class="icon"><use xlink:href="/dist/svg/sprite.svg#moon-line"></use></svg>';
+      break;
+    case "light":
+      toggler.innerHTML =
+        '<svg class="icon"><use xlink:href="/dist/svg/sprite.svg#sun-line"></use></svg>';
+      break;
+    default:
+      toggler.innerHTML =
+        '<svg class="icon"><use xlink:href="/dist/svg/sprite.svg#lightbulb-line"></use></svg>';
+      break;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function() {

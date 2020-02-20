@@ -17,7 +17,7 @@ Vivid UI theme for openSUSE websites. Based on Bootstrap 4.1. Apply
 ### NPM install
 
 ```bash
-npm install opensuse-theme-chameleon --save
+npm install @opensuse/chameleon --save
 ```
 
 ### Ruby Gem install

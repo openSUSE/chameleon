@@ -38,10 +38,6 @@
     border-color: $navbar-light-toggler-border-color;
   }
 
-  .navbar-toggler-icon {
-    background-image: $navbar-light-toggler-icon-bg;
-  }
-
   .navbar-text {
     color: $navbar-light-color;
     a {
@@ -96,103 +92,10 @@
   margin-left: 0;
 }
 
-.navbar .megamenu-toggler-icon {
-  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' fill='transparent' d='#{$megamenu-icon-path}'/></svg>");
-}
-
-.navbar .darkmode-toggler-icon {
-  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' fill='transparent' d='#{$lightmode-icon-path}'/></svg>");
-}
-
 @include media-breakpoint-down(sm) {
   // TODO: deal with different navbar break point
   .navbar-collapse {
     order: 1;
     margin-top: $navbar-padding-y;
-  }
-}
-
-// Deprecated
-#global-navbar {
-  .navbar-brand {
-    font-size: 1em;
-
-    img {
-      height: 2em;
-      width: auto;
-      margin: 0;
-    }
-  }
-}
-.cross-site-navbar {
-  $height: 1.5rem;
-  display: flex;
-  height: $height;
-  font-size: $font-size-sm;
-  background: $black;
-  color: $gray-500;
-
-  > .sites {
-    display: flex;
-    flex: 1 1 auto;
-
-    .menu {
-      display: flex;
-      flex: 0 1 auto;
-      flex-wrap: wrap;
-      overflow: hidden;
-    }
-
-    .dropdown {
-      flex: 0 0 auto;
-    }
-  }
-
-  a {
-    display: block;
-    padding: 0 8px;
-    height: $height;
-    line-height: $height;
-    color: inherit;
-    white-space: nowrap;
-
-    &:hover,
-    &.active {
-      background: $primary;
-      text-decoration: none;
-      color: $white;
-    }
-  }
-
-  .dropdown-menu {
-    border: 0;
-    background: $black;
-    color: $gray-500;
-
-    .dropdown-header {
-      padding: 0.5rem 1rem;
-      text-transform: uppercase;
-    }
-  }
-
-  > .actions {
-    flex: 0 1 auto;
-    display: flex;
-    height: $height;
-    align-items: center;
-    overflow: hidden;
-
-    > * {
-      margin-right: 15px;
-      line-height: $height;
-      white-space: nowrap;
-    }
-
-    @media (max-width: 400px) {
-      label {
-        width: 0;
-        color: transparent;
-      }
-    }
   }
 }
