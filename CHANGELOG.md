@@ -9,8 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Wiki test pages
-- Wiki print styles
 - sticky-scroller for wiki side toc
 - Language code pt, zh, zh-Hans, zh-Hant
 - Buttons and inputs in dark background
@@ -20,13 +18,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Chagned
 
-- Update to Bootstrap 4.3.1
+- Update to Bootstrap 4.4.1
 - Update Gulp packages for security reason
 - Change from gulp-uglify to gulp-uglify-es
 - Change CJK font-weight to default and don't mix Noto Sans
 - Remove border-radius
 - Colors follow [openSUSE Design System](https://opensuse.eosdesignsystem.com/colors)
 - Alert component style
+
+### Removed
 
 ## [1.3.0] - 2019-03-02
 
@@ -91,7 +91,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Brazilian Portuguese translation from openSUSE contributors.
 - Detailed README for using it in other openSUSE projects.
 
-[Unreleased]: https://github.com/openSUSE/chameleon/compare/v1.3.0...HEAD
+[unreleased]: https://github.com/openSUSE/chameleon/compare/v1.3.0...HEAD
 [1.3.0]: https://github.com/openSUSE/chameleon/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/openSUSE/chameleon/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/openSUSE/chameleon/compare/v1.1.0...v1.1.1
