@@ -1,10 +1,5 @@
 // https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
 
-// Fonts
-// =====
-$font-path: "../fonts" !default;
-$image-path: "../images" !default;
-
 // Colors
 // ======
 // All colors are from openSUSE Design System https://opensuse.eosdesignsystem.com/colors
@@ -79,16 +74,16 @@ $darkmode-icon-path: "M 16.507812,4.0175781 A 11,11 0 0 0 6,15 11,11 0 0 0 17,26
 $lightmode-icon-path: "M 6.5147176,23.485281 7.9289312,22.071068 M 6.5147183,6.5147193 7.9289319,7.9289329 M 23.48528,23.485281 22.071067,22.071068 M 23.48528,6.514719 22.071066,7.9289325 M 15,27 V 25 M 3,15 h 2 m 22,0 H 25 M 15,3 v 2 m 6,10 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z";
 
 // Fonts
-$font-family-sans-serif: "Open Sans", sans-serif;
-$font-family-serif: "Source Serif", serif;
+$font-family-sans-serif: "Source Sans Pro", sans-serif;
+$font-family-serif: "Source Serif Pro", serif;
 $font-family-monospace: "Source Code Pro", monospace;
 $font-size-base: 1rem;
 $font-size-small: 0.8rem;
 
 // Headings
 $headings-margin-bottom: 1rem;
-$headings-font-family: "Open Sans Condensed", "Open Sans", sans-serif;
-$headings-font-weight: bold;
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 400;
 
 $h1-font-size: $font-size-base * 3.5;
 $h2-font-size: $font-size-base * 2.5;
