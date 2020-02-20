@@ -8,7 +8,6 @@ const buffer = require("gulp-buffer");
 const sourcemaps = require("gulp-sourcemaps");
 const uglify = require("gulp-uglify-es").default;
 const sass = require("gulp-dart-sass");
-const svgmin = require("gulp-svgmin");
 const autoprefixer = require("gulp-autoprefixer");
 const connect = require("gulp-connect");
 const open = require("gulp-open");
@@ -58,30 +57,18 @@ gulp.task("sass", function() {
 // Icons (SVG Sprite)
 gulp.task("icons", function() {
   return gulp
-    .src("src/icons/*.svg")
-    .pipe(svgSprite())
-    .pipe(gulp.dest("dist"));
-});
-
-// Minify SVG images
-gulp.task("svg", function() {
-  return gulp
-    .src("src/images/**/*.svg")
+    .src(["node_modules/remixicon/icons/*/*.svg", "src/icons/*.svg"])
     .pipe(
-      svgmin({
-        plugins: [
-          { convertShapeToPath: true },
-          { mergePaths: true },
-          {
-            removeAttrs: {
-              attrs: ["style", "font.*", "overflow.*"]
-            }
+      svgSprite({
+        mode: {
+          symbol: {
+            dest: "svg",
+            sprite: "sprite.svg"
           }
-        ]
+        }
       })
     )
-    .pipe(gulp.dest("dist/images"))
-    .pipe(connect.reload());
+    .pipe(gulp.dest("dist"));
 });
 
 // Pug templates
@@ -94,7 +81,7 @@ gulp.task("pug", function() {
 });
 
 // Build all
-gulp.task("build", gulp.parallel("js", "sass", "svg", "pug"));
+gulp.task("build", gulp.parallel("js", "sass", "pug", "icons"));
 gulp.task("default", gulp.parallel("build"));
 
 // Watch all
@@ -112,6 +99,5 @@ gulp.task("watch", function() {
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
   gulp.watch(["src/js/**/*.js", "src/langs/*.json"], gulp.parallel("js"));
   gulp.watch("src/icons/*.svg", gulp.parallel("icons"));
-  gulp.watch("src/images/**/*.svg", gulp.parallel("svg"));
   gulp.watch(["src/pug/**/*.pug", "*.md"], gulp.parallel("pug"));
 });

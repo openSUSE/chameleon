@@ -39,7 +39,6 @@
     "gulp-pug": "^4.0.1",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svg-sprite": "^1.5.0",
-    "gulp-svgmin": "^2.2.0",
     "gulp-tap": "^1.0.1",
     "gulp-uglify-es": "^1.0.4",
     "gulplog": "^1.0.0",
