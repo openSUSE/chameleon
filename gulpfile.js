@@ -13,13 +13,14 @@ const autoprefixer = require("gulp-autoprefixer");
 const connect = require("gulp-connect");
 const open = require("gulp-open");
 const pug = require("gulp-pug");
+const svgSprite = require("gulp-svg-sprite");
 
 // Compile JavaScripts with sourcemaps
-gulp.task("js", function () {
+gulp.task("js", function() {
   return gulp
     .src("src/js/*.js", { read: false })
     .pipe(
-      tap(function (file) {
+      tap(function(file) {
         log.info("bundling " + file.path);
         file.contents = browserify(file.path, { debug: true }).bundle();
       })
@@ -33,7 +34,7 @@ gulp.task("js", function () {
 });
 
 // Compile SaSS stylesheets with sourcemaps
-gulp.task("sass", function () {
+gulp.task("sass", function() {
   return gulp
     .src("src/sass/**/*.scss")
     .pipe(sourcemaps.init())
@@ -54,27 +55,37 @@ gulp.task("sass", function () {
     .pipe(connect.reload());
 });
 
+// Icons (SVG Sprite)
+gulp.task("icons", function() {
+  return gulp
+    .src("src/icons/*.svg")
+    .pipe(svgSprite())
+    .pipe(gulp.dest("dist"));
+});
+
 // Minify SVG images
-gulp.task("svg", function () {
+gulp.task("svg", function() {
   return gulp
     .src("src/images/**/*.svg")
-    .pipe(svgmin({
-      plugins: [
-        { convertShapeToPath: true },
-        { mergePaths: true },
-        {
-          removeAttrs: {
-            attrs: ["style", "font.*", "overflow.*"]
+    .pipe(
+      svgmin({
+        plugins: [
+          { convertShapeToPath: true },
+          { mergePaths: true },
+          {
+            removeAttrs: {
+              attrs: ["style", "font.*", "overflow.*"]
+            }
           }
-        }
-      ]
-    }))
+        ]
+      })
+    )
     .pipe(gulp.dest("dist/images"))
     .pipe(connect.reload());
 });
 
 // Pug templates
-gulp.task("pug", function () {
+gulp.task("pug", function() {
   return gulp
     .src("src/pug/pages/**/*.pug")
     .pipe(pug())
@@ -87,19 +98,20 @@ gulp.task("build", gulp.parallel("js", "sass", "svg", "pug"));
 gulp.task("default", gulp.parallel("build"));
 
 // Watch all
-gulp.task("watch", function () {
+gulp.task("watch", function() {
   // start web server with live reload
   connect.server({
     root: ".",
     port: "8044",
+    debug: true,
     livereload: true
   });
   // start web browser to load test pages
-  gulp.src('.').pipe(open({ uri: 'http://localhost:8044' }));
+  gulp.src(".").pipe(open({ uri: "http://localhost:8044" }));
 
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
-  gulp.watch("src/js/**/*.js", gulp.parallel("js"));
-  gulp.watch("src/langs/*.json", gulp.parallel("js"));
+  gulp.watch(["src/js/**/*.js", "src/langs/*.json"], gulp.parallel("js"));
+  gulp.watch("src/icons/*.svg", gulp.parallel("icons"));
   gulp.watch("src/images/**/*.svg", gulp.parallel("svg"));
-  gulp.watch("src/pug/**/*.pug", gulp.parallel("pug"));
+  gulp.watch(["src/pug/**/*.pug", "*.md"], gulp.parallel("pug"));
 });
