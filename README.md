@@ -1,5 +1,7 @@
 # Chameleon
 
+The Design System implementation of openSUSE..x
+
 Vivid UI theme for openSUSE websites. Based on Bootstrap 4.1. Apply
 [openSUSE Brand Guidelines](https://opensuse.github.io/branding-guidelines/) and
 [openSUSE Artwork](https://github.com/openSUSE/artwork).

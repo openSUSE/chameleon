@@ -1,8 +1,8 @@
-extends ../layouts/theme.pug
-
-block variables
+extends ../layouts/main.pug
 
 block content
+
+  include:markdown-it ../../../README.md
 
   h2#how-to-use How to use
 
@@ -54,59 +54,3 @@ block content
     |
     | for openSUSE under development. We are looking forward to adopt it into
     | Chameleon.
-
-  h2#usability-accessibility Usability &amp; accessibility
-
-  h3#print Print
-
-  p
-    | Our wiki pages, documents, news articles, forum discussions should have
-    | nice print result. So they can be used for offline educational activities.
-
-  h3#mobile Mobile
-
-  p
-    | Most of our web pages should be mobile friendly. In case users' PC have
-    | trouble or are unavailable, they can use mobile devices to search information.
-
-  p
-    | openSUSE has been ported to many different hardware, like Raspberry PI.
-    | These devices may have a small touch screen.
-
-  h2#components Components
-
-  p
-    | Chameleon is based on Bootstrap 4.3, providing all components from
-    |
-    a(href="https://getbootstrap.com/") Bootstrap
-    | .
-
-  include ../sections/buttons.pug
-
-  include ../sections/inputs.pug
-
-  include ../sections/alerts.pug
-
-  include ../sections/cards.pug
-
-  include ../sections/lists.pug
-
-  include ../sections/modals.pug
-
-  h2#graphics Graphics
-
-  include ../sections/graphics.pug
-
-  h2#examples Examples
-
-  p We made some examples of how to use Chameleon theme in web applications.
-
-  ul
-    li
-      a(href="./www.html") www.opensuse.org
-    li
-      a(href="./software.html") software.opensuse.org
-    li
-      a(href="./wiki.html") wiki.opensuse.org
-    li
-      a(href="./forum.html") forum.opensuse.org
