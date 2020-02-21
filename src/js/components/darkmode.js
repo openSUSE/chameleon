@@ -2,18 +2,19 @@
  * Switch to toggle light/dark theme.
  *
  * This setting is a cross-site feature via cross-storage package.
- * Since cross-storage sometimes timeout, we use localStorage as fallback.
+ * Since cross-storage sometimes timeout, we use cookies as fallback.
  */
 
+const Cookies = require("js-cookie");
 const CrossStorageClient = require("cross-storage").CrossStorageClient;
+
+const key = "chameleon_mode";
 
 const crossStorage = new CrossStorageClient(
   "https://static.opensuse.org/chameleon/hub.html"
 );
 
 let mode = "auto";
-
-readMode();
 
 const toggler = document.createElement("button");
 toggler.className = "navbar-toggler darkmode-toggler";
@@ -25,6 +26,8 @@ toggler.addEventListener("click", function() {
   applyMode();
   writeMode();
 });
+
+readMode();
 
 function toggleMode() {
   switch (mode) {
@@ -38,12 +41,13 @@ function toggleMode() {
 }
 
 function readMode() {
-  // localStorage is faster and doesn't timeout. It is a fallback option.
-  mode = localStorage.getItem("chameleon_mode");
+  // Cookies doesn't time out and can serve as a fallback.
+  mode = Cookies.get(key);
+  applyMode();
 
   // Then try the cross storage option.
   crossStorage.onConnect().then(function() {
-    crossStorage.get("chameleon_mode").then(value => {
+    crossStorage.get(key).then(value => {
       mode = value;
       applyMode();
     });
@@ -51,8 +55,8 @@ function readMode() {
 }
 
 function writeMode() {
-  localStorage.setItem("chameleon_mode", mode);
-  crossStorage.set("chameleon_mode", mode);
+  Cookies.set(key, mode);
+  crossStorage.set(key, mode);
 }
 
 function applyMode() {
