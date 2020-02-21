@@ -19,7 +19,7 @@ const toggler = document.createElement("button");
 toggler.className = "navbar-toggler darkmode-toggler";
 toggler.type = "button";
 toggler.innerHTML =
-  '<svg class="icon"><use xlink:href="/dist/svg/sprite.svg#lightbulb-line"></use></svg>';
+  '<svg class="icon"><use xlink:href="#lightbulb-line"></use></svg>';
 toggler.addEventListener("click", function() {
   toggleMode();
   applyMode();
@@ -61,15 +61,15 @@ function applyMode() {
   switch (mode) {
     case "dark":
       toggler.innerHTML =
-        '<svg class="icon"><use xlink:href="/dist/svg/sprite.svg#moon-line"></use></svg>';
+        '<svg class="icon"><use xlink:href="#moon-line"></use></svg>';
       break;
     case "light":
       toggler.innerHTML =
-        '<svg class="icon"><use xlink:href="/dist/svg/sprite.svg#sun-line"></use></svg>';
+        '<svg class="icon"><use xlink:href="#sun-line"></use></svg>';
       break;
     default:
       toggler.innerHTML =
-        '<svg class="icon"><use xlink:href="/dist/svg/sprite.svg#lightbulb-line"></use></svg>';
+        '<svg class="icon"><use xlink:href="#lightbulb-line"></use></svg>';
       break;
   }
 }

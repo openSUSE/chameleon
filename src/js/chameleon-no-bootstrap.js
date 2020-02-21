@@ -6,6 +6,8 @@
 
 require("./components");
 
+require("./data");
+
 require("./l10n");
 
 require("./wiki");

@@ -232,7 +232,7 @@ const toggler = document.createElement("button");
 toggler.className = "navbar-toggler megamenu-toggler";
 toggler.type = "button";
 toggler.innerHTML =
-  '<svg class="icon"><use xlink:href="/dist/svg/sprite.svg#apps-line"></use></svg>';
+  '<svg class="icon"><use xlink:href="#apps-line"></use></svg>';
 
 document.addEventListener("DOMContentLoaded", function() {
   const navbar = document.querySelector(".navbar");

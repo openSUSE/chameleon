@@ -13,6 +13,9 @@ const connect = require("gulp-connect");
 const open = require("gulp-open");
 const pug = require("gulp-pug");
 const svgSprite = require("gulp-svg-sprite");
+const header = require("gulp-header");
+const footer = require("gulp-footer");
+const rename = require("gulp-rename");
 
 // Compile JavaScripts with sourcemaps
 gulp.task("js", function() {
@@ -54,8 +57,8 @@ gulp.task("sass", function() {
     .pipe(connect.reload());
 });
 
-// Icons (SVG Sprite)
-gulp.task("icons", function() {
+// Icons (SVG Sprite in JS)
+gulp.task("icons-svg", function() {
   return gulp
     .src([
       "node_modules/remixicon/icons/Buildings/*.svg",
@@ -80,14 +83,29 @@ gulp.task("icons", function() {
       svgSprite({
         mode: {
           symbol: {
-            dest: "svg",
+            dest: "icons",
             sprite: "sprite.svg"
           }
         }
       })
     )
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("src"));
 });
+
+gulp.task("icons-js", function() {
+  return gulp
+    .src("src/icons/sprite.svg")
+    .pipe(
+      header(
+        "const div = document.createElement('div'); div.className='d-none'; div.innerHTML ='"
+      )
+    )
+    .pipe(footer("'; document.body.append(div);"))
+    .pipe(rename("sprite.js"))
+    .pipe(gulp.dest("src/js/data"));
+});
+
+gulp.task("icons", gulp.series("icons-svg", "icons-js"));
 
 // Pug templates
 gulp.task("pug", function() {
