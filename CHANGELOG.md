@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Chagned
 
 - Update to Bootstrap 4.4.1
-- Use Source Sans Pro, Source Serif Pro and Source Code Pro fonts
+- Use Source Sans Pro and Source Code Pro fonts
 - Remove border-radius
 - Colors follow [openSUSE Design System](https://opensuse.eosdesignsystem.com/colors)
 - Alert component style
