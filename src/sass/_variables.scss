@@ -21,11 +21,11 @@ $gray-900: #212529;
 
 // Primary colors
 $green: #73ba25;
-$blue: #173f4f;
+$teal: #173f4f;
 $turquoise: #35b9ab;
 
 // Secondary colors
-$cerulean: #21a4df;
+$blue: #21a4df;
 $yellow: #ffc107;
 $red: #dc3545;
 $orange: #fe7f2d;
@@ -33,14 +33,14 @@ $orange: #fe7f2d;
 // These names are not in Bootstrap color lists
 $colors: (
   "turquoise": $turquoise,
-  "cerulean": $cerulean
+  "teal": $teal
 );
 
 // Bootstrap colors
 $primary: $turquoise;
 $secondary: $gray-200;
 $success: $green;
-$info: $cerulean;
+$info: $blue;
 $warning: $yellow;
 $danger: $red;
 $light: $gray-100;
@@ -51,7 +51,7 @@ $body-bg: $white;
 $body-color: $black;
 
 // Links
-$link-color: $cerulean;
+$link-color: $blue;
 
 // Options
 

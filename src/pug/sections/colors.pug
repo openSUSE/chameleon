@@ -1,1 +1,38 @@
+mixin color(name, value)
+  .col-sm-6.col-lg-4
+    .media.my-2
+      .mr-3(style="background:"+value+";width:6rem;height:6rem;border:1px solid #adb5bd")
+      .media-body
+        .mb-2 $#{name}
+        .mb-2 var(--#{name})
+        .mb-2= value
+
 h2#colors Colors
+
+.row
+  +color('green', '#73ba25')
+  +color('teal', '#173f4f')
+  +color('turquoise', '#35b9ab')
+
+hr.my-4
+
+.row
+  +color('blue', '#21a4df')
+  +color('yellow', '#ffc107')
+  +color('red', '#dc3545')
+  +color('orange', '#fe7f2d')
+
+hr.my-4
+
+.row
+  +color('white', '#ffffff')
+  +color('gray-100', '#f8f9fa')
+  +color('gray-200', '#e9ecef')
+  +color('gray-300', '#dee2e6')
+  +color('gray-400', '#ced4da')
+  +color('gray-500', '#adb5bd')
+  +color('gray-600', '#6c757d')
+  +color('gray-700', '#495057')
+  +color('gray-800', '#343a40')
+  +color('gray-900', '#212529')
+  +color('black', '#000000')
