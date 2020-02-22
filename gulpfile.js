@@ -16,6 +16,7 @@ const svgSprite = require("gulp-svg-sprite");
 const header = require("gulp-header");
 const footer = require("gulp-footer");
 const rename = require("gulp-rename");
+const wait = require("gulp-wait");
 
 // Compile JavaScripts with sourcemaps
 gulp.task("js", function() {
@@ -32,6 +33,7 @@ gulp.task("js", function() {
     .pipe(uglify())
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("dist/js"))
+    .pipe(wait(500))
     .pipe(connect.reload());
 });
 
@@ -54,6 +56,7 @@ gulp.task("sass", function() {
     )
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("dist/css"))
+    .pipe(wait(500))
     .pipe(connect.reload());
 });
 
@@ -113,6 +116,7 @@ gulp.task("pug", function() {
     .src("src/pug/pages/**/*.pug")
     .pipe(pug())
     .pipe(gulp.dest("./"))
+    .pipe(wait(500))
     .pipe(connect.reload());
 });
 
@@ -134,6 +138,5 @@ gulp.task("watch", function() {
 
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
   gulp.watch(["src/js/**/*.js", "src/langs/*.json"], gulp.parallel("js"));
-  gulp.watch("src/icons/*.svg", gulp.parallel("icons"));
   gulp.watch(["src/pug/**/*.pug", "*.md"], gulp.parallel("pug"));
 });
