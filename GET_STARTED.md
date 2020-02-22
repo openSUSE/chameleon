@@ -1,185 +1,94 @@
 # Get Started
 
-## Download
+## CDN
 
-### Directly download
-
-[Download latest releases](https://github.com/openSUSE/opensuse-theme-chameleon/releases)
-
-### NPM install
-
-```bash
-npm install @opensuse/chameleon --save
-```
-
-### Ruby Gem install
-
-TODO
-
-### PHP Composer install
-
-TODO
-
-## Import
-
-### HTML link
-
-Compiled CSS, JavaScript, fonts and some SVG images are inside `dist` folder.
-You can directly include/link these files in your HTML template.
-
-Link CSS:
+Chameleon asset files are hosted at <https://static.opensuse.org> to improve
+webpage loading speed. This is the most recommended way to use Chameleon.
 
 ```html
+<!-- Chameleon Style -->
 <link
   rel="stylesheet"
-  type="text/css"
-  href="path/to/chameleon/dist/css/chameleon.css"
+  href="https://static.opensuse.org/chameleon/dist/css/chameleon.css"
 />
+
+<!-- Chameleon Script Bundled with jQuery and Bootstrap -->
+<script
+  src="https://static.opensuse.org/chameleon/dist/js/chameleon.js"
+  defer
+></script>
 ```
 
-Link JavaScript:
+If the website (WordPress, MediaWiki, etc.) already provides jQuery:
 
-1. Bundled with **Bootstrap** and **jQuery**
+```html
+<!-- Chameleon Script Bundled with Bootstrap -->
+<script
+  src="https://static.opensuse.org/chameleon/dist/js/chameleon-no-jquery.js"
+  defer
+></script>
+```
 
-   ```html
-   <script src="path/to/chameleon/dist/js/chameleon.js"></script>
-   ```
+If the website (for Weblate, etc.) already provides jQuery and Bootstrap 4:
 
-2. Bundled with **Bootstrap** but **without jQuery** (for MediaWiki, etc.):
+```html
+<!-- Chameleon Script -->
+<script
+  src="https://static.opensuse.org/chameleon/dist/js/chameleon-no-bootstrap.js"
+  defer
+></script>
+```
 
-   ```html
-   <script src="path/to/chameleon/dist/js/chameleon-no-jquery.js"></script>
-   ```
+## NPM
 
-3. Bundled with nothing (for Weblate, etc.):
+If the website requires a lot of SaSS variables and mixins from Chameleon and
+Bootstrap, then you need to install the package locally.
 
-   ```html
-   <script src="path/to/chameleon/dist/js/chameleon-no-bootstrap.js"></script>
-   ```
+```bash
+npm install --save @opensuse/chameleon
+```
 
-### Gulp/Webpack import
-
-If you have a lot of stuff to customize, use a build system like Gulp, Webpack,
-like what we do for openSUSE wiki. You can use a lot of SaSS features to make
-beautiful components.
-
-[Gulp configuration example](https://github.com/openSUSE/wiki/blob/master/skins/Chameleon/gulpfile.js)
-
-Import SCSS:
+Here are different build system you can use: Webpack, Gulp, Grunt, Rollup. But
+ways to import SCSS and JS files are similiar.
 
 ```scss
-@import "~opensuse-theme-chameleon/src/scss/chameleon";
+// SCSS
+@import "@opensuse/chameleon";
 ```
 
-Import JavaScript:
-
-1. Old way, without ES6 support
-
-   ```js
-   require("opensuse-theme-chameleon");
-   // or
-   require("opensuse-theme-chameleon/dist/js/chameleon-no-jquery.js");
-   ```
-
-2. New way, with ES6 support
-
-   ```js
-   import "opensuse-theme-chameleon";
-   // or
-   import "opensuse-theme-chameleon/dist/js/chameleon-no-jquery.js";
-   ```
-
-### Ruby on Rails import
-
-TODO
-
-## Bootstrap 4 Styles and Components
-
-[Read the Bootstrap 4 document](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-
-## Chameleon Styles
-
-Chameloen has some customization to Bootstrap 4. You can reuse these colors and
-fonts in your styles.
-
-### Colors
-
-| openSUSE colors   | Value   | Bootstrap colors |
-| ----------------- | ------- | ---------------- |
-| \$opensuse-green  | #73ba25 | \$brand-success  |
-| \$opensuse-dark   | #173f4f | \$brand-inverse  |
-| \$opensuse-cyan   | #35b9ab | \$brand-primary  |
-| \$opensuse-cyan2  | #00a489 | \$link-color     |
-| \$opensuse-green2 | #6da741 |                  |
-| \$opensuse-blue   | #21a4df | \$brand-info     |
-
-### Fonts
-
-Default
-
-- Font family: Open Sans, Source Sans Pro, sans-serif
-- Font weight: 400
-- Font style: normal
-
-Title and heading
-
-- Font family: Open Sans Condensed, Source Sans Pro, sans-serif
-- Font weight: 700
-
-Source code and commands
-
-- Font family: Source Code Pro, monospace
-- Font weight: 400
-
-## Icons
-
-Use Typicons as basic icon set for UI. See <http://typicons.com/>.
-
-```html
-<span class="typcn typcn-arrow-left"></span>
+```js
+// CJS
+require("@opensuse/chameleon");
+// ES6
+import "@opensuse/chameleon";
 ```
 
-For icons not covered by Typicons, we create our own in SVG format.
+## Files
 
-## Translations
+- **dist**: compiled styles, scripts and images
+  - **css**: compiled styles
+    - **chameleon.css**: main style
+    - **chameleon.css.map**: source map for debugging
+  - **js**: compiled scripts
+    - **chameleon.js**: bundled with jQuery and Bootstrap
+    - **chameleon-no-jquery.js**: bundled with Bootstrap but not jQuery
+    - **chameleon-no-bootstrap.js**: bundled with neither Bootstrap nor jQuery
+- **lib**: only used by the Chameleon website
+- **src**: source icons, svgs, sass and js
+  - **icons**: icons in svg format, extending Remix Icon
+    - **sprite.svg**: compiled svg sprite. it is then compiled to `src/js/data/sprite.js`
+  - **images**: other images from openSUSE/artwork repo
+  - **js**: source scripts
+  - **langs**: translation files in JSON format. mainly for mega menu.
+  - **pug**: generate Chameleon website pages
+  - **sass**: sass files
+    - **wiki**: style patches for MediaWiki
+- **hub.html**: [cross-storage](https://github.com/zendesk/cross-storage) hub. Through this page, we can store data cross all opensuse websites.
+- **\*.html**: Chameleon website pages
 
-The theme is shipped with some translations for navbar and footer links, so that
-our translators won't need to translate the same content for each site.
+## Examples
 
-```html
-<a
-  class="nav-link l10n"
-  data-msg-id="software"
-  href="https://software.opensuse.org/"
->
-  Software
-</a>
-```
+Here are already several websites integrated with Chameleon.
 
-Class `l10n` makes the element localizable. `data-msg-id` attribute defines the
-message key so that it can be find in translation files.
-
-## Development
-
-### Install
-
-```
-sudo zypper install git nodejs10
-sudo npm install -g gulp-cli
-```
-
-### Download
-
-Fork and clone this repo.
-
-### Run with hot reload
-
-```
-gulp watch
-```
-
-### Build
-
-```
-gulp
-```
+- [Wikis](https://en.opensuse.org/) ([code](https://github.com/openSUSE/wiki/tree/master/skins/Chameleon)): MediaWiki, use CDN
+- [Software](https://software.opensuse.org/) ([code](https://github.com/openSUSE/software-o-o)): Ruby On Rails, out-dated Ruby Gem package
