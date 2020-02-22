@@ -1,0 +1,167 @@
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><title>Chameleon - web theme for openSUSE</title><link href="./dist/images/app-icons/www-16.png" rel="icon" sizes="16x16" type="image/png"/><link href="./dist/images/app-icons/www.png" rel="icon" sizes="256x256" type="image/png"/><link href="./dist/css/chameleon.css" rel="stylesheet"/></head><body class="d-flex flex-column" style="min-height:100vh;"><nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="/"><img class="mr-2" src="./dist/images/logo/logo-white.svg"/><span class="navbar-title">Chameleon</span></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"><svg class="icon"><use xlink:href="#menu-2-line"></use></svg></button><div class="collapse navbar-collapse" id="navbar-collapse"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="/get-started.html"><svg class="icon"><use xlink:href="#rocket-2-line"></use></svg>&nbsp;Get Started</a></li><li class="nav-item"><a class="nav-link" href="/elements.html"><svg class="icon"><use xlink:href="#stack-line"></use></svg>&nbsp;Elements</a></li><li class="nav-item"><a class="nav-link" href="/layouts.html"><svg class="icon"><use xlink:href="#layout-line"></use></svg>&nbsp;Layouts</a></li><li class="nav-item"><a class="nav-link" href="/components.html"><svg class="icon"><use xlink:href="#dashboard-line"></use></svg>&nbsp;Components</a></li><li class="nav-item"><a class="nav-link" href="/changelog.html"><svg class="icon"><use xlink:href="#clipboard-line"></use></svg>&nbsp;Changelog</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/openSUSE/chameleon"><svg class="icon"><use xlink:href="#github-line"></use></svg>&nbsp;Source Code</a></li></ul></div></nav><div class="container flex-fill py-5"><h1>Get Started</h1>
+<h2>Download</h2>
+<h3>Directly download</h3>
+<p><a href="https://github.com/openSUSE/opensuse-theme-chameleon/releases">Download latest releases</a></p>
+<h3>NPM install</h3>
+<pre><code class="language-bash">npm install @opensuse/chameleon --save
+</code></pre>
+<h3>Ruby Gem install</h3>
+<p>TODO</p>
+<h3>PHP Composer install</h3>
+<p>TODO</p>
+<h2>Import</h2>
+<h3>HTML link</h3>
+<p>Compiled CSS, JavaScript, fonts and some SVG images are inside <code>dist</code> folder.
+You can directly include/link these files in your HTML template.</p>
+<p>Link CSS:</p>
+<pre><code class="language-html">&lt;link
+  rel=&quot;stylesheet&quot;
+  type=&quot;text/css&quot;
+  href=&quot;path/to/chameleon/dist/css/chameleon.css&quot;
+/&gt;
+</code></pre>
+<p>Link JavaScript:</p>
+<ol>
+<li>
+<p>Bundled with <strong>Bootstrap</strong> and <strong>jQuery</strong></p>
+<pre><code class="language-html">&lt;script src=&quot;path/to/chameleon/dist/js/chameleon.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>Bundled with <strong>Bootstrap</strong> but <strong>without jQuery</strong> (for MediaWiki, etc.):</p>
+<pre><code class="language-html">&lt;script src=&quot;path/to/chameleon/dist/js/chameleon-no-jquery.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>Bundled with nothing (for Weblate, etc.):</p>
+<pre><code class="language-html">&lt;script src=&quot;path/to/chameleon/dist/js/chameleon-no-bootstrap.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+</li>
+</ol>
+<h3>Gulp/Webpack import</h3>
+<p>If you have a lot of stuff to customize, use a build system like Gulp, Webpack,
+like what we do for openSUSE wiki. You can use a lot of SaSS features to make
+beautiful components.</p>
+<p><a href="https://github.com/openSUSE/wiki/blob/master/skins/Chameleon/gulpfile.js">Gulp configuration example</a></p>
+<p>Import SCSS:</p>
+<pre><code class="language-scss">@import &quot;~opensuse-theme-chameleon/src/scss/chameleon&quot;;
+</code></pre>
+<p>Import JavaScript:</p>
+<ol>
+<li>
+<p>Old way, without ES6 support</p>
+<pre><code class="language-js">require(&quot;opensuse-theme-chameleon&quot;);
+// or
+require(&quot;opensuse-theme-chameleon/dist/js/chameleon-no-jquery.js&quot;);
+</code></pre>
+</li>
+<li>
+<p>New way, with ES6 support</p>
+<pre><code class="language-js">import &quot;opensuse-theme-chameleon&quot;;
+// or
+import &quot;opensuse-theme-chameleon/dist/js/chameleon-no-jquery.js&quot;;
+</code></pre>
+</li>
+</ol>
+<h3>Ruby on Rails import</h3>
+<p>TODO</p>
+<h2>Bootstrap 4 Styles and Components</h2>
+<p><a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">Read the Bootstrap 4 document</a></p>
+<h2>Chameleon Styles</h2>
+<p>Chameloen has some customization to Bootstrap 4. You can reuse these colors and
+fonts in your styles.</p>
+<h3>Colors</h3>
+<table>
+<thead>
+<tr>
+<th>openSUSE colors</th>
+<th>Value</th>
+<th>Bootstrap colors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$opensuse-green</td>
+<td>#73ba25</td>
+<td>$brand-success</td>
+</tr>
+<tr>
+<td>$opensuse-dark</td>
+<td>#173f4f</td>
+<td>$brand-inverse</td>
+</tr>
+<tr>
+<td>$opensuse-cyan</td>
+<td>#35b9ab</td>
+<td>$brand-primary</td>
+</tr>
+<tr>
+<td>$opensuse-cyan2</td>
+<td>#00a489</td>
+<td>$link-color</td>
+</tr>
+<tr>
+<td>$opensuse-green2</td>
+<td>#6da741</td>
+<td></td>
+</tr>
+<tr>
+<td>$opensuse-blue</td>
+<td>#21a4df</td>
+<td>$brand-info</td>
+</tr>
+</tbody>
+</table>
+<h3>Fonts</h3>
+<p>Default</p>
+<ul>
+<li>Font family: Open Sans, Source Sans Pro, sans-serif</li>
+<li>Font weight: 400</li>
+<li>Font style: normal</li>
+</ul>
+<p>Title and heading</p>
+<ul>
+<li>Font family: Open Sans Condensed, Source Sans Pro, sans-serif</li>
+<li>Font weight: 700</li>
+</ul>
+<p>Source code and commands</p>
+<ul>
+<li>Font family: Source Code Pro, monospace</li>
+<li>Font weight: 400</li>
+</ul>
+<h2>Icons</h2>
+<p>Use Typicons as basic icon set for UI. See <a href="http://typicons.com/">http://typicons.com/</a>.</p>
+<pre><code class="language-html">&lt;span class=&quot;typcn typcn-arrow-left&quot;&gt;&lt;/span&gt;
+</code></pre>
+<p>For icons not covered by Typicons, we create our own in SVG format.</p>
+<h2>Translations</h2>
+<p>The theme is shipped with some translations for navbar and footer links, so that
+our translators won't need to translate the same content for each site.</p>
+<pre><code class="language-html">&lt;a
+  class=&quot;nav-link l10n&quot;
+  data-msg-id=&quot;software&quot;
+  href=&quot;https://software.opensuse.org/&quot;
+&gt;
+  Software
+&lt;/a&gt;
+</code></pre>
+<p>Class <code>l10n</code> makes the element localizable. <code>data-msg-id</code> attribute defines the
+message key so that it can be find in translation files.</p>
+<h2>Development</h2>
+<h3>Install</h3>
+<pre><code>sudo zypper install git nodejs10
+sudo npm install -g gulp-cli
+</code></pre>
+<h3>Download</h3>
+<p>Fork and clone this repo.</p>
+<h3>Run with hot reload</h3>
+<pre><code>gulp watch
+</code></pre>
+<h3>Build</h3>
+<pre><code>gulp
+</code></pre>
+<h2 id="how-to-use">How to use</h2><h3>Link from CDN</h3><pre><code class="html">&lt;link href=&quot;https://static.opensuse.org/chameleon/dist/css/chameleon.css&quot; rel=&quot;stylesheet&quot;/&gt;</code></pre><p>If your application already provides jQuery (MediaWiki, WordPress, etc.):</p><pre><code class="html">&lt;script src=&quot;https://static.opensuse.org/chameleon/dist/js/chameleon-no-jquery.js&quot;&gt;&lt;/script&gt;</code></pre><p>Otherwise:</p><pre><code class="html">&lt;script src=&quot;https://static.opensuse.org/chameleon/dist/js/chameleon.js&quot;&gt;&lt;/script&gt;</code></pre><h3>Install from NPM</h3><pre><code class="bash">npm install --save opensuse-theme-chameleon</code></pre><h3>Import styles to SaSS</h3><pre><code class="scss">@import '~opensuse-theme-chameleon/src/sass/chameleon';</code></pre><h3>Import JavaScript to Browserify/Webpack</h3><pre><code class="js">require('opensuse-theme-chameleon'); // CommonJS</code></pre><pre><code class="js">import 'opensuse-theme-chameleon'; // ES6</code></pre><h2 id="design-language">Design language</h2><p>Based on
+<a href="https://opensuse.github.io/branding-guidelines/">openSUSE Brand Guidelines</a>.</p><p>Here is a
+<a href="https://opensuse.eosdesignsystem.com/">design system</a>
+for openSUSE under development. We are looking forward to adopt it into
+Chameleon.</p></div><footer class="text-center py-5 bg-dark text-light" id="theme-doc-footer"><div class="container"><p>&copy; 2017-2020 Guo Yunhe. GPLv3</p></div></footer><script src="./dist/js/chameleon.js"></script></body></html>

@@ -1,56 +1,54 @@
 extends ../layouts/main.pug
 
 block content
-
-  include:markdown-it ../../../README.md
-
-  h2#how-to-use How to use
-
-  h3 Link from CDN
-
-  pre
-    code.html= `<link href="https://static.opensuse.org/chameleon/dist/css/chameleon.css" rel="stylesheet"/>`
-
-  p If your application already provides jQuery (MediaWiki, WordPress, etc.):
-
-  pre
-    code.html= `<script src="https://static.opensuse.org/chameleon/dist/js/chameleon-no-jquery.js"></script>`
-
-  p Otherwise:
-
-  pre
-    code.html= `<script src="https://static.opensuse.org/chameleon/dist/js/chameleon.js"></script>`
-
-  h3 Install from NPM
-
-  pre
-    code.bash npm install --save opensuse-theme-chameleon
-
-  h3 Import styles to SaSS
-
-  pre
-    code.scss @import '~opensuse-theme-chameleon/src/sass/chameleon';
-
-  h3 Import JavaScript to Browserify/Webpack
-
-  pre
-    code.js require('opensuse-theme-chameleon'); // CommonJS
-
-  pre
-    code.js import 'opensuse-theme-chameleon'; // ES6
-
-  h2#design-language Design language
-
-  p
-    | Based on
-    |
-    a(href="https://opensuse.github.io/branding-guidelines/") openSUSE Brand Guidelines
-    | .
-
-  p
-    | Here is a
-    |
-    a(href="https://opensuse.eosdesignsystem.com/") design system
-    |
-    | for openSUSE under development. We are looking forward to adopt it into
-    | Chameleon.
+  .text-center
+    h1.display-4 CHAMELEON
+    p.lead openSUSE Design System for Web
+    hr.my-4
+    .row
+      .col-sm-6.col-md-4.py-3
+        p
+          svg.icon.icon-2x
+            use(xlink:href="#stack-line")
+        p Bootstrap 4 &amp; Remix Icon
+      .col-sm-6.col-md-4.py-3
+        p
+          svg.icon.icon-2x
+            use(xlink:href="#html5-line")
+        p Powered by HTML5 &amp; CSS3
+      .col-sm-6.col-md-4.py-3
+        p
+          svg.icon.icon-2x
+            use(xlink:href="#pencil-ruler-line")
+        p openSUSE Branding Guidelines
+      .col-sm-6.col-md-4.py-3
+        p
+          svg.icon.icon-2x
+            use(xlink:href="#e-bike-2-line")
+        p Super Fast &amp; Light Weight
+      .col-sm-6.col-md-4.py-3
+        p
+          svg.icon.icon-2x
+            use(xlink:href="#device-line")
+        p Responsive &amp; Cross-Platform
+      .col-sm-6.col-md-4.py-3
+        p
+          svg.icon.icon-2x
+            use(xlink:href="#contrast-2-line")
+        p Light &amp; Dark Mode Switch
+    hr.my-4
+    p
+      a(href="https://github.com/opensuse/chameleon/releases")
+        img(src="https://img.shields.io/github/v/release/opensuse/chameleon" alt="version")
+      span &nbsp;
+      a(href="https://github.com/opensuse/chameleon/graphs/pulse")
+        img(src="https://img.shields.io/github/commit-activity/m/opensuse/chameleon" alt="commit activities")
+      span &nbsp;
+      a(href="https://github.com/opensuse/chameleon/graphs/contributors")
+        img(src="https://img.shields.io/github/contributors/opensuse/chameleon" alt="contributors")
+      span &nbsp;
+      a(href="https://l10n.opensuse.org/engage/opensuse-theme-chameleon/?utm_source=widget")
+        img(src="https://l10n.opensuse.org/widgets/opensuse-theme-chameleon/-/master/svg-badge.svg" alt="commit activities")
+      span &nbsp;
+      a(href="https://github.com/openSUSE/chameleon/blob/master/LICENSE")
+        img(src="https://img.shields.io/github/license/opensuse/chameleon" alt="license")

@@ -1,0 +1,56 @@
+extends ../layouts/main.pug
+
+block content
+
+  include:markdown-it ../../../GET_STARTED.md
+
+  h2#how-to-use How to use
+
+  h3 Link from CDN
+
+  pre
+    code.html= `<link href="https://static.opensuse.org/chameleon/dist/css/chameleon.css" rel="stylesheet"/>`
+
+  p If your application already provides jQuery (MediaWiki, WordPress, etc.):
+
+  pre
+    code.html= `<script src="https://static.opensuse.org/chameleon/dist/js/chameleon-no-jquery.js"></script>`
+
+  p Otherwise:
+
+  pre
+    code.html= `<script src="https://static.opensuse.org/chameleon/dist/js/chameleon.js"></script>`
+
+  h3 Install from NPM
+
+  pre
+    code.bash npm install --save opensuse-theme-chameleon
+
+  h3 Import styles to SaSS
+
+  pre
+    code.scss @import '~opensuse-theme-chameleon/src/sass/chameleon';
+
+  h3 Import JavaScript to Browserify/Webpack
+
+  pre
+    code.js require('opensuse-theme-chameleon'); // CommonJS
+
+  pre
+    code.js import 'opensuse-theme-chameleon'; // ES6
+
+  h2#design-language Design language
+
+  p
+    | Based on
+    |
+    a(href="https://opensuse.github.io/branding-guidelines/") openSUSE Brand Guidelines
+    | .
+
+  p
+    | Here is a
+    |
+    a(href="https://opensuse.eosdesignsystem.com/") design system
+    |
+    | for openSUSE under development. We are looking forward to adopt it into
+    | Chameleon.

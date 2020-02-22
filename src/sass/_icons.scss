@@ -1,5 +1,15 @@
+$icon-size: 24px;
+
 .icon {
-  width: 24px;
-  height: 24px;
+  width: $icon-size;
+  height: $icon-size;
   fill: currentColor;
+  margin: -4px 0; // avoid line height increase
+}
+
+@for $i from 2 through 4 {
+  .icon-#{$i}x {
+    width: $icon-size * $i;
+    height: $icon-size * $i;
+  }
 }
