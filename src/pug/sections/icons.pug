@@ -7,19 +7,34 @@ mixin icon(name)
 
 h2#icons Icons
 
-pre
-  | &lt;svg class="icon"&gt;
-  |   &lt;use xlink:href="#leap"&gt;
-  | &lt;/svg&gt;
-
 .row
   +icon("opensuse")
   +icon("opensuse-button")
   +icon("leap")
   +icon("tumbleweed")
 
-p
+pre
+  code.language-html
+    | &lt;svg class="icon"&gt;
+    |   &lt;use xlink:href="#leap"&gt;
+    | &lt;/svg&gt;
+
+.alert.alert-info
   | More icons can be found at
   |
-  a(href="https://remixicon.com") RemixIcon.com
-  |.
+  a(href="https://remixicon.com") Remix Icon
+  |. Note: you need append
+  |
+  code -fill
+  |
+  | or
+  |
+  code -line
+  |
+  | to the name of icons from Remix Icon.
+
+pre
+  code.language-html
+    | &lt;svg class="icon"&gt;
+    |   &lt;use xlink:href="#home-line"&gt;
+    | &lt;/svg&gt;
