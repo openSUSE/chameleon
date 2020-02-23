@@ -80,7 +80,8 @@ gulp.task("icons-svg", function() {
       "node_modules/remixicon/icons/System/*.svg",
       "node_modules/remixicon/icons/User/*.svg",
       "node_modules/remixicon/icons/Weather/*.svg",
-      "src/icons/*.svg"
+      "src/icons/*.svg",
+      "!src/icons/sprite.svg"
     ])
     .pipe(
       svgSprite({
