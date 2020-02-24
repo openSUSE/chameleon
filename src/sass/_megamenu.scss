@@ -1,0 +1,36 @@
+.megamenu {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: inherit;
+  flex-direction: column;
+}
+
+.megamenu-header {
+  display: flex;
+  padding: 0 1rem;
+}
+
+.megamenu-title {
+  margin: 0.5rem 0;
+}
+
+.megamenu-close {
+  background: transparent;
+  color: inherit;
+  border: 0;
+}
+
+.megamenu-content {
+  flex: 1 1 auto;
+  padding: 1rem 0;
+  overflow: auto;
+}
+
+.megamenu-list {
+  list-style: none;
+  padding: 0;
+}
