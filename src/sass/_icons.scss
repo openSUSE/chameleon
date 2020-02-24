@@ -4,12 +4,15 @@ $icon-size: 24px;
   width: $icon-size;
   height: $icon-size;
   fill: currentColor;
-  margin: -4px 0; // avoid line height increase
+  margin-top: -6px; // avoid line height increase
+  margin-bottom: -2px; // avoid line height increase
 }
 
 @for $i from 2 through 4 {
   .icon-#{$i}x {
     width: $icon-size * $i;
     height: $icon-size * $i;
+    margin-top: -4px;
+    margin-bottom: -4px;
   }
 }

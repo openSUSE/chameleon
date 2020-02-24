@@ -3,7 +3,7 @@ $dark-mode-body-bg-color: $black;
 $dark-mode-text-color: $gray-500;
 $dark-mode-secondary: $gray-800;
 $dark-mode-bg-color: $gray-900;
-$dark-mode-border-color: $gray-800;
+$dark-mode-border-color: $gray-700;
 
 // Mixins
 @mixin dark-mode {
@@ -103,7 +103,7 @@ $dark-mode-border-color: $gray-800;
   }
 
   hr {
-    border-color: $dark;
+    border-color: $gray-700;
   }
 
   .list-group-item:not(.active) {

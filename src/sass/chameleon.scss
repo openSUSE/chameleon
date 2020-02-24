@@ -3,21 +3,19 @@
 @import "bootstrap/scss/bootstrap";
 
 @import "animate";
-@import "icons";
-
-// Patches to Bootstrap
 @import "alert";
 @import "button-input-fonts";
 @import "selection-color";
 @import "carousel";
 @import "code";
-
-// Universal styles for all sites
 @import "navbar";
 @import "footer";
 
-@import "dark-mode";
+// Additional styles, not from Bootstrap
+@import "darkmode";
+@import "icons";
+@import "megamenu";
+@import "toc";
 
-@import "components/index";
-
+// Site specific styles
 @import "wiki/index";

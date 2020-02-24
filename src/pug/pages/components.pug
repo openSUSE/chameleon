@@ -2,22 +2,21 @@ extends ../layouts/main.pug
 
 block content
 
-  h1.my-5 Components
+  h1 Components
 
-    p
-    | Chameleon is based on Bootstrap 4.3, providing all components from
-    |
-    a(href="https://getbootstrap.com/") Bootstrap
-    | .
+  .row
+    .col-lg-9#toc-scope
+      include ../sections/alerts.pug
+      include ../sections/buttons.pug
+      include ../sections/cards.pug
+      include ../sections/inputs.pug
+      include ../sections/lists.pug
+      include ../sections/modals.pug
 
-  include ../sections/buttons.pug
-
-  include ../sections/inputs.pug
-
-  include ../sections/alerts.pug
-
-  include ../sections/cards.pug
-
-  include ../sections/lists.pug
-
-  include ../sections/modals.pug
+    #toc-sidebar.toc-sidebar.col-lg-3.d-none.d-lg-block
+      #toc.toc
+        ol
+          li foo
+          li bar
+          li foo
+          li bar
