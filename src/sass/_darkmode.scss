@@ -155,12 +155,8 @@ $dark-mode-border-color: $gray-700;
 }
 
 // Default auto mode
-body:not(.dark-mode):not(.light-mode) {
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
+  body {
     @include dark-mode();
   }
-}
-
-.dark-mode {
-  @include dark-mode();
 }
