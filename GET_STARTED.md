@@ -83,7 +83,6 @@ import "@opensuse/chameleon";
   - **pug**: generate Chameleon website pages
   - **sass**: sass files
     - **wiki**: style patches for MediaWiki
-- **hub.html**: [cross-storage](https://github.com/zendesk/cross-storage) hub. Through this page, we can store data cross all opensuse websites.
 - **\*.html**: Chameleon website pages
 
 ## Examples
