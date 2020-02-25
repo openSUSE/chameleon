@@ -6,7 +6,6 @@ const log = require("gulplog");
 const tap = require("gulp-tap");
 const buffer = require("gulp-buffer");
 const sourcemaps = require("gulp-sourcemaps");
-const uglify = require("gulp-uglify-es").default;
 const sass = require("gulp-dart-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const connect = require("gulp-connect");
@@ -30,7 +29,6 @@ gulp.task("js", function() {
     )
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(uglify())
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("dist/js"))
     .pipe(wait(500))
@@ -44,7 +42,6 @@ gulp.task("sass", function() {
     .pipe(sourcemaps.init())
     .pipe(
       sass({
-        outputStyle: "compressed",
         includePaths: ["node_modules"]
       }).on("error", sass.logError)
     )
