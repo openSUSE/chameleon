@@ -1,7 +1,10 @@
 const sections = require("../data/sites");
+const localize = require("../util/localize");
+const langs = require("../data/langs");
 
 const modal = document.createElement("div");
 modal.className = "megamenu animated fast";
+modal.style.display = "none";
 
 const content = sections
   .map(function(section) {
@@ -24,7 +27,7 @@ const content = sections
 
 modal.innerHTML = `
 <div class="megamenu-header">
-  <h3 class="megamenu-title">openSUSE Universe</h3>
+  <h3 class="megamenu-title l10n" data-msg-id="opensuse-universe">openSUSE Universe</h3>
   <button class="megamenu-close ml-auto" type="button">
     <svg class="icon"><use xlink:href="#close-line"></use></svg>
   </button>
@@ -48,13 +51,16 @@ document.addEventListener("DOMContentLoaded", function() {
   const navbar = document.querySelector(".navbar");
   if (navbar) {
     navbar.append(toggler);
+    document.body.append(modal);
   }
+
+  localize(".l10n", langs);
 
   toggler.addEventListener("click", function() {
     const scrollbarWidth = window.innerWidth - document.body.clientWidth;
+    modal.style.display = "flex";
     modal.classList.remove("fadeOut");
     modal.classList.add("fadeIn");
-    document.body.append(modal);
     document.body.style.paddingRight = scrollbarWidth + "px";
     document.body.style.overflow = "hidden";
   });
@@ -63,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
     modal.classList.remove("fadeIn");
     modal.classList.add("fadeOut");
     setTimeout(function() {
-      document.body.removeChild(modal);
+      modal.style.display = "none";
       document.body.style.paddingRight = "";
       document.body.style.overflow = "";
     }, 800);

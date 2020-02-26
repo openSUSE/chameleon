@@ -1,2 +1,0 @@
-require("./megamenu");
-require("./toc");

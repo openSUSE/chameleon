@@ -20,7 +20,7 @@ const wait = require("gulp-wait");
 // Compile JavaScripts with sourcemaps
 gulp.task("js", function() {
   return gulp
-    .src("src/js/*.js", { read: false })
+    .src(["src/js/*.js", "src/js/components/*.js"], { read: false })
     .pipe(
       tap(function(file) {
         log.info("bundling " + file.path);
@@ -96,12 +96,8 @@ gulp.task("icons-svg", function() {
 gulp.task("icons-js", function() {
   return gulp
     .src("src/icons/sprite.svg")
-    .pipe(
-      header(
-        "const div = document.createElement('div'); div.className='d-none'; div.innerHTML ='"
-      )
-    )
-    .pipe(footer("'; document.body.append(div);"))
+    .pipe(header("module.exports = '"))
+    .pipe(footer("';"))
     .pipe(rename("sprite.js"))
     .pipe(gulp.dest("src/js/data"));
 });
