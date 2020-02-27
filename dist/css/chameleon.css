@@ -5759,7 +5759,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-link {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .alert-dismissible {
@@ -18528,6 +18528,18 @@ body.mediawiki .card .navbar .navbar-nav ol > strong.nav-link.selflink {
   body {
     background-color: #000000;
     color: #adb5bd;
+  }
+  body .alert-success .alert-link {
+    color: #73ba25;
+  }
+  body .alert-danger .alert-link {
+    color: #dc3545;
+  }
+  body .alert-warning .alert-link {
+    color: #ffc107;
+  }
+  body .alert-info .alert-link {
+    color: #21a4df;
   }
   body .breadcrumb {
     background-color: #212529;

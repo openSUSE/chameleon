@@ -1,4 +1,4 @@
-## Breadcrumb
+## Breadcrumbs
 
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">

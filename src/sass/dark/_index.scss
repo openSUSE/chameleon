@@ -10,6 +10,7 @@ $dark-mode-border-color: $gray-700;
     background-color: $dark-mode-body-bg-color;
     color: $dark-mode-text-color;
 
+    @import "alert";
     @import "breadcrumb";
 
     .navbar {
