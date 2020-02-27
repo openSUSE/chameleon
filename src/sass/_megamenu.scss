@@ -7,6 +7,7 @@
   bottom: 0;
   background-color: inherit;
   flex-direction: column;
+  z-index: $zindex-modal;
 }
 
 .megamenu-header {
