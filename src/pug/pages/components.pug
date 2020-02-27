@@ -3,6 +3,7 @@ extends ../layouts/doc.pug
 block content
   h1 Components
   include ../sections/alerts.pug
+  include:markdown-it(html) ../../../docs/breadcrumb.md
   include ../sections/buttons.pug
   include ../sections/cards.pug
   include ../sections/inputs.pug

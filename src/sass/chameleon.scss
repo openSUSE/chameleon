@@ -12,10 +12,12 @@
 @import "footer";
 
 // Additional styles, not from Bootstrap
-@import "darkmode";
 @import "icons";
 @import "megamenu";
 @import "toc";
+
+// Dark mode
+@import "dark/index";
 
 // Site specific styles
 @import "wiki/index";
