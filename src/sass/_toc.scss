@@ -7,57 +7,26 @@
   font-size: $font-size-sm;
   max-height: 100vh;
 
-  a {
-    color: inherit;
-    opacity: 0.8;
-  }
-
-  a:hover {
-    opacity: 1;
-  }
-
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
-
     ul {
       padding-left: 1rem;
     }
+  }
 
-    > li {
-      margin-bottom: 0.25em;
+  li {
+    margin: 0;
+  }
 
-      > ul {
-        margin-top: 0.25em;
-      }
+  a {
+    color: inherit;
+    opacity: 0.8;
+    word-wrap: break-word;
 
-      &.toclevel-1 {
-        margin-bottom: 0.5em;
-
-        > ul {
-          margin-top: 0.5em;
-        }
-      }
-
-      > a {
-        display: flex;
-      }
+    &:hover {
+      opacity: 1;
     }
   }
-}
-
-#toctitle {
-  display: none;
-}
-
-.tocnumber {
-  display: inline-block;
-  margin-right: 0.5em;
-  white-space: nowrap;
-}
-
-.toctext {
-  overflow: hidden;
-  word-wrap: break-word;
 }
