@@ -9,10 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- sticky-scroller for wiki side toc
 - Language code pt, zh, zh-Hans, zh-Hant
 - Dark mode
 - Megamenu
+- Table of content
 - New icon set based on Remix Icon
 
 ### Chagned

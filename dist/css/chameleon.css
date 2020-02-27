@@ -18743,7 +18743,7 @@ body.mediawiki table {
 }
 .toc a {
   color: inherit;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .toc a:hover {
   opacity: 1;
