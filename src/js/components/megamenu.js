@@ -2,19 +2,36 @@ const sections = require("../data/sites");
 const localize = require("../util/localize");
 const langs = require("../data/langs");
 
-const modal = document.createElement("div");
-modal.className = "megamenu animated fast";
-modal.style.display = "none";
+document.addEventListener("DOMContentLoaded", function() {
+  const navbar = document.querySelector(".navbar");
+  if (!navbar) {
+    return;
+  }
 
-const content = sections
-  .map(function(section) {
-    const links = section.links
-      .map(function(link) {
-        return `<li><a class="l10n" href="${link.url}" data-msg-id="${link.id}" data-url-id="${link.id}-url">${link.title}</a></li>`;
-      })
-      .join("");
+  const toggler =
+    navbar.querySelector(".megamenu-toggler") ||
+    document.createElement("button");
+  if (!toggler.className) {
+    toggler.className = "navbar-toggler megamenu-toggler";
+    toggler.type = "button";
+    toggler.innerHTML =
+      '<svg class="icon"><use xlink:href="#apps-line"></use></svg>';
+    navbar.append(toggler);
+  }
 
-    return `
+  const modal = document.createElement("div");
+  modal.className = "megamenu animated fast";
+  modal.style.display = "none";
+
+  const content = sections
+    .map(function(section) {
+      const links = section.links
+        .map(function(link) {
+          return `<li><a class="l10n" href="${link.url}" data-msg-id="${link.id}" data-url-id="${link.id}-url">${link.title}</a></li>`;
+        })
+        .join("");
+
+      return `
 <div class="col-6 col-md-4 mb-5">
   <h5 class="megamenu-heading l10n" data-msg-id="${section.id}">${section.title}</h5>
   <ul class="megamenu-list">
@@ -22,10 +39,10 @@ const content = sections
   </ul>
 </div>
   `;
-  })
-  .join("");
+    })
+    .join("");
 
-modal.innerHTML = `
+  modal.innerHTML = `
 <div class="megamenu-header">
   <h3 class="megamenu-title l10n" data-msg-id="opensuse-universe">openSUSE Universe</h3>
   <button class="megamenu-close ml-auto" type="button">
@@ -41,18 +58,7 @@ modal.innerHTML = `
 </div>
 `;
 
-const toggler = document.createElement("button");
-toggler.className = "navbar-toggler megamenu-toggler";
-toggler.type = "button";
-toggler.innerHTML =
-  '<svg class="icon"><use xlink:href="#apps-line"></use></svg>';
-
-document.addEventListener("DOMContentLoaded", function() {
-  const navbar = document.querySelector(".navbar");
-  if (navbar) {
-    navbar.append(toggler);
-    document.body.append(modal);
-  }
+  document.body.append(modal);
 
   localize(".l10n", langs);
 
