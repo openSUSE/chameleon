@@ -132,5 +132,5 @@ gulp.task("watch", function() {
 
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
   gulp.watch(["src/js/**/*.js", "src/langs/*.json"], gulp.parallel("js"));
-  gulp.watch(["src/pug/**/*.pug", "*.md"], gulp.parallel("pug"));
+  gulp.watch(["src/pug/**/*.pug", "*.md", "docs/*.md"], gulp.parallel("pug"));
 });
