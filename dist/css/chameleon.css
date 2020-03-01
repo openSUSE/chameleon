@@ -11285,7 +11285,7 @@ button.bg-dark:focus {
   border-radius: 0 !important;
 }
 
-.clearfix::after, .site-footer::after, .global-footer::after {
+.clearfix::after {
   display: block;
   clear: both;
   content: "";
@@ -18392,30 +18392,9 @@ body.mediawiki .card .navbar .navbar-nav ol > strong.nav-link.selflink {
     margin-top: 0.5rem;
   }
 }
-.global-footer {
-  margin-top: 30px;
-  padding: 30px 0;
-  color: #6c757d;
-  background: #f8f9fa;
-}
-.global-footer .footer-copyright-language-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-@media (max-width: 767.98px) {
-  .global-footer .footer-copyright-language-row {
-    display: block;
-  }
-}
-
-.site-footer {
+.global-footer,
+.site-footer,
+.footer {
   padding: 30px 0;
   color: #6c757d;
   background: #f8f9fa;
@@ -18549,6 +18528,12 @@ body.mediawiki .card .navbar .navbar-nav ol > strong.nav-link.selflink {
   }
   body .breadcrumb-item.active, body.mediawiki ul#preftoc li.selected a.breadcrumb-item, body.mediawiki .list-group > strong.breadcrumb-item.selflink, body.mediawiki .card ul > strong.breadcrumb-item.selflink,
 body.mediawiki .card ol > strong.breadcrumb-item.selflink {
+    color: #adb5bd;
+  }
+  body .global-footer,
+body .site-footer,
+body .footer {
+    background: #212529;
     color: #adb5bd;
   }
   body .navbar {
@@ -18773,9 +18758,6 @@ body.mediawiki .card ul#preftoc ol > strong.nav-link.selflink {
 body .pre {
     background: #212529;
     color: #adb5bd;
-  }
-  body .site-footer {
-    background: #212529;
   }
   body.mediawiki table,
 body .table,

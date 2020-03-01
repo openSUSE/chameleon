@@ -12,6 +12,7 @@ $dark-mode-border-color: $gray-700;
 
     @import "alert";
     @import "breadcrumb";
+    @import "footer";
 
     .navbar {
       background: $dark-mode-body-bg-color !important;
@@ -145,10 +146,6 @@ $dark-mode-border-color: $gray-700;
     .pre {
       background: $dark-mode-bg-color;
       color: $dark-mode-text-color;
-    }
-
-    .site-footer {
-      background: $dark;
     }
 
     &.mediawiki table,
