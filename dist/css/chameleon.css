@@ -18218,6 +18218,13 @@ body.mediawiki table th {
   border-color: #dc3545;
   background-color: rgba(220, 53, 69, 0.2);
 }
+.alert > p:last-child,
+.alert > ol:last-child,
+.alert > ul:last-child,
+.alert > pre:last-child,
+body.mediawiki .alert > .pre:last-child {
+  margin-bottom: 0;
+}
 
 button, input, select {
   font-family: "Source Sans Pro", sans-serif;

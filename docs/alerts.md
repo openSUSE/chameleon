@@ -7,8 +7,8 @@
   A simple danger alert with <a href="#" class="alert-link">an example link</a>
 </div>
 <div class="alert alert-warning" role="alert">
-  <div class="alert-heading h5 mb-0">Alert Title</div>
-  A simple warning alert with <a href="#" class="alert-link">an example link</a>
+  <div class="alert-heading h5">Alert Title</div>
+  <p>A simple warning alert with <a href="#" class="alert-link">an example link</a></p>
 </div>
 <div class="alert alert-info alert-dismissible fade show" role="alert">
   A simple info alert with <a href="#" class="alert-link">an example link</a>
