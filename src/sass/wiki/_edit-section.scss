@@ -1,5 +1,12 @@
-// Hide the [] around edit link.
+// Hide the [] around edit link. Reset font size and line height.
 // See also src/js/wiki/edit-section.js
+
+.mw-editsection {
+  margin-left: 0.5rem !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
 .mw-editsection-bracket {
   display: none;
 }

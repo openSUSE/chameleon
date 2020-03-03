@@ -18713,6 +18713,11 @@ body.mediawiki table {
 body.mediawiki {
   /* Table of content */
 }
+body.mediawiki .mw-editsection {
+  margin-left: 0.5rem !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
 body.mediawiki .btn a, body.mediawiki #cse-search-box input[type=submit] a,
 body.mediawiki .searchbox input[type=submit] a, body.mediawiki .mw-ui-button a {
   display: inline-block;
@@ -18776,6 +18781,11 @@ body.mediawiki body.action-submit #siteNotice,
 body.mediawiki body.action-edit #mw-head,
 body.mediawiki body.action-edit #siteNotice {
   display: none;
+}
+body.mediawiki .mw-editsection {
+  margin-left: 0.5rem !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
 }
 body.mediawiki .mw-editsection-bracket {
   display: none;

@@ -473,26 +473,33 @@ module.exports = localize;
 
 },{}],10:[function(require,module,exports){
 // Add anchor icons to headings
+// See also src/sass/wiki/_anchor.scss
 
 const headlines = document.getElementsByClassName("mw-headline");
 
 for (let i = 0; i < headlines.length; i++) {
   const headline = headlines.item(i);
+
+  const wrap = document.createElement("span");
+  wrap.className = "mw-anchor";
+
   const link = document.createElement("a");
   link.href = "#" + headline.id;
   link.innerHTML = '<svg class="icon"><use xlink:href="#links-line"></svg>';
-  headline.after(link);
+
+  wrap.append(link);
+  headline.after(wrap);
 }
 
 },{}],11:[function(require,module,exports){
 // The "Edit" text is replaced with a pencil icon.
 // See also src/sass/wiki/_edit-section.scss
 
-const editButtons = document.querySelectorAll(".mw-editsection a");
+const wraps = document.getElementsByClassName("mw-editsection");
 
-for (let i = 0; i < editButtons.length; i++) {
-  const button = editButtons.item(i);
-  const link = button.getElementsByTagName("a");
+for (let i = 0; i < wraps.length; i++) {
+  const wrap = wraps.item(i);
+  const link = wrap.getElementsByTagName("a").item(0);
   link.innerHTML = '<svg class="icon"><use xlink:href="#pencil-line"></svg>';
 }
 
