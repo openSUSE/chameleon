@@ -18718,6 +18718,10 @@ body.mediawiki .mw-editsection {
   font-size: inherit !important;
   line-height: inherit !important;
 }
+body.mediawiki .mw-editsection a {
+  color: inherit;
+  opacity: 0.5;
+}
 body.mediawiki .btn a, body.mediawiki #cse-search-box input[type=submit] a,
 body.mediawiki .searchbox input[type=submit] a, body.mediawiki .mw-ui-button a {
   display: inline-block;
@@ -18786,6 +18790,10 @@ body.mediawiki .mw-editsection {
   margin-left: 0.5rem !important;
   font-size: inherit !important;
   line-height: inherit !important;
+}
+body.mediawiki .mw-editsection a {
+  color: inherit;
+  opacity: 0.5;
 }
 body.mediawiki .mw-editsection-bracket {
   display: none;
