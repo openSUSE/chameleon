@@ -22,4 +22,6 @@
 
 // Site specific styles
 // TODO: move to separate CSS file
-@import "wiki/index";
+body.mediawiki {
+  @import "chameleon-wiki";
+}
