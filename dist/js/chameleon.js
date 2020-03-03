@@ -17765,7 +17765,7 @@ require("./components/toc");
 
 require("./wiki");
 
-},{"./components/icons":8,"./components/megamenu":9,"./components/toc":10,"./wiki":16}],6:[function(require,module,exports){
+},{"./components/icons":8,"./components/megamenu":9,"./components/toc":10,"./wiki":17}],6:[function(require,module,exports){
 /**
  * For websites that already provides jQuery.
  *
@@ -17994,7 +17994,7 @@ langs["zh-Hant"] = langs["zh-TW"];
 
 module.exports = langs;
 
-},{"../../langs/da.json":21,"../../langs/de.json":22,"../../langs/en.json":23,"../../langs/es.json":24,"../../langs/et.json":25,"../../langs/fi.json":26,"../../langs/it.json":27,"../../langs/ja.json":28,"../../langs/ko.json":29,"../../langs/pl.json":30,"../../langs/pt_BR.json":31,"../../langs/ru.json":32,"../../langs/sv.json":33,"../../langs/zh_CN.json":34,"../../langs/zh_TW.json":35}],12:[function(require,module,exports){
+},{"../../langs/da.json":22,"../../langs/de.json":23,"../../langs/en.json":24,"../../langs/es.json":25,"../../langs/et.json":26,"../../langs/fi.json":27,"../../langs/it.json":28,"../../langs/ja.json":29,"../../langs/ko.json":30,"../../langs/pl.json":31,"../../langs/pt_BR.json":32,"../../langs/ru.json":33,"../../langs/sv.json":34,"../../langs/zh_CN.json":35,"../../langs/zh_TW.json":36}],12:[function(require,module,exports){
 module.exports = [
   {
     id: "main",
@@ -18238,6 +18238,19 @@ function localize(selector, translations) {
 module.exports = localize;
 
 },{}],15:[function(require,module,exports){
+// Add anchor icons to headings
+
+const headlines = document.getElementsByClassName("mw-headline");
+
+for (let i = 0; i < headlines.length; i++) {
+  const headline = headlines.item(i);
+  const link = document.createElement(a);
+  link.href = "#" + headline.id;
+  link.innerHTML = '<svg class="icon"><use xlink:href="#links-line"></svg>';
+  headline.after(link);
+}
+
+},{}],16:[function(require,module,exports){
 // The "Edit" text is replaced with a pencil icon.
 // See also src/sass/wiki/_edit-section.scss
 
@@ -18249,9 +18262,10 @@ for (let i = 0; i < editButtons.length; i++) {
   link.innerHTML = '<svg class="icon"><use xlink:href="#pencil-line"></svg>';
 }
 
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 document.addEventListener("DOMContentLoaded", function() {
   if (document.body.classList.contains("mediawiki")) {
+    require("./anchor");
     require("./edit-section");
     require("./login-modal");
     require("./toc");
@@ -18259,7 +18273,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-},{"./edit-section":15,"./login-modal":17,"./migrations":19,"./toc":20}],17:[function(require,module,exports){
+},{"./anchor":15,"./edit-section":16,"./login-modal":18,"./migrations":20,"./toc":21}],18:[function(require,module,exports){
 /**
  * Automatically focus username input after opening login modal.
  * This is a fallback for old Firefox (<= 57) because autofocus property doesn't
@@ -18278,7 +18292,7 @@ if (toggle) {
   });
 }
 
-},{}],18:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 var boxes = document.getElementsByClassName('box');
 
 for (var i = 0; i < boxes.length; i++) {
@@ -18328,10 +18342,10 @@ for (var i = 0; i < boxes.length; i++) {
   }
 }
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 require("./box");
 
-},{"./box":18}],20:[function(require,module,exports){
+},{"./box":19}],21:[function(require,module,exports){
 // Move table of contents to sidebar
 const toc = document.getElementById("toc");
 const sidebar = document.getElementById("toc-sidebar");
@@ -18345,7 +18359,7 @@ if (sidebar) {
   }
 }
 
-},{}],21:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 module.exports={
     "dark-mode": "Mørk tilstand",
     "more": "Mere",
@@ -18377,7 +18391,7 @@ module.exports={
     "social-media": "Socialemedier"
 }
 
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 module.exports={
     "software": "Software",
     "download": "Download",
@@ -18418,7 +18432,7 @@ module.exports={
     "lizards": "Lizards"
 }
 
-},{}],23:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 module.exports={
   "dark-mode": "Dark Mode",
   "opensuse-universe": "openSUSE Universe",
@@ -18457,7 +18471,7 @@ module.exports={
   "lizards": "Lizards"
 }
 
-},{}],24:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 module.exports={
     "software": "Software",
     "download": "Descargar",
@@ -18485,7 +18499,7 @@ module.exports={
     "social-media": "Redes sociales"
 }
 
-},{}],25:[function(require,module,exports){
+},{}],26:[function(require,module,exports){
 module.exports={
     "dark-mode": "Tume kujundus",
     "more": "Veel",
@@ -18525,7 +18539,7 @@ module.exports={
     "lizards": "Lizard"
 }
 
-},{}],26:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 module.exports={
     "dark-mode": "Tumma tila",
     "more": "Lisää",
@@ -18562,7 +18576,7 @@ module.exports={
     "mirrors": "Peilit"
 }
 
-},{}],27:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 module.exports={
     "dark-mode": "Modalità Scura",
     "more": "Altro",
@@ -18594,7 +18608,7 @@ module.exports={
     "social-media": ""
 }
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 module.exports={
     "software": "ソフトウエア",
     "download": "ダウンロード",
@@ -18635,7 +18649,7 @@ module.exports={
     "lizards": "Lizards"
 }
 
-},{}],29:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 module.exports={
     "dark-mode": "",
     "more": "",
@@ -18667,9 +18681,9 @@ module.exports={
     "social-media": ""
 }
 
-},{}],30:[function(require,module,exports){
-arguments[4][29][0].apply(exports,arguments)
-},{"dup":29}],31:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
+arguments[4][30][0].apply(exports,arguments)
+},{"dup":30}],32:[function(require,module,exports){
 module.exports={
     "software": "Software",
     "download": "Baixar",
@@ -18710,7 +18724,7 @@ module.exports={
     "lizards": "Lagartos"
 }
 
-},{}],32:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 module.exports={
     "software": "Программное обеспечение",
     "download": "Скачать",
@@ -18750,7 +18764,7 @@ module.exports={
     "lizards": "Блоги"
 }
 
-},{}],33:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 module.exports={
     "software": "",
     "download": "",
@@ -18777,7 +18791,7 @@ module.exports={
     "social-media": ""
 }
 
-},{}],34:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 module.exports={
     "software": "软件",
     "download": "下载",
@@ -18810,7 +18824,7 @@ module.exports={
     "doc": "文档"
 }
 
-},{}],35:[function(require,module,exports){
+},{}],36:[function(require,module,exports){
 module.exports={
     "software": "軟體",
     "download": "下載",
