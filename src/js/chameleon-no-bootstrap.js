@@ -8,4 +8,6 @@ require("./components/icons");
 require("./components/megamenu");
 require("./components/toc");
 
-require("./wiki");
+if (document.body.classList.contains("mediawiki")) {
+  require("./chameleon-wiki");
+}
