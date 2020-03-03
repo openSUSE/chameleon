@@ -5,6 +5,7 @@
 @import "animate";
 @import "alert";
 @import "button-input-fonts";
+@import "card";
 @import "selection-color";
 @import "carousel";
 @import "code";
@@ -17,7 +18,8 @@
 @import "toc";
 
 // Dark mode
-@import "dark/index";
+@import "dark-mode/index";
 
 // Site specific styles
+// TODO: move to separate CSS file
 @import "wiki/index";

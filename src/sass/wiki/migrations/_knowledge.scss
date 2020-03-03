@@ -1,14 +1,13 @@
 .knowledge {
-	@extend .table;
-	border: none;
+  border: none;
 
-	// Icon should not use max-width: 100% otherwise they are very small
-	img {
-		width: initial;
-		height: initial;
-	}
+  // Icon should not use max-width: 100% otherwise they are very small
+  img {
+    width: initial;
+    height: initial;
+  }
 
-	ul {
-		@include list-unstyled();
-	}
+  ul {
+    @include list-unstyled();
+  }
 }

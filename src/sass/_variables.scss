@@ -37,7 +37,7 @@ $colors: (
 );
 
 // Bootstrap colors
-$primary: $turquoise;
+$primary: $teal;
 $secondary: $gray-200;
 $success: $green;
 $info: $blue;
@@ -98,3 +98,10 @@ $table-border-color: $gray-400;
 // Close
 $close-text-shadow: none;
 $close-color: inherit;
+
+// Dropdowns
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: $blue;
+$dropdown-link-active-color: $white;
+$dropdown-link-active-bg: darken($blue, 5%);
+$dropdown-link-disabled-color: $gray-500;
