@@ -1,15 +1,5 @@
-// Style edit section link as button
-.mw-editsection {
-	vertical-align: 0.6em;
-
-	a {
-		@extend .btn;
-		@extend .btn-sm;
-		@extend .btn-secondary;
-		font-family: $font-family-sans-serif;
-	}
-}
-
+// Hide the [] around edit link.
+// See also src/js/wiki/edit-section.js
 .mw-editsection-bracket {
-	display: none;
+  display: none;
 }

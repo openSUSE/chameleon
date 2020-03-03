@@ -13,7 +13,7 @@ require("./components/toc");
 
 require("./wiki");
 
-},{"./components/icons":3,"./components/megamenu":4,"./components/toc":5,"./wiki":10}],3:[function(require,module,exports){
+},{"./components/icons":3,"./components/megamenu":4,"./components/toc":5,"./wiki":11}],3:[function(require,module,exports){
 const sprite = require("../data/sprite");
 
 const div = document.createElement("div");
@@ -228,7 +228,7 @@ langs["zh-Hant"] = langs["zh-TW"];
 
 module.exports = langs;
 
-},{"../../langs/da.json":15,"../../langs/de.json":16,"../../langs/en.json":17,"../../langs/es.json":18,"../../langs/et.json":19,"../../langs/fi.json":20,"../../langs/it.json":21,"../../langs/ja.json":22,"../../langs/ko.json":23,"../../langs/pl.json":24,"../../langs/pt_BR.json":25,"../../langs/ru.json":26,"../../langs/sv.json":27,"../../langs/zh_CN.json":28,"../../langs/zh_TW.json":29}],7:[function(require,module,exports){
+},{"../../langs/da.json":16,"../../langs/de.json":17,"../../langs/en.json":18,"../../langs/es.json":19,"../../langs/et.json":20,"../../langs/fi.json":21,"../../langs/it.json":22,"../../langs/ja.json":23,"../../langs/ko.json":24,"../../langs/pl.json":25,"../../langs/pt_BR.json":26,"../../langs/ru.json":27,"../../langs/sv.json":28,"../../langs/zh_CN.json":29,"../../langs/zh_TW.json":30}],7:[function(require,module,exports){
 module.exports = [
   {
     id: "main",
@@ -472,15 +472,28 @@ function localize(selector, translations) {
 module.exports = localize;
 
 },{}],10:[function(require,module,exports){
-document.addEventListener('DOMContentLoaded', function () {
-  if (document.body.classList.contains('mediawiki')) {
+// The "Edit" text is replaced with a pencil icon.
+// See also src/sass/wiki/_edit-section.scss
+
+const editButtons = document.querySelectorAll(".mw-editsection a");
+
+for (let i = 0; i < editButtons.length; i++) {
+  const button = editButtons.item(i);
+  const link = button.getElementsByTagName("a");
+  link.innerHTML = '<svg class="icon"><use xlink:href="#pencil-line"></svg>';
+}
+
+},{}],11:[function(require,module,exports){
+document.addEventListener("DOMContentLoaded", function() {
+  if (document.body.classList.contains("mediawiki")) {
+    require("./edit-section");
     require("./login-modal");
     require("./toc");
     require("./migrations");
   }
 });
 
-},{"./login-modal":11,"./migrations":13,"./toc":14}],11:[function(require,module,exports){
+},{"./edit-section":10,"./login-modal":12,"./migrations":14,"./toc":15}],12:[function(require,module,exports){
 /**
  * Automatically focus username input after opening login modal.
  * This is a fallback for old Firefox (<= 57) because autofocus property doesn't
@@ -499,7 +512,7 @@ if (toggle) {
   });
 }
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 var boxes = document.getElementsByClassName('box');
 
 for (var i = 0; i < boxes.length; i++) {
@@ -549,10 +562,10 @@ for (var i = 0; i < boxes.length; i++) {
   }
 }
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 require("./box");
 
-},{"./box":12}],14:[function(require,module,exports){
+},{"./box":13}],15:[function(require,module,exports){
 // Move table of contents to sidebar
 const toc = document.getElementById("toc");
 const sidebar = document.getElementById("toc-sidebar");
@@ -566,7 +579,7 @@ if (sidebar) {
   }
 }
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 module.exports={
     "dark-mode": "Mørk tilstand",
     "more": "Mere",
@@ -598,7 +611,7 @@ module.exports={
     "social-media": "Socialemedier"
 }
 
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 module.exports={
     "software": "Software",
     "download": "Download",
@@ -639,7 +652,7 @@ module.exports={
     "lizards": "Lizards"
 }
 
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 module.exports={
   "dark-mode": "Dark Mode",
   "opensuse-universe": "openSUSE Universe",
@@ -678,7 +691,7 @@ module.exports={
   "lizards": "Lizards"
 }
 
-},{}],18:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 module.exports={
     "software": "Software",
     "download": "Descargar",
@@ -706,7 +719,7 @@ module.exports={
     "social-media": "Redes sociales"
 }
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 module.exports={
     "dark-mode": "Tume kujundus",
     "more": "Veel",
@@ -746,7 +759,7 @@ module.exports={
     "lizards": "Lizard"
 }
 
-},{}],20:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 module.exports={
     "dark-mode": "Tumma tila",
     "more": "Lisää",
@@ -783,7 +796,7 @@ module.exports={
     "mirrors": "Peilit"
 }
 
-},{}],21:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 module.exports={
     "dark-mode": "Modalità Scura",
     "more": "Altro",
@@ -815,7 +828,7 @@ module.exports={
     "social-media": ""
 }
 
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 module.exports={
     "software": "ソフトウエア",
     "download": "ダウンロード",
@@ -856,7 +869,7 @@ module.exports={
     "lizards": "Lizards"
 }
 
-},{}],23:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 module.exports={
     "dark-mode": "",
     "more": "",
@@ -888,9 +901,9 @@ module.exports={
     "social-media": ""
 }
 
-},{}],24:[function(require,module,exports){
-arguments[4][23][0].apply(exports,arguments)
-},{"dup":23}],25:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
+arguments[4][24][0].apply(exports,arguments)
+},{"dup":24}],26:[function(require,module,exports){
 module.exports={
     "software": "Software",
     "download": "Baixar",
@@ -931,7 +944,7 @@ module.exports={
     "lizards": "Lagartos"
 }
 
-},{}],26:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 module.exports={
     "software": "Программное обеспечение",
     "download": "Скачать",
@@ -971,7 +984,7 @@ module.exports={
     "lizards": "Блоги"
 }
 
-},{}],27:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 module.exports={
     "software": "",
     "download": "",
@@ -998,7 +1011,7 @@ module.exports={
     "social-media": ""
 }
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 module.exports={
     "software": "软件",
     "download": "下载",
@@ -1031,7 +1044,7 @@ module.exports={
     "doc": "文档"
 }
 
-},{}],29:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 module.exports={
     "software": "軟體",
     "download": "下載",

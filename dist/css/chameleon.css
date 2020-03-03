@@ -2886,7 +2886,7 @@ body.mediawiki .searchbox .form-inline input[type=text] {
   }
 }
 
-.btn, body.mediawiki .mw-editsection a, body.mediawiki #cse-search-box input[type=submit],
+.btn, body.mediawiki #cse-search-box input[type=submit],
 body.mediawiki .searchbox input[type=submit], body.mediawiki .mw-ui-button {
   display: inline-block;
   font-weight: 400;
@@ -2910,33 +2910,31 @@ body.mediawiki .searchbox input[type=submit], body.mediawiki .mw-ui-button {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, body.mediawiki .mw-editsection a, body.mediawiki #cse-search-box input[type=submit],
+  .btn, body.mediawiki #cse-search-box input[type=submit],
 body.mediawiki .searchbox input[type=submit], body.mediawiki .mw-ui-button {
     -webkit-transition: none;
     transition: none;
   }
 }
-.btn:hover, body.mediawiki .mw-editsection a:hover, body.mediawiki #cse-search-box input[type=submit]:hover,
+.btn:hover, body.mediawiki #cse-search-box input[type=submit]:hover,
 body.mediawiki .searchbox input[type=submit]:hover, body.mediawiki .mw-ui-button:hover {
   color: #000000;
   text-decoration: none;
 }
-.btn:focus, body.mediawiki .mw-editsection a:focus, body.mediawiki #cse-search-box input[type=submit]:focus,
-body.mediawiki .searchbox input[type=submit]:focus, body.mediawiki .mw-ui-button:focus, .btn.focus, body.mediawiki .mw-editsection a.focus, body.mediawiki #cse-search-box input.focus[type=submit],
+.btn:focus, body.mediawiki #cse-search-box input[type=submit]:focus,
+body.mediawiki .searchbox input[type=submit]:focus, body.mediawiki .mw-ui-button:focus, .btn.focus, body.mediawiki #cse-search-box input.focus[type=submit],
 body.mediawiki .searchbox input.focus[type=submit], body.mediawiki .focus.mw-ui-button {
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(53, 185, 171, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(53, 185, 171, 0.25);
 }
-.btn.disabled, body.mediawiki .mw-editsection a.disabled, body.mediawiki #cse-search-box input.disabled[type=submit],
-body.mediawiki .searchbox input.disabled[type=submit], body.mediawiki .disabled.mw-ui-button, .btn:disabled, body.mediawiki .mw-editsection a:disabled, body.mediawiki #cse-search-box input[type=submit]:disabled,
+.btn.disabled, body.mediawiki #cse-search-box input.disabled[type=submit],
+body.mediawiki .searchbox input.disabled[type=submit], body.mediawiki .disabled.mw-ui-button, .btn:disabled, body.mediawiki #cse-search-box input[type=submit]:disabled,
 body.mediawiki .searchbox input[type=submit]:disabled, body.mediawiki .mw-ui-button:disabled {
   opacity: 0.65;
 }
-a.btn.disabled, body.mediawiki .mw-editsection a.disabled, body.mediawiki a.disabled.mw-ui-button,
+a.btn.disabled, body.mediawiki a.disabled.mw-ui-button,
 fieldset:disabled a.btn,
-fieldset:disabled body.mediawiki .mw-editsection a,
-body.mediawiki .mw-editsection fieldset:disabled a,
 fieldset:disabled body.mediawiki a.mw-ui-button,
 body.mediawiki fieldset:disabled a.mw-ui-button {
   pointer-events: none;
@@ -2988,38 +2986,38 @@ body.mediawiki .searchbox .show > input.dropdown-toggle[type=submit]:focus {
   box-shadow: 0 0 0 0.2rem rgba(83, 196, 184, 0.5);
 }
 
-.btn-secondary, body.mediawiki .mw-editsection a, body.mediawiki .mw-ui-button {
+.btn-secondary, body.mediawiki .mw-ui-button {
   color: #212529;
   background-color: #e9ecef;
   border-color: #e9ecef;
 }
-.btn-secondary:hover, body.mediawiki .mw-editsection a:hover, body.mediawiki .mw-ui-button:hover {
+.btn-secondary:hover, body.mediawiki .mw-ui-button:hover {
   color: #212529;
   background-color: #d3d9df;
   border-color: #cbd3da;
 }
-.btn-secondary:focus, body.mediawiki .mw-editsection a:focus, body.mediawiki .mw-ui-button:focus, .btn-secondary.focus, body.mediawiki .mw-editsection a.focus, body.mediawiki .focus.mw-ui-button {
+.btn-secondary:focus, body.mediawiki .mw-ui-button:focus, .btn-secondary.focus, body.mediawiki .focus.mw-ui-button {
   color: #212529;
   background-color: #d3d9df;
   border-color: #cbd3da;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
 }
-.btn-secondary.disabled, body.mediawiki .mw-editsection a.disabled, body.mediawiki .disabled.mw-ui-button, .btn-secondary:disabled, body.mediawiki .mw-editsection a:disabled, body.mediawiki .mw-ui-button:disabled {
+.btn-secondary.disabled, body.mediawiki .disabled.mw-ui-button, .btn-secondary:disabled, body.mediawiki .mw-ui-button:disabled {
   color: #212529;
   background-color: #e9ecef;
   border-color: #e9ecef;
 }
-.btn-secondary:not(:disabled):not(.disabled):active, body.mediawiki .mw-editsection a:not(:disabled):not(.disabled):active, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, body.mediawiki ul#preftoc li.selected a.btn-secondary:not(:disabled):not(.disabled), body.mediawiki .list-group > strong.btn-secondary.selflink:not(:disabled):not(.disabled), body.mediawiki .card ul > strong.btn-secondary.selflink:not(:disabled):not(.disabled),
-body.mediawiki .card ol > strong.btn-secondary.selflink:not(:disabled):not(.disabled), body.mediawiki .mw-editsection a:not(:disabled):not(.disabled).active, body.mediawiki .mw-editsection ul#preftoc li.selected a:not(:disabled):not(.disabled), body.mediawiki ul#preftoc li.selected .mw-editsection a:not(:disabled):not(.disabled), body.mediawiki .mw-ui-button:not(:disabled):not(.disabled).active, body.mediawiki ul#preftoc li.selected a.mw-ui-button:not(:disabled):not(.disabled), body.mediawiki .list-group > strong.mw-ui-button.selflink:not(:disabled):not(.disabled), body.mediawiki .card ul > strong.mw-ui-button.selflink:not(:disabled):not(.disabled),
-body.mediawiki .card ol > strong.mw-ui-button.selflink:not(:disabled):not(.disabled), .show > .btn-secondary.dropdown-toggle, body.mediawiki .mw-editsection .show > a.dropdown-toggle, body.mediawiki .show > .dropdown-toggle.mw-ui-button {
+.btn-secondary:not(:disabled):not(.disabled):active, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, body.mediawiki ul#preftoc li.selected a.btn-secondary:not(:disabled):not(.disabled), body.mediawiki .list-group > strong.btn-secondary.selflink:not(:disabled):not(.disabled), body.mediawiki .card ul > strong.btn-secondary.selflink:not(:disabled):not(.disabled),
+body.mediawiki .card ol > strong.btn-secondary.selflink:not(:disabled):not(.disabled), body.mediawiki .mw-ui-button:not(:disabled):not(.disabled).active, body.mediawiki ul#preftoc li.selected a.mw-ui-button:not(:disabled):not(.disabled), body.mediawiki .list-group > strong.mw-ui-button.selflink:not(:disabled):not(.disabled), body.mediawiki .card ul > strong.mw-ui-button.selflink:not(:disabled):not(.disabled),
+body.mediawiki .card ol > strong.mw-ui-button.selflink:not(:disabled):not(.disabled), .show > .btn-secondary.dropdown-toggle, body.mediawiki .show > .dropdown-toggle.mw-ui-button {
   color: #212529;
   background-color: #cbd3da;
   border-color: #c4ccd4;
 }
-.btn-secondary:not(:disabled):not(.disabled):active:focus, body.mediawiki .mw-editsection a:not(:disabled):not(.disabled):active:focus, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, body.mediawiki ul#preftoc li.selected a.btn-secondary:not(:disabled):not(.disabled):focus, body.mediawiki .list-group > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .card ul > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus,
-body.mediawiki .card ol > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .mw-editsection a:not(:disabled):not(.disabled).active:focus, body.mediawiki .mw-editsection ul#preftoc li.selected a:not(:disabled):not(.disabled):focus, body.mediawiki ul#preftoc li.selected .mw-editsection a:not(:disabled):not(.disabled):focus, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled).active:focus, body.mediawiki ul#preftoc li.selected a.mw-ui-button:not(:disabled):not(.disabled):focus, body.mediawiki .list-group > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .card ul > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus,
-body.mediawiki .card ol > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus, .show > .btn-secondary.dropdown-toggle:focus, body.mediawiki .mw-editsection .show > a.dropdown-toggle:focus, body.mediawiki .show > .dropdown-toggle.mw-ui-button:focus {
+.btn-secondary:not(:disabled):not(.disabled):active:focus, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, body.mediawiki ul#preftoc li.selected a.btn-secondary:not(:disabled):not(.disabled):focus, body.mediawiki .list-group > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .card ul > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus,
+body.mediawiki .card ol > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled).active:focus, body.mediawiki ul#preftoc li.selected a.mw-ui-button:not(:disabled):not(.disabled):focus, body.mediawiki .list-group > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .card ul > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus,
+body.mediawiki .card ol > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus, .show > .btn-secondary.dropdown-toggle:focus, body.mediawiki .show > .dropdown-toggle.mw-ui-button:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
 }
@@ -3479,7 +3477,7 @@ body.mediawiki .card ol > strong.btn-outline-dark.selflink:not(:disabled):not(.d
   pointer-events: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, body.mediawiki .mw-editsection .btn-group-lg > a, body.mediawiki #cse-search-box .btn-group-lg > input[type=submit],
+.btn-lg, .btn-group-lg > .btn, body.mediawiki #cse-search-box .btn-group-lg > input[type=submit],
 body.mediawiki .searchbox .btn-group-lg > input[type=submit], body.mediawiki .btn-group-lg > .mw-ui-button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
@@ -3487,7 +3485,7 @@ body.mediawiki .searchbox .btn-group-lg > input[type=submit], body.mediawiki .bt
   border-radius: 0;
 }
 
-.btn-sm, body.mediawiki .mw-editsection a, .btn-group-sm > .btn, body.mediawiki #cse-search-box .btn-group-sm > input[type=submit],
+.btn-sm, .btn-group-sm > .btn, body.mediawiki #cse-search-box .btn-group-sm > input[type=submit],
 body.mediawiki .searchbox .btn-group-sm > input[type=submit], body.mediawiki .btn-group-sm > .mw-ui-button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
@@ -3790,10 +3788,9 @@ body.mediawiki .card ol > strong.dropdown-item.selflink, .dropdown-item:active {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, body.mediawiki .mw-editsection .btn-group > a, body.mediawiki #cse-search-box .btn-group > input[type=submit],
+.btn-group > .btn, body.mediawiki #cse-search-box .btn-group > input[type=submit],
 body.mediawiki .searchbox .btn-group > input[type=submit], body.mediawiki .btn-group > .mw-ui-button,
 .btn-group-vertical > .btn,
-body.mediawiki .mw-editsection .btn-group-vertical > a,
 body.mediawiki #cse-search-box .btn-group-vertical > input[type=submit],
 body.mediawiki .searchbox .btn-group-vertical > input[type=submit],
 body.mediawiki .btn-group-vertical > .mw-ui-button {
@@ -3802,28 +3799,25 @@ body.mediawiki .btn-group-vertical > .mw-ui-button {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
-.btn-group > .btn:hover, body.mediawiki .mw-editsection .btn-group > a:hover, body.mediawiki #cse-search-box .btn-group > input[type=submit]:hover,
+.btn-group > .btn:hover, body.mediawiki #cse-search-box .btn-group > input[type=submit]:hover,
 body.mediawiki .searchbox .btn-group > input[type=submit]:hover, body.mediawiki .btn-group > .mw-ui-button:hover,
 .btn-group-vertical > .btn:hover,
-body.mediawiki .mw-editsection .btn-group-vertical > a:hover,
 body.mediawiki #cse-search-box .btn-group-vertical > input[type=submit]:hover,
 body.mediawiki .searchbox .btn-group-vertical > input[type=submit]:hover,
 body.mediawiki .btn-group-vertical > .mw-ui-button:hover {
   z-index: 1;
 }
-.btn-group > .btn:focus, body.mediawiki .mw-editsection .btn-group > a:focus, body.mediawiki #cse-search-box .btn-group > input[type=submit]:focus,
-body.mediawiki .searchbox .btn-group > input[type=submit]:focus, body.mediawiki .btn-group > .mw-ui-button:focus, .btn-group > .btn:active, body.mediawiki .mw-editsection .btn-group > a:active, body.mediawiki #cse-search-box .btn-group > input[type=submit]:active,
+.btn-group > .btn:focus, body.mediawiki #cse-search-box .btn-group > input[type=submit]:focus,
+body.mediawiki .searchbox .btn-group > input[type=submit]:focus, body.mediawiki .btn-group > .mw-ui-button:focus, .btn-group > .btn:active, body.mediawiki #cse-search-box .btn-group > input[type=submit]:active,
 body.mediawiki .searchbox .btn-group > input[type=submit]:active, body.mediawiki .btn-group > .mw-ui-button:active, .btn-group > .btn.active, body.mediawiki ul#preftoc li.selected .btn-group > a.btn, body.mediawiki .list-group.btn-group > strong.btn.selflink, body.mediawiki .card ul.btn-group > strong.btn.selflink,
-body.mediawiki .card ol.btn-group > strong.btn.selflink, body.mediawiki .mw-editsection .btn-group > a.active, body.mediawiki .mw-editsection ul#preftoc li.selected .btn-group > a, body.mediawiki ul#preftoc li.selected .mw-editsection .btn-group > a, body.mediawiki #cse-search-box .btn-group > input.active[type=submit],
+body.mediawiki .card ol.btn-group > strong.btn.selflink, body.mediawiki #cse-search-box .btn-group > input.active[type=submit],
 body.mediawiki .searchbox .btn-group > input.active[type=submit], body.mediawiki .btn-group > .active.mw-ui-button, body.mediawiki ul#preftoc li.selected .btn-group > a.mw-ui-button, body.mediawiki .list-group.btn-group > strong.mw-ui-button.selflink, body.mediawiki .card ul.btn-group > strong.mw-ui-button.selflink,
 body.mediawiki .card ol.btn-group > strong.mw-ui-button.selflink,
 .btn-group-vertical > .btn:focus,
-body.mediawiki .mw-editsection .btn-group-vertical > a:focus,
 body.mediawiki #cse-search-box .btn-group-vertical > input[type=submit]:focus,
 body.mediawiki .searchbox .btn-group-vertical > input[type=submit]:focus,
 body.mediawiki .btn-group-vertical > .mw-ui-button:focus,
 .btn-group-vertical > .btn:active,
-body.mediawiki .mw-editsection .btn-group-vertical > a:active,
 body.mediawiki #cse-search-box .btn-group-vertical > input[type=submit]:active,
 body.mediawiki .searchbox .btn-group-vertical > input[type=submit]:active,
 body.mediawiki .btn-group-vertical > .mw-ui-button:active,
@@ -3832,9 +3826,6 @@ body.mediawiki ul#preftoc li.selected .btn-group-vertical > a.btn,
 body.mediawiki .list-group.btn-group-vertical > strong.btn.selflink,
 body.mediawiki .card ul.btn-group-vertical > strong.btn.selflink,
 body.mediawiki .card ol.btn-group-vertical > strong.btn.selflink,
-body.mediawiki .mw-editsection .btn-group-vertical > a.active,
-body.mediawiki .mw-editsection ul#preftoc li.selected .btn-group-vertical > a,
-body.mediawiki ul#preftoc li.selected .mw-editsection .btn-group-vertical > a,
 body.mediawiki #cse-search-box .btn-group-vertical > input.active[type=submit],
 body.mediawiki .searchbox .btn-group-vertical > input.active[type=submit],
 body.mediawiki .btn-group-vertical > .active.mw-ui-button,
@@ -3859,7 +3850,7 @@ body.mediawiki .card ol.btn-group-vertical > strong.mw-ui-button.selflink {
   width: auto;
 }
 
-.btn-group > .btn:not(:first-child), body.mediawiki .mw-editsection .btn-group > a:not(:first-child), body.mediawiki #cse-search-box .btn-group > input[type=submit]:not(:first-child),
+.btn-group > .btn:not(:first-child), body.mediawiki #cse-search-box .btn-group > input[type=submit]:not(:first-child),
 body.mediawiki .searchbox .btn-group > input[type=submit]:not(:first-child), body.mediawiki .btn-group > .mw-ui-button:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
@@ -3875,13 +3866,13 @@ body.mediawiki .searchbox .btn-group > input[type=submit]:not(:first-child), bod
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, body.mediawiki .mw-editsection a + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, body.mediawiki .mw-editsection .btn-group-sm > a + .dropdown-toggle-split, body.mediawiki #cse-search-box .btn-group-sm > input[type=submit] + .dropdown-toggle-split,
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, body.mediawiki #cse-search-box .btn-group-sm > input[type=submit] + .dropdown-toggle-split,
 body.mediawiki .searchbox .btn-group-sm > input[type=submit] + .dropdown-toggle-split, body.mediawiki .btn-group-sm > .mw-ui-button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, body.mediawiki .mw-editsection .btn-group-lg > a + .dropdown-toggle-split, body.mediawiki #cse-search-box .btn-group-lg > input[type=submit] + .dropdown-toggle-split,
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, body.mediawiki #cse-search-box .btn-group-lg > input[type=submit] + .dropdown-toggle-split,
 body.mediawiki .searchbox .btn-group-lg > input[type=submit] + .dropdown-toggle-split, body.mediawiki .btn-group-lg > .mw-ui-button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
@@ -3899,29 +3890,27 @@ body.mediawiki .searchbox .btn-group-lg > input[type=submit] + .dropdown-toggle-
   -ms-flex-pack: center;
   justify-content: center;
 }
-.btn-group-vertical > .btn, body.mediawiki .mw-editsection .btn-group-vertical > a, body.mediawiki #cse-search-box .btn-group-vertical > input[type=submit],
+.btn-group-vertical > .btn, body.mediawiki #cse-search-box .btn-group-vertical > input[type=submit],
 body.mediawiki .searchbox .btn-group-vertical > input[type=submit], body.mediawiki .btn-group-vertical > .mw-ui-button,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), body.mediawiki .mw-editsection .btn-group-vertical > a:not(:first-child), body.mediawiki #cse-search-box .btn-group-vertical > input[type=submit]:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), body.mediawiki #cse-search-box .btn-group-vertical > input[type=submit]:not(:first-child),
 body.mediawiki .searchbox .btn-group-vertical > input[type=submit]:not(:first-child), body.mediawiki .btn-group-vertical > .mw-ui-button:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-toggle > .btn, body.mediawiki .mw-editsection .btn-group-toggle > a, body.mediawiki #cse-search-box .btn-group-toggle > input[type=submit],
+.btn-group-toggle > .btn, body.mediawiki #cse-search-box .btn-group-toggle > input[type=submit],
 body.mediawiki .searchbox .btn-group-toggle > input[type=submit], body.mediawiki .btn-group-toggle > .mw-ui-button,
 .btn-group-toggle > .btn-group > .btn,
-body.mediawiki .mw-editsection .btn-group-toggle > .btn-group > a,
 body.mediawiki #cse-search-box .btn-group-toggle > .btn-group > input[type=submit],
 body.mediawiki .searchbox .btn-group-toggle > .btn-group > input[type=submit],
 body.mediawiki .btn-group-toggle > .btn-group > .mw-ui-button {
   margin-bottom: 0;
 }
-.btn-group-toggle > .btn input[type=radio], body.mediawiki .mw-editsection .btn-group-toggle > a input[type=radio], body.mediawiki #cse-search-box .btn-group-toggle > input[type=submit] input[type=radio],
+.btn-group-toggle > .btn input[type=radio], body.mediawiki #cse-search-box .btn-group-toggle > input[type=submit] input[type=radio],
 body.mediawiki .searchbox .btn-group-toggle > input[type=submit] input[type=radio], body.mediawiki .btn-group-toggle > .mw-ui-button input[type=radio],
 .btn-group-toggle > .btn input[type=checkbox],
-body.mediawiki .mw-editsection .btn-group-toggle > a input[type=checkbox],
 body.mediawiki #cse-search-box .btn-group-toggle > input[type=submit] input[type=checkbox],
 body.mediawiki .searchbox .btn-group-toggle > input[type=submit] input[type=checkbox],
 body.mediawiki .btn-group-toggle > .mw-ui-button input[type=checkbox],
@@ -4015,12 +4004,10 @@ body.mediawiki .searchbox .input-group > input[type=text]:focus,
   display: -ms-flexbox;
   display: flex;
 }
-.input-group-prepend .btn, .input-group-prepend body.mediawiki .mw-editsection a, body.mediawiki .mw-editsection .input-group-prepend a, .input-group-prepend body.mediawiki #cse-search-box input[type=submit], body.mediawiki #cse-search-box .input-group-prepend input[type=submit],
+.input-group-prepend .btn, .input-group-prepend body.mediawiki #cse-search-box input[type=submit], body.mediawiki #cse-search-box .input-group-prepend input[type=submit],
 .input-group-prepend body.mediawiki .searchbox input[type=submit],
 body.mediawiki .searchbox .input-group-prepend input[type=submit], .input-group-prepend body.mediawiki .mw-ui-button, body.mediawiki .input-group-prepend .mw-ui-button,
 .input-group-append .btn,
-.input-group-append body.mediawiki .mw-editsection a,
-body.mediawiki .mw-editsection .input-group-append a,
 .input-group-append body.mediawiki #cse-search-box input[type=submit],
 body.mediawiki #cse-search-box .input-group-append input[type=submit],
 .input-group-append body.mediawiki .searchbox input[type=submit],
@@ -4030,12 +4017,10 @@ body.mediawiki .input-group-append .mw-ui-button {
   position: relative;
   z-index: 2;
 }
-.input-group-prepend .btn:focus, .input-group-prepend body.mediawiki .mw-editsection a:focus, body.mediawiki .mw-editsection .input-group-prepend a:focus, .input-group-prepend body.mediawiki #cse-search-box input[type=submit]:focus, body.mediawiki #cse-search-box .input-group-prepend input[type=submit]:focus,
+.input-group-prepend .btn:focus, .input-group-prepend body.mediawiki #cse-search-box input[type=submit]:focus, body.mediawiki #cse-search-box .input-group-prepend input[type=submit]:focus,
 .input-group-prepend body.mediawiki .searchbox input[type=submit]:focus,
 body.mediawiki .searchbox .input-group-prepend input[type=submit]:focus, .input-group-prepend body.mediawiki .mw-ui-button:focus, body.mediawiki .input-group-prepend .mw-ui-button:focus,
 .input-group-append .btn:focus,
-.input-group-append body.mediawiki .mw-editsection a:focus,
-body.mediawiki .mw-editsection .input-group-append a:focus,
 .input-group-append body.mediawiki #cse-search-box input[type=submit]:focus,
 body.mediawiki #cse-search-box .input-group-append input[type=submit]:focus,
 .input-group-append body.mediawiki .searchbox input[type=submit]:focus,
@@ -4044,38 +4029,28 @@ body.mediawiki .searchbox .input-group-append input[type=submit]:focus,
 body.mediawiki .input-group-append .mw-ui-button:focus {
   z-index: 3;
 }
-.input-group-prepend .btn + .btn, .input-group-prepend body.mediawiki .mw-editsection a + .btn, body.mediawiki .mw-editsection .input-group-prepend a + .btn, .input-group-prepend body.mediawiki .mw-editsection .btn + a, body.mediawiki .mw-editsection .input-group-prepend .btn + a, .input-group-prepend body.mediawiki .mw-editsection a + a, body.mediawiki .mw-editsection .input-group-prepend a + a, .input-group-prepend body.mediawiki #cse-search-box input[type=submit] + .btn, .input-group-prepend body.mediawiki #cse-search-box .mw-editsection input[type=submit] + a, .input-group-prepend body.mediawiki .mw-editsection #cse-search-box input[type=submit] + a, body.mediawiki #cse-search-box .input-group-prepend input[type=submit] + .btn, body.mediawiki #cse-search-box .input-group-prepend .mw-editsection input[type=submit] + a, body.mediawiki .mw-editsection #cse-search-box .input-group-prepend input[type=submit] + a,
+.input-group-prepend .btn + .btn, .input-group-prepend body.mediawiki #cse-search-box input[type=submit] + .btn, body.mediawiki #cse-search-box .input-group-prepend input[type=submit] + .btn,
 .input-group-prepend body.mediawiki .searchbox input[type=submit] + .btn,
-.input-group-prepend body.mediawiki .searchbox .mw-editsection input[type=submit] + a,
-.input-group-prepend body.mediawiki .mw-editsection .searchbox input[type=submit] + a,
-body.mediawiki .searchbox .input-group-prepend input[type=submit] + .btn,
-body.mediawiki .searchbox .input-group-prepend .mw-editsection input[type=submit] + a,
-body.mediawiki .mw-editsection .searchbox .input-group-prepend input[type=submit] + a, .input-group-prepend body.mediawiki #cse-search-box .btn + input[type=submit], .input-group-prepend body.mediawiki #cse-search-box .mw-editsection a + input[type=submit], .input-group-prepend body.mediawiki .mw-editsection #cse-search-box a + input[type=submit], body.mediawiki #cse-search-box .input-group-prepend .btn + input[type=submit], body.mediawiki #cse-search-box .input-group-prepend .mw-editsection a + input[type=submit], body.mediawiki .mw-editsection #cse-search-box .input-group-prepend a + input[type=submit], .input-group-prepend body.mediawiki #cse-search-box input[type=submit] + input[type=submit], body.mediawiki #cse-search-box .input-group-prepend input[type=submit] + input[type=submit],
+body.mediawiki .searchbox .input-group-prepend input[type=submit] + .btn, .input-group-prepend body.mediawiki #cse-search-box .btn + input[type=submit], body.mediawiki #cse-search-box .input-group-prepend .btn + input[type=submit], .input-group-prepend body.mediawiki #cse-search-box input[type=submit] + input[type=submit], body.mediawiki #cse-search-box .input-group-prepend input[type=submit] + input[type=submit],
 .input-group-prepend body.mediawiki .searchbox #cse-search-box input[type=submit] + input[type=submit],
 .input-group-prepend body.mediawiki #cse-search-box .searchbox input[type=submit] + input[type=submit],
 body.mediawiki .searchbox .input-group-prepend #cse-search-box input[type=submit] + input[type=submit],
 body.mediawiki #cse-search-box .searchbox .input-group-prepend input[type=submit] + input[type=submit],
 .input-group-prepend body.mediawiki .searchbox .btn + input[type=submit],
-.input-group-prepend body.mediawiki .searchbox .mw-editsection a + input[type=submit],
-.input-group-prepend body.mediawiki .mw-editsection .searchbox a + input[type=submit],
 body.mediawiki .searchbox .input-group-prepend .btn + input[type=submit],
-body.mediawiki .searchbox .input-group-prepend .mw-editsection a + input[type=submit],
-body.mediawiki .mw-editsection .searchbox .input-group-prepend a + input[type=submit],
 .input-group-prepend body.mediawiki #cse-search-box .searchbox input[type=submit] + input[type=submit],
 .input-group-prepend body.mediawiki .searchbox #cse-search-box input[type=submit] + input[type=submit],
 body.mediawiki #cse-search-box .input-group-prepend .searchbox input[type=submit] + input[type=submit],
 body.mediawiki .searchbox #cse-search-box .input-group-prepend input[type=submit] + input[type=submit],
 .input-group-prepend body.mediawiki .searchbox input[type=submit] + input[type=submit],
-body.mediawiki .searchbox .input-group-prepend input[type=submit] + input[type=submit], .input-group-prepend body.mediawiki .mw-ui-button + .btn, .input-group-prepend body.mediawiki .mw-editsection .mw-ui-button + a, .input-group-prepend body.mediawiki #cse-search-box .mw-ui-button + input[type=submit],
-.input-group-prepend body.mediawiki .searchbox .mw-ui-button + input[type=submit], body.mediawiki .input-group-prepend .mw-ui-button + .btn, body.mediawiki .input-group-prepend .mw-editsection .mw-ui-button + a, body.mediawiki .mw-editsection .input-group-prepend .mw-ui-button + a, body.mediawiki .input-group-prepend #cse-search-box .mw-ui-button + input[type=submit], body.mediawiki #cse-search-box .input-group-prepend .mw-ui-button + input[type=submit],
+body.mediawiki .searchbox .input-group-prepend input[type=submit] + input[type=submit], .input-group-prepend body.mediawiki .mw-ui-button + .btn, .input-group-prepend body.mediawiki #cse-search-box .mw-ui-button + input[type=submit],
+.input-group-prepend body.mediawiki .searchbox .mw-ui-button + input[type=submit], body.mediawiki .input-group-prepend .mw-ui-button + .btn, body.mediawiki .input-group-prepend #cse-search-box .mw-ui-button + input[type=submit], body.mediawiki #cse-search-box .input-group-prepend .mw-ui-button + input[type=submit],
 body.mediawiki .input-group-prepend .searchbox .mw-ui-button + input[type=submit],
-body.mediawiki .searchbox .input-group-prepend .mw-ui-button + input[type=submit], .input-group-prepend body.mediawiki .btn + .mw-ui-button, .input-group-prepend body.mediawiki .mw-editsection a + .mw-ui-button, .input-group-prepend body.mediawiki #cse-search-box input[type=submit] + .mw-ui-button,
-.input-group-prepend body.mediawiki .searchbox input[type=submit] + .mw-ui-button, body.mediawiki .input-group-prepend .btn + .mw-ui-button, body.mediawiki .input-group-prepend .mw-editsection a + .mw-ui-button, body.mediawiki .mw-editsection .input-group-prepend a + .mw-ui-button, body.mediawiki .input-group-prepend #cse-search-box input[type=submit] + .mw-ui-button, body.mediawiki #cse-search-box .input-group-prepend input[type=submit] + .mw-ui-button,
+body.mediawiki .searchbox .input-group-prepend .mw-ui-button + input[type=submit], .input-group-prepend body.mediawiki .btn + .mw-ui-button, .input-group-prepend body.mediawiki #cse-search-box input[type=submit] + .mw-ui-button,
+.input-group-prepend body.mediawiki .searchbox input[type=submit] + .mw-ui-button, body.mediawiki .input-group-prepend .btn + .mw-ui-button, body.mediawiki .input-group-prepend #cse-search-box input[type=submit] + .mw-ui-button, body.mediawiki #cse-search-box .input-group-prepend input[type=submit] + .mw-ui-button,
 body.mediawiki .input-group-prepend .searchbox input[type=submit] + .mw-ui-button,
 body.mediawiki .searchbox .input-group-prepend input[type=submit] + .mw-ui-button, .input-group-prepend body.mediawiki .mw-ui-button + .mw-ui-button, body.mediawiki .input-group-prepend .mw-ui-button + .mw-ui-button,
 .input-group-prepend .btn + .input-group-text,
-.input-group-prepend body.mediawiki .mw-editsection a + .input-group-text,
-body.mediawiki .mw-editsection .input-group-prepend a + .input-group-text,
 .input-group-prepend body.mediawiki #cse-search-box input[type=submit] + .input-group-text,
 body.mediawiki #cse-search-box .input-group-prepend input[type=submit] + .input-group-text,
 .input-group-prepend body.mediawiki .searchbox input[type=submit] + .input-group-text,
@@ -4084,8 +4059,6 @@ body.mediawiki .searchbox .input-group-prepend input[type=submit] + .input-group
 body.mediawiki .input-group-prepend .mw-ui-button + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
 .input-group-prepend .input-group-text + .btn,
-.input-group-prepend body.mediawiki .mw-editsection .input-group-text + a,
-body.mediawiki .mw-editsection .input-group-prepend .input-group-text + a,
 .input-group-prepend body.mediawiki #cse-search-box .input-group-text + input[type=submit],
 body.mediawiki #cse-search-box .input-group-prepend .input-group-text + input[type=submit],
 .input-group-prepend body.mediawiki .searchbox .input-group-text + input[type=submit],
@@ -4093,30 +4066,12 @@ body.mediawiki .searchbox .input-group-prepend .input-group-text + input[type=su
 .input-group-prepend body.mediawiki .input-group-text + .mw-ui-button,
 body.mediawiki .input-group-prepend .input-group-text + .mw-ui-button,
 .input-group-append .btn + .btn,
-.input-group-append body.mediawiki .mw-editsection a + .btn,
-body.mediawiki .mw-editsection .input-group-append a + .btn,
-.input-group-append body.mediawiki .mw-editsection .btn + a,
-body.mediawiki .mw-editsection .input-group-append .btn + a,
-.input-group-append body.mediawiki .mw-editsection a + a,
-body.mediawiki .mw-editsection .input-group-append a + a,
 .input-group-append body.mediawiki #cse-search-box input[type=submit] + .btn,
-.input-group-append body.mediawiki #cse-search-box .mw-editsection input[type=submit] + a,
-.input-group-append body.mediawiki .mw-editsection #cse-search-box input[type=submit] + a,
 body.mediawiki #cse-search-box .input-group-append input[type=submit] + .btn,
-body.mediawiki #cse-search-box .input-group-append .mw-editsection input[type=submit] + a,
-body.mediawiki .mw-editsection #cse-search-box .input-group-append input[type=submit] + a,
 .input-group-append body.mediawiki .searchbox input[type=submit] + .btn,
-.input-group-append body.mediawiki .searchbox .mw-editsection input[type=submit] + a,
-.input-group-append body.mediawiki .mw-editsection .searchbox input[type=submit] + a,
 body.mediawiki .searchbox .input-group-append input[type=submit] + .btn,
-body.mediawiki .searchbox .input-group-append .mw-editsection input[type=submit] + a,
-body.mediawiki .mw-editsection .searchbox .input-group-append input[type=submit] + a,
 .input-group-append body.mediawiki #cse-search-box .btn + input[type=submit],
-.input-group-append body.mediawiki #cse-search-box .mw-editsection a + input[type=submit],
-.input-group-append body.mediawiki .mw-editsection #cse-search-box a + input[type=submit],
 body.mediawiki #cse-search-box .input-group-append .btn + input[type=submit],
-body.mediawiki #cse-search-box .input-group-append .mw-editsection a + input[type=submit],
-body.mediawiki .mw-editsection #cse-search-box .input-group-append a + input[type=submit],
 .input-group-append body.mediawiki #cse-search-box input[type=submit] + input[type=submit],
 body.mediawiki #cse-search-box .input-group-append input[type=submit] + input[type=submit],
 .input-group-append body.mediawiki .searchbox #cse-search-box input[type=submit] + input[type=submit],
@@ -4124,11 +4079,7 @@ body.mediawiki #cse-search-box .input-group-append input[type=submit] + input[ty
 body.mediawiki .searchbox .input-group-append #cse-search-box input[type=submit] + input[type=submit],
 body.mediawiki #cse-search-box .searchbox .input-group-append input[type=submit] + input[type=submit],
 .input-group-append body.mediawiki .searchbox .btn + input[type=submit],
-.input-group-append body.mediawiki .searchbox .mw-editsection a + input[type=submit],
-.input-group-append body.mediawiki .mw-editsection .searchbox a + input[type=submit],
 body.mediawiki .searchbox .input-group-append .btn + input[type=submit],
-body.mediawiki .searchbox .input-group-append .mw-editsection a + input[type=submit],
-body.mediawiki .mw-editsection .searchbox .input-group-append a + input[type=submit],
 .input-group-append body.mediawiki #cse-search-box .searchbox input[type=submit] + input[type=submit],
 .input-group-append body.mediawiki .searchbox #cse-search-box input[type=submit] + input[type=submit],
 body.mediawiki #cse-search-box .input-group-append .searchbox input[type=submit] + input[type=submit],
@@ -4136,23 +4087,17 @@ body.mediawiki .searchbox #cse-search-box .input-group-append input[type=submit]
 .input-group-append body.mediawiki .searchbox input[type=submit] + input[type=submit],
 body.mediawiki .searchbox .input-group-append input[type=submit] + input[type=submit],
 .input-group-append body.mediawiki .mw-ui-button + .btn,
-.input-group-append body.mediawiki .mw-editsection .mw-ui-button + a,
 .input-group-append body.mediawiki #cse-search-box .mw-ui-button + input[type=submit],
 .input-group-append body.mediawiki .searchbox .mw-ui-button + input[type=submit],
 body.mediawiki .input-group-append .mw-ui-button + .btn,
-body.mediawiki .input-group-append .mw-editsection .mw-ui-button + a,
-body.mediawiki .mw-editsection .input-group-append .mw-ui-button + a,
 body.mediawiki .input-group-append #cse-search-box .mw-ui-button + input[type=submit],
 body.mediawiki #cse-search-box .input-group-append .mw-ui-button + input[type=submit],
 body.mediawiki .input-group-append .searchbox .mw-ui-button + input[type=submit],
 body.mediawiki .searchbox .input-group-append .mw-ui-button + input[type=submit],
 .input-group-append body.mediawiki .btn + .mw-ui-button,
-.input-group-append body.mediawiki .mw-editsection a + .mw-ui-button,
 .input-group-append body.mediawiki #cse-search-box input[type=submit] + .mw-ui-button,
 .input-group-append body.mediawiki .searchbox input[type=submit] + .mw-ui-button,
 body.mediawiki .input-group-append .btn + .mw-ui-button,
-body.mediawiki .input-group-append .mw-editsection a + .mw-ui-button,
-body.mediawiki .mw-editsection .input-group-append a + .mw-ui-button,
 body.mediawiki .input-group-append #cse-search-box input[type=submit] + .mw-ui-button,
 body.mediawiki #cse-search-box .input-group-append input[type=submit] + .mw-ui-button,
 body.mediawiki .input-group-append .searchbox input[type=submit] + .mw-ui-button,
@@ -4160,8 +4105,6 @@ body.mediawiki .searchbox .input-group-append input[type=submit] + .mw-ui-button
 .input-group-append body.mediawiki .mw-ui-button + .mw-ui-button,
 body.mediawiki .input-group-append .mw-ui-button + .mw-ui-button,
 .input-group-append .btn + .input-group-text,
-.input-group-append body.mediawiki .mw-editsection a + .input-group-text,
-body.mediawiki .mw-editsection .input-group-append a + .input-group-text,
 .input-group-append body.mediawiki #cse-search-box input[type=submit] + .input-group-text,
 body.mediawiki #cse-search-box .input-group-append input[type=submit] + .input-group-text,
 .input-group-append body.mediawiki .searchbox input[type=submit] + .input-group-text,
@@ -4170,8 +4113,6 @@ body.mediawiki .searchbox .input-group-append input[type=submit] + .input-group-
 body.mediawiki .input-group-append .mw-ui-button + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
 .input-group-append .input-group-text + .btn,
-.input-group-append body.mediawiki .mw-editsection .input-group-text + a,
-body.mediawiki .mw-editsection .input-group-append .input-group-text + a,
 .input-group-append body.mediawiki #cse-search-box .input-group-text + input[type=submit],
 body.mediawiki #cse-search-box .input-group-append .input-group-text + input[type=submit],
 .input-group-append body.mediawiki .searchbox .input-group-text + input[type=submit],
@@ -4224,12 +4165,10 @@ body.mediawiki .searchbox .input-group-lg > input[type=text],
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
-body.mediawiki .mw-editsection .input-group-lg > .input-group-prepend > a,
 body.mediawiki #cse-search-box .input-group-lg > .input-group-prepend > input[type=submit],
 body.mediawiki .searchbox .input-group-lg > .input-group-prepend > input[type=submit],
 body.mediawiki .input-group-lg > .input-group-prepend > .mw-ui-button,
 .input-group-lg > .input-group-append > .btn,
-body.mediawiki .mw-editsection .input-group-lg > .input-group-append > a,
 body.mediawiki #cse-search-box .input-group-lg > .input-group-append > input[type=submit],
 body.mediawiki .searchbox .input-group-lg > .input-group-append > input[type=submit],
 body.mediawiki .input-group-lg > .input-group-append > .mw-ui-button {
@@ -4250,12 +4189,10 @@ body.mediawiki .searchbox .input-group-sm > input[type=text],
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
-body.mediawiki .mw-editsection .input-group-sm > .input-group-prepend > a,
 body.mediawiki #cse-search-box .input-group-sm > .input-group-prepend > input[type=submit],
 body.mediawiki .searchbox .input-group-sm > .input-group-prepend > input[type=submit],
 body.mediawiki .input-group-sm > .input-group-prepend > .mw-ui-button,
 .input-group-sm > .input-group-append > .btn,
-body.mediawiki .mw-editsection .input-group-sm > .input-group-append > a,
 body.mediawiki #cse-search-box .input-group-sm > .input-group-append > input[type=submit],
 body.mediawiki .searchbox .input-group-sm > .input-group-append > input[type=submit],
 body.mediawiki .input-group-sm > .input-group-append > .mw-ui-button {
@@ -5608,7 +5545,7 @@ a.badge:hover, a.badge:focus {
   display: none;
 }
 
-.btn .badge, body.mediawiki .mw-editsection a .badge, body.mediawiki #cse-search-box input[type=submit] .badge,
+.btn .badge, body.mediawiki #cse-search-box input[type=submit] .badge,
 body.mediawiki .searchbox input[type=submit] .badge, body.mediawiki .mw-ui-button .badge {
   position: relative;
   top: -1px;
@@ -18610,38 +18547,38 @@ body.mediawiki .card .navbar .navbar-nav ol > strong.nav-link.selflink {
   body .navbar .navbar-text a:hover, body .navbar .navbar-text a:focus {
     color: #ffffff;
   }
-  body .btn-secondary, body.mediawiki .mw-editsection a, body.mediawiki .mw-ui-button {
+  body .btn-secondary, body.mediawiki .mw-ui-button {
     color: #ffffff;
     background-color: #343a40;
     border-color: #343a40;
   }
-  body .btn-secondary:hover, body.mediawiki .mw-editsection a:hover, body.mediawiki .mw-ui-button:hover {
+  body .btn-secondary:hover, body.mediawiki .mw-ui-button:hover {
     color: #ffffff;
     background-color: #23272b;
     border-color: #1d2124;
   }
-  body .btn-secondary:focus, body.mediawiki .mw-editsection a:focus, body.mediawiki .mw-ui-button:focus, body .btn-secondary.focus, body.mediawiki .mw-editsection a.focus, body.mediawiki .focus.mw-ui-button {
+  body .btn-secondary:focus, body.mediawiki .mw-ui-button:focus, body .btn-secondary.focus, body.mediawiki .focus.mw-ui-button {
     color: #ffffff;
     background-color: #23272b;
     border-color: #1d2124;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
   }
-  body .btn-secondary.disabled, body.mediawiki .mw-editsection a.disabled, body.mediawiki .disabled.mw-ui-button, body .btn-secondary:disabled, body.mediawiki .mw-editsection a:disabled, body.mediawiki .mw-ui-button:disabled {
+  body .btn-secondary.disabled, body.mediawiki .disabled.mw-ui-button, body .btn-secondary:disabled, body.mediawiki .mw-ui-button:disabled {
     color: #ffffff;
     background-color: #343a40;
     border-color: #343a40;
   }
-  body .btn-secondary:not(:disabled):not(.disabled):active, body.mediawiki .mw-editsection a:not(:disabled):not(.disabled):active, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled):active, body .btn-secondary:not(:disabled):not(.disabled).active, body.mediawiki ul#preftoc li.selected a.btn-secondary:not(:disabled):not(.disabled), body.mediawiki .list-group > strong.btn-secondary.selflink:not(:disabled):not(.disabled), body.mediawiki .card ul > strong.btn-secondary.selflink:not(:disabled):not(.disabled),
-body.mediawiki .card ol > strong.btn-secondary.selflink:not(:disabled):not(.disabled), body.mediawiki .mw-editsection a:not(:disabled):not(.disabled).active, body.mediawiki .mw-editsection ul#preftoc li.selected a:not(:disabled):not(.disabled), body.mediawiki ul#preftoc li.selected .mw-editsection a:not(:disabled):not(.disabled), body.mediawiki .mw-ui-button:not(:disabled):not(.disabled).active, body.mediawiki ul#preftoc li.selected a.mw-ui-button:not(:disabled):not(.disabled), body.mediawiki .list-group > strong.mw-ui-button.selflink:not(:disabled):not(.disabled), body.mediawiki .card ul > strong.mw-ui-button.selflink:not(:disabled):not(.disabled),
-body.mediawiki .card ol > strong.mw-ui-button.selflink:not(:disabled):not(.disabled), .show > body .btn-secondary.dropdown-toggle, .show > body body.mediawiki .mw-editsection a.dropdown-toggle, body.mediawiki .mw-editsection .show > body a.dropdown-toggle, .show > body body.mediawiki .dropdown-toggle.mw-ui-button, body.mediawiki .show > body .dropdown-toggle.mw-ui-button {
+  body .btn-secondary:not(:disabled):not(.disabled):active, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled):active, body .btn-secondary:not(:disabled):not(.disabled).active, body.mediawiki ul#preftoc li.selected a.btn-secondary:not(:disabled):not(.disabled), body.mediawiki .list-group > strong.btn-secondary.selflink:not(:disabled):not(.disabled), body.mediawiki .card ul > strong.btn-secondary.selflink:not(:disabled):not(.disabled),
+body.mediawiki .card ol > strong.btn-secondary.selflink:not(:disabled):not(.disabled), body.mediawiki .mw-ui-button:not(:disabled):not(.disabled).active, body.mediawiki ul#preftoc li.selected a.mw-ui-button:not(:disabled):not(.disabled), body.mediawiki .list-group > strong.mw-ui-button.selflink:not(:disabled):not(.disabled), body.mediawiki .card ul > strong.mw-ui-button.selflink:not(:disabled):not(.disabled),
+body.mediawiki .card ol > strong.mw-ui-button.selflink:not(:disabled):not(.disabled), .show > body .btn-secondary.dropdown-toggle, .show > body body.mediawiki .dropdown-toggle.mw-ui-button, body.mediawiki .show > body .dropdown-toggle.mw-ui-button {
     color: #ffffff;
     background-color: #1d2124;
     border-color: #171a1d;
   }
-  body .btn-secondary:not(:disabled):not(.disabled):active:focus, body.mediawiki .mw-editsection a:not(:disabled):not(.disabled):active:focus, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled):active:focus, body .btn-secondary:not(:disabled):not(.disabled).active:focus, body.mediawiki ul#preftoc li.selected a.btn-secondary:not(:disabled):not(.disabled):focus, body.mediawiki .list-group > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .card ul > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus,
-body.mediawiki .card ol > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .mw-editsection a:not(:disabled):not(.disabled).active:focus, body.mediawiki .mw-editsection ul#preftoc li.selected a:not(:disabled):not(.disabled):focus, body.mediawiki ul#preftoc li.selected .mw-editsection a:not(:disabled):not(.disabled):focus, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled).active:focus, body.mediawiki ul#preftoc li.selected a.mw-ui-button:not(:disabled):not(.disabled):focus, body.mediawiki .list-group > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .card ul > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus,
-body.mediawiki .card ol > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus, .show > body .btn-secondary.dropdown-toggle:focus, .show > body body.mediawiki .mw-editsection a.dropdown-toggle:focus, body.mediawiki .mw-editsection .show > body a.dropdown-toggle:focus, .show > body body.mediawiki .dropdown-toggle.mw-ui-button:focus, body.mediawiki .show > body .dropdown-toggle.mw-ui-button:focus {
+  body .btn-secondary:not(:disabled):not(.disabled):active:focus, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled):active:focus, body .btn-secondary:not(:disabled):not(.disabled).active:focus, body.mediawiki ul#preftoc li.selected a.btn-secondary:not(:disabled):not(.disabled):focus, body.mediawiki .list-group > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .card ul > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus,
+body.mediawiki .card ol > strong.btn-secondary.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .mw-ui-button:not(:disabled):not(.disabled).active:focus, body.mediawiki ul#preftoc li.selected a.mw-ui-button:not(:disabled):not(.disabled):focus, body.mediawiki .list-group > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus, body.mediawiki .card ul > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus,
+body.mediawiki .card ol > strong.mw-ui-button.selflink:not(:disabled):not(.disabled):focus, .show > body .btn-secondary.dropdown-toggle:focus, .show > body body.mediawiki .dropdown-toggle.mw-ui-button:focus, body.mediawiki .show > body .dropdown-toggle.mw-ui-button:focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
   }
@@ -18776,7 +18713,7 @@ body.mediawiki table {
 body.mediawiki {
   /* Table of content */
 }
-body.mediawiki .btn a, body.mediawiki .mw-editsection a a, body.mediawiki #cse-search-box input[type=submit] a,
+body.mediawiki .btn a, body.mediawiki #cse-search-box input[type=submit] a,
 body.mediawiki .searchbox input[type=submit] a, body.mediawiki .mw-ui-button a {
   display: inline-block;
   color: inherit;
@@ -18784,12 +18721,12 @@ body.mediawiki .searchbox input[type=submit] a, body.mediawiki .mw-ui-button a {
   margin: -0.375rem -0.75rem;
   padding: 0.375rem 0.75rem;
 }
-body.mediawiki .btn-sm a, body.mediawiki .mw-editsection a a, body.mediawiki .btn-group-sm > .btn a, body.mediawiki #cse-search-box .btn-group-sm > input[type=submit] a,
+body.mediawiki .btn-sm a, body.mediawiki .btn-group-sm > .btn a, body.mediawiki #cse-search-box .btn-group-sm > input[type=submit] a,
 body.mediawiki .searchbox .btn-group-sm > input[type=submit] a, body.mediawiki .btn-group-sm > .mw-ui-button a {
   margin: -0.25rem -0.5rem;
   padding: 0.25rem 0.5rem;
 }
-body.mediawiki .btn-lg a, body.mediawiki .btn-group-lg > .btn a, body.mediawiki .mw-editsection .btn-group-lg > a a, body.mediawiki #cse-search-box .btn-group-lg > input[type=submit] a,
+body.mediawiki .btn-lg a, body.mediawiki .btn-group-lg > .btn a, body.mediawiki #cse-search-box .btn-group-lg > input[type=submit] a,
 body.mediawiki .searchbox .btn-group-lg > input[type=submit] a, body.mediawiki .btn-group-lg > .mw-ui-button a {
   margin: -0.5rem -1rem;
   padding: 0.5rem 1rem;
@@ -18839,12 +18776,6 @@ body.mediawiki body.action-submit #siteNotice,
 body.mediawiki body.action-edit #mw-head,
 body.mediawiki body.action-edit #siteNotice {
   display: none;
-}
-body.mediawiki .mw-editsection {
-  vertical-align: 0.6em;
-}
-body.mediawiki .mw-editsection a {
-  font-family: "Source Sans Pro", sans-serif;
 }
 body.mediawiki .mw-editsection-bracket {
   display: none;
