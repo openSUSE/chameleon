@@ -18713,12 +18713,12 @@ body.mediawiki table {
 body.mediawiki {
   /* Table of content */
 }
-body.mediawiki .mw-editsection {
+body.mediawiki .mw-anchor {
   margin-left: 0.5rem !important;
   font-size: inherit !important;
   line-height: inherit !important;
 }
-body.mediawiki .mw-editsection a {
+body.mediawiki .mw-anchor a {
   color: inherit;
   opacity: 0.5;
 }
