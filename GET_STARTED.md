@@ -9,12 +9,12 @@ webpage loading speed. This is the most recommended way to use Chameleon.
 <!-- Chameleon Style -->
 <link
   rel="stylesheet"
-  href="https://static.opensuse.org/chameleon/dist/css/chameleon.css"
+  href="https://static.opensuse.org/chameleon-2.0/dist/css/chameleon.css"
 />
 
 <!-- Chameleon Script Bundled with jQuery and Bootstrap -->
 <script
-  src="https://static.opensuse.org/chameleon/dist/js/chameleon.js"
+  src="https://static.opensuse.org/chameleon-2.0/dist/js/chameleon.js"
   defer
 ></script>
 ```
@@ -24,7 +24,7 @@ If the website (WordPress, MediaWiki, etc.) already provides jQuery:
 ```html
 <!-- Chameleon Script Bundled with Bootstrap -->
 <script
-  src="https://static.opensuse.org/chameleon/dist/js/chameleon-no-jquery.js"
+  src="https://static.opensuse.org/chameleon-2.0/dist/js/chameleon-no-jquery.js"
   defer
 ></script>
 ```
@@ -34,7 +34,7 @@ If the website (for Weblate, etc.) already provides jQuery and Bootstrap 4:
 ```html
 <!-- Chameleon Script -->
 <script
-  src="https://static.opensuse.org/chameleon/dist/js/chameleon-no-bootstrap.js"
+  src="https://static.opensuse.org/chameleon-2.0/dist/js/chameleon-no-bootstrap.js"
   defer
 ></script>
 ```
