@@ -13859,12 +13859,6 @@ pre, .pre {
 .navbar .navbar-text a:hover, .navbar .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar img {
-  height: 32px;
-  width: auto;
-  margin-top: -0.5rem;
-  margin-bottom: -0.5rem;
-}
 .navbar .navbar-brand {
   display: -webkit-box;
   display: -ms-flexbox;
