@@ -1,0 +1,44 @@
+#!/usr/bin/node
+
+const fs = require("fs");
+
+let icons = "module.exports = {\n";
+
+function dir(p) {
+  const files = fs.readdirSync(p);
+
+  files.forEach(function(f) {
+    if (f.indexOf("-fill.svg") > -1) {
+      return;
+    }
+    const name = f.replace(/(\-line)?\.svg$/, "");
+    const data = fs.readFileSync(p + f, "utf8");
+    const path = data.substring(
+      data.lastIndexOf('d="') + 3,
+      data.lastIndexOf('"')
+    );
+    icons += `  "${name}": "${path}",\n`;
+  });
+}
+
+dir("./src/icons/");
+dir("node_modules/remixicon/icons/Buildings/");
+dir("node_modules/remixicon/icons/Business/");
+dir("node_modules/remixicon/icons/Communication/");
+dir("node_modules/remixicon/icons/Design/");
+dir("node_modules/remixicon/icons/Development/");
+dir("node_modules/remixicon/icons/Device/");
+dir("node_modules/remixicon/icons/Document/");
+dir("node_modules/remixicon/icons/Editor/");
+dir("node_modules/remixicon/icons/Finance/");
+dir("node_modules/remixicon/icons/Logos/");
+dir("node_modules/remixicon/icons/Map/");
+dir("node_modules/remixicon/icons/Media/");
+dir("node_modules/remixicon/icons/Others/");
+dir("node_modules/remixicon/icons/System/");
+dir("node_modules/remixicon/icons/User/");
+dir("node_modules/remixicon/icons/Weather/");
+
+icons = icons.substring(0, icons.length - 2) + "\n};";
+
+fs.writeFileSync("./src/js/data/icons.js", icons);

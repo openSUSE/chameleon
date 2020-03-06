@@ -11,7 +11,7 @@ for (let i = 0; i < headlines.length; i++) {
 
   const link = document.createElement("a");
   link.href = "#" + headline.id;
-  link.innerHTML = '<svg class="icon"><use xlink:href="#links-line"></svg>';
+  link.innerHTML = '<svg class="icon"><use xlink:href="#links"></svg>';
 
   wrap.append(link);
   headline.after(wrap);

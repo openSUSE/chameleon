@@ -1,89 +1,4 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-const sections = require("../data/sites");
-const localize = require("../util/localize");
-const langs = require("../data/langs");
-
-document.addEventListener("DOMContentLoaded", function() {
-  const navbar = document.querySelector(".navbar");
-  if (!navbar) {
-    return;
-  }
-
-  const toggler =
-    navbar.querySelector(".megamenu-toggler") ||
-    document.createElement("button");
-  if (!toggler.className) {
-    toggler.className = "navbar-toggler megamenu-toggler";
-    toggler.type = "button";
-    toggler.innerHTML =
-      '<svg class="icon"><use xlink:href="#apps-line"></use></svg>';
-    navbar.append(toggler);
-  }
-
-  const modal = document.createElement("div");
-  modal.className = "megamenu animated fast";
-  modal.style.display = "none";
-
-  const content = sections
-    .map(function(section) {
-      const links = section.links
-        .map(function(link) {
-          return `<li><a class="l10n" href="${link.url}" data-msg-id="${link.id}" data-url-id="${link.id}-url">${link.title}</a></li>`;
-        })
-        .join("");
-
-      return `
-<div class="col-6 col-md-4 mb-5">
-  <h5 class="megamenu-heading l10n" data-msg-id="${section.id}">${section.title}</h5>
-  <ul class="megamenu-list">
-    ${links}
-  </ul>
-</div>
-  `;
-    })
-    .join("");
-
-  modal.innerHTML = `
-<div class="megamenu-header">
-  <h3 class="megamenu-title l10n" data-msg-id="opensuse-universe">openSUSE Universe</h3>
-  <button class="megamenu-close ml-auto" type="button">
-    <svg class="icon"><use xlink:href="#close-line"></use></svg>
-  </button>
-</div>
-<div class="megamenu-content">
-  <div class="container-fluid">
-    <div class="row">
-      ${content}
-    </div>
-  </div>
-</div>
-`;
-
-  document.body.append(modal);
-
-  localize(".l10n", langs);
-
-  toggler.addEventListener("click", function() {
-    const scrollbarWidth = window.innerWidth - document.body.clientWidth;
-    modal.style.display = "flex";
-    modal.classList.remove("fadeOut");
-    modal.classList.add("fadeIn");
-    document.body.style.paddingRight = scrollbarWidth + "px";
-    document.body.style.overflow = "hidden";
-  });
-
-  modal.addEventListener("click", function() {
-    modal.classList.remove("fadeIn");
-    modal.classList.add("fadeOut");
-    setTimeout(function() {
-      modal.style.display = "none";
-      document.body.style.paddingRight = "";
-      document.body.style.overflow = "";
-    }, 800);
-  });
-});
-
-},{"../data/langs":2,"../data/sites":3,"../util/localize":4}],2:[function(require,module,exports){
 const langs = {};
 
 langs["da"] = require("../../langs/da.json");
@@ -108,7 +23,7 @@ langs["zh-Hant"] = langs["zh-TW"];
 
 module.exports = langs;
 
-},{"../../langs/da.json":5,"../../langs/de.json":6,"../../langs/en.json":7,"../../langs/es.json":8,"../../langs/et.json":9,"../../langs/fi.json":10,"../../langs/it.json":11,"../../langs/ja.json":12,"../../langs/ko.json":13,"../../langs/pl.json":14,"../../langs/pt_BR.json":15,"../../langs/ru.json":16,"../../langs/sv.json":17,"../../langs/zh_CN.json":18,"../../langs/zh_TW.json":19}],3:[function(require,module,exports){
+},{"../../langs/da.json":5,"../../langs/de.json":6,"../../langs/en.json":7,"../../langs/es.json":8,"../../langs/et.json":9,"../../langs/fi.json":10,"../../langs/it.json":11,"../../langs/ja.json":12,"../../langs/ko.json":13,"../../langs/pl.json":14,"../../langs/pt_BR.json":15,"../../langs/ru.json":16,"../../langs/sv.json":17,"../../langs/zh_CN.json":18,"../../langs/zh_TW.json":19}],2:[function(require,module,exports){
 module.exports = [
   {
     id: "main",
@@ -297,7 +212,92 @@ module.exports = [
   }
 ];
 
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
+const langs = require("./data/langs");
+const sections = require("./data/sites");
+const localize = require("./util/localize");
+
+document.addEventListener("DOMContentLoaded", function() {
+  const navbar = document.querySelector(".navbar");
+  if (!navbar) {
+    return;
+  }
+
+  const toggler =
+    navbar.querySelector(".megamenu-toggler") ||
+    document.createElement("button");
+  if (!toggler.className) {
+    toggler.className = "navbar-toggler megamenu-toggler";
+    toggler.type = "button";
+    toggler.innerHTML =
+      '<svg class="icon"><use xlink:href="#apps"></use></svg>';
+    navbar.append(toggler);
+  }
+
+  const modal = document.createElement("div");
+  modal.className = "megamenu animated fast";
+  modal.style.display = "none";
+
+  const content = sections
+    .map(function(section) {
+      const links = section.links
+        .map(function(link) {
+          return `<li><a class="l10n" href="${link.url}" data-msg-id="${link.id}" data-url-id="${link.id}-url">${link.title}</a></li>`;
+        })
+        .join("");
+
+      return `
+<div class="col-6 col-md-4 mb-5">
+  <h5 class="megamenu-heading l10n" data-msg-id="${section.id}">${section.title}</h5>
+  <ul class="megamenu-list">
+    ${links}
+  </ul>
+</div>
+  `;
+    })
+    .join("");
+
+  modal.innerHTML = `
+<div class="megamenu-header">
+  <h3 class="megamenu-title l10n" data-msg-id="opensuse-universe">openSUSE Universe</h3>
+  <button class="megamenu-close ml-auto" type="button">
+    <svg class="icon"><use xlink:href="#close"></use></svg>
+  </button>
+</div>
+<div class="megamenu-content">
+  <div class="container-fluid">
+    <div class="row">
+      ${content}
+    </div>
+  </div>
+</div>
+`;
+
+  document.body.append(modal);
+
+  localize(".l10n", langs);
+
+  toggler.addEventListener("click", function() {
+    const scrollbarWidth = window.innerWidth - document.body.clientWidth;
+    modal.style.display = "flex";
+    modal.classList.remove("fadeOut");
+    modal.classList.add("fadeIn");
+    document.body.style.paddingRight = scrollbarWidth + "px";
+    document.body.style.overflow = "hidden";
+  });
+
+  modal.addEventListener("click", function() {
+    modal.classList.remove("fadeIn");
+    modal.classList.add("fadeOut");
+    setTimeout(function() {
+      modal.style.display = "none";
+      document.body.style.paddingRight = "";
+      document.body.style.overflow = "";
+    }, 800);
+  });
+});
+
+},{"./data/langs":1,"./data/sites":2,"./util/localize":4}],4:[function(require,module,exports){
 function localize(selector, translations) {
   function localizeString() {
     /**
@@ -847,6 +847,6 @@ module.exports={
     "doc": "文件"
 }
 
-},{}]},{},[1])
+},{}]},{},[3])
 
 //# sourceMappingURL=megamenu.js.map

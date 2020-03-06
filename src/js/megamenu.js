@@ -1,6 +1,6 @@
-const sections = require("../data/sites");
-const localize = require("../util/localize");
-const langs = require("../data/langs");
+const langs = require("./data/langs");
+const sections = require("./data/sites");
+const localize = require("./util/localize");
 
 document.addEventListener("DOMContentLoaded", function() {
   const navbar = document.querySelector(".navbar");
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     toggler.className = "navbar-toggler megamenu-toggler";
     toggler.type = "button";
     toggler.innerHTML =
-      '<svg class="icon"><use xlink:href="#apps-line"></use></svg>';
+      '<svg class="icon"><use xlink:href="#apps"></use></svg>';
     navbar.append(toggler);
   }
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="megamenu-header">
   <h3 class="megamenu-title l10n" data-msg-id="opensuse-universe">openSUSE Universe</h3>
   <button class="megamenu-close ml-auto" type="button">
-    <svg class="icon"><use xlink:href="#close-line"></use></svg>
+    <svg class="icon"><use xlink:href="#close"></use></svg>
   </button>
 </div>
 <div class="megamenu-content">

@@ -67,53 +67,6 @@ gulp.task("sass", function() {
     .pipe(connect.reload());
 });
 
-// Icons (SVG Sprite in JS)
-gulp.task("icons-svg", function() {
-  return gulp
-    .src([
-      "node_modules/remixicon/icons/Buildings/*-line.svg",
-      "node_modules/remixicon/icons/Business/*-line.svg",
-      "node_modules/remixicon/icons/Communication/*-line.svg",
-      "node_modules/remixicon/icons/Design/*-line.svg",
-      "node_modules/remixicon/icons/Development/*-line.svg",
-      "node_modules/remixicon/icons/Device/*-line.svg",
-      "node_modules/remixicon/icons/Document/*-line.svg",
-      "node_modules/remixicon/icons/Editor/*-line.svg",
-      "node_modules/remixicon/icons/Finance/*-line.svg",
-      "node_modules/remixicon/icons/Logos/*-line.svg",
-      "node_modules/remixicon/icons/Map/*-line.svg",
-      "node_modules/remixicon/icons/Media/*-line.svg",
-      "node_modules/remixicon/icons/Others/*-line.svg",
-      "node_modules/remixicon/icons/System/*-line.svg",
-      "node_modules/remixicon/icons/User/*-line.svg",
-      "node_modules/remixicon/icons/Weather/*-line.svg",
-      "src/icons/*.svg",
-      "!src/icons/sprite.svg"
-    ])
-    .pipe(
-      svgSprite({
-        mode: {
-          symbol: {
-            dest: "icons",
-            sprite: "sprite.svg"
-          }
-        }
-      })
-    )
-    .pipe(gulp.dest("src"));
-});
-
-gulp.task("icons-js", function() {
-  return gulp
-    .src("src/icons/sprite.svg")
-    .pipe(header("module.exports = '"))
-    .pipe(footer("';"))
-    .pipe(rename("sprite.js"))
-    .pipe(gulp.dest("src/js/data"));
-});
-
-gulp.task("icons", gulp.series("icons-svg", "icons-js"));
-
 // Documents
 gulp.task("docs", function() {
   return gulp
@@ -125,7 +78,7 @@ gulp.task("docs", function() {
 });
 
 // Build all
-gulp.task("build", gulp.parallel("js", "sass", "docs", "icons", "copy"));
+gulp.task("build", gulp.parallel("js", "sass", "docs", "copy"));
 gulp.task("default", gulp.parallel("build"));
 
 // Watch all
