@@ -12,7 +12,7 @@
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
-  color: #333;
+  color: currentColor;
   font-weight: bold;
 }
 

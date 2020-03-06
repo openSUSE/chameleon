@@ -35,6 +35,16 @@ gulp.task("js", function() {
     .pipe(connect.reload());
 });
 
+// Copy jQuery and Bootstrap JS
+gulp.task("copy", function() {
+  return gulp
+    .src([
+      "node_modules/jquery/dist/jquery.slim.js",
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.js*"
+    ])
+    .pipe(gulp.dest("dist/js"));
+});
+
 // Compile SaSS stylesheets with sourcemaps
 gulp.task("sass", function() {
   return gulp
@@ -61,22 +71,22 @@ gulp.task("sass", function() {
 gulp.task("icons-svg", function() {
   return gulp
     .src([
-      "node_modules/remixicon/icons/Buildings/*.svg",
-      "node_modules/remixicon/icons/Business/*.svg",
-      "node_modules/remixicon/icons/Communication/*.svg",
-      "node_modules/remixicon/icons/Design/*.svg",
-      "node_modules/remixicon/icons/Development/*.svg",
-      "node_modules/remixicon/icons/Device/*.svg",
-      "node_modules/remixicon/icons/Document/*.svg",
-      "node_modules/remixicon/icons/Editor/*.svg",
-      "node_modules/remixicon/icons/Finance/*.svg",
-      "node_modules/remixicon/icons/Logos/*.svg",
-      "node_modules/remixicon/icons/Map/*.svg",
-      "node_modules/remixicon/icons/Media/*.svg",
-      "node_modules/remixicon/icons/Others/*.svg",
-      "node_modules/remixicon/icons/System/*.svg",
-      "node_modules/remixicon/icons/User/*.svg",
-      "node_modules/remixicon/icons/Weather/*.svg",
+      "node_modules/remixicon/icons/Buildings/*-line.svg",
+      "node_modules/remixicon/icons/Business/*-line.svg",
+      "node_modules/remixicon/icons/Communication/*-line.svg",
+      "node_modules/remixicon/icons/Design/*-line.svg",
+      "node_modules/remixicon/icons/Development/*-line.svg",
+      "node_modules/remixicon/icons/Device/*-line.svg",
+      "node_modules/remixicon/icons/Document/*-line.svg",
+      "node_modules/remixicon/icons/Editor/*-line.svg",
+      "node_modules/remixicon/icons/Finance/*-line.svg",
+      "node_modules/remixicon/icons/Logos/*-line.svg",
+      "node_modules/remixicon/icons/Map/*-line.svg",
+      "node_modules/remixicon/icons/Media/*-line.svg",
+      "node_modules/remixicon/icons/Others/*-line.svg",
+      "node_modules/remixicon/icons/System/*-line.svg",
+      "node_modules/remixicon/icons/User/*-line.svg",
+      "node_modules/remixicon/icons/Weather/*-line.svg",
       "src/icons/*.svg",
       "!src/icons/sprite.svg"
     ])
@@ -115,7 +125,7 @@ gulp.task("pug", function() {
 });
 
 // Build all
-gulp.task("build", gulp.parallel("js", "sass", "pug", "icons"));
+gulp.task("build", gulp.parallel("js", "sass", "pug", "icons", "copy"));
 gulp.task("default", gulp.parallel("build"));
 
 // Watch all

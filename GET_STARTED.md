@@ -9,32 +9,22 @@ webpage loading speed. This is the most recommended way to use Chameleon.
 <!-- Chameleon Style -->
 <link
   rel="stylesheet"
-  href="https://static.opensuse.org/chameleon-2.0/dist/css/chameleon.css"
+  href="https://static.opensuse.org/chameleon-3.0/dist/css/chameleon.css"
 />
 
-<!-- Chameleon Script Bundled with jQuery and Bootstrap -->
+<!-- jQuery Slim -->
 <script
-  src="https://static.opensuse.org/chameleon-2.0/dist/js/chameleon.js"
+  src="https://static.opensuse.org/chameleon-3.0/dist/js/jquery.slim.js"
   defer
 ></script>
-```
-
-If the website (WordPress, MediaWiki, etc.) already provides jQuery:
-
-```html
-<!-- Chameleon Script Bundled with Bootstrap -->
+<!-- Bootstrap Script -->
 <script
-  src="https://static.opensuse.org/chameleon-2.0/dist/js/chameleon-no-jquery.js"
+  src="https://static.opensuse.org/chameleon-3.0/dist/js/bootstrap.bundle.js"
   defer
 ></script>
-```
-
-If the website (for Weblate, etc.) already provides jQuery and Bootstrap 4:
-
-```html
 <!-- Chameleon Script -->
 <script
-  src="https://static.opensuse.org/chameleon-2.0/dist/js/chameleon-no-bootstrap.js"
+  src="https://static.opensuse.org/chameleon-3.0/dist/js/chameleon.js"
   defer
 ></script>
 ```
@@ -65,29 +55,35 @@ import "@opensuse/chameleon";
 
 ## Files
 
-- **dist**: compiled styles, scripts and images
-  - **css**: compiled styles
-    - **chameleon.css**: main style
-    - **chameleon.css.map**: source map for debugging
-  - **js**: compiled scripts
-    - **chameleon.js**: bundled with jQuery and Bootstrap
-    - **chameleon-no-jquery.js**: bundled with Bootstrap but not jQuery
-    - **chameleon-no-bootstrap.js**: bundled with neither Bootstrap nor jQuery
-- **lib**: only used by the Chameleon website
-- **src**: source icons, svgs, sass and js
-  - **icons**: icons in svg format, extending Remix Icon
+- **dist/**: compiled styles, scripts and images
+  - **css/**: compiled styles
+    - **chameleon.css**: chameleon style
+  - **js/**: compiled scripts
+    - **chameleon.js**: chameleon script
+    - **jquery.slim.js**: jQuery without some uncommon modules
+    - **bootstrap.bundle.js**: Bootstrap with Popper.js
+    - **\*.js**: individual components
+- **src/**: source icons, svgs, sass and js
+  - **icons/**: icons in svg format, extending Remix Icon
+    - **\*.svg**: icon svg files
     - **sprite.svg**: compiled svg sprite. it is then compiled to `src/js/data/sprite.js`
-  - **images**: other images from openSUSE/artwork repo
-  - **js**: source scripts
-  - **langs**: translation files in JSON format. mainly for mega menu.
-  - **pug**: generate Chameleon website pages
-  - **sass**: sass files
-    - **wiki**: style patches for MediaWiki
-- **\*.html**: Chameleon website pages
+  - **images/**: other images from openSUSE/artwork repo
+  - **js/**: source scripts
+    - **components/**: invidual components
+    - **data/**: data files
+    - **util/**: shared utility functions
+    - **wiki/**: wiki related scripts
+  - **langs/**: translation files in JSON format. mainly for mega menu.
+  - **sass/**: sass files
+    - **dark-mode/**: dark mode style
+    - **wiki/**: style patches for wikis
 
 ## Examples
 
 Here are already several websites integrated with Chameleon.
 
-- [Wikis](https://en.opensuse.org/) ([code](https://github.com/openSUSE/wiki/tree/master/skins/Chameleon)): MediaWiki, use CDN
-- [Software](https://software.opensuse.org/) ([code](https://github.com/openSUSE/software-o-o)): Ruby On Rails, out-dated Ruby Gem package
+| Site                           | Code                                     | Software      | Chameleon Version |
+| ------------------------------ | ---------------------------------------- | ------------- | ----------------- |
+| https://news.opensuse.org/     | https://github.com/openSUSE/news-o-o     | Jekyll        | v2.0              |
+| https://en.opensuse.org/       | https://github.com/openSUSE/wiki         | MediaWiki     | v2.0              |
+| https://software.opensuse.org/ | https://github.com/openSUSE/software-o-o | Ruby On Rails | v1.0              |

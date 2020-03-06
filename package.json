@@ -1,8 +1,9 @@
 {
   "name": "@opensuse/chameleon",
   "version": "2.0.0",
-  "description": "Vivid UI theme for openSUSE websites",
+  "description": "openSUSE Design System for Web",
   "main": "dist/js/chameleon.js",
+  "module": "src/js/chameleon.js",
   "sass": "src/sass/chameleon.scss",
   "style": "dist/css/chameleon.css",
   "scripts": {
@@ -21,14 +22,14 @@
   },
   "homepage": "https://github.com/openSUSE/chameleon#readme",
   "dependencies": {
+    "sticky-scroller": "^0.4.0"
+  },
+  "peerDependencies": {
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.1",
-    "remixicon": "^2.3.0",
-    "sticky-scroller": "^0.4.0",
-    "tether": "^1.4.7"
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
+    "bootstrap": "^4.4.1",
     "browserify": "^16.5.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
@@ -46,6 +47,8 @@
     "gulp-tap": "^1.0.1",
     "gulp-wait": "0.0.2",
     "gulplog": "^1.0.0",
-    "jstransformer-markdown-it": "^2.1.0"
+    "jquery": "^3.4.1",
+    "jstransformer-markdown-it": "^2.1.0",
+    "remixicon": "^2.3.0"
   }
 }

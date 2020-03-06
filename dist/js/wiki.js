@@ -1,11 +1,11 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-require("./wiki/anchor");
-require("./wiki/edit-section");
-require("./wiki/login-modal");
-require("./wiki/toc");
-require("./wiki/migrations");
+require("../wiki/anchor");
+require("../wiki/edit-section");
+require("../wiki/login-modal");
+require("../wiki/toc");
+require("../wiki/migrations");
 
-},{"./wiki/anchor":2,"./wiki/edit-section":3,"./wiki/login-modal":4,"./wiki/migrations":6,"./wiki/toc":7}],2:[function(require,module,exports){
+},{"../wiki/anchor":2,"../wiki/edit-section":3,"../wiki/login-modal":4,"../wiki/migrations":6,"../wiki/toc":7}],2:[function(require,module,exports){
 // Add anchor icons to headings
 // See also src/sass/wiki/_anchor.scss
 
@@ -125,4 +125,4 @@ if (sidebar) {
 
 },{}]},{},[1])
 
-//# sourceMappingURL=chameleon-wiki.js.map
+//# sourceMappingURL=wiki.js.map

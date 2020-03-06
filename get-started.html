@@ -5,26 +5,22 @@ webpage loading speed. This is the most recommended way to use Chameleon.</p>
 <pre><code class="language-html">&lt;!-- Chameleon Style --&gt;
 &lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://static.opensuse.org/chameleon-2.0/dist/css/chameleon.css&quot;
+  href=&quot;https://static.opensuse.org/chameleon-3.0/dist/css/chameleon.css&quot;
 /&gt;
 
-&lt;!-- Chameleon Script Bundled with jQuery and Bootstrap --&gt;
+&lt;!-- jQuery Slim --&gt;
 &lt;script
-  src=&quot;https://static.opensuse.org/chameleon-2.0/dist/js/chameleon.js&quot;
+  src=&quot;https://static.opensuse.org/chameleon-3.0/dist/js/jquery.slim.js&quot;
   defer
 &gt;&lt;/script&gt;
-</code></pre>
-<p>If the website (WordPress, MediaWiki, etc.) already provides jQuery:</p>
-<pre><code class="language-html">&lt;!-- Chameleon Script Bundled with Bootstrap --&gt;
+&lt;!-- Bootstrap Script --&gt;
 &lt;script
-  src=&quot;https://static.opensuse.org/chameleon-2.0/dist/js/chameleon-no-jquery.js&quot;
+  src=&quot;https://static.opensuse.org/chameleon-3.0/dist/js/bootstrap.bundle.js&quot;
   defer
 &gt;&lt;/script&gt;
-</code></pre>
-<p>If the website (for Weblate, etc.) already provides jQuery and Bootstrap 4:</p>
-<pre><code class="language-html">&lt;!-- Chameleon Script --&gt;
+&lt;!-- Chameleon Script --&gt;
 &lt;script
-  src=&quot;https://static.opensuse.org/chameleon-2.0/dist/js/chameleon-no-bootstrap.js&quot;
+  src=&quot;https://static.opensuse.org/chameleon-3.0/dist/js/chameleon.js&quot;
   defer
 &gt;&lt;/script&gt;
 </code></pre>
@@ -45,48 +41,80 @@ import &quot;@opensuse/chameleon&quot;;
 </code></pre>
 <h2>Files</h2>
 <ul>
-<li><strong>dist</strong>: compiled styles, scripts and images
+<li><strong>dist/</strong>: compiled styles, scripts and images
 <ul>
-<li><strong>css</strong>: compiled styles
+<li><strong>css/</strong>: compiled styles
 <ul>
-<li><strong>chameleon.css</strong>: main style</li>
-<li><strong>chameleon.css.map</strong>: source map for debugging</li>
+<li><strong>chameleon.css</strong>: chameleon style</li>
 </ul>
 </li>
-<li><strong>js</strong>: compiled scripts
+<li><strong>js/</strong>: compiled scripts
 <ul>
-<li><strong>chameleon.js</strong>: bundled with jQuery and Bootstrap</li>
-<li><strong>chameleon-no-jquery.js</strong>: bundled with Bootstrap but not jQuery</li>
-<li><strong>chameleon-no-bootstrap.js</strong>: bundled with neither Bootstrap nor jQuery</li>
+<li><strong>chameleon.js</strong>: chameleon script</li>
+<li><strong>jquery.slim.js</strong>: jQuery without some uncommon modules</li>
+<li><strong>bootstrap.bundle.js</strong>: Bootstrap with Popper.js</li>
+<li><strong>*.js</strong>: individual components</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><strong>lib</strong>: only used by the Chameleon website</li>
-<li><strong>src</strong>: source icons, svgs, sass and js
+<li><strong>src/</strong>: source icons, svgs, sass and js
 <ul>
-<li><strong>icons</strong>: icons in svg format, extending Remix Icon
+<li><strong>icons/</strong>: icons in svg format, extending Remix Icon
 <ul>
+<li><strong>*.svg</strong>: icon svg files</li>
 <li><strong>sprite.svg</strong>: compiled svg sprite. it is then compiled to <code>src/js/data/sprite.js</code></li>
 </ul>
 </li>
-<li><strong>images</strong>: other images from openSUSE/artwork repo</li>
-<li><strong>js</strong>: source scripts</li>
-<li><strong>langs</strong>: translation files in JSON format. mainly for mega menu.</li>
-<li><strong>pug</strong>: generate Chameleon website pages</li>
-<li><strong>sass</strong>: sass files
+<li><strong>images/</strong>: other images from openSUSE/artwork repo</li>
+<li><strong>js/</strong>: source scripts
 <ul>
-<li><strong>wiki</strong>: style patches for MediaWiki</li>
+<li><strong>components/</strong>: invidual components</li>
+<li><strong>data/</strong>: data files</li>
+<li><strong>util/</strong>: shared utility functions</li>
+<li><strong>wiki/</strong>: wiki related scripts</li>
+</ul>
+</li>
+<li><strong>langs/</strong>: translation files in JSON format. mainly for mega menu.</li>
+<li><strong>sass/</strong>: sass files
+<ul>
+<li><strong>dark-mode/</strong>: dark mode style</li>
+<li><strong>wiki/</strong>: style patches for wikis</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><strong>*.html</strong>: Chameleon website pages</li>
 </ul>
 <h2>Examples</h2>
 <p>Here are already several websites integrated with Chameleon.</p>
-<ul>
-<li><a href="https://en.opensuse.org/">Wikis</a> (<a href="https://github.com/openSUSE/wiki/tree/master/skins/Chameleon">code</a>): MediaWiki, use CDN</li>
-<li><a href="https://software.opensuse.org/">Software</a> (<a href="https://github.com/openSUSE/software-o-o">code</a>): Ruby On Rails, out-dated Ruby Gem package</li>
-</ul>
-</div><div class="toc-sidebar col-lg-3 d-none d-lg-block"><div class="toc"></div></div></div></div></div><footer class="footer"><div class="container">&copy; 2017&ndash;2020 openSUSE contributors</div></footer><script src="./dist/js/chameleon.js"></script><script src="./lib/highlight.js"></script><script>hljs.initHighlightingOnLoad();</script><script src="./lib/doc.js"></script></body></html>
+<table>
+<thead>
+<tr>
+<th>Site</th>
+<th>Code</th>
+<th>Software</th>
+<th>Chameleon Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://news.opensuse.org/</td>
+<td>https://github.com/openSUSE/news-o-o</td>
+<td>Jekyll</td>
+<td>v2.0</td>
+</tr>
+<tr>
+<td>https://en.opensuse.org/</td>
+<td>https://github.com/openSUSE/wiki</td>
+<td>MediaWiki</td>
+<td>v2.0</td>
+</tr>
+<tr>
+<td>https://software.opensuse.org/</td>
+<td>https://github.com/openSUSE/software-o-o</td>
+<td>Ruby On Rails</td>
+<td>v1.0</td>
+</tr>
+</tbody>
+</table>
+</div><div class="toc-sidebar col-lg-3 d-none d-lg-block"><div class="toc"></div></div></div></div></div><footer class="footer"><div class="container">&copy; 2017&ndash;2020 openSUSE contributors</div></footer><script src="./dist/js/jquery.slim.js"></script><script src="./dist/js/bootstrap.bundle.js"></script><script src="./dist/js/chameleon.js"></script><script src="./lib/highlight.js"></script><script src="./lib/doc.js"></script></body></html>
