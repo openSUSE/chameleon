@@ -114,10 +114,10 @@ gulp.task("icons-js", function() {
 
 gulp.task("icons", gulp.series("icons-svg", "icons-js"));
 
-// Pug templates
-gulp.task("pug", function() {
+// Documents
+gulp.task("docs", function() {
   return gulp
-    .src("src/pug/pages/**/*.pug")
+    .src("docs/pug/pages/**/*.pug")
     .pipe(pug())
     .pipe(gulp.dest("./"))
     .pipe(wait(500))
@@ -125,7 +125,7 @@ gulp.task("pug", function() {
 });
 
 // Build all
-gulp.task("build", gulp.parallel("js", "sass", "pug", "icons", "copy"));
+gulp.task("build", gulp.parallel("js", "sass", "docs", "icons", "copy"));
 gulp.task("default", gulp.parallel("build"));
 
 // Watch all
@@ -142,5 +142,5 @@ gulp.task("watch", function() {
 
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
   gulp.watch(["src/js/**/*.js", "src/langs/*.json"], gulp.parallel("js"));
-  gulp.watch(["src/pug/**/*.pug", "*.md", "docs/*.md"], gulp.parallel("pug"));
+  gulp.watch(["*.md", "docs/**/*.md", "docs/**/*.pug"], gulp.parallel("docs"));
 });
