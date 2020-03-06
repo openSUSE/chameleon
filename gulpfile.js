@@ -11,10 +11,6 @@ const autoprefixer = require("gulp-autoprefixer");
 const connect = require("gulp-connect");
 const open = require("gulp-open");
 const pug = require("gulp-pug");
-const svgSprite = require("gulp-svg-sprite");
-const header = require("gulp-header");
-const footer = require("gulp-footer");
-const rename = require("gulp-rename");
 const wait = require("gulp-wait");
 
 // Compile JavaScripts with sourcemaps
