@@ -2084,14 +2084,14 @@ pre code, .pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #ced4da;
+  border-top: 1px solid #dee2e6;
 }
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ced4da;
+  border-bottom: 2px solid #dee2e6;
 }
 .table tbody + tbody {
-  border-top: 2px solid #ced4da;
+  border-top: 2px solid #dee2e6;
 }
 
 .table-sm th,
@@ -2100,11 +2100,11 @@ pre code, .pre code {
 }
 
 .table-bordered {
-  border: 1px solid #ced4da;
+  border: 1px solid #dee2e6;
 }
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #ced4da;
+  border: 1px solid #dee2e6;
 }
 .table-bordered thead th,
 .table-bordered thead td {
@@ -2309,7 +2309,7 @@ pre code, .pre code {
 .table .thead-light th {
   color: #495057;
   background-color: #e9ecef;
-  border-color: #ced4da;
+  border-color: #dee2e6;
 }
 
 .table-dark {
@@ -10795,12 +10795,12 @@ h3 {
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
-    border-color: #ced4da;
+    border-color: #dee2e6;
   }
 
   .table .thead-dark th {
     color: inherit;
-    border-color: #ced4da;
+    border-color: #dee2e6;
   }
 }
 /*!
@@ -13922,6 +13922,14 @@ pre, .pre {
   background: #f8f9fa;
 }
 
+.table th,
+.table td {
+  border-bottom: 1px #dee2e6 solid;
+}
+.table thead th {
+  border-bottom-width: 1px;
+}
+
 .icon {
   width: 24px;
   height: 24px;
@@ -14250,6 +14258,15 @@ pre, .pre {
   }
   .navbar .navbar-text a:hover, .navbar .navbar-text a:focus {
     color: #ffffff;
+  }
+
+  .table th,
+.table td {
+    border-color: #6c757d;
+    color: #adb5bd;
+  }
+  .table thead th {
+    border-color: #6c757d;
   }
 }
 body.mediawiki {

@@ -131,4 +131,74 @@ to use all of them. Instead, you should use as less variants as possible.</p><p>
 &lt;/footer&gt;
 </code></pre>
 <h2 id="inputs">Inputs</h2><p>Text, search, email, password inputs have the same appearance. They are just
-single element components.</p><div class="mb-3"><input class="form-control mb-3" type="text" placeholder="Text input"><textarea class="form-control" placeholder="Textarea"></textarea></div><p>Selects, checkboxs, radio buttons and file inputs should use custom control.</p><div class="mb-3"><div class="custom-control custom-checkbox mb-3"><input class="custom-control-input" id="custom-check-1" type="checkbox" checked><label class="custom-control-label" for="custom-check-1">Checkbox 1</label></div><div class="custom-control custom-checkbox mb-3"><input class="custom-control-input" id="custom-check-2" type="checkbox"><label class="custom-control-label" for="custom-check-2">Checkbox 2</label></div><div class="custom-control custom-radio mb-3"><input class="custom-control-input" id="custom-radio-1" type="radio" name="custom-radio-1" value="1" checked><label class="custom-control-label" for="custom-radio-1">Radio button 1</label></div><div class="custom-control custom-radio mb-3"><input class="custom-control-input" id="custom-radio-2" type="radio" name="custom-radio-1" value="2"><label class="custom-control-label" for="custom-radio-2">Radio button 2</label></div><select class="custom-select mb-3"><option>gedit</option><option>emacs</option><option>kate</option><option selected>nano</option><option>vim</option></select><div class="custom-file"><input class="custom-file-input" id="custom-file-1" type="file"><label class="custom-file-label" for="custom-file-1">Choose file</label></div></div><h2>List Group</h2><p>Please don't use contextual classes.</p><ul class="list-group"><li class="list-group-item active">Cras justo odio</li><li class="list-group-item">Dapibus ac facilisis in</li><li class="list-group-item">Morbi leo risus</li><li class="list-group-item">Porta ac consectetur ac</li><li class="list-group-item">Vestibulum at eros</li></ul><h2>Modals</h2><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="modal-title">Modal title</div><button class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><p>Modal body text goes here.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal">Close</button><button class="btn btn-primary">Save changes</button></div></div></div></div><div class="toc-sidebar col-lg-3 d-none d-lg-block"><div class="toc"></div></div></div></div></div><footer class="footer"><div class="container">&copy; 2017&ndash;2020 openSUSE contributors</div></footer><script src="./dist/js/jquery.slim.js"></script><script src="./dist/js/bootstrap.bundle.js"></script><script src="./dist/js/chameleon.js"></script><script src="./lib/highlight.js"></script><script src="./lib/doc.js"></script></body></html>
+single element components.</p><div class="mb-3"><input class="form-control mb-3" type="text" placeholder="Text input"><textarea class="form-control" placeholder="Textarea"></textarea></div><p>Selects, checkboxs, radio buttons and file inputs should use custom control.</p><div class="mb-3"><div class="custom-control custom-checkbox mb-3"><input class="custom-control-input" id="custom-check-1" type="checkbox" checked><label class="custom-control-label" for="custom-check-1">Checkbox 1</label></div><div class="custom-control custom-checkbox mb-3"><input class="custom-control-input" id="custom-check-2" type="checkbox"><label class="custom-control-label" for="custom-check-2">Checkbox 2</label></div><div class="custom-control custom-radio mb-3"><input class="custom-control-input" id="custom-radio-1" type="radio" name="custom-radio-1" value="1" checked><label class="custom-control-label" for="custom-radio-1">Radio button 1</label></div><div class="custom-control custom-radio mb-3"><input class="custom-control-input" id="custom-radio-2" type="radio" name="custom-radio-1" value="2"><label class="custom-control-label" for="custom-radio-2">Radio button 2</label></div><select class="custom-select mb-3"><option>gedit</option><option>emacs</option><option>kate</option><option selected>nano</option><option>vim</option></select><div class="custom-file"><input class="custom-file-input" id="custom-file-1" type="file"><label class="custom-file-label" for="custom-file-1">Choose file</label></div></div><h2>List Group</h2><p>Please don't use contextual classes.</p><ul class="list-group"><li class="list-group-item active">Cras justo odio</li><li class="list-group-item">Dapibus ac facilisis in</li><li class="list-group-item">Morbi leo risus</li><li class="list-group-item">Porta ac consectetur ac</li><li class="list-group-item">Vestibulum at eros</li></ul><h2>Modals</h2><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="modal-title">Modal title</div><button class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><p>Modal body text goes here.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal">Close</button><button class="btn btn-primary">Save changes</button></div></div></div><h2>Tables</h2>
+<div class="table-responsive">
+  <table class="table">
+    <caption>List of users</caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    &lt;caption&gt;
+      List of users
+    &lt;/caption&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;Mark&lt;/td&gt;
+        &lt;td&gt;Otto&lt;/td&gt;
+        &lt;td&gt;@mdo&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Jacob&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;@fat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Larry&lt;/td&gt;
+        &lt;td&gt;the Bird&lt;/td&gt;
+        &lt;td&gt;@twitter&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+</div><div class="toc-sidebar col-lg-3 d-none d-lg-block"><div class="toc"></div></div></div></div></div><footer class="footer"><div class="container">&copy; 2017&ndash;2020 openSUSE contributors</div></footer><script src="./dist/js/jquery.slim.js"></script><script src="./dist/js/bootstrap.bundle.js"></script><script src="./dist/js/chameleon.js"></script><script src="./lib/highlight.js"></script><script src="./lib/doc.js"></script></body></html>
