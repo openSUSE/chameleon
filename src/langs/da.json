@@ -26,5 +26,13 @@
     "facebook-group": "Facebook-gruppe",
     "mail-lists": "Mailinglister",
     "irc-channels": "IRC-kanaler",
-    "social-media": "Socialemedier"
+    "social-media": "Socialemedier",
+    "opensuse-universe": "openSUSE Universe",
+    "main-site": "Hovedsted",
+    "telegram-group": "Telegram-gruppe",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "other": "Andet",
+    "guide-unofficial": "Vejledning (uofficiel)",
+    "mirrors": "Spejle",
+    "lizards": "Øgler"
 }
