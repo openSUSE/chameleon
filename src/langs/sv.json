@@ -3,16 +3,16 @@
     "download": "Ladda ner",
     "documentation": "Dokumentation",
     "wiki": "Wiki",
-    "wiki-url": " https://en.opensuse.org/",
+    "wiki-url": "https://en.opensuse.org/",
     "forum": "Forum",
-    "forum-url": " https://forums.opensuse.org/forumdisplay.php/842-English",
+    "forum-url": "https://forums.opensuse.org/forumdisplay.php/842-English",
     "development": "Utveckling",
     "development-document": "Dokument",
-    "development-document-url": " https://en.opensuse.org/Portal:Development",
+    "development-document-url": "https://en.opensuse.org/Portal:Development",
     "build-service": "Byggtjänst",
     "information": "Information",
     "news": "Nyheter",
-    "release-notes": "",
+    "release-notes": "Viktig information",
     "events": "Evenemang",
     "planet": "Planet",
     "shop": "Butik",
@@ -32,5 +32,6 @@
     "other": "Annat",
     "guide-unofficial": "Guide (inofficiell)",
     "mirrors": "Speglar",
-    "lizards": "Ödlor"
+    "lizards": "Ödlor",
+    "doc": "Doc"
 }
