@@ -31,5 +31,8 @@
     "telegram-group": "Telegram ryhmä",
     "other": "Muut",
     "guide-unofficial": "Ohje (epävirallinen)",
-    "mirrors": "Peilit"
+    "mirrors": "Peilit",
+    "opensuse-universe": "openSUSE-universumi",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "lizards": "Liskot"
 }
