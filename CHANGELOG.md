@@ -7,10 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Added
+
+- icon: add bootstrap-icons
+
 ## Changed
 
+- bootstrap: update to 4.5.0
 - js: `jquery.js` and `bootstrap.js` are not bundled anymore **BREAKING CHANGE**
 - js,icon: optimize size
+
+## Removed
+
+- icon: remove _remix icon_ **BREAKING CHANGE**
 
 ## Fixed
 

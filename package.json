@@ -25,26 +25,32 @@
     "sticky-scroller": "^0.4.0"
   },
   "peerDependencies": {
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1"
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {
-    "bootstrap": "^4.4.1",
-    "browserify": "^16.5.0",
+    "bootstrap": "^4.5.0",
+    "bootstrap-icons": "^1.0.0-alpha4",
+    "browserify": "^16.5.1",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^5.0.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-buffer": "0.0.2",
-    "gulp-cli": "^2.2.0",
+    "gulp-cli": "^2.3.0",
     "gulp-connect": "^5.7.0",
-    "gulp-dart-sass": "^0.9.1",
+    "gulp-dart-sass": "^1.0.2",
     "gulp-open": "^3.0.1",
     "gulp-pug": "^4.0.1",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-tap": "^1.0.1",
+    "gulp-tap": "^2.0.0",
     "gulp-wait": "0.0.2",
     "gulplog": "^1.0.0",
-    "jquery": "^3.4.1",
-    "jstransformer-markdown-it": "^2.1.0",
-    "remixicon": "^2.3.0"
-  }
+    "jquery": "^3.5.1",
+    "jstransformer-markdown-it": "^2.1.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
 }

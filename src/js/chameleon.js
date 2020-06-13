@@ -6,4 +6,3 @@
 
 require("./megamenu");
 require("./toc");
-require("./icons");

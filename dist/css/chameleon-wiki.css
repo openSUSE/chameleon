@@ -174,8 +174,6 @@ ul.nav {
   margin-top: 0;
 }
 #sidebar form {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1;
   flex: 1 1;
 }
 #sidebar form input {
@@ -184,8 +182,6 @@ ul.nav {
 }
 
 #sidebar-toggle-button {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0;
   flex: 0 0;
   display: block;
   padding: 0.375rem;
@@ -210,8 +206,6 @@ ul.nav {
 }
 
 .toc ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
