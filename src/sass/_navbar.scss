@@ -1,7 +1,6 @@
 .navbar {
-  justify-content: initial;
-  border-bottom: 2px solid $green;
-  background: $body-bg !important;
+  background: $light !important;
+  border-bottom: 1px solid $green;
 
   .navbar-brand {
     color: $navbar-light-brand-color;
@@ -47,49 +46,16 @@
       }
     }
   }
-
-  // mainly for avatars and logos
-  img {
-    height: 2rem;
-    width: auto;
-    margin-top: -0.7rem;
-    margin-bottom: -0.5rem;
-  }
-
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    background: $green;
-    color: $white;
-    user-select: none;
-    margin-left: -$navbar-padding-x;
-    margin-top: -$navbar-padding-y;
-    margin-bottom: -$navbar-padding-y;
-    padding-left: $navbar-padding-x;
-    padding-right: $navbar-padding-x;
-    align-self: stretch;
-
-    &:hover,
-    &:focus {
-      color: $white;
-    }
-  }
-
-  form {
-    margin: 0;
-    align-self: stretch;
-  }
 }
 
 .navbar-toggler {
-  border: 0;
   margin-left: auto;
 }
 
 .megamenu-toggler,
 .darkmode-toggler {
   display: block !important; // make it always visible
-  margin-left: 0;
+  margin-left: 10px;
 }
 
 @include media-breakpoint-down(sm) {

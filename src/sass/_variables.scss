@@ -44,7 +44,7 @@ $info: $blue;
 $warning: $yellow;
 $danger: $red;
 $light: $gray-100;
-$dark: $gray-900;
+$dark: $gray-800;
 
 // Body background
 $body-bg: $white;
@@ -56,7 +56,7 @@ $link-color: $blue;
 // Options
 
 $enable-caret: true;
-$enable-rounded: false;
+$enable-rounded: true;
 $enable-shadows: false;
 $enable-gradients: false;
 $enable-transitions: true;
@@ -67,11 +67,6 @@ $enable-print-styles: true;
 $enable-responsive-font-sizes: true;
 $enable-validation-icons: true;
 $enable-deprecation-messages: true;
-
-// Icons
-$megamenu-icon-path: "M 8 5 C 6.338 5 5 6.338 5 8 L 5 10 C 5 11.662 6.338 13 8 13 L 10 13 C 11.662 13 13 11.662 13 10 L 13 8 C 13 6.338 11.662 5 10 5 L 8 5 z M 20 5 C 18.338 5 17 6.338 17 8 L 17 10 C 17 11.662 18.338 13 20 13 L 22 13 C 23.662 13 25 11.662 25 10 L 25 8 C 25 6.338 23.662 5 22 5 L 20 5 z M 8 17 C 6.338 17 5 18.338 5 20 L 5 22 C 5 23.662 6.338 25 8 25 L 10 25 C 11.662 25 13 23.662 13 22 L 13 20 C 13 18.338 11.662 17 10 17 L 8 17 z M 20 17 C 18.338 17 17 18.338 17 20 L 17 22 C 17 23.662 18.338 25 20 25 L 22 25 C 23.662 25 25 23.662 25 22 L 25 20 C 25 18.338 23.662 17 22 17 L 20 17 z";
-$darkmode-icon-path: "M 16.507812,4.0175781 A 11,11 0 0 0 6,15 11,11 0 0 0 17,26 11,11 0 0 0 25.492188,21.982422 11,11 0 0 1 25,22 11,11 0 0 1 14,11 11,11 0 0 1 16.507812,4.0175781 Z";
-$lightmode-icon-path: "M 6.5147176,23.485281 7.9289312,22.071068 M 6.5147183,6.5147193 7.9289319,7.9289329 M 23.48528,23.485281 22.071067,22.071068 M 23.48528,6.514719 22.071066,7.9289325 M 15,27 V 25 M 3,15 h 2 m 22,0 H 25 M 15,3 v 2 m 6,10 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z";
 
 // Fonts
 $font-family-sans-serif: "Source Sans Pro", sans-serif;
