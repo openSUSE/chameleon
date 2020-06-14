@@ -532,7 +532,15 @@ module.exports={
     "facebook-group": "Facebook-gruppe",
     "mail-lists": "Mailinglister",
     "irc-channels": "IRC-kanaler",
-    "social-media": "Socialemedier"
+    "social-media": "Socialemedier",
+    "opensuse-universe": "openSUSE Universe",
+    "main-site": "Hovedsted",
+    "telegram-group": "Telegram-gruppe",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "other": "Andet",
+    "guide-unofficial": "Vejledning (uofficiel)",
+    "mirrors": "Spejle",
+    "lizards": "Øgler"
 }
 
 },{}],9:[function(require,module,exports){
@@ -640,7 +648,19 @@ module.exports={
     "google-group": "Grupo de Google+",
     "mail-lists": "Listas de correo",
     "irc-channels": "Canales de IRC",
-    "social-media": "Redes sociales"
+    "social-media": "Redes sociales",
+    "dark-mode": "Modo Nocturno",
+    "opensuse-universe": "Universo openSUSE",
+    "search": "Buscar",
+    "main": "Principal",
+    "main-site": "Sitio principal",
+    "doc": "Doc",
+    "telegram-group": "Grupo de Telegram",
+    "telegram-group-url": "https://t.me/openSUSE_group",
+    "other": "Otro",
+    "guide-unofficial": "Guía (no oficial)",
+    "mirrors": "Espejos",
+    "lizards": "Lagartos"
 }
 
 },{}],12:[function(require,module,exports){
@@ -727,7 +747,7 @@ module.exports={
     "search": "Cerca",
     "main": "Principale",
     "software": "Software",
-    "download": "",
+    "download": "Scarica",
     "doc": "Doc",
     "documentation": "Documentazione",
     "wiki": "Wiki",
@@ -736,7 +756,7 @@ module.exports={
     "forum-url": "",
     "development": "Sviluppo",
     "development-document": "Documento",
-    "development-document-url": "",
+    "development-document-url": "https://it.opensuse.org/Portal:Sviluppo",
     "build-service": "Servizio di compilazione",
     "information": "Informazione",
     "news": "Novità",
@@ -744,12 +764,17 @@ module.exports={
     "events": "Eventi",
     "planet": "Pianeta",
     "shop": "Negozio",
-    "community": "",
-    "connect": "",
-    "facebook-group": "",
+    "community": "Comunità",
+    "connect": "Connetti",
+    "facebook-group": "Gruppo Facebook",
     "mail-lists": "",
-    "irc-channels": "",
-    "social-media": ""
+    "irc-channels": "Canale IRC",
+    "social-media": "",
+    "opensuse-universe": "Universo openSUSE",
+    "main-site": "Sito principale",
+    "telegram-group": "Gruppo Telegram",
+    "other": "Altro",
+    "guide-unofficial": "Guide (non ufficiali)"
 }
 
 },{}],15:[function(require,module,exports){
@@ -910,29 +935,40 @@ module.exports={
 
 },{}],20:[function(require,module,exports){
 module.exports={
-    "software": "",
-    "download": "",
-    "documentation": "",
-    "wiki": "",
-    "wiki-url": "",
-    "forum": "",
-    "forum-url": "",
-    "development": "",
-    "development-document": "",
-    "development-document-url": "",
-    "build-service": "",
-    "information": "",
-    "news": "",
+    "software": "Programvara",
+    "download": "Ladda ner",
+    "documentation": "Dokumentation",
+    "wiki": "Wiki",
+    "wiki-url": " https://en.opensuse.org/",
+    "forum": "Forum",
+    "forum-url": " https://forums.opensuse.org/forumdisplay.php/842-English",
+    "development": "Utveckling",
+    "development-document": "Dokument",
+    "development-document-url": " https://en.opensuse.org/Portal:Development",
+    "build-service": "Byggtjänst",
+    "information": "Information",
+    "news": "Nyheter",
     "release-notes": "",
-    "events": "",
-    "planet": "",
-    "shop": "",
-    "community": "",
-    "connect": "",
-    "facebook-group": "",
-    "mail-lists": "",
-    "irc-channels": "",
-    "social-media": ""
+    "events": "Evenemang",
+    "planet": "Planet",
+    "shop": "Butik",
+    "community": "Community",
+    "connect": "Anslut",
+    "facebook-group": "Facebook grupp",
+    "mail-lists": "Mailinglistor",
+    "irc-channels": "IRC kanaler",
+    "social-media": "Social media",
+    "dark-mode": "Mörkt läge",
+    "opensuse-universe": "openSUSE Universumet",
+    "search": "Sök",
+    "main": "Huvud",
+    "main-site": "Huvudsida",
+    "telegram-group": "Telegram grupp",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "other": "Annat",
+    "guide-unofficial": "Guide (inofficiell)",
+    "mirrors": "Speglar",
+    "lizards": "Ödlor"
 }
 
 },{}],21:[function(require,module,exports){

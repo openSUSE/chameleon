@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - bootstrap: update to 4.5.0
 - js: `jquery.js` and `bootstrap.js` are not bundled anymore **BREAKING CHANGE**
 - js,icon: optimize size
+- js,css: new megamenu design
 
 ## Removed
 
