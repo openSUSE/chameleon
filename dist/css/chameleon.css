@@ -12686,33 +12686,14 @@ pre, .pre {
   border-bottom-width: 1px;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-  margin-top: -6px;
-  margin-bottom: -2px;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.icon-2x {
-  width: 48px;
-  height: 48px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-}
-
-.icon-3x {
-  width: 72px;
-  height: 72px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-}
-
-.icon-4x {
-  width: 96px;
-  height: 96px;
-  margin-top: -4px;
-  margin-bottom: -4px;
+.main-wrap {
+  flex: 1 0 auto;
 }
 
 .megamenu {
@@ -13012,7 +12993,7 @@ body.mediawiki {
 }
 body.mediawiki .mw-anchor {
   margin-left: 0.5rem !important;
-  font-size: inherit !important;
+  font-size: 1.75rem !important;
   line-height: inherit !important;
 }
 body.mediawiki .mw-anchor a {
@@ -13058,7 +13039,7 @@ body.mediawiki body.action-edit #siteNotice {
 }
 body.mediawiki .mw-editsection {
   margin-left: 0.5rem !important;
-  font-size: inherit !important;
+  font-size: 1.5rem !important;
   line-height: inherit !important;
 }
 body.mediawiki .mw-editsection a {
