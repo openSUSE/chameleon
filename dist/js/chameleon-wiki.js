@@ -125,4 +125,4 @@ if (sidebar) {
 
 },{}]},{},[1])
 
-//# sourceMappingURL=wiki.js.map
+//# sourceMappingURL=chameleon-wiki.js.map
