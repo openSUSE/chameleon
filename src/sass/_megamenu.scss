@@ -9,14 +9,8 @@
   z-index: $zindex-dropdown;
 }
 
-.megamenu .container-fluid {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.megamenu-title {
-  text-align: center;
-  margin-bottom: 0;
+.megamenu .row {
+  padding-bottom: $spacer;
 }
 
 .megamenu-heading {

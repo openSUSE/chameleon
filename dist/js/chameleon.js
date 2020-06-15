@@ -344,7 +344,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   megamenu.innerHTML = `
     <div class="container-fluid">
-      <h4 class="megamenu-title" data-msg-id="opensuse-universe">openSUSE Universe</h3>
       <div class="row">
         ${content}
       </div>
