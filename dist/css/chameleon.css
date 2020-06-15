@@ -12647,11 +12647,11 @@ pre, .pre {
   color: rgba(0, 0, 0, 0.7);
 }
 .navbar .avatar {
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 1em;
-  margin-top: -1.2em;
-  margin-bottom: -1em;
+  margin-top: -0.3em;
+  margin-bottom: -0.2em;
 }
 
 .navbar-toggler {
