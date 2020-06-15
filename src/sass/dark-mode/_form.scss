@@ -1,3 +1,10 @@
+.form-control {
+  &:focus {
+    background-color: $dark-mode-bg-color;
+    color: $dark-mode-text-color;
+  }
+}
+
 .form-control,
 .custom-file-label,
 .custom-select,
