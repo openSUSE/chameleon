@@ -12641,6 +12641,10 @@ pre, .pre {
 .navbar .btn-secondary {
   border: 0;
   background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5);
+}
+.navbar .btn-secondary:hover, .navbar .btn-secondary:focus {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .navbar-toggler {
@@ -12710,8 +12714,6 @@ pre, .pre {
   right: 0;
   top: 3.5em;
   margin-top: 1px;
-  max-height: calc(100vh - 3.5em);
-  overflow: auto;
   background-color: #173f4f;
   color: #e9ecef;
   z-index: 1000;
@@ -12989,6 +12991,10 @@ pre, .pre {
   }
   .navbar .btn-secondary {
     background-color: #212529;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .navbar .btn-secondary:hover, .navbar .btn-secondary:focus {
+    color: rgba(255, 255, 255, 0.75);
   }
 
   .table th,

@@ -50,6 +50,11 @@
   .btn-secondary {
     border: 0;
     background-color: $white;
+    color: $navbar-light-color;
+
+    @include hover-focus {
+      color: $navbar-light-hover-color;
+    }
   }
 }
 
