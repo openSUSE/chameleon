@@ -1,13 +1,15 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 require("./wiki/anchor");
 require("./wiki/edit-section");
+require("./wiki/form");
 require("./wiki/login-modal");
+require("./wiki/preferences");
 require("./wiki/toc");
 require("./wiki/table");
 
 require("./wiki/migrations");
 
-},{"./wiki/anchor":2,"./wiki/edit-section":3,"./wiki/login-modal":4,"./wiki/migrations":6,"./wiki/table":7,"./wiki/toc":8}],2:[function(require,module,exports){
+},{"./wiki/anchor":2,"./wiki/edit-section":3,"./wiki/form":4,"./wiki/login-modal":5,"./wiki/migrations":7,"./wiki/preferences":8,"./wiki/table":9,"./wiki/toc":10}],2:[function(require,module,exports){
 // Add anchor icons to headings
 // See also src/sass/wiki/_anchor.scss
 
@@ -42,6 +44,13 @@ for (let i = 0; i < wraps.length; i++) {
 }
 
 },{}],4:[function(require,module,exports){
+const buttons = document.getElementsByClassName("mw-htmlform-submit");
+
+for (let i = 0; i < buttons.length; i++) {
+  const button = buttons.item(i).classList.add("btn", "btn-primary");
+}
+
+},{}],5:[function(require,module,exports){
 /**
  * Automatically focus username input after opening login modal.
  * This is a fallback for old Firefox (<= 57) because autofocus property doesn't
@@ -60,7 +69,7 @@ if (toggle) {
   });
 }
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 var boxes = document.getElementsByClassName('box');
 
 for (var i = 0; i < boxes.length; i++) {
@@ -110,10 +119,35 @@ for (var i = 0; i < boxes.length; i++) {
   }
 }
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 require("./box");
 
-},{"./box":5}],7:[function(require,module,exports){
+},{"./box":6}],8:[function(require,module,exports){
+const preftoc = document.getElementById("preftoc");
+const preferences = document.getElementById("preferences");
+const items = preftoc.getElementsByTagName("li");
+const links = preftoc.getElementsByTagName("a");
+
+preftoc.classList.add("nav", "nav-pills");
+preferences.classList.add("card", "card-body", "mt-3");
+
+for (let i = 0; i < items.length; i++) {
+  const item = items.item(i);
+  item.classList.add("nav-item");
+  const link = item.getElementsByTagName("a").item(0);
+  link.classList.add("nav-link");
+  if (item.classList.contains("selected")) {
+    link.classList.add("active");
+  }
+  link.addEventListener("click", function () {
+    for (let j = 0; j < links.length; j++) {
+      links.item(j).classList.remove("active");
+    }
+    link.classList.add("active");
+  });
+}
+
+},{}],9:[function(require,module,exports){
 const tables = document.getElementsByClassName("wikitable");
 
 while (tables.length) {
@@ -122,7 +156,7 @@ while (tables.length) {
   list.remove("wikitable");
 }
 
-},{}],8:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 // Move table of contents to sidebar
 const toc = document.getElementById("toc");
 const sidebar = document.getElementById("toc-sidebar");
