@@ -3,9 +3,11 @@ require("./wiki/anchor");
 require("./wiki/edit-section");
 require("./wiki/login-modal");
 require("./wiki/toc");
+require("./wiki/table");
+
 require("./wiki/migrations");
 
-},{"./wiki/anchor":2,"./wiki/edit-section":3,"./wiki/login-modal":4,"./wiki/migrations":6,"./wiki/toc":7}],2:[function(require,module,exports){
+},{"./wiki/anchor":2,"./wiki/edit-section":3,"./wiki/login-modal":4,"./wiki/migrations":6,"./wiki/table":7,"./wiki/toc":8}],2:[function(require,module,exports){
 // Add anchor icons to headings
 // See also src/sass/wiki/_anchor.scss
 
@@ -112,6 +114,15 @@ for (var i = 0; i < boxes.length; i++) {
 require("./box");
 
 },{"./box":5}],7:[function(require,module,exports){
+const tables = document.getElementsByClassName("wikitable");
+
+while (tables.length) {
+  const list = tables.item(0).classList;
+  list.add("table");
+  list.remove("wikitable");
+}
+
+},{}],8:[function(require,module,exports){
 // Move table of contents to sidebar
 const toc = document.getElementById("toc");
 const sidebar = document.getElementById("toc-sidebar");
