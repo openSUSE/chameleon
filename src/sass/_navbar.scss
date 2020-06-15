@@ -56,6 +56,14 @@
       color: $navbar-light-hover-color;
     }
   }
+
+  .avatar {
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    margin-top: -1.2em;
+    margin-bottom: -1em;
+  }
 }
 
 .navbar-toggler {

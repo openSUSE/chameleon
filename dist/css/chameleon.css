@@ -12646,6 +12646,13 @@ pre, .pre {
 .navbar .btn-secondary:hover, .navbar .btn-secondary:focus {
   color: rgba(0, 0, 0, 0.7);
 }
+.navbar .avatar {
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  margin-top: -1.2em;
+  margin-bottom: -1em;
+}
 
 .navbar-toggler {
   margin-left: auto;
