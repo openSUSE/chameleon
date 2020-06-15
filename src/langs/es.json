@@ -22,5 +22,17 @@
     "google-group": "Grupo de Google+",
     "mail-lists": "Listas de correo",
     "irc-channels": "Canales de IRC",
-    "social-media": "Redes sociales"
+    "social-media": "Redes sociales",
+    "dark-mode": "Modo Nocturno",
+    "opensuse-universe": "Universo openSUSE",
+    "search": "Buscar",
+    "main": "Principal",
+    "main-site": "Sitio principal",
+    "doc": "Doc",
+    "telegram-group": "Grupo de Telegram",
+    "telegram-group-url": "https://t.me/openSUSE_group",
+    "other": "Otro",
+    "guide-unofficial": "Guía (no oficial)",
+    "mirrors": "Espejos",
+    "lizards": "Lagartos"
 }
