@@ -12638,6 +12638,9 @@ pre, .pre {
 .navbar .navbar-text a:hover, .navbar .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
+.navbar .form-control {
+  border: 0;
+}
 .navbar .btn-secondary {
   border: 0;
   background-color: #ffffff;
