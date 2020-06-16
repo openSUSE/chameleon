@@ -12564,6 +12564,10 @@ textarea {
   margin-bottom: 0;
 }
 
+svg {
+  vertical-align: -0.15em;
+}
+
 ::-moz-selection {
   background: #17a2b8;
   /* WebKit/Blink Browsers */
@@ -12606,6 +12610,10 @@ pre, .pre {
 }
 .navbar .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
+  display: inline-flex;
+}
+.navbar .navbar-brand img {
+  margin-right: 0.5rem;
 }
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
