@@ -71,6 +71,7 @@ body.action-edit #siteNotice {
 @media screen and (min-width: 600px) {
   #mw-head #actions {
     margin-top: -2.5rem;
+    margin-bottom: 2rem;
   }
 }
 
