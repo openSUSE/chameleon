@@ -21,9 +21,3 @@
 
 // Dark mode
 @import "dark-mode/index";
-
-// Site specific styles
-// TODO: move to separate CSS file
-body.mediawiki {
-  @import "chameleon-wiki";
-}
