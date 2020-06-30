@@ -12681,6 +12681,11 @@ pre, .pre {
     margin-top: 0.5rem;
   }
 }
+.navbar-transparent {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
 .global-footer,
 .site-footer,
 .footer {
