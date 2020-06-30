@@ -12605,8 +12605,12 @@ pre, .pre {
 }
 
 .navbar {
-  background: #e9ecef !important;
+  background: #e9ecef;
   border-bottom: 2px solid #73ba25;
+}
+.navbar.navbar-transparent {
+  background-color: transparent;
+  border: 0;
 }
 .navbar .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
@@ -12681,11 +12685,6 @@ pre, .pre {
     margin-top: 0.5rem;
   }
 }
-.navbar-transparent {
-  background-color: transparent !important;
-  border: 0 !important;
-}
-
 .global-footer,
 .site-footer,
 .footer {
@@ -12951,7 +12950,7 @@ body {
   }
 
   .navbar {
-    background: #343a40 !important;
+    background: #343a40;
   }
   .navbar .navbar-brand {
     color: #ffffff;

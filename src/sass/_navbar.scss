@@ -1,6 +1,11 @@
 .navbar {
-  background: $light !important;
+  background: $light;
   border-bottom: 2px solid $green;
+
+  &.navbar-transparent {
+    background-color: transparent;
+    border: 0;
+  }
 
   .navbar-brand {
     color: $navbar-light-brand-color;
@@ -91,9 +96,4 @@
     order: 1;
     margin-top: $navbar-padding-y;
   }
-}
-
-.navbar-transparent {
-  background-color: transparent !important;
-  border: 0 !important;
 }
