@@ -10,7 +10,7 @@ classNameMapping.forEach(m => {
 
   while (warnings.length) {
     const list = warnings.item(0).classList;
-    list.add(m.add);
-    list.remove(m.remove);
+    list.add(...m.add.split(' '));
+    list.remove(...m.remove.split(' '));
   }
 });
