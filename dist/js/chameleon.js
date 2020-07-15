@@ -1000,7 +1000,15 @@ module.exports={
     "more": "更多",
     "search": "搜索",
     "main": "主站",
-    "doc": "文档"
+    "doc": "文档",
+    "opensuse-universe": "openSUSE 宇宙",
+    "main-site": "主站",
+    "telegram-group": "电报群",
+    "telegram-group-url": "https://t.me/opensuse_cn",
+    "other": "其他",
+    "guide-unofficial": "指南 (非官方)",
+    "mirrors": "镜像",
+    "lizards": "蜥蜴部落"
 }
 
 },{}],22:[function(require,module,exports){
