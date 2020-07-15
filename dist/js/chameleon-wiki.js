@@ -1,15 +1,14 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 require("./wiki/anchor");
 require("./wiki/edit-section");
-require("./wiki/form");
 require("./wiki/login-modal");
 require("./wiki/preferences");
 require("./wiki/toc");
-require("./wiki/table");
+require("./wiki/class-name-mapping");
 
 require("./wiki/migrations");
 
-},{"./wiki/anchor":2,"./wiki/edit-section":3,"./wiki/form":4,"./wiki/login-modal":5,"./wiki/migrations":7,"./wiki/preferences":8,"./wiki/table":9,"./wiki/toc":10}],2:[function(require,module,exports){
+},{"./wiki/anchor":2,"./wiki/class-name-mapping":3,"./wiki/edit-section":4,"./wiki/login-modal":5,"./wiki/migrations":7,"./wiki/preferences":8,"./wiki/toc":9}],2:[function(require,module,exports){
 // Add anchor icons to headings
 // See also src/sass/wiki/_anchor.scss
 
@@ -31,6 +30,24 @@ for (let i = 0; i < headlines.length; i++) {
 }
 
 },{}],3:[function(require,module,exports){
+const classNameMapping = [
+  { select: 'error', remove: 'error', add: 'alert alert-danger' },
+  { select: 'mw-htmlform-submit', remove: 'mw-htmlform-submit', add: 'btn btn-primary' },
+  { select: 'mw-warning-with-logexcerpt', remove: 'mw-warning-with-logexcerpt', add: 'alert alert-info' },
+  { select: 'wikitable', remove: 'wikitable', add: 'table' }
+];
+
+classNameMapping.forEach(m => {
+  const warnings = document.getElementsByClassName(m.select);
+
+  while (warnings.length) {
+    const list = warnings.item(0).classList;
+    list.add(m.add);
+    list.remove(m.remove);
+  }
+});
+
+},{}],4:[function(require,module,exports){
 // The "Edit" text is replaced with a pencil icon.
 // See also src/sass/wiki/_edit-section.scss
 
@@ -41,13 +58,6 @@ for (let i = 0; i < wraps.length; i++) {
   const link = wrap.getElementsByTagName("a").item(0);
   link.innerHTML =
     '<svg class="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"/><path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"/></svg>';
-}
-
-},{}],4:[function(require,module,exports){
-const buttons = document.getElementsByClassName("mw-htmlform-submit");
-
-for (let i = 0; i < buttons.length; i++) {
-  const button = buttons.item(i).classList.add("btn", "btn-primary");
 }
 
 },{}],5:[function(require,module,exports){
@@ -151,15 +161,6 @@ if (preftoc && preferences) {
 }
 
 },{}],9:[function(require,module,exports){
-const tables = document.getElementsByClassName("wikitable");
-
-while (tables.length) {
-  const list = tables.item(0).classList;
-  list.add("table");
-  list.remove("wikitable");
-}
-
-},{}],10:[function(require,module,exports){
 // Move table of contents to sidebar
 const toc = document.getElementById("toc");
 const sidebar = document.getElementById("toc-sidebar");
