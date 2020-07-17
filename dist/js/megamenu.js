@@ -126,6 +126,13 @@ module.exports = [
         title: "Weblate",
         url: "https://l10n.opensuse.org/",
       },
+      ,
+      {
+        id: "kernel",
+        icon: `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/><path fill-rule="evenodd" d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/></svg>`,
+        title: "Kernel",
+        url: "https://kernel.opensuse.org/",
+      },
     ],
   },
   {
@@ -176,6 +183,15 @@ module.exports = [
       </svg>`,
         title: "Status",
         url: "https://status.opensuse.org/",
+      },
+      {
+        id: "survey",
+        icon: `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3zm4.354 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+      </svg>`,
+        title: "Survey",
+        url: "https://survey.opensuse.org/",
       },
     ],
   },
@@ -493,12 +509,15 @@ module.exports={
   "development-document": "Document",
   "development-document-url": "https://en.opensuse.org/Portal:Development",
   "build-service": "Build service",
+  "kernel": "Kernel",
   "information": "Information",
   "news": "News",
   "release-notes": "Release notes",
   "events": "Events",
   "planet": "Planet",
   "shop": "Shop",
+  "status": "Status",
+  "survey": "Survey",
   "community": "Community",
   "connect": "Connect",
   "facebook-group": "Facebook group",
