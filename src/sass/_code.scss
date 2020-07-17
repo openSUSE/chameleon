@@ -8,3 +8,10 @@ pre {
 .pre {
   @extend pre;
 }
+
+@import "highlight.js/scss/atom-one-light";
+
+.hljs {
+  background: transparent !important;
+  padding: 0 !important;
+}

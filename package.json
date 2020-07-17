@@ -44,6 +44,7 @@
     "gulp-tap": "^2.0.0",
     "gulp-wait": "0.0.2",
     "gulplog": "^1.0.0",
+    "highlight.js": "^10.1.1",
     "jquery": "^3.5.1",
     "jstransformer-markdown-it": "^2.1.0",
     "prettier": "^2.0.5"
