@@ -918,7 +918,10 @@ module.exports={
     "other": "其他",
     "guide-unofficial": "指南 (非官方)",
     "mirrors": "镜像",
-    "lizards": "蜥蜴部落"
+    "lizards": "蜥蜴部落",
+    "kernel": "内核",
+    "status": "状态",
+    "survey": "问卷"
 }
 
 },{}],19:[function(require,module,exports){
