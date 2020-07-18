@@ -2,7 +2,10 @@
   position: fixed;
   left: 0;
   right: 0;
-  top: 3.5em;
+  top: 56px;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   margin-top: 2px;
   background-color: $teal;
   color: $light;
@@ -10,14 +13,15 @@
 }
 
 .megamenu .row {
-  padding-bottom: $spacer;
+  padding-bottom: 16px;
 }
 
 .megamenu-heading {
   text-transform: uppercase;
-  font-size: $font-size-small;
+  font-size: 13px;
   font-weight: 600;
-  margin-top: $spacer;
+  line-height: 1.2;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 
@@ -30,4 +34,8 @@
 .megamenu a {
   color: inherit;
   text-decoration: none;
+}
+
+.megamenu svg {
+  vertical-align: -2.4px;
 }

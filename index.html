@@ -33,6 +33,23 @@ webpage loading speed. This is the most recommended way to use Chameleon.</p>
   defer
 &gt;&lt;/script&gt;
 </code></pre>
+<p>If the site is based on Bootstrap 3, here is a minimal build to use:</p>
+<pre><code class="language-html">&lt;!-- Chameleon Style --&gt;
+&lt;link
+  rel=&quot;stylesheet&quot;
+  href=&quot;https://static.opensuse.org/chameleon-3.0/dist/css/chameleon-bs3.css&quot;
+/&gt;
+
+&lt;!-- Chameleon Script --&gt;
+&lt;script
+  src=&quot;https://static.opensuse.org/chameleon-3.0/dist/js/chameleon-bs3.js&quot;
+  defer
+&gt;&lt;/script&gt;
+&lt;script
+  src=&quot;https://static.opensuse.org/chameleon-3.0/dist/js/chameleon.js&quot;
+  defer
+&gt;&lt;/script&gt;
+</code></pre>
 <h2>Use NPM</h2>
 <p>If the website requires a lot of SaSS variables and mixins from Chameleon and
 Bootstrap, then you need to install the package locally.</p>
