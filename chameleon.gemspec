@@ -8,9 +8,7 @@ Gem::Specification.new do |spec|
     spec.homepage = "https://github.com/openSUSE/chameleon"
     spec.license  = "GPL-3.0-or-later"
 
-    spec.files    = FileList[
-      'src/**/*',
-    ].to_a
+    spec.files    = `git ls-files`.split("\n")
 
     spec.add_runtime_dependency 'bootstrap'
 
