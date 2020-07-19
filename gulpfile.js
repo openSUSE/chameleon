@@ -45,7 +45,7 @@ gulp.task("copylib", function () {
 // Copy Ruby Gem assets
 gulp.task("copygem", function () {
   return gulp
-    .src("src/sass/*")
+    .src(["src/sass/**/*.scss", "!src/sass/chameleon-bs3.scss", "!src/sass/chameleon-wiki.scss", "!src/sass/wiki/**/*"])
     .pipe(rename(function (path) {
       console.log(path);
       if (path.extname === '.scss' && path.basename && path.basename.charAt(0) !== '_') {
@@ -102,7 +102,7 @@ gulp.task("watch", function () {
   // start web browser to load test pages
   gulp.src(".").pipe(open({ uri: "http://localhost:8044" }));
 
-  gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
+  gulp.watch("src/sass/**/*.scss", gulp.parallel("sass", "copygem"));
   gulp.watch(["src/js/**/*.js", "src/langs/*.json"], gulp.parallel("js"));
   gulp.watch(["*.md", "docs/**/*.md", "docs/**/*.pug"], gulp.parallel("docs"));
 });
