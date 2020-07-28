@@ -35,5 +35,8 @@
     "other": "その他",
     "guide-unofficial": "ガイド (非公式)",
     "mirrors": "ミラー",
-    "lizards": "Lizards"
+    "lizards": "Lizards",
+    "kernel": "カーネル",
+    "status": "ステータス",
+    "survey": "調査"
 }
