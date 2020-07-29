@@ -716,7 +716,10 @@ module.exports={
     "other": "その他",
     "guide-unofficial": "ガイド (非公式)",
     "mirrors": "ミラー",
-    "lizards": "Lizards"
+    "lizards": "Lizards",
+    "kernel": "カーネル",
+    "status": "ステータス",
+    "survey": "調査"
 }
 
 },{}],13:[function(require,module,exports){
@@ -779,7 +782,7 @@ module.exports={
     "mail-lists": "Listas de discussão",
     "irc-channels": "Canais IRC",
     "social-media": "Mídias sociais",
-    "dark-mode": "Modo Escuro",
+    "dark-mode": "Modo escuro",
     "more": "Mais",
     "search": "Pesquisa",
     "main": "Principal",
@@ -787,11 +790,14 @@ module.exports={
     "opensuse-universe": "Universo openSUSE",
     "main-site": "Site principal",
     "telegram-group": "Grupo do Telegram",
-    "telegram-group-url": "https://t.me/opensuseusers",
+    "telegram-group-url": "https://t.me/opensusebr",
     "other": "Outro",
     "guide-unofficial": "Guia (não-oficial)",
     "mirrors": "Espelhos",
-    "lizards": "Lagartos"
+    "lizards": "Lagartos",
+    "kernel": "Kernel",
+    "status": "Status",
+    "survey": "Pesquisa"
 }
 
 },{}],16:[function(require,module,exports){
@@ -893,7 +899,7 @@ module.exports={
     "shop": "商店",
     "community": "社群",
     "connect": "连接",
-    "facebook-group": "Facebook 群组",
+    "facebook-group": "脸书群",
     "google-group": "Google+ 群组",
     "mail-lists": "邮件列表",
     "irc-channels": "IRC 频道",
