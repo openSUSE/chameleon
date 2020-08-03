@@ -48,7 +48,6 @@ gulp.task("copygem", function () {
   return gulp
     .src(["src/sass/**/*.scss", "!src/sass/chameleon-bs3.scss", "!src/sass/chameleon-wiki.scss", "!src/sass/wiki/**/*"])
     .pipe(rename(function (path) {
-      console.log(path);
       if (path.extname === '.scss' && path.basename && path.basename.charAt(0) !== '_') {
         path.basename = '_' + path.basename;
       }
