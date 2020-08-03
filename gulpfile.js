@@ -36,6 +36,7 @@ gulp.task("js", function () {
 gulp.task("copylib", function () {
   return gulp
     .src([
+      "node_modules/jquery/dist/jquery.js",
       "node_modules/jquery/dist/jquery.slim.js",
       "node_modules/bootstrap/dist/js/bootstrap.bundle.js*"
     ])
