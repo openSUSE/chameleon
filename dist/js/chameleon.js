@@ -584,7 +584,7 @@ module.exports={
     "opensuse-universe": "openSUSE Universum",
     "main-site": "Hauptseite",
     "telegram-group": "Telegram-Gruppe",
-    "telegram-group-url": "https://t.me/opensuseusers",
+    "telegram-group-url": "https://t.me/openSUSE_group",
     "other": "Andere",
     "guide-unofficial": "Leitfaden (inoffiziell)",
     "mirrors": "Mirrors",
@@ -662,14 +662,14 @@ module.exports={
     "mail-lists": "Listas de correo",
     "irc-channels": "Canales de IRC",
     "social-media": "Redes sociales",
-    "dark-mode": "Modo Nocturno",
+    "dark-mode": "Modo oscuro",
     "opensuse-universe": "Universo openSUSE",
     "search": "Buscar",
     "main": "Principal",
     "main-site": "Sitio principal",
     "doc": "Doc",
     "telegram-group": "Grupo de Telegram",
-    "telegram-group-url": "https://t.me/openSUSE_group",
+    "telegram-group-url": "https://t.me/openSUSE_ES",
     "other": "Otro",
     "guide-unofficial": "Guía (no oficial)",
     "mirrors": "Espejos",
@@ -750,7 +750,10 @@ module.exports={
     "telegram-group": "Telegram ryhmä",
     "other": "Muut",
     "guide-unofficial": "Ohje (epävirallinen)",
-    "mirrors": "Peilit"
+    "mirrors": "Peilit",
+    "opensuse-universe": "openSUSE-universumi",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "lizards": "Liskot"
 }
 
 },{}],14:[function(require,module,exports){
@@ -824,7 +827,7 @@ module.exports={
     "opensuse-universe": "openSUSE Universe",
     "main-site": "メインサイト",
     "telegram-group": "Telegram グループ",
-    "telegram-group-url": "https://t.me/opensuseusers",
+    "telegram-group-url": "https://t.me/openSUSE_group",
     "other": "その他",
     "guide-unofficial": "ガイド (非公式)",
     "mirrors": "ミラー",
@@ -958,16 +961,16 @@ module.exports={
     "download": "Ladda ner",
     "documentation": "Dokumentation",
     "wiki": "Wiki",
-    "wiki-url": " https://en.opensuse.org/",
+    "wiki-url": "https://en.opensuse.org/",
     "forum": "Forum",
-    "forum-url": " https://forums.opensuse.org/forumdisplay.php/842-English",
+    "forum-url": "https://forums.opensuse.org/forumdisplay.php/842-English",
     "development": "Utveckling",
     "development-document": "Dokument",
-    "development-document-url": " https://en.opensuse.org/Portal:Development",
+    "development-document-url": "https://en.opensuse.org/Portal:Development",
     "build-service": "Byggtjänst",
     "information": "Information",
     "news": "Nyheter",
-    "release-notes": "",
+    "release-notes": "Viktig information",
     "events": "Evenemang",
     "planet": "Planet",
     "shop": "Butik",
@@ -987,7 +990,8 @@ module.exports={
     "other": "Annat",
     "guide-unofficial": "Guide (inofficiell)",
     "mirrors": "Speglar",
-    "lizards": "Ödlor"
+    "lizards": "Ödlor",
+    "doc": "Doc"
 }
 
 },{}],21:[function(require,module,exports){
