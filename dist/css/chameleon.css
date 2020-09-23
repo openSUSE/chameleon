@@ -12790,7 +12790,7 @@ body {
   }
 
   body {
-    background-color: #000000;
+    background-color: #212529;
     color: #adb5bd;
   }
 
@@ -12838,12 +12838,12 @@ body {
 
   .card {
     border-color: #495057;
-    background-color: #212529;
+    background-color: #000000;
   }
 
   pre,
 .pre {
-    background: #212529;
+    background: #000000;
     color: #adb5bd;
   }
 
@@ -12863,7 +12863,7 @@ body {
   }
 
   .form-control:focus {
-    background-color: #212529;
+    background-color: #000000;
     color: #adb5bd;
   }
 
@@ -12872,7 +12872,7 @@ body {
 .custom-select,
 .custom-control-label::before {
     border-color: #495057;
-    background-color: #212529;
+    background-color: #000000;
     color: #adb5bd;
   }
   .form-control::-moz-placeholder, .custom-file-label::-moz-placeholder, .custom-select::-moz-placeholder, .custom-control-label::before::-moz-placeholder {
@@ -12921,12 +12921,12 @@ body {
   }
 
   .list-group-item:not(.active) {
-    background-color: #000000;
+    background-color: #212529;
     border-color: #495057;
   }
 
   .list-group-item-action:hover:not(.active) {
-    background-color: #212529;
+    background-color: #000000;
   }
 
   hr {
@@ -12934,7 +12934,7 @@ body {
   }
 
   .modal-content {
-    background-color: #212529;
+    background-color: #000000;
   }
 
   .nav.nav-tabs {
@@ -12945,8 +12945,8 @@ body {
   }
   .nav.nav-tabs .nav-link.active {
     color: inherit;
-    background-color: #000000;
-    border-bottom-color: #000000;
+    background-color: #212529;
+    border-bottom-color: #212529;
   }
 
   .navbar:not(.navbar-light) {
