@@ -12838,7 +12838,7 @@ body {
 
   .card {
     border-color: #495057;
-    background-color: #000000;
+    background-color: #343a40;
   }
 
   pre,
@@ -12863,7 +12863,7 @@ body {
   }
 
   .form-control:focus {
-    background-color: #000000;
+    background-color: #343a40;
     color: #adb5bd;
   }
 
@@ -12872,7 +12872,7 @@ body {
 .custom-select,
 .custom-control-label::before {
     border-color: #495057;
-    background-color: #000000;
+    background-color: #343a40;
     color: #adb5bd;
   }
   .form-control::-moz-placeholder, .custom-file-label::-moz-placeholder, .custom-select::-moz-placeholder, .custom-control-label::before::-moz-placeholder {
@@ -12926,7 +12926,7 @@ body {
   }
 
   .list-group-item-action:hover:not(.active) {
-    background-color: #000000;
+    background-color: #343a40;
   }
 
   hr {
@@ -12934,7 +12934,7 @@ body {
   }
 
   .modal-content {
-    background-color: #000000;
+    background-color: #343a40;
   }
 
   .nav.nav-tabs {
