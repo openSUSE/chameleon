@@ -12986,6 +12986,9 @@ body {
   .navbar:not(.navbar-light) .navbar-text a:hover, .navbar:not(.navbar-light) .navbar-text a:focus {
     color: #ffffff;
   }
+  .navbar:not(.navbar-light) .form-control {
+    background-color: #212529;
+  }
   .navbar:not(.navbar-light) .btn-secondary {
     background-color: #212529;
     color: rgba(255, 255, 255, 0.5);
