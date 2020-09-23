@@ -31,9 +31,12 @@
     "opensuse-universe": "Universo openSUSE",
     "main-site": "Site principal",
     "telegram-group": "Grupo do Telegram",
-    "telegram-group-url": "https://t.me/openSUSE_group",
+    "telegram-group-url": "https://t.me/opensusebr",
     "other": "Outro",
     "guide-unofficial": "Guia (não-oficial)",
     "mirrors": "Espelhos",
-    "lizards": "Lagartos"
+    "lizards": "Lagartos",
+    "kernel": "Kernel",
+    "status": "Status",
+    "survey": "Pesquisa"
 }

@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Chameleon - openSUSE Design System for Web</title><link href="./dist/images/app-icons/www-16.png" rel="icon" sizes="16x16" type="image/png"><link href="./dist/images/app-icons/www.png" rel="icon" sizes="256x256" type="image/png"><link href="./dist/css/chameleon.css" rel="stylesheet"><link href="./lib/github.css" rel="stylesheet"><link href="./lib/doc.css" rel="stylesheet"></head><body class="d-flex flex-column" style="min-height:100vh;"><nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="./"><svg class="icon icon-2x mr-2"><use xlink:href="#opensuse"></use></svg><span class="navbar-title">Chameleon</span></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"><svg class="icon"><use xlink:href="#menu-2-line"></use></svg></button><div class="collapse navbar-collapse" id="navbar-collapse"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="./get-started.html"><svg class="icon"><use xlink:href="#rocket-2-line"></use></svg>&nbsp;Get Started</a></li><li class="nav-item"><a class="nav-link" href="./elements.html"><svg class="icon"><use xlink:href="#stack-line"></use></svg>&nbsp;Elements</a></li><li class="nav-item"><a class="nav-link" href="./layouts.html"><svg class="icon"><use xlink:href="#layout-line"></use></svg>&nbsp;Layouts</a></li><li class="nav-item"><a class="nav-link" href="./components.html"><svg class="icon"><use xlink:href="#dashboard-line"></use></svg>&nbsp;Components</a></li><li class="nav-item"><a class="nav-link" href="./changelog.html"><svg class="icon"><use xlink:href="#clipboard-line"></use></svg>&nbsp;Changelog</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/openSUSE/chameleon"><svg class="icon"><use xlink:href="#github-line"></use></svg>&nbsp;Source Code</a></li></ul></div><button class="navbar-toggler megamenu-toggler" type="button"><svg class="icon"><use xlink:href="#apps-line"></use></svg></button></nav><div class="flex-fill py-5"><div class="container"><div class="row"><div class="col-lg-9 toc-scope"><h1>Components</h1><h2>Alerts</h2>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Chameleon - openSUSE Design System for Web</title><link href="https://static.opensuse.org/favicon-32.png" rel="icon" sizes="32x32" type="image/png"><link href="https://static.opensuse.org/favicon-48.png" rel="icon" sizes="48x48" type="image/png"><link href="https://static.opensuse.org/favicon-64.png" rel="icon" sizes="64x64" type="image/png"><link href="https://static.opensuse.org/favicon-96.png" rel="icon" sizes="96x96" type="image/png"><link href="https://static.opensuse.org/favicon-144.png" rel="icon" sizes="144x144" type="image/png"><link href="https://static.opensuse.org/favicon-192.png" rel="icon" sizes="192x192" type="image/png"><link href="./dist/css/chameleon.css" rel="stylesheet"><link href="./docs/css/doc.css" rel="stylesheet"></head><body class="d-flex flex-column" style="min-height:100vh;"><nav class="navbar navbar-expand-lg sticky-top"><a class="navbar-brand" href="./"><img src="https://static.opensuse.org/favicon.svg" width="30" height="30" class="d-inline-block align-top" alt="🦎" title="openSUSE">
+Chameleon</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path></svg></button><div class="collapse navbar-collapse" id="navbar-collapse"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="./">Home</a></li><li class="nav-item"><a class="nav-link" href="./elements.html">Elements</a></li><li class="nav-item"><a class="nav-link" href="./components.html">Components</a></li><li class="nav-item"><a class="nav-link" href="./changelog.html">Changelog</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/openSUSE/chameleon">GitHub</a></li></ul></div><button class="navbar-toggler megamenu-toggler" type="button" data-toggle="collapse" data-target="#megamenu"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"></path></svg></button></nav><div class="megamenu collapse" id="megamenu"></div><div class="flex-fill py-5"><div class="container"><div class="row"><div class="col-lg-9 toc-scope"><h1>Components</h1><h2>Alerts</h2>
 <div class="alert alert-success" role="alert">
   A simple success alert with <a href="#" class="alert-link">an example link</a>
 </div>
@@ -131,4 +132,74 @@ to use all of them. Instead, you should use as less variants as possible.</p><p>
 &lt;/footer&gt;
 </code></pre>
 <h2 id="inputs">Inputs</h2><p>Text, search, email, password inputs have the same appearance. They are just
-single element components.</p><div class="mb-3"><input class="form-control mb-3" type="text" placeholder="Text input"><textarea class="form-control" placeholder="Textarea"></textarea></div><p>Selects, checkboxs, radio buttons and file inputs should use custom control.</p><div class="mb-3"><div class="custom-control custom-checkbox mb-3"><input class="custom-control-input" id="custom-check-1" type="checkbox" checked><label class="custom-control-label" for="custom-check-1">Checkbox 1</label></div><div class="custom-control custom-checkbox mb-3"><input class="custom-control-input" id="custom-check-2" type="checkbox"><label class="custom-control-label" for="custom-check-2">Checkbox 2</label></div><div class="custom-control custom-radio mb-3"><input class="custom-control-input" id="custom-radio-1" type="radio" name="custom-radio-1" value="1" checked><label class="custom-control-label" for="custom-radio-1">Radio button 1</label></div><div class="custom-control custom-radio mb-3"><input class="custom-control-input" id="custom-radio-2" type="radio" name="custom-radio-1" value="2"><label class="custom-control-label" for="custom-radio-2">Radio button 2</label></div><select class="custom-select mb-3"><option>gedit</option><option>emacs</option><option>kate</option><option selected>nano</option><option>vim</option></select><div class="custom-file"><input class="custom-file-input" id="custom-file-1" type="file"><label class="custom-file-label" for="custom-file-1">Choose file</label></div></div><h2>List Group</h2><p>Please don't use contextual classes.</p><ul class="list-group"><li class="list-group-item active">Cras justo odio</li><li class="list-group-item">Dapibus ac facilisis in</li><li class="list-group-item">Morbi leo risus</li><li class="list-group-item">Porta ac consectetur ac</li><li class="list-group-item">Vestibulum at eros</li></ul><h2>Modals</h2><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="modal-title">Modal title</div><button class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><p>Modal body text goes here.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal">Close</button><button class="btn btn-primary">Save changes</button></div></div></div></div><div class="toc-sidebar col-lg-3 d-none d-lg-block"><div class="toc"></div></div></div></div></div><footer class="footer"><div class="container">&copy; 2017&ndash;2020 openSUSE contributors</div></footer><script src="./dist/js/chameleon.js"></script><script src="./lib/highlight.js"></script><script>hljs.initHighlightingOnLoad();</script><script src="./lib/doc.js"></script></body></html>
+single element components.</p><div class="mb-3"><input class="form-control mb-3" type="text" placeholder="Text input"><textarea class="form-control" placeholder="Textarea"></textarea></div><p>Selects, checkboxs, radio buttons and file inputs should use custom control.</p><div class="mb-3"><div class="custom-control custom-checkbox mb-3"><input class="custom-control-input" id="custom-check-1" type="checkbox" checked><label class="custom-control-label" for="custom-check-1">Checkbox 1</label></div><div class="custom-control custom-checkbox mb-3"><input class="custom-control-input" id="custom-check-2" type="checkbox"><label class="custom-control-label" for="custom-check-2">Checkbox 2</label></div><div class="custom-control custom-radio mb-3"><input class="custom-control-input" id="custom-radio-1" type="radio" name="custom-radio-1" value="1" checked><label class="custom-control-label" for="custom-radio-1">Radio button 1</label></div><div class="custom-control custom-radio mb-3"><input class="custom-control-input" id="custom-radio-2" type="radio" name="custom-radio-1" value="2"><label class="custom-control-label" for="custom-radio-2">Radio button 2</label></div><select class="custom-select mb-3"><option>gedit</option><option>emacs</option><option>kate</option><option selected>nano</option><option>vim</option></select><div class="custom-file"><input class="custom-file-input" id="custom-file-1" type="file"><label class="custom-file-label" for="custom-file-1">Choose file</label></div></div><h2>List Group</h2><p>Please don't use contextual classes.</p><ul class="list-group"><li class="list-group-item active">Cras justo odio</li><li class="list-group-item">Dapibus ac facilisis in</li><li class="list-group-item">Morbi leo risus</li><li class="list-group-item">Porta ac consectetur ac</li><li class="list-group-item">Vestibulum at eros</li></ul><h2>Modals</h2><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="modal-title">Modal title</div><button class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><p>Modal body text goes here.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal">Close</button><button class="btn btn-primary">Save changes</button></div></div></div><h2>Tables</h2>
+<div class="table-responsive">
+  <table class="table">
+    <caption>List of users</caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    &lt;caption&gt;
+      List of users
+    &lt;/caption&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;Mark&lt;/td&gt;
+        &lt;td&gt;Otto&lt;/td&gt;
+        &lt;td&gt;@mdo&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Jacob&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;@fat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Larry&lt;/td&gt;
+        &lt;td&gt;the Bird&lt;/td&gt;
+        &lt;td&gt;@twitter&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+</div><div class="toc-sidebar col-lg-3 d-none d-lg-block"><div class="toc"></div></div></div></div></div><footer class="footer"><div class="container">&copy; 2017&ndash;2020 openSUSE contributors</div></footer><script src="./dist/js/jquery.slim.js"></script><script src="./dist/js/bootstrap.bundle.js"></script><script src="./dist/js/chameleon.js"></script><script src="./dist/js/highlight.js"></script><script src="./docs/js/doc.js"></script></body></html>

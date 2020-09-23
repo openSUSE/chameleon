@@ -11,18 +11,15 @@ const autoprefixer = require("gulp-autoprefixer");
 const connect = require("gulp-connect");
 const open = require("gulp-open");
 const pug = require("gulp-pug");
-const svgSprite = require("gulp-svg-sprite");
-const header = require("gulp-header");
-const footer = require("gulp-footer");
 const rename = require("gulp-rename");
 const wait = require("gulp-wait");
 
 // Compile JavaScripts with sourcemaps
-gulp.task("js", function() {
+gulp.task("js", function () {
   return gulp
     .src(["src/js/*.js", "src/js/components/*.js"], { read: false })
     .pipe(
-      tap(function(file) {
+      tap(function (file) {
         log.info("bundling " + file.path);
         file.contents = browserify(file.path, { debug: true }).bundle();
       })
@@ -35,19 +32,41 @@ gulp.task("js", function() {
     .pipe(connect.reload());
 });
 
+// Copy jQuery and Bootstrap JS
+gulp.task("copylib", function () {
+  return gulp
+    .src([
+      "node_modules/jquery/dist/jquery.js",
+      "node_modules/jquery/dist/jquery.slim.js",
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.js*"
+    ])
+    .pipe(gulp.dest("dist/js"));
+});
+
+// Copy Ruby Gem assets
+gulp.task("copygem", function () {
+  return gulp
+    .src(["src/sass/**/*.scss", "!src/sass/chameleon-bs3.scss", "!src/sass/chameleon-wiki.scss", "!src/sass/wiki/**/*"])
+    .pipe(rename(function (path) {
+      if (path.extname === '.scss' && path.basename && path.basename.charAt(0) !== '_') {
+        path.basename = '_' + path.basename;
+      }
+    }))
+    .pipe(gulp.dest("assets/stylesheets"));
+});
+
 // Compile SaSS stylesheets with sourcemaps
-gulp.task("sass", function() {
+gulp.task("sass", function () {
   return gulp
     .src("src/sass/**/*.scss")
     .pipe(sourcemaps.init())
     .pipe(
       sass({
-        includePaths: ["node_modules"]
+        includePaths: ["node_modules", "node_modules/bootstrap/scss"]
       }).on("error", sass.logError)
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 2 versions"],
         cascade: false
       })
     )
@@ -57,57 +76,10 @@ gulp.task("sass", function() {
     .pipe(connect.reload());
 });
 
-// Icons (SVG Sprite in JS)
-gulp.task("icons-svg", function() {
+// Documents
+gulp.task("docs", function () {
   return gulp
-    .src([
-      "node_modules/remixicon/icons/Buildings/*.svg",
-      "node_modules/remixicon/icons/Business/*.svg",
-      "node_modules/remixicon/icons/Communication/*.svg",
-      "node_modules/remixicon/icons/Design/*.svg",
-      "node_modules/remixicon/icons/Development/*.svg",
-      "node_modules/remixicon/icons/Device/*.svg",
-      "node_modules/remixicon/icons/Document/*.svg",
-      "node_modules/remixicon/icons/Editor/*.svg",
-      "node_modules/remixicon/icons/Finance/*.svg",
-      "node_modules/remixicon/icons/Logos/*.svg",
-      "node_modules/remixicon/icons/Map/*.svg",
-      "node_modules/remixicon/icons/Media/*.svg",
-      "node_modules/remixicon/icons/Others/*.svg",
-      "node_modules/remixicon/icons/System/*.svg",
-      "node_modules/remixicon/icons/User/*.svg",
-      "node_modules/remixicon/icons/Weather/*.svg",
-      "src/icons/*.svg",
-      "!src/icons/sprite.svg"
-    ])
-    .pipe(
-      svgSprite({
-        mode: {
-          symbol: {
-            dest: "icons",
-            sprite: "sprite.svg"
-          }
-        }
-      })
-    )
-    .pipe(gulp.dest("src"));
-});
-
-gulp.task("icons-js", function() {
-  return gulp
-    .src("src/icons/sprite.svg")
-    .pipe(header("module.exports = '"))
-    .pipe(footer("';"))
-    .pipe(rename("sprite.js"))
-    .pipe(gulp.dest("src/js/data"));
-});
-
-gulp.task("icons", gulp.series("icons-svg", "icons-js"));
-
-// Pug templates
-gulp.task("pug", function() {
-  return gulp
-    .src("src/pug/pages/**/*.pug")
+    .src("docs/pug/pages/**/*.pug")
     .pipe(pug())
     .pipe(gulp.dest("./"))
     .pipe(wait(500))
@@ -115,11 +87,11 @@ gulp.task("pug", function() {
 });
 
 // Build all
-gulp.task("build", gulp.parallel("js", "sass", "pug", "icons"));
+gulp.task("build", gulp.parallel("js", "sass", "docs", "copylib", "copygem"));
 gulp.task("default", gulp.parallel("build"));
 
 // Watch all
-gulp.task("watch", function() {
+gulp.task("watch", function () {
   // start web server with live reload
   connect.server({
     root: ".",
@@ -130,7 +102,7 @@ gulp.task("watch", function() {
   // start web browser to load test pages
   gulp.src(".").pipe(open({ uri: "http://localhost:8044" }));
 
-  gulp.watch("src/sass/**/*.scss", gulp.parallel("sass"));
+  gulp.watch("src/sass/**/*.scss", gulp.parallel("sass", "copygem"));
   gulp.watch(["src/js/**/*.js", "src/langs/*.json"], gulp.parallel("js"));
-  gulp.watch(["src/pug/**/*.pug", "*.md", "docs/*.md"], gulp.parallel("pug"));
+  gulp.watch(["*.md", "docs/**/*.md", "docs/**/*.pug"], gulp.parallel("docs"));
 });
