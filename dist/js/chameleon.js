@@ -588,7 +588,10 @@ module.exports={
     "other": "Andere",
     "guide-unofficial": "Leitfaden (inoffiziell)",
     "mirrors": "Mirrors",
-    "lizards": "Lizards"
+    "lizards": "Lizards",
+    "kernel": "Kernel",
+    "status": "Status",
+    "survey": "Umfrage"
 }
 
 },{}],10:[function(require,module,exports){

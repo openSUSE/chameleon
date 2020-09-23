@@ -905,6 +905,10 @@ function compileLanguage(language) {
       return matcher;
     }
 
+    resumingScanAtSamePosition() {
+      return this.regexIndex != 0;
+    }
+
     considerAll() {
       this.regexIndex = 0;
     }
@@ -1212,7 +1216,70 @@ function commonKeyword(keyword) {
   return COMMON_KEYWORDS.includes(keyword.toLowerCase());
 }
 
-var version = "10.1.1";
+var version = "10.2.0";
+
+// @ts-nocheck
+
+function hasValueOrEmptyAttribute(value) {
+  return Boolean(value || value === "");
+}
+
+const Component = {
+  props: ["language", "code", "autodetect"],
+  data: function() {
+    return {
+      detectedLanguage: "",
+      unknownLanguage: false
+    };
+  },
+  computed: {
+    className() {
+      if (this.unknownLanguage) return "";
+
+      return "hljs " + this.detectedLanguage;
+    },
+    highlighted() {
+      // no idea what language to use, return raw code
+      if (!this.autoDetect && !hljs.getLanguage(this.language)) {
+        console.warn(`The language "${this.language}" you specified could not be found.`);
+        this.unknownLanguage = true;
+        return escapeHTML(this.code);
+      }
+
+      let result;
+      if (this.autoDetect) {
+        result = hljs.highlightAuto(this.code);
+        this.detectedLanguage = result.language;
+      } else {
+        result = hljs.highlight(this.language, this.code, this.ignoreIllegals);
+        this.detectectLanguage = this.language;
+      }
+      return result.value;
+    },
+    autoDetect() {
+      return !this.language || hasValueOrEmptyAttribute(this.autodetect);
+    },
+    ignoreIllegals() {
+      return true;
+    }
+  },
+  // this avoids needing to use a whole Vue compilation pipeline just
+  // to build Highlight.js
+  render(createElement) {
+    return createElement("pre", {}, [
+      createElement("code", {
+        class: this.className,
+        domProps: { innerHTML: this.highlighted }})
+    ]);
+  }
+  // template: `<pre><code :class="className" v-html="highlighted"></code></pre>`
+};
+
+const VuePlugin = {
+  install(Vue) {
+    Vue.component('highlightjs', Component);
+  }
+};
 
 /*
 Syntax highlighting with language autodetection.
@@ -1236,9 +1303,9 @@ const HLJS = function(hljs) {
 
   // Global internal variables used within the highlight.js library.
   /** @type {Record<string, Language>} */
-  var languages = {};
+  var languages = Object.create(null);
   /** @type {Record<string, string>} */
-  var aliases = {};
+  var aliases = Object.create(null);
   /** @type {HLJSPlugin[]} */
   var plugins = [];
 
@@ -1468,6 +1535,14 @@ const HLJS = function(hljs) {
     }
 
     /**
+     * Advance a single character
+     */
+    function advanceOne() {
+      mode_buffer += codeToHighlight[index];
+      index += 1;
+    }
+
+    /**
      * Handle matching but then ignoring a sequence of text
      *
      * @param {string} lexeme - string containing full match text
@@ -1481,7 +1556,7 @@ const HLJS = function(hljs) {
       } else {
         // no need to move the cursor, we still have additional regexes to try and
         // match at this very spot
-        continueScanAtSamePosition = true;
+        resumeScanAtSamePosition = true;
         return 0;
       }
     }
@@ -1684,23 +1759,32 @@ const HLJS = function(hljs) {
     var relevance = 0;
     var index = 0;
     var iterations = 0;
-    var continueScanAtSamePosition = false;
+    var resumeScanAtSamePosition = false;
 
     try {
       top.matcher.considerAll();
 
       for (;;) {
         iterations++;
-        if (continueScanAtSamePosition) {
+        if (resumeScanAtSamePosition) {
           // only regexes not matched previously will now be
           // considered for a potential match
-          continueScanAtSamePosition = false;
+          resumeScanAtSamePosition = false;
         } else {
           top.matcher.lastIndex = index;
           top.matcher.considerAll();
         }
+
         const match = top.matcher.exec(codeToHighlight);
         // console.log("match", match[0], match.rule && match.rule.begin)
+
+        // if our failure to match was the result of a "resumed scan" then we
+        // need to advance one position and revert to full scanning before we
+        // decide there are truly no more matches at all to be had
+        if (!match && top.matcher.resumingScanAtSamePosition()) {
+          advanceOne();
+          continue;
+        }
         if (!match) break;
 
         const beforeMatch = codeToHighlight.substring(index, match.index);
@@ -2037,12 +2121,19 @@ const HLJS = function(hljs) {
     });
   }
 
-  /* Interface definition */
+  /* fixMarkup is deprecated and will be removed entirely in v11 */
+  function deprecate_fixMarkup(arg) {
+    console.warn("fixMarkup is deprecated and will be removed entirely in v11.0");
+    console.warn("Please see https://github.com/highlightjs/highlight.js/issues/2534");
 
+    return fixMarkup(arg)
+  }
+
+  /* Interface definition */
   Object.assign(hljs, {
     highlight,
     highlightAuto,
-    fixMarkup,
+    fixMarkup: deprecate_fixMarkup,
     highlightBlock,
     configure,
     initHighlighting,
@@ -2054,7 +2145,9 @@ const HLJS = function(hljs) {
     requireLanguage,
     autoDetection,
     inherit: inherit$1,
-    addPlugin
+    addPlugin,
+    // plugins for frameworks
+    vuePlugin: VuePlugin
   });
 
   hljs.debugMode = function() { SAFE_MODE = false; };
@@ -3777,6 +3870,7 @@ function arduino(hljs) {
   kws.built_in += ' ' + ARDUINO_KW.built_in;
 
   ARDUINO.name = 'Arduino';
+  ARDUINO.aliases = ['ino'];
 
   return ARDUINO;
 }
@@ -4298,7 +4392,7 @@ function autohotkey(hljs) {
         //I don't really know if this is totally relevant
       },
       {
-        className: 'title', //symbol would be most accurate however is higlighted just like built_in and that makes up a lot of AutoHotkey code
+        className: 'title', //symbol would be most accurate however is highlighted just like built_in and that makes up a lot of AutoHotkey code
 		                        //meaning that it would fail to highlight anything
         variants: [
           {begin: '^[^\\n";]+::(?!=)'},
@@ -4741,7 +4835,7 @@ function bash(hljs) {
     name: 'Bash',
     aliases: ['sh', 'zsh'],
     keywords: {
-      $pattern: /\b-?[a-z\._]+\b/,
+      $pattern: /\b-?[a-z\._-]+\b/,
       keyword:
         'if then else elif fi for while in do done case esac function',
       literal:
@@ -5185,8 +5279,7 @@ Requires: c-like.js
 
 /** @type LanguageFn */
 function c(hljs) {
-
-  var lang = hljs.getLanguage('c-like').rawDefinition();
+  var lang = hljs.requireLanguage('c-like').rawDefinition();
   // Until C is actually different than C++ there is no reason to auto-detect C
   // as it's own language since it would just fail auto-detect testing or
   // simply match with C++.
@@ -5197,7 +5290,6 @@ function c(hljs) {
   lang.name = 'C';
   lang.aliases = ['c', 'h'];
   return lang;
-
 }
 
 module.exports = c;
@@ -6238,7 +6330,7 @@ Requires: c-like.js
 
 /** @type LanguageFn */
 function cpp(hljs) {
-  var lang = hljs.getLanguage('c-like').rawDefinition();
+  var lang = hljs.requireLanguage('c-like').rawDefinition();
   // return auto-detection back on
   lang.disableAutodetect = false;
   lang.name = 'C++';
@@ -6570,7 +6662,7 @@ function csharp(hljs) {
       // Normal keywords.
       'abstract as base bool break byte case catch char checked const continue decimal ' +
       'default delegate do double enum event explicit extern finally fixed float ' +
-      'for foreach goto if implicit in int interface internal is lock long ' +
+      'for foreach goto if implicit in init int interface internal is lock long ' +
       'object operator out override params private protected public readonly ref sbyte ' +
       'sealed short sizeof stackalloc static string struct switch this try typeof ' +
       'uint ulong unchecked unsafe ushort using virtual void volatile while ' +
@@ -6717,6 +6809,16 @@ function csharp(hljs) {
         illegal: /[^\s:]/,
         contains: [
           TITLE_MODE,
+          hljs.C_LINE_COMMENT_MODE,
+          hljs.C_BLOCK_COMMENT_MODE
+        ]
+      },
+      {
+        beginKeywords: 'record', end: /[{;=]/,
+        illegal: /[^\s:]/,
+        contains: [
+          TITLE_MODE,
+          GENERIC_MODIFIER,
           hljs.C_LINE_COMMENT_MODE,
           hljs.C_BLOCK_COMMENT_MODE
         ]
@@ -15630,8 +15732,8 @@ function java(hljs) {
       hljs.QUOTE_STRING_MODE,
       {
         className: 'class',
-        beginKeywords: 'class interface', end: /[{;=]/, excludeEnd: true,
-        keywords: 'class interface',
+        beginKeywords: 'class interface enum', end: /[{;=]/, excludeEnd: true,
+        keywords: 'class interface enum',
         illegal: /[:"\[\]]/,
         contains: [
           { beginKeywords: 'extends implements' },
@@ -16015,7 +16117,7 @@ function javascript(hljs) {
           lookahead(concat(
             // we also need to allow for multiple possible comments inbetween
             // the first key:value pairing
-            /(((\/\/.*)|(\/\*(.|\n)*\*\/))\s*)*/,
+            /(((\/\/.*$)|(\/\*(.|\n)*\*\/))\s*)*/,
             IDENT_RE$1 + '\\s*:'))),
         relevance: 0,
         contains: [
@@ -16495,9 +16597,7 @@ function kotlin(hljs) {
       'crossinline dynamic final enum if else do while for when throw try catch finally ' +
       'import package is in fun override companion reified inline lateinit init ' +
       'interface annotation data sealed internal infix operator out by constructor super ' +
-      'tailrec where const inner suspend typealias external expect actual ' +
-      // to be deleted soon
-      'trait volatile transient native default',
+      'tailrec where const inner suspend typealias external expect actual',
     built_in:
       'Byte Short Char Int Long Boolean Float Double Void Unit Nothing',
     literal:
@@ -18422,7 +18522,7 @@ function matlab(hljs) {
     name: 'Matlab',
     keywords: {
       keyword:
-        'break case catch classdef continue else elseif end enumerated events for function ' +
+        'arguments break case catch classdef continue else elseif end enumeration events for function ' +
         'global if methods otherwise parfor persistent properties return spmd switch try while',
       built_in:
         'sin sind sinh asin asind asinh cos cosd cosh acos acosd acosh tan tand tanh atan ' +
@@ -20028,7 +20128,7 @@ function nsis(hljs) {
     case_insensitive: false,
     keywords: {
       keyword:
-      'Abort AddBrandingImage AddSize AllowRootDirInstall AllowSkipFiles AutoCloseWindow BGFont BGGradient BrandingText BringToFront Call CallInstDLL Caption ChangeUI CheckBitmap ClearErrors CompletedText ComponentText CopyFiles CRCCheck CreateDirectory CreateFont CreateShortCut Delete DeleteINISec DeleteINIStr DeleteRegKey DeleteRegValue DetailPrint DetailsButtonText DirText DirVar DirVerify EnableWindow EnumRegKey EnumRegValue Exch Exec ExecShell ExecShellWait ExecWait ExpandEnvStrings File FileBufSize FileClose FileErrorText FileOpen FileRead FileReadByte FileReadUTF16LE FileReadWord FileSeek FileWrite FileWriteByte FileWriteUTF16LE FileWriteWord FindClose FindFirst FindNext FindWindow FlushINI FunctionEnd GetCurInstType GetCurrentAddress GetDlgItem GetDLLVersion GetDLLVersionLocal GetErrorLevel GetFileTime GetFileTimeLocal GetFullPathName GetFunctionAddress GetInstDirError GetLabelAddress GetTempFileName Goto HideWindow Icon IfAbort IfErrors IfFileExists IfRebootFlag IfSilent InitPluginsDir InstallButtonText InstallColors InstallDir InstallDirRegKey InstProgressFlags InstType InstTypeGetText InstTypeSetText Int64Cmp Int64CmpU Int64Fmt IntCmp IntCmpU IntFmt IntOp IntPtrCmp IntPtrCmpU IntPtrOp IsWindow LangString LicenseBkColor LicenseData LicenseForceSelection LicenseLangString LicenseText LoadLanguageFile LockWindow LogSet LogText ManifestDPIAware ManifestSupportedOS MessageBox MiscButtonText Name Nop OutFile Page PageCallbacks PageExEnd Pop Push Quit ReadEnvStr ReadINIStr ReadRegDWORD ReadRegStr Reboot RegDLL Rename RequestExecutionLevel ReserveFile Return RMDir SearchPath SectionEnd SectionGetFlags SectionGetInstTypes SectionGetSize SectionGetText SectionGroupEnd SectionIn SectionSetFlags SectionSetInstTypes SectionSetSize SectionSetText SendMessage SetAutoClose SetBrandingImage SetCompress SetCompressor SetCompressorDictSize SetCtlColors SetCurInstType SetDatablockOptimize SetDateSave SetDetailsPrint SetDetailsView SetErrorLevel SetErrors SetFileAttributes SetFont SetOutPath SetOverwrite SetRebootFlag SetRegView SetShellVarContext SetSilent ShowInstDetails ShowUninstDetails ShowWindow SilentInstall SilentUnInstall Sleep SpaceTexts StrCmp StrCmpS StrCpy StrLen SubCaption Unicode UninstallButtonText UninstallCaption UninstallIcon UninstallSubCaption UninstallText UninstPage UnRegDLL Var VIAddVersionKey VIFileVersion VIProductVersion WindowIcon WriteINIStr WriteRegBin WriteRegDWORD WriteRegExpandStr WriteRegMultiStr WriteRegNone WriteRegStr WriteUninstaller XPStyle',
+      'Abort AddBrandingImage AddSize AllowRootDirInstall AllowSkipFiles AutoCloseWindow BGFont BGGradient BrandingText BringToFront Call CallInstDLL Caption ChangeUI CheckBitmap ClearErrors CompletedText ComponentText CopyFiles CRCCheck CreateDirectory CreateFont CreateShortCut Delete DeleteINISec DeleteINIStr DeleteRegKey DeleteRegValue DetailPrint DetailsButtonText DirText DirVar DirVerify EnableWindow EnumRegKey EnumRegValue Exch Exec ExecShell ExecShellWait ExecWait ExpandEnvStrings File FileBufSize FileClose FileErrorText FileOpen FileRead FileReadByte FileReadUTF16LE FileReadWord FileWriteUTF16LE FileSeek FileWrite FileWriteByte FileWriteWord FindClose FindFirst FindNext FindWindow FlushINI GetCurInstType GetCurrentAddress GetDlgItem GetDLLVersion GetDLLVersionLocal GetErrorLevel GetFileTime GetFileTimeLocal GetFullPathName GetFunctionAddress GetInstDirError GetKnownFolderPath GetLabelAddress GetTempFileName Goto HideWindow Icon IfAbort IfErrors IfFileExists IfRebootFlag IfRtlLanguage IfShellVarContextAll IfSilent InitPluginsDir InstallButtonText InstallColors InstallDir InstallDirRegKey InstProgressFlags InstType InstTypeGetText InstTypeSetText Int64Cmp Int64CmpU Int64Fmt IntCmp IntCmpU IntFmt IntOp IntPtrCmp IntPtrCmpU IntPtrOp IsWindow LangString LicenseBkColor LicenseData LicenseForceSelection LicenseLangString LicenseText LoadAndSetImage LoadLanguageFile LockWindow LogSet LogText ManifestDPIAware ManifestLongPathAware ManifestMaxVersionTested ManifestSupportedOS MessageBox MiscButtonText Name Nop OutFile Page PageCallbacks PEAddResource PEDllCharacteristics PERemoveResource PESubsysVer Pop Push Quit ReadEnvStr ReadINIStr ReadRegDWORD ReadRegStr Reboot RegDLL Rename RequestExecutionLevel ReserveFile Return RMDir SearchPath SectionGetFlags SectionGetInstTypes SectionGetSize SectionGetText SectionIn SectionSetFlags SectionSetInstTypes SectionSetSize SectionSetText SendMessage SetAutoClose SetBrandingImage SetCompress SetCompressor SetCompressorDictSize SetCtlColors SetCurInstType SetDatablockOptimize SetDateSave SetDetailsPrint SetDetailsView SetErrorLevel SetErrors SetFileAttributes SetFont SetOutPath SetOverwrite SetRebootFlag SetRegView SetShellVarContext SetSilent ShowInstDetails ShowUninstDetails ShowWindow SilentInstall SilentUnInstall Sleep SpaceTexts StrCmp StrCmpS StrCpy StrLen SubCaption Unicode UninstallButtonText UninstallCaption UninstallIcon UninstallSubCaption UninstallText UninstPage UnRegDLL Var VIAddVersionKey VIFileVersion VIProductVersion WindowIcon WriteINIStr WriteRegBin WriteRegDWORD WriteRegExpandStr WriteRegMultiStr WriteRegNone WriteRegStr WriteUninstaller XPStyle',
       literal:
       'admin all auto both bottom bzip2 colored components current custom directory false force hide highest ifdiff ifnewer instfiles lastused leave left license listonly lzma nevershow none normal notset off on open print right show silent silentlog smooth textonly top true try un.components un.custom un.directory un.instfiles un.license uninstConfirm user Win10 Win7 Win8 WinVista zlib'
     },
@@ -21248,6 +21348,10 @@ Website: https://www.php.net
 Category: common
 */
 
+/**
+ * @param {HLJSApi} hljs
+ * @returns {LanguageDetail}
+ * */
 function php(hljs) {
   var VARIABLE = {
     begin: '\\$+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*'
@@ -21260,18 +21364,38 @@ function php(hljs) {
       { begin: /\?>/ } // end php tag
     ]
   };
+  var SUBST = {
+    className: 'subst',
+    variants: [
+      { begin: /\$\w+/ },
+      { begin: /\{\$/, end: /\}/ }
+    ]
+  };
+  var SINGLE_QUOTED = hljs.inherit(hljs.APOS_STRING_MODE, {
+    illegal: null,
+  });
+  var DOUBLE_QUOTED = hljs.inherit(hljs.QUOTE_STRING_MODE, {
+    illegal: null,
+    contains: hljs.QUOTE_STRING_MODE.contains.concat(SUBST),
+  });
+  var HEREDOC = hljs.END_SAME_AS_BEGIN({
+    begin: /<<<[ \t]*(\w+)\n/,
+    end: /[ \t]*(\w+)\b/,
+    contains: hljs.QUOTE_STRING_MODE.contains.concat(SUBST),
+  });
   var STRING = {
     className: 'string',
     contains: [hljs.BACKSLASH_ESCAPE, PREPROCESSOR],
     variants: [
-      {
-        begin: 'b"', end: '"'
-      },
-      {
-        begin: 'b\'', end: '\''
-      },
-      hljs.inherit(hljs.APOS_STRING_MODE, {illegal: null}),
-      hljs.inherit(hljs.QUOTE_STRING_MODE, {illegal: null})
+      hljs.inherit(SINGLE_QUOTED, {
+        begin: "b'", end: "'",
+      }),
+      hljs.inherit(DOUBLE_QUOTED, {
+        begin: 'b"', end: '"',
+      }),
+      DOUBLE_QUOTED,
+      SINGLE_QUOTED,
+      HEREDOC
     ]
   };
   var NUMBER = {variants: [hljs.BINARY_NUMBER_MODE, hljs.C_NUMBER_MODE]};
@@ -21329,20 +21453,6 @@ function php(hljs) {
           keywords: '__halt_compiler'
         }
       ),
-      {
-        className: 'string',
-        begin: /<<<['"]?\w+['"]?$/, end: /^\w+;?$/,
-        contains: [
-          hljs.BACKSLASH_ESCAPE,
-          {
-            className: 'subst',
-            variants: [
-              {begin: /\$\w+/},
-              {begin: /\{\$/, end: /\}/}
-            ]
-          }
-        ]
-      },
       PREPROCESSOR,
       {
         className: 'keyword', begin: /\$this\b/
@@ -26980,7 +27090,7 @@ function typescript(hljs) {
           PARAMS
         ]
       },
-      { // prevent references like module.id from being higlighted as module definitions
+      { // prevent references like module.id from being highlighted as module definitions
         begin: /module\./,
         keywords: { built_in: 'module' },
         relevance: 0
