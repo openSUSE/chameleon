@@ -44,6 +44,15 @@
   display: none;
 }
 
+.mw-highlight {
+  background-color: transparent !important;
+}
+@media (prefers-color-scheme: dark) {
+  .mw-highlight .mi {
+    color: #adb5bd;
+  }
+}
+
 body.action-submit #mw-head,
 body.action-submit #siteNotice,
 body.action-edit #mw-head,
