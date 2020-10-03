@@ -12686,6 +12686,21 @@ pre, .pre {
   background: #f8f9fa;
 }
 
+* {
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 .table th,
 .table td {
   border-bottom: 1px #dee2e6 solid;
@@ -12996,6 +13011,21 @@ body {
   }
   .navbar:not(.navbar-light) .btn-secondary:hover, .navbar:not(.navbar-light) .btn-secondary:focus {
     color: rgba(255, 255, 255, 0.75);
+  }
+
+  * {
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+    scrollbar-width: thin;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .table th,
