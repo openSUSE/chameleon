@@ -827,7 +827,7 @@ module.exports={
     "opensuse-universe": "openSUSE Universe",
     "main-site": "メインサイト",
     "telegram-group": "Telegram グループ",
-    "telegram-group-url": "https://t.me/openSUSE_group",
+    "telegram-group-url": "https://t.me/opensuseusers",
     "other": "その他",
     "guide-unofficial": "ガイド (非公式)",
     "mirrors": "ミラー",
