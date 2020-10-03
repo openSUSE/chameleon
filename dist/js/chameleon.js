@@ -18,7 +18,9 @@ langs["de"] = require("../../langs/de.json");
 langs["en"] = require("../../langs/en.json");
 langs["es"] = require("../../langs/es.json");
 langs["et"] = require("../../langs/et.json");
+langs["fa"] = require("../../langs/fa.json");
 langs["fi"] = require("../../langs/fi.json");
+langs["hi"] = require("../../langs/hi.json");
 langs["it"] = require("../../langs/it.json");
 langs["ja"] = require("../../langs/ja.json");
 langs["ko"] = require("../../langs/ko.json");
@@ -35,7 +37,7 @@ langs["zh-Hant"] = langs["zh-TW"];
 
 module.exports = langs;
 
-},{"../../langs/da.json":8,"../../langs/de.json":9,"../../langs/en.json":10,"../../langs/es.json":11,"../../langs/et.json":12,"../../langs/fi.json":13,"../../langs/it.json":14,"../../langs/ja.json":15,"../../langs/ko.json":16,"../../langs/pl.json":17,"../../langs/pt_BR.json":18,"../../langs/ru.json":19,"../../langs/sv.json":20,"../../langs/zh_CN.json":21,"../../langs/zh_TW.json":22}],4:[function(require,module,exports){
+},{"../../langs/da.json":8,"../../langs/de.json":9,"../../langs/en.json":10,"../../langs/es.json":11,"../../langs/et.json":12,"../../langs/fa.json":13,"../../langs/fi.json":14,"../../langs/hi.json":15,"../../langs/it.json":16,"../../langs/ja.json":17,"../../langs/ko.json":18,"../../langs/pl.json":19,"../../langs/pt_BR.json":20,"../../langs/ru.json":21,"../../langs/sv.json":22,"../../langs/zh_CN.json":23,"../../langs/zh_TW.json":24}],4:[function(require,module,exports){
 const docIcon = `<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z"/><path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/></svg>`;
 const packageIcon = `<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/></svg>`;
 const telegramIcon = `<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m 15.135036,0.00147914 c -0.01565,2.1e-5 -0.03132,4.44e-4 -0.04702,0.0013 -0.08366,0.0047 -0.167707,0.02177 -0.249133,0.05288 -7.1e-5,2.7e-5 -1.43e-4,4.3e-5 -2.14e-4,7.2e-5 L 0.55255496,5.4627331 a 0.57157718,0.57157718 0 0 0 -0.0024,9.07e-4 c -0.348213,0.133597 -0.557341,0.492923 -0.54996299977,0.819746 0.0074,0.326824 0.23249399977,0.676327 0.58638099977,0.794073 l -0.03433,-0.01263 5.93279904,2.405379 a 0.57157718,0.57157718 0 0 0 0.0337,0.01249 0.57157718,0.57157718 0 0 0 0.01256,0.03391 l 2.407542,5.9327289 -0.01074,-0.0286 c 0.120467,0.349349 0.46672,0.570238 0.791072,0.57759 0.324353,0.0074 0.680155,-0.197641 0.816328,-0.541172 a 0.57157718,0.57157718 0 0 0 0.0032,-0.0083 l 5.406976,-14.2861169 7.1e-5,-2.11e-4 c 0.124551,-0.32591496 0.02418,-0.69350296 -0.194576,-0.91225496 -0.153843,-0.153844 -0.381304,-0.249097 -0.6161,-0.248785 z M 13.352873,1.8402221 6.820368,8.3727271 1.641178,6.2728511 Z M 14.161178,2.6485271 9.729456,14.357781 7.628673,9.1810321 Z"/></svg>`;
@@ -718,6 +720,45 @@ module.exports={
 
 },{}],13:[function(require,module,exports){
 module.exports={
+    "dark-mode": "حالت تاریک",
+    "opensuse-universe": "جهان openSUSE",
+    "search": "جستجو",
+    "main": "اصلی",
+    "main-site": "سایت اصلی",
+    "software": "نرم‌افزار",
+    "download": "دریافت",
+    "doc": "مستندات",
+    "documentation": "مستندات",
+    "wiki": "ویکی",
+    "wiki-url": "https://en.opensuse.org/",
+    "forum": "انجمن",
+    "forum-url": "https://forums.opensuse.org/forumdisplay.php/842-English",
+    "development": "توسعه",
+    "development-document": "سند",
+    "development-document-url": "https://en.opensuse.org/Portal:Development",
+    "build-service": "سرویس ساخت",
+    "information": "اطلاعات",
+    "news": "اخبار",
+    "release-notes": "یادداشت‌های انتشار",
+    "events": "رویداد‌ها",
+    "planet": "سیاره",
+    "shop": "فروشگاه",
+    "community": "جامعه",
+    "connect": "ارتباط",
+    "facebook-group": "گروه فیس‌بوک",
+    "telegram-group": "گروه تلگرام",
+    "telegram-group-url": "https://t.me/openSUSE_group",
+    "mail-lists": "لیست ایمیل",
+    "irc-channels": "کانال‌های IRC",
+    "social-media": "شبکه‌های اجتماعی",
+    "other": "دیگر",
+    "guide-unofficial": "راهنما (غیر رسمی)",
+    "mirrors": "آینه‌ها",
+    "lizards": "مارمولک‌ها"
+}
+
+},{}],14:[function(require,module,exports){
+module.exports={
     "dark-mode": "Tumma tila",
     "more": "Lisää",
     "search": "Etsi",
@@ -756,7 +797,49 @@ module.exports={
     "lizards": "Liskot"
 }
 
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
+module.exports={
+    "dark-mode": "डार्क मोड",
+    "opensuse-universe": "ओपनSUSE संसार",
+    "search": "खोज",
+    "main": "मुख्य",
+    "main-site": "मुख्य साइट",
+    "software": "सॉफ्टवेयर",
+    "download": "डाउनलोड",
+    "doc": "प्रलेख",
+    "documentation": "प्रलेखन",
+    "wiki": "विकी",
+    "wiki-url": "https://en.opensuse.org/",
+    "forum": "चर्चा मंच",
+    "forum-url": "https://forums.opensuse.org/forumdisplay.php/842-English",
+    "development": "सॉफ्टवेयर विकास",
+    "development-document": "प्रलेख",
+    "development-document-url": "https://en.opensuse.org/Portal:Development",
+    "build-service": "बिल्ड सेवा",
+    "kernel": "कर्नेल",
+    "information": "जानकारी",
+    "news": "समाचार",
+    "release-notes": "प्रकाशन नोट्स",
+    "events": "कार्यक्रम",
+    "planet": "संसार",
+    "shop": "दुकान",
+    "status": "स्थिति",
+    "survey": "सर्वेक्षण",
+    "community": "समुदाय",
+    "connect": "जुड़ें",
+    "facebook-group": "फेसबुक समूह",
+    "telegram-group": "टेलीग्राम समूह",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "mail-lists": "ईमेल सूची",
+    "irc-channels": "आईआरसी चैट चैनल",
+    "social-media": "सोशल मीडिया",
+    "other": "अन्य",
+    "guide-unofficial": "गाइड (अनाधिकारिक)",
+    "mirrors": "सर्वर-मिरर",
+    "lizards": "गिरगिट"
+}
+
+},{}],16:[function(require,module,exports){
 module.exports={
     "dark-mode": "Modalità Scura",
     "more": "Altro",
@@ -793,7 +876,7 @@ module.exports={
     "guide-unofficial": "Guide (non ufficiali)"
 }
 
-},{}],15:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 module.exports={
     "software": "ソフトウエア",
     "download": "ダウンロード",
@@ -837,7 +920,7 @@ module.exports={
     "survey": "調査"
 }
 
-},{}],16:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 module.exports={
     "dark-mode": "",
     "more": "",
@@ -869,9 +952,9 @@ module.exports={
     "social-media": ""
 }
 
-},{}],17:[function(require,module,exports){
-arguments[4][16][0].apply(exports,arguments)
-},{"dup":16}],18:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
+arguments[4][18][0].apply(exports,arguments)
+},{"dup":18}],20:[function(require,module,exports){
 module.exports={
     "software": "Software",
     "download": "Baixar",
@@ -915,7 +998,7 @@ module.exports={
     "survey": "Pesquisa"
 }
 
-},{}],19:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 module.exports={
     "software": "Программное обеспечение",
     "download": "Скачать",
@@ -955,7 +1038,7 @@ module.exports={
     "lizards": "Блоги"
 }
 
-},{}],20:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 module.exports={
     "software": "Programvara",
     "download": "Ladda ner",
@@ -994,7 +1077,7 @@ module.exports={
     "doc": "Doc"
 }
 
-},{}],21:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 module.exports={
     "software": "软件",
     "download": "下载",
@@ -1038,7 +1121,7 @@ module.exports={
     "survey": "问卷"
 }
 
-},{}],22:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 module.exports={
     "software": "軟體",
     "download": "下載",
