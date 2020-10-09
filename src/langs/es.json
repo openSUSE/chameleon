@@ -23,7 +23,7 @@
     "mail-lists": "Listas de correo",
     "irc-channels": "Canales de IRC",
     "social-media": "Redes sociales",
-    "dark-mode": "Modo oscuro",
+    "dark-mode": "Modo Oscuro",
     "opensuse-universe": "Universo openSUSE",
     "search": "Buscar",
     "main": "Principal",
@@ -34,5 +34,8 @@
     "other": "Otro",
     "guide-unofficial": "Guía (no oficial)",
     "mirrors": "Espejos",
-    "lizards": "Lagartos"
+    "lizards": "Lagartos",
+    "kernel": "Kernel",
+    "status": "Estado",
+    "survey": "Encuesta"
 }
