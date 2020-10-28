@@ -26,6 +26,15 @@
     "dark-mode": "暗色模式",
     "more": "更多",
     "search": "搜尋",
-    "main": "主站",
-    "doc": "文件"
+    "main": "主要站台",
+    "doc": "文件",
+    "main-site": "主站",
+    "kernel": "內核",
+    "status": "狀態",
+    "survey": "問卷",
+    "telegram-group": "Telegram 群組",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "other": "其他",
+    "guide-unofficial": "指南 (非官方)",
+    "mirrors": "鏡像站台"
 }
