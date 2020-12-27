@@ -34,5 +34,7 @@
     "mirrors": "Peilit",
     "opensuse-universe": "openSUSE-universumi",
     "telegram-group-url": "https://t.me/opensuseusers",
-    "lizards": "Liskot"
+    "lizards": "Liskot",
+    "status": "Tila",
+    "survey": "Selvitys"
 }
