@@ -34,5 +34,8 @@
     "other": "Прочее",
     "guide-unofficial": "Руководство (неофициальное)",
     "mirrors": "Зеркала",
-    "lizards": "Блоги"
+    "lizards": "Блоги",
+    "kernel": "Ядро",
+    "status": "Статус",
+    "survey": "Опрос"
 }
