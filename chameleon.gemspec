@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
     spec.name     = "chameleon"
-    spec.version  = "3.0.0"
+    spec.version  = "4.0.0"
     spec.authors  = ["Guo Yunhe"]
     spec.summary  = "Bootstrap theme for openSUSE websites"
     spec.homepage = "https://github.com/openSUSE/chameleon"
