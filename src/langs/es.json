@@ -29,5 +29,9 @@
     "main": "Principal",
     "main-site": "Sitio principal",
     "doc": "Doc",
-    "telegram-group-url": "https://t.me/openSUSE_ES"
+    "telegram-group-url": "https://t.me/openSUSE_ES",
+    "other": "Otro",
+    "guide-unofficial": "Guía (no oficial)",
+    "mirrors": "Espejos",
+    "lizards": "Lagartos"
 }
