@@ -20,3 +20,10 @@ ul.nav {
     user-select: none;
   }
 }
+
+/* hide "jump to navigation/search" links */
+.mw-jump, #jump-to-nav {
+  overflow: hidden;
+  height: 0;
+  zoom: 1;
+}
