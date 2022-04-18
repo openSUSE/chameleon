@@ -586,10 +586,10 @@ module.exports={
     "opensuse-universe": "openSUSE Universum",
     "main-site": "Hauptseite",
     "telegram-group": "Telegram-Gruppe",
-    "telegram-group-url": "https://t.me/openSUSE_group",
+    "telegram-group-url": "https://t.me/opensuseusers",
     "other": "Andere",
     "guide-unofficial": "Leitfaden (inoffiziell)",
-    "mirrors": "Mirrors",
+    "mirrors": "Spiegelserver",
     "lizards": "Lizards",
     "kernel": "Kernel",
     "status": "Status",
@@ -675,7 +675,10 @@ module.exports={
     "other": "Otro",
     "guide-unofficial": "Guía (no oficial)",
     "mirrors": "Espejos",
-    "lizards": "Lagartos"
+    "lizards": "Lagartos",
+    "kernel": "Kernel",
+    "status": "Estado",
+    "survey": "Encuesta"
 }
 
 },{}],12:[function(require,module,exports){
@@ -794,7 +797,10 @@ module.exports={
     "mirrors": "Peilit",
     "opensuse-universe": "openSUSE-universumi",
     "telegram-group-url": "https://t.me/opensuseusers",
-    "lizards": "Liskot"
+    "lizards": "Liskot",
+    "status": "Tila",
+    "survey": "Selvitys",
+    "kernel": "Ydin"
 }
 
 },{}],15:[function(require,module,exports){
@@ -922,7 +928,7 @@ module.exports={
 
 },{}],18:[function(require,module,exports){
 module.exports={
-    "dark-mode": "",
+    "dark-mode": "다크 모드",
     "more": "",
     "search": "",
     "main": "",
@@ -953,8 +959,47 @@ module.exports={
 }
 
 },{}],19:[function(require,module,exports){
-arguments[4][18][0].apply(exports,arguments)
-},{"dup":18}],20:[function(require,module,exports){
+module.exports={
+    "dark-mode": "Tryb ciemny",
+    "more": "",
+    "search": "Szukaj",
+    "main": "Główna",
+    "software": "Oprogramowanie",
+    "download": "Pobierz",
+    "doc": "Dok",
+    "documentation": "Dokumentacja",
+    "wiki": "Wiki",
+    "wiki-url": "https://pl.opensuse.org/",
+    "forum": "Forum",
+    "forum-url": "https://forums.opensuse.org/forumdisplay.php/936-Polski-(Polish)",
+    "development": "Rozwój oprogramowania",
+    "development-document": "Dokument",
+    "development-document-url": "",
+    "build-service": "Usługa budowy",
+    "information": "Informacje",
+    "news": "Wiadomości",
+    "release-notes": "Uwagi do wydania",
+    "events": "Wydarzenia",
+    "planet": "Planeta",
+    "shop": "Sklep",
+    "community": "Społeczność",
+    "connect": "Połączenie",
+    "facebook-group": "Grupa na Facebooku",
+    "mail-lists": "Listy pocztowe",
+    "irc-channels": "Kanały IRC",
+    "social-media": "Media społecznościowe",
+    "kernel": "Jądro",
+    "survey": "Ankieta",
+    "status": "Status",
+    "mirrors": "Serwery lustrzane",
+    "opensuse-universe": "openSUSE Universum",
+    "main-site": "Strona główna",
+    "telegram-group": "Grupa Telegram",
+    "other": "Inne",
+    "guide-unofficial": "Przewodnik (nieoficjalny)"
+}
+
+},{}],20:[function(require,module,exports){
 module.exports={
     "software": "Software",
     "download": "Baixar",
@@ -1035,7 +1080,10 @@ module.exports={
     "other": "Прочее",
     "guide-unofficial": "Руководство (неофициальное)",
     "mirrors": "Зеркала",
-    "lizards": "Блоги"
+    "lizards": "Блоги",
+    "kernel": "Ядро",
+    "status": "Статус",
+    "survey": "Опрос"
 }
 
 },{}],22:[function(require,module,exports){
@@ -1150,8 +1198,17 @@ module.exports={
     "dark-mode": "暗色模式",
     "more": "更多",
     "search": "搜尋",
-    "main": "主站",
-    "doc": "文件"
+    "main": "主要站台",
+    "doc": "文件",
+    "main-site": "主站",
+    "kernel": "內核",
+    "status": "狀態",
+    "survey": "問卷",
+    "telegram-group": "Telegram 群組",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "other": "其他",
+    "guide-unofficial": "指南 (非官方)",
+    "mirrors": "鏡像站台"
 }
 
 },{}]},{},[2])
