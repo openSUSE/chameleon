@@ -2042,10 +2042,6 @@ pre code, .pre code {
   color: #6c757d;
   opacity: 1;
 }
-.form-control::-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -2442,7 +2438,6 @@ textarea.form-control {
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -7341,21 +7336,18 @@ button.bg-dark:focus {
 .user-select-all {
   -webkit-user-select: all !important;
   -moz-user-select: all !important;
-  -ms-user-select: all !important;
   user-select: all !important;
 }
 
 .user-select-auto {
   -webkit-user-select: auto !important;
   -moz-user-select: auto !important;
-  -ms-user-select: auto !important;
   user-select: auto !important;
 }
 
 .user-select-none {
   -webkit-user-select: none !important;
   -moz-user-select: none !important;
-  -ms-user-select: none !important;
   user-select: none !important;
 }
 
@@ -12892,12 +12884,6 @@ body {
     color: #adb5bd;
   }
   .form-control::-moz-placeholder, .custom-file-label::-moz-placeholder, .custom-select::-moz-placeholder, .custom-control-label::before::-moz-placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #adb5bd;
-    opacity: 0.5;
-    /* Firefox */
-  }
-  .form-control::-ms-input-placeholder, .custom-file-label::-ms-input-placeholder, .custom-select::-ms-input-placeholder, .custom-control-label::before::-ms-input-placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #adb5bd;
     opacity: 0.5;

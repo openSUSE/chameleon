@@ -865,7 +865,7 @@ module.exports={
     "forum-url": "https://forums.opensuse.org/forumdisplay.php/936-Polski-(Polish)",
     "development": "Rozwój oprogramowania",
     "development-document": "Dokument",
-    "development-document-url": "",
+    "development-document-url": "https://en.opensuse.org/Portal:Development",
     "build-service": "Usługa budowy",
     "information": "Informacje",
     "news": "Wiadomości",
@@ -887,7 +887,8 @@ module.exports={
     "main-site": "Strona główna",
     "telegram-group": "Grupa Telegram",
     "other": "Inne",
-    "guide-unofficial": "Przewodnik (nieoficjalny)"
+    "guide-unofficial": "Przewodnik (nieoficjalny)",
+    "lizards": "Lizards"
 }
 
 },{}],17:[function(require,module,exports){
