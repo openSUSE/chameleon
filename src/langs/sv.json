@@ -1,6 +1,6 @@
 {
     "software": "Programvara",
-    "download": "Ladda ner",
+    "download": "Ladda ned",
     "documentation": "Dokumentation",
     "wiki": "Wiki",
     "wiki-url": "https://en.opensuse.org/",
@@ -12,16 +12,16 @@
     "build-service": "Byggtjänst",
     "information": "Information",
     "news": "Nyheter",
-    "release-notes": "Viktig information",
+    "release-notes": "Utgivningsmeddelande",
     "events": "Evenemang",
     "planet": "Planet",
     "shop": "Butik",
-    "community": "Community",
+    "community": "Gemenskap",
     "connect": "Anslut",
     "facebook-group": "Facebook grupp",
     "mail-lists": "Mailinglistor",
     "irc-channels": "IRC kanaler",
-    "social-media": "Social media",
+    "social-media": "Socialmedia",
     "dark-mode": "Mörkt läge",
     "opensuse-universe": "openSUSE Universumet",
     "search": "Sök",
@@ -33,5 +33,8 @@
     "guide-unofficial": "Guide (inofficiell)",
     "mirrors": "Speglar",
     "lizards": "Ödlor",
-    "doc": "Doc"
+    "doc": "Dok",
+    "kernel": "Kärna",
+    "survey": "Undersökning",
+    "status": "Status"
 }
