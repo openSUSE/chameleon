@@ -103,6 +103,6 @@ gulp.task("watch", function () {
   gulp.src(".").pipe(open({ uri: "http://localhost:8044" }));
 
   gulp.watch("src/sass/**/*.scss", gulp.parallel("sass", "copygem"));
-  gulp.watch(["src/js/**/*.js", "src/langs/*.json"], gulp.parallel("js"));
+  gulp.watch(["src/js/**/*.js"], gulp.parallel("js"));
   gulp.watch(["*.md", "docs/**/*.md", "docs/**/*.pug"], gulp.parallel("docs"));
 });
