@@ -24,7 +24,7 @@
     "community": "Społeczność",
     "connect": "Połączenie",
     "facebook-group": "Grupa na Facebooku",
-    "mail-lists": "Listy pocztowe",
+    "mail-lists": "Listy dyskusyjne",
     "irc-channels": "Kanały IRC",
     "social-media": "Media społecznościowe",
     "kernel": "Jądro",
@@ -36,5 +36,6 @@
     "telegram-group": "Grupa Telegram",
     "other": "Inne",
     "guide-unofficial": "Przewodnik (nieoficjalny)",
-    "lizards": "Lizards"
+    "lizards": "Lizards",
+    "telegram-group-url": "https://t.me/opensuseusers"
 }
