@@ -24,7 +24,7 @@
     "community": "Społeczność",
     "connect": "Połączenie",
     "facebook-group": "Grupa na Facebooku",
-    "mail-lists": "Listy pocztowe",
+    "mail-lists": "Listy dyskusyjne",
     "irc-channels": "Kanały IRC",
     "social-media": "Media społecznościowe",
     "guide-unofficial": "Przewodnik (nieoficjalny)",
@@ -36,5 +36,6 @@
     "opensuse-universe": "openSUSE Universum",
     "main-site": "Strona główna",
     "kernel": "Jądro",
-    "lizards": "Lizards"
+    "lizards": "Lizards",
+    "telegram-group-url": "https://t.me/opensuseusers"
 }
