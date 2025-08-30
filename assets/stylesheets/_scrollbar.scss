@@ -1,6 +1,8 @@
+@use "variables";
+
 // Firefox
 * {
-  scrollbar-color: $scrollbar-thumb-color $scrollbar-color;
+  scrollbar-color: variables.$scrollbar-thumb-color variables.$scrollbar-color;
   scrollbar-width: thin;
 }
 
@@ -8,9 +10,9 @@
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
-  background: $scrollbar-color;
+  background: variables.$scrollbar-color;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $scrollbar-thumb-color;
+  background: variables.$scrollbar-thumb-color;
 }

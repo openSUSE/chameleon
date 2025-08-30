@@ -3,8 +3,8 @@
 
   .mi {
     @media (prefers-color-scheme: dark) {
-      @import "../dark-mode/variables";
-      color: $dark-mode-text-color;
+      /*@import "../dark-mode/variables";
+      color: $dark-mode-text-color;*/
     }
   }
 }

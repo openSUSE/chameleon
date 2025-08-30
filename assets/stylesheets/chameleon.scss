@@ -1,8 +1,8 @@
 // Customized Bootstrap
 @import "variables";
-@import "bootstrap";
+@import "~bootstrap/scss/bootstrap";
+@import "fontfaces";
 
-@import "animate";
 @import "alert";
 @import "button-input-fonts";
 @import "card";
@@ -17,8 +17,4 @@
 
 // Additional styles, not from Bootstrap
 @import "body";
-@import "megamenu";
 @import "toc";
-
-// Dark mode
-@import "dark-mode/index";

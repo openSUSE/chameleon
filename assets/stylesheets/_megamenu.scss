@@ -1,14 +1,16 @@
+@use "variables";
+
 .megamenu {
   position: fixed;
   left: 0;
   right: 0;
   top: 56px;
-  font-family: $font-family-sans-serif;
+  font-family: variables.$font-family-sans-serif;
   font-size: 16px;
   line-height: 1.5;
   margin-top: 2px;
   background-color: $teal;
-  color: $light;
+  color: variables.$light;
   z-index: $zindex-dropdown;
 }
 

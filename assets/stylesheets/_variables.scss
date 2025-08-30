@@ -1,43 +1,34 @@
-// https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
-
-// Colors
-// ======
-// All colors are from openSUSE Design System https://opensuse.eosdesignsystem.com/colors
-
 // Monochrome
 $black: #000000;
 $white: #ffffff;
 
 // Gray
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
+$gray-100: #fff8ee;
+$gray-200: #ede6dd;
+$gray-300: #dcd3cd;
+$gray-400: #cac1bc;
+$gray-500: #b8aeab;
+$gray-600: #968985;
+$gray-700: #746460;
+$gray-800: #523f3a;
+$gray-900: #301a14;
 
 // Primary colors
-$green: #73ba25;
-$teal: #173f4f;
-$turquoise: #35b9ab;
+$green: #42cd42;
+$turquoise: #20caa3;
 
 // Secondary colors
-$blue: #21a4df;
-$yellow: #bb9d43;
-$red: #a55860;
-$orange: #b96a35;
-
-// These names are not in Bootstrap color lists
-$colors: (
-  "turquoise": $turquoise,
-  "teal": $teal,
-);
+$blue: #00c8ff;
+$yellow: #d4cb1b;
+$red: #ff5b45;
+$orange: #f68946;
+$purple: #a498ff;
+$indigo: #79a4ff;
+$pink: #dc738d;
+$cyan: #0bc9de;
 
 // Bootstrap colors
-$primary: $teal;
+$primary: $blue;
 $secondary: $gray-200;
 $success: $green;
 $info: $blue;
@@ -49,9 +40,6 @@ $dark: $gray-800;
 // Body background
 $body-bg: $white;
 $body-color: $black;
-
-// Links
-$link-color: $blue;
 
 // Scrollbars
 $scrollbar-color: transparent;
@@ -71,17 +59,19 @@ $enable-print-styles: true;
 $enable-responsive-font-sizes: true;
 $enable-validation-icons: true;
 $enable-deprecation-messages: true;
+$color-mode-type: media-query;
 
 // Fonts
-$font-family-sans-serif: "Source Sans Pro", sans-serif;
+$font-path: "../fonts/";
+$font-family-sans-serif: "Lato", sans-serif;
 $font-family-serif: "Source Serif Pro", serif;
-$font-family-monospace: "Source Code Pro", monospace;
+$font-family-monospace: "Victor Mono", monospace;
 $font-size-base: 1rem;
 $font-size-small: 0.8rem;
 
 // Headings
 $headings-margin-bottom: 1rem;
-$headings-font-family: $font-family-sans-serif;
+$headings-font-family: "Play", sans-serif;
 $headings-font-weight: 400;
 
 // Alerts
@@ -99,5 +89,5 @@ $close-color: inherit;
 $dropdown-link-hover-color: $white;
 $dropdown-link-hover-bg: $blue;
 $dropdown-link-active-color: $white;
-$dropdown-link-active-bg: darken($blue, 5%);
+$dropdown-link-active-bg: $blue;
 $dropdown-link-disabled-color: $gray-500;

@@ -1,9 +1,11 @@
+@use "variables";
+
 ::selection {
-  background: $cyan; /* WebKit/Blink Browsers */
-  color: $white;
+  background: $green; /* WebKit/Blink Browsers */
+  color: variables.$white;
 }
 
 ::-moz-selection {
-  background: $cyan; /* Gecko Browsers */
-  color: $white;
+  background: $green; /* Gecko Browsers */
+  color: variables.$white;
 }
