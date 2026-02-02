@@ -26,5 +26,13 @@
     "facebook-group": "Facebook-gruppe",
     "mail-lists": "Mailinglister",
     "irc-channels": "IRC-kanaler",
-    "social-media": "Socialemedier"
+    "social-media": "Socialemedier",
+    "opensuse-universe": "openSUSE Universe",
+    "main-site": "Hovedside",
+    "telegram-group": "Telegram-gruppe",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "other": "Andre",
+    "guide-unofficial": "Guide (uofficiel)",
+    "mirrors": "Spejle",
+    "lizards": "Øgler"
 }
