@@ -28,11 +28,14 @@
     "irc-channels": "IRC-kanaler",
     "social-media": "Socialemedier",
     "opensuse-universe": "openSUSE Universe",
-    "main-site": "Hovedsted",
+    "main-site": "Hovedside",
     "telegram-group": "Telegram-gruppe",
     "telegram-group-url": "https://t.me/opensuseusers",
-    "other": "Andet",
-    "guide-unofficial": "Vejledning (uofficiel)",
+    "other": "Andre",
+    "guide-unofficial": "Guide (uofficiel)",
     "mirrors": "Spejle",
-    "lizards": "Øgler"
+    "lizards": "Øgler",
+    "kernel": "Kerne",
+    "status": "Status",
+    "survey": "Undersøgelse"
 }
