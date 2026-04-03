@@ -31,5 +31,8 @@
     "main-site": "Sito principale",
     "telegram-group": "Gruppo Telegram",
     "other": "Altro",
-    "guide-unofficial": "Guide (non ufficiali)"
+    "guide-unofficial": "Guide (non ufficiali)",
+    "kernel": "Kernel",
+    "status": "Stato",
+    "survey": "Questionario"
 }
