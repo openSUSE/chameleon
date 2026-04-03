@@ -25,6 +25,7 @@
     "connect": "",
     "facebook-group": "",
     "mail-lists": "",
-    "irc-channels": "",
-    "social-media": ""
+    "irc-channels": "Canale IRC",
+    "social-media": "",
+    "other": "Altro"
 }
