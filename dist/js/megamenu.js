@@ -120,6 +120,12 @@ module.exports = [
         title: "Weblate",
         url: "https://l10n.opensuse.org/",
       },
+      {
+        id: "uyuni",
+        icon: `<svg width="1em" height="1em" viewBox="0 0 256 256" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M173.22752 62.461663V22.262527H86.555173v73.066895z"/><path d="M86.555173 22.262527H70.663365L12.194821 123.52785 86.555173 95.329422z"/><path d="M204.03433 50.772248 187.57362 22.262527h-14.3461v40.199136z"/><path d="M86.555173 95.329422 12.194821 123.52785 86.555173 170.28551z"/><path d="M86.555173 170.28551H173.22752V62.461663L86.549806 95.329422z"/><path d="M204.03433 50.772248 173.22752 62.461663V170.29625h45.83453l27.00158-46.7684z"/><path d="m173.22752 224.80928h14.3622l31.47233-54.51303h-45.83453z"/><path d="m86.565907 170.29625 86.661613 54.51303v-54.51303z"/><path d="m86.555173 170.29625v54.51303H173.22752L86.565907 170.29625z"/><path d="M86.555173 170.28551 12.194821 123.52785 70.663365 224.80928h15.891808v-54.51303z"/></svg>`,
+        title: "Uyuni",
+        url: "https://www.uyuni-project.org/",
+      },
       ,
       {
         id: "kernel",
@@ -229,6 +235,12 @@ module.exports = [
         title: "Reddit",
         url: "https://reddit.com/r/openSUSE",
       },
+      {
+        id: "kudos",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><path fill="#1a1a1a" d="M434 147c-5-5-13-1-20-2h-1q-6 1-6-6v-17q1-5-5-5l-18 1q-5 0-4-5V95q1-5-5-5h-73q-6 0-5 5v18q1 5-5 5h-15q-9-2-8 7v15q1 6-5 6h-17q-5 0-5-6v-17q1-5-5-5h-18q-5 1-5-5V95q0-5-4-5h-74q-5 0-5 5l1 17q1 6-6 6h-15q-7-1-7 6v15q1 7-6 7H83q-7-2-7 6v87c0 17 0 17 17 17 11 0 11 0 11 11 0 16 0 16 16 16h6q5 0 5 6c0 7-3 17 2 21q9 3 22 1 4-2 4 3v15c0 10 0 10 10 10 18 0 18 0 17 18 0 9-1 9 9 9 19 0 19 1 19 19q-2 11 9 9t18 1q3 8 1 18-2 11 9 9 10 0 17-1 4-8 1-18-1-11 9-9 11 2 17-1c5-3 2-12 2-18q-1-10 9-9 10 3 17-1c4-3 1-11 2-17 0-9 0-9 9-9h9q10 2 9-9c0-19 0-19 19-18q11 1 9-9-3-11 1-18c4-4 11-1 17-1h2q9 1 7-7-2-12 1-19c5-5 13-1 19-1q9 0 8-8v-82c0-8 3-16-1-20m-248 21q0 6-5 5l-16-1q-7 0-7 7v71q1 6-4 5h-18q-6 1-5-5v-72q0-7 5-6l14 1q8 1 9-7v-16q-1-5 4-5h2c27 1 20-6 21 23"/></svg>`,
+        title: "Kudos recognition",
+        url: "https://kudos.opensuse.org",
+      },
     ],
   },
   {
@@ -254,10 +266,16 @@ module.exports = [
         url: "https://www.facebook.com/en.openSUSE",
       },
       {
-        id: "twitter",
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor"><path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"/></svg>`,
-        title: "Twitter",
-        url: "https://twitter.com/opensuse",
+        id: "x",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor"><path d="M389.2 48h70.6L305.6 224.2 486.6 464H344.8L233.6 318.6 106.5 464H35.8l164.9-188.6L27.4 48h145.5L273.4 180.5 389.2 48zm-24.8 373.7h39.1L151.7 88.3h-42l254.7 333.4z"/></svg>`,
+        title: "X",
+        url: "https://x.com/opensuse",
+      },
+      {
+        id: "bluesky",
+        icon: `<svg width="1em" height="1em" viewBox="0 0 256 256" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m60.138836 37.291919c27.807978 20.876476 57.718624 63.205271 68.700294 85.921361 10.98251-22.71442 40.89147-65.045307 68.70029-85.921361 20.06478-15.063631 52.57489-26.719017 52.57489 10.369026 0 7.406988-4.24672 62.222525-6.73746 71.121615-8.65781 30.93939-40.20649 38.83064-68.26957 34.05449 49.05372 8.34874 61.53251 36.00283 34.58309 63.65692-51.18231 52.52051-73.56386-13.1776-79.30144-30.01184-1.05132-3.08613-1.54327-4.52983-1.55051-3.3022-.008-1.22769-.49919.21607-1.55051 3.3022-5.73507 16.83424-28.116195 82.53403-79.301434 30.01184C21.036628 188.83988 33.515002 161.18412 82.569568 152.83705 54.50565 157.6132 22.956536 149.7219 14.299998 118.78256 11.80918 109.88262 7.5625379 55.067093 7.5625379 47.660945c0-37.088043 32.5109501-25.432657 52.5748801-10.369026z"/></svg>`,
+        title: "Bluesky",
+        url: "https://bsky.app/profile/opensuse.org",
       },
       {
         id: "youtube",
@@ -434,13 +452,16 @@ module.exports={
     "irc-channels": "IRC-kanaler",
     "social-media": "Socialemedier",
     "opensuse-universe": "openSUSE Universe",
-    "main-site": "Hovedsted",
+    "main-site": "Hovedside",
     "telegram-group": "Telegram-gruppe",
     "telegram-group-url": "https://t.me/opensuseusers",
-    "other": "Andet",
-    "guide-unofficial": "Vejledning (uofficiel)",
+    "other": "Andre",
+    "guide-unofficial": "Guide (uofficiel)",
     "mirrors": "Spejle",
-    "lizards": "Øgler"
+    "lizards": "Øgler",
+    "kernel": "Kerne",
+    "status": "Status",
+    "survey": "Undersøgelse"
 }
 
 },{}],6:[function(require,module,exports){
@@ -555,7 +576,7 @@ module.exports={
     "mail-lists": "Listas de correo",
     "irc-channels": "Canales de IRC",
     "social-media": "Redes sociales",
-    "dark-mode": "Modo Oscuro",
+    "dark-mode": "Modo oscuro",
     "opensuse-universe": "Universo openSUSE",
     "search": "Buscar",
     "main": "Principal",
@@ -621,10 +642,10 @@ module.exports={
     "main-site": "سایت اصلی",
     "software": "نرم‌افزار",
     "download": "دریافت",
-    "doc": "مستندات",
+    "doc": "مستند",
     "documentation": "مستندات",
     "wiki": "ویکی",
-    "wiki-url": "https://en.opensuse.org/",
+    "wiki-url": "https://en.opensuse.org/‭‮‭",
     "forum": "انجمن",
     "forum-url": "https://forums.opensuse.org/forumdisplay.php/842-English",
     "development": "توسعه",
@@ -641,14 +662,17 @@ module.exports={
     "connect": "ارتباط",
     "facebook-group": "گروه فیس‌بوک",
     "telegram-group": "گروه تلگرام",
-    "telegram-group-url": "https://t.me/openSUSE_group",
-    "mail-lists": "لیست ایمیل",
+    "telegram-group-url": "https://t.me/opensuseusers",
+    "mail-lists": "لیست‌های ایمیل",
     "irc-channels": "کانال‌های IRC",
-    "social-media": "شبکه‌های اجتماعی",
+    "social-media": "شبکه‌ اجتماعی",
     "other": "دیگر",
     "guide-unofficial": "راهنما (غیر رسمی)",
     "mirrors": "آینه‌ها",
-    "lizards": "مارمولک‌ها"
+    "lizards": "مارمولک‌ها",
+    "kernel": "هسته",
+    "status": "وضعیت",
+    "survey": "نظر سنجی"
 }
 
 },{}],11:[function(require,module,exports){
@@ -690,19 +714,20 @@ module.exports={
     "telegram-group-url": "https://t.me/opensuseusers",
     "lizards": "Liskot",
     "status": "Tila",
-    "survey": "Selvitys"
+    "survey": "Selvitys",
+    "kernel": "Ydin"
 }
 
 },{}],12:[function(require,module,exports){
 module.exports={
     "dark-mode": "डार्क मोड",
-    "opensuse-universe": "ओपनSUSE संसार",
+    "opensuse-universe": "openSUSE संसार",
     "search": "खोज",
     "main": "मुख्य",
     "main-site": "मुख्य साइट",
     "software": "सॉफ्टवेयर",
     "download": "डाउनलोड",
-    "doc": "प्रलेख",
+    "doc": "दस्तावेज़",
     "documentation": "प्रलेखन",
     "wiki": "विकी",
     "wiki-url": "https://en.opensuse.org/",
@@ -769,7 +794,10 @@ module.exports={
     "main-site": "Sito principale",
     "telegram-group": "Gruppo Telegram",
     "other": "Altro",
-    "guide-unofficial": "Guide (non ufficiali)"
+    "guide-unofficial": "Guide (non ufficiali)",
+    "kernel": "Kernel",
+    "status": "Stato",
+    "survey": "Questionario"
 }
 
 },{}],14:[function(require,module,exports){
@@ -818,7 +846,7 @@ module.exports={
 
 },{}],15:[function(require,module,exports){
 module.exports={
-    "dark-mode": "",
+    "dark-mode": "다크 모드",
     "more": "",
     "search": "",
     "main": "",
@@ -849,8 +877,49 @@ module.exports={
 }
 
 },{}],16:[function(require,module,exports){
-arguments[4][15][0].apply(exports,arguments)
-},{"dup":15}],17:[function(require,module,exports){
+module.exports={
+    "dark-mode": "Tryb ciemny",
+    "more": "",
+    "search": "Szukaj",
+    "main": "Główna",
+    "software": "Oprogramowanie",
+    "download": "Pobierz",
+    "doc": "Dok",
+    "documentation": "Dokumentacja",
+    "wiki": "Wiki",
+    "wiki-url": "https://pl.opensuse.org/",
+    "forum": "Forum",
+    "forum-url": "https://forums.opensuse.org/forumdisplay.php/936-Polski-(Polish)",
+    "development": "Rozwój oprogramowania",
+    "development-document": "Dokument",
+    "development-document-url": "https://en.opensuse.org/Portal:Development",
+    "build-service": "Usługa budowy",
+    "information": "Informacje",
+    "news": "Wiadomości",
+    "release-notes": "Uwagi do wydania",
+    "events": "Wydarzenia",
+    "planet": "Planeta",
+    "shop": "Sklep",
+    "community": "Społeczność",
+    "connect": "Połączenie",
+    "facebook-group": "Grupa na Facebooku",
+    "mail-lists": "Listy dyskusyjne",
+    "irc-channels": "Kanały IRC",
+    "social-media": "Media społecznościowe",
+    "guide-unofficial": "Przewodnik (nieoficjalny)",
+    "survey": "Ankieta",
+    "other": "Inne",
+    "status": "Status",
+    "telegram-group": "Grupa Telegram",
+    "mirrors": "Serwery lustrzane",
+    "opensuse-universe": "openSUSE Universum",
+    "main-site": "Strona główna",
+    "kernel": "Jądro",
+    "lizards": "Jaszczurki",
+    "telegram-group-url": "https://t.me/opensuseusers"
+}
+
+},{}],17:[function(require,module,exports){
 module.exports={
     "software": "Software",
     "download": "Baixar",
@@ -915,7 +984,7 @@ module.exports={
     "shop": "Магазин",
     "community": "Сообщество",
     "connect": "Connect",
-    "facebook-group": "Группа на Facebook",
+    "facebook-group": "Группа Facebook",
     "google-group": "Группа в Google+",
     "mail-lists": "Списки рассылки",
     "irc-channels": "IRC-каналы",
@@ -925,7 +994,7 @@ module.exports={
     "search": "Поиск",
     "main": "Главная",
     "main-site": "Основной сайт",
-    "doc": "Документация",
+    "doc": "Документы",
     "telegram-group": "Группа Telegram",
     "telegram-group-url": "https://t.me/opensuseusers",
     "other": "Прочее",
@@ -940,7 +1009,7 @@ module.exports={
 },{}],19:[function(require,module,exports){
 module.exports={
     "software": "Programvara",
-    "download": "Ladda ner",
+    "download": "Ladda ned",
     "documentation": "Dokumentation",
     "wiki": "Wiki",
     "wiki-url": "https://en.opensuse.org/",
@@ -952,18 +1021,18 @@ module.exports={
     "build-service": "Byggtjänst",
     "information": "Information",
     "news": "Nyheter",
-    "release-notes": "Viktig information",
+    "release-notes": "Utgivningsmeddelande",
     "events": "Evenemang",
     "planet": "Planet",
     "shop": "Butik",
-    "community": "Community",
+    "community": "Gemenskap",
     "connect": "Anslut",
     "facebook-group": "Facebook grupp",
     "mail-lists": "Mailinglistor",
     "irc-channels": "IRC kanaler",
-    "social-media": "Social media",
+    "social-media": "Socialmedia",
     "dark-mode": "Mörkt läge",
-    "opensuse-universe": "openSUSE Universumet",
+    "opensuse-universe": "openSUSE Universum",
     "search": "Sök",
     "main": "Huvud",
     "main-site": "Huvudsida",
@@ -973,7 +1042,10 @@ module.exports={
     "guide-unofficial": "Guide (inofficiell)",
     "mirrors": "Speglar",
     "lizards": "Ödlor",
-    "doc": "Doc"
+    "doc": "Dok",
+    "status": "Status",
+    "kernel": "Kärna",
+    "survey": "Undersökning"
 }
 
 },{}],20:[function(require,module,exports){
